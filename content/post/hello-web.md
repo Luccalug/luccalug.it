@@ -1,7 +1,10 @@
 ---
 title: "Hello Web"
 description: "È online il nuovo sito di Luccalug!"
+lead: "Sito tutto nuovo!"
 date: "2020-01-20T19:26:20+01:00"
+categories:                                                                     
+   - "News"
 thumbnail: "thumb/tux_hacking.jpg"
 toc: false
 mathjax: false

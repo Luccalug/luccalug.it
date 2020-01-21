@@ -6,9 +6,12 @@ date: "2020-01-21T13:46:08+01:00"
 thumbnail: "thumb/package.png"
 sidebar: false
 categories:
-  - "Linux"
+  - "Guide"
 tags:
   - "Linux"
+  - "Package manager"
+  - "apt"
+  - "yum"
 draft: false
 toc: true
 mathjax: false
