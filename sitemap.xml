@@ -3,7 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://luccalug.it/tags/arduino/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/post/arduracing/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://luccalug.it/categories/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/post/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/categories/progetti/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/tags/</loc>
+    <lastmod>2020-01-21T20:48:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/tags/apt/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/categories/guide/</loc>
     <lastmod>2020-01-21T13:46:08+01:00</lastmod>
   </url>
   
@@ -18,27 +58,22 @@
   </url>
   
   <url>
-    <loc>https://luccalug.it/categories/linux/</loc>
+    <loc>https://luccalug.it/tags/package-manager/</loc>
     <lastmod>2020-01-21T13:46:08+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://luccalug.it/</loc>
-    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://luccalug.it/post/</loc>
-    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://luccalug.it/tags/</loc>
+    <loc>https://luccalug.it/tags/yum/</loc>
     <lastmod>2020-01-21T13:46:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://luccalug.it/post/hello-web/</loc>
+    <lastmod>2020-01-20T19:26:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/categories/news/</loc>
     <lastmod>2020-01-20T19:26:20+01:00</lastmod>
   </url>
   

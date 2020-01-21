@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Luccalug</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
-    <lastBuildDate>Tue, 21 Jan 2020 13:46:08 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2020 20:48:01 +0100</lastBuildDate>
     
 	<atom:link href="https://luccalug.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>arduino</title>
+      <link>https://luccalug.it/tags/arduino/</link>
+      <pubDate>Tue, 21 Jan 2020 20:48:01 +0100</pubDate>
+      
+      <guid>https://luccalug.it/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apt</title>
+      <link>https://luccalug.it/tags/apt/</link>
+      <pubDate>Tue, 21 Jan 2020 13:46:08 +0100</pubDate>
+      
+      <guid>https://luccalug.it/tags/apt/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Linux</title>
@@ -17,6 +35,24 @@
       <pubDate>Tue, 21 Jan 2020 13:46:08 +0100</pubDate>
       
       <guid>https://luccalug.it/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package manager</title>
+      <link>https://luccalug.it/tags/package-manager/</link>
+      <pubDate>Tue, 21 Jan 2020 13:46:08 +0100</pubDate>
+      
+      <guid>https://luccalug.it/tags/package-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yum</title>
+      <link>https://luccalug.it/tags/yum/</link>
+      <pubDate>Tue, 21 Jan 2020 13:46:08 +0100</pubDate>
+      
+      <guid>https://luccalug.it/tags/yum/</guid>
       <description></description>
     </item>
     
