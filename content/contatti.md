@@ -18,6 +18,6 @@ La mappa è anche disponibile via [Google Maps](https://goo.gl/maps/P4vdP4CjqoE2
 ## I nostri contatti diretti e social:
 * Iscriviti alla nostra Mailing list delle news per rimanere aggiornato sulle ultime novità.
 * Iscriviti alla nostra Mailing list dei soci per rimanere in contatto con noi.
-* Scrivici una mail a luccalug[chiocciola]protonmail[punto]com
+* Scrivici una mail a luccalug[chiocciola]protonmail[punto]com oppure presidente[chiocciola]luccalug[punto]it
 * Seguici su [Facebook.](www.fb.com/luccalug)
 * Seguici su [Twitter.](www.twitter.com/luccalug)
