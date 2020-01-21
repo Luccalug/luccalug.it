@@ -6,6 +6,13 @@ echo ">> Genero il sito <<"
 hugo
 echo "Commenta la modifica e premi [ENTER]: "
 read comment
+
+#master
 git add --all && git commit -m $comment
-cd public && git add --all && git commit -m $comment && cd ..
+git push
+#gh-pages
+cd public && git add --all && git commit -m $comment 
+git push
+
+cd ..
 echo "Fatto ... bye!"
