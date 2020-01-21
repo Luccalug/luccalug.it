@@ -1,0 +1,79 @@
+baseurl = "https://luccalug.it"
+title = "Luccalug"
+languageCode = "it-IT"
+defaultContentLanguage ="it"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Author]
+  name = "Luccalug"
+  bio = "Un gruppo di amici che amano la tecnologia libera"
+  avatar = "img/luccalug.png"
+
+[Params]
+  subtitle = "Lucca Linux user group" # Subtitle of your site
+  description = "Il sito web di Luccalug" # Description of your site
+  logo ="img/luccalug.png"
+  opengraph = true
+  twitter_cards = true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = false
+  toc = true # Enable Table of Contents
+  post_navigation = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "02-01-2006" # Change the format of dates
+  mathjax = false # Enabled optionally for every article
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#E95420" # Override highlight color
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  #customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "social","categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "luccalug"
+  twitter = "luccalug"
+  instagram = "luccalug"
+  telegram = "luccalug"
+  github = "luccalug"
+  gitlab = "luccalug"
+  email = "luccalug@protonmail.com"
+
+#Custom social links
+[[Params.widgets.social.custom]]
+  title = "presidente@luccalug.it"
+  url = "mailto:presidente@luccalug.it"
+  icon = "svg/email.svg" # Optional. Path relative to "layouts/partials"
+
+#Enable custom robots.txt
+enableRobotsTXT = true
+
+#Custom markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+[markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "manni"
+    tabWidth = 4
