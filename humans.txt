@@ -1,0 +1,11 @@
+/* TEAM */
+
+    The entire Luccalug team, a bunch of friends from Lucca that love technology and free (as in freedom) stuff
+
+/* SITE */
+
+    Site Name: Luccalug - Lucca Linux User Group
+    Site URL: http://www.luccalug.it
+    Language: Italian
+    Facebook: https://www.facebook.com/luccalug-121848141161284/
+    Twitter: @luccalug

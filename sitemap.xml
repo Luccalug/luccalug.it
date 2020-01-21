@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://luccalug.it/categories/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/post/i-gestori-di-pacchetti/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/tags/linux/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/categories/linux/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/post/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/tags/</loc>
+    <lastmod>2020-01-21T13:46:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/post/hello-web/</loc>
+    <lastmod>2020-01-20T19:26:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/associazione/</loc>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/attivit%C3%A0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/calendario/</loc>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/contatti/</loc>
+  </url>
+  
+  <url>
+    <loc>https://luccalug.it/linuxday/</loc>
+  </url>
+  
+</urlset>
