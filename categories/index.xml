@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Luccalug</title>
-    <link>https://luccalug.it/categories/</link>
+    <link>https://www.luccalug.it/categories/</link>
     <description>Recent content in Categories on Luccalug</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-IT</language>
     <lastBuildDate>Tue, 21 Jan 2020 23:34:59 +0100</lastBuildDate>
     
-	<atom:link href="https://luccalug.it/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.luccalug.it/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>News</title>
-      <link>https://luccalug.it/categories/news/</link>
+      <link>https://www.luccalug.it/categories/news/</link>
       <pubDate>Tue, 21 Jan 2020 23:34:59 +0100</pubDate>
       
-      <guid>https://luccalug.it/categories/news/</guid>
+      <guid>https://www.luccalug.it/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Serate a tema</title>
-      <link>https://luccalug.it/categories/serate-a-tema/</link>
+      <link>https://www.luccalug.it/categories/serate-a-tema/</link>
       <pubDate>Tue, 21 Jan 2020 23:34:59 +0100</pubDate>
       
-      <guid>https://luccalug.it/categories/serate-a-tema/</guid>
+      <guid>https://www.luccalug.it/categories/serate-a-tema/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Progetti</title>
-      <link>https://luccalug.it/categories/progetti/</link>
+      <link>https://www.luccalug.it/categories/progetti/</link>
       <pubDate>Tue, 21 Jan 2020 20:48:01 +0100</pubDate>
       
-      <guid>https://luccalug.it/categories/progetti/</guid>
+      <guid>https://www.luccalug.it/categories/progetti/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Guide</title>
-      <link>https://luccalug.it/categories/guide/</link>
+      <link>https://www.luccalug.it/categories/guide/</link>
       <pubDate>Tue, 21 Jan 2020 13:46:08 +0100</pubDate>
       
-      <guid>https://luccalug.it/categories/guide/</guid>
+      <guid>https://www.luccalug.it/categories/guide/</guid>
       <description></description>
     </item>
     
