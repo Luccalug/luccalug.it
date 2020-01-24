@@ -22,7 +22,8 @@ L'associazione svolge molte attività durante l'anno con principalmente due scop
 * Elettronica digitale
 * Elettornica analogica
 * Dispositivi embedded (arduino, raspberrypi & co.)
-* stampanti 3D, CNC autocostruite
+* Stampanti 3D, CNC autocostruite
+* **Trashware** (recupero e riutilizzo di vecchi PC)
 * *e tutto quello che ci viene in mente!*
 
 ### Serate a tema
