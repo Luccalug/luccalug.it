@@ -20,5 +20,5 @@ La mappa è anche disponibile via [Google Maps](https://goo.gl/maps/P4vdP4CjqoE2
 * Scrivici una mail a luccalug[chiocciola]protonmail[punto]com oppure presidente[chiocciola]luccalug[punto]it
 * Seguici su [Facebook.](https://www.fb.com/luccalug)
 * Seguici su [Twitter.](https://www.twitter.com/luccalug)
-* Seguici su [Instragram.](https://www.instragram.com/luccalug)
+* Seguici su [Instragram.](https://www.instagram.com/luccalug)
 * Seguici su [Telegram.](https://t.me/luccalug)
