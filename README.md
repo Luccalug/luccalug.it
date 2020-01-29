@@ -19,7 +19,7 @@ Se volete contribuire al sito o capire come funziona bastano pochi semplici pass
 3. Entra nella cartella e genera il sito
 
     cd luccalug.it  
-    hugo -D
+    hugo serve -D
 4. Visita localhost:1313
 
 enjoy :D

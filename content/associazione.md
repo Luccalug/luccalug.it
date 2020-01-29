@@ -13,7 +13,9 @@ menu: main
 
 L’Associazione Luccalug si occupa di promuovere e diffondere l’utilizzo del software e hardware libero, la conoscenza informatica e l’alfabetizzazione digitale nell’area di Lucca.
 
-**Luccalug è nata nel 2007 e da allora è diventata un punto di riferimento per i lucchesi appassionati di informatica, elettronica e tecnologia in generale.** Da sempre organizziamo corsi, serate a tema ed eventi in collaborazione con le istituzioni, sia nella nostra sede operativa che in sedi esterne offerte da vari enti. Di particolare importanza l’appuntamento annuale con il Linux Day, che organizziamo a Lucca dal 2007 e durante il quale selezioniamo e presentiamo progetti di informatica libera e open hardware, teniamo tavole rotonde, convegni e talk, negli anni l’evento è stato ospitato ed ha coinvolto varie scuole, coworking e centri giovanili della provincia di Lucca.
+**Luccalug è nata nel 2007 e da allora è diventata un punto di riferimento per i lucchesi appassionati di informatica, elettronica e tecnologia in generale.** Da sempre organizziamo corsi, serate a tema ed eventi in collaborazione con le istituzioni, sia nella nostra sede operativa che in sedi esterne offerte da vari enti.
+
+Di particolare importanza l’appuntamento annuale con il Linux Day, che organizziamo a Lucca dal 2007 e durante il quale selezioniamo e presentiamo progetti di informatica libera e open hardware, teniamo tavole rotonde, convegni e talk, negli anni l’evento è stato ospitato ed ha coinvolto varie scuole, coworking e centri giovanili della provincia di Lucca.
 
 *In più occasioni abbiamo collaborato con il Comune di Capannori, con il Polo Tecnologico lucchese e con la Camera di Commercio di Lucca intervenendo ad eventi sulla stampa 3D e sull’innovazione in generale.*
 
@@ -28,11 +30,11 @@ L’Associazione Luccalug si occupa di promuovere e diffondere l’utilizzo del 
 ## Perché diventare soci?
 L’associazione è senza scopo di lucro e autofinanziata tramite quota associativa annuale, i soci regolarmente iscritti possono partecipare a tutti i nostri eventi e alle serate a tema, contribuendo attivamente ai progetti che svolgiamo, chi è iscritto può inoltre utilizzare la strumentazione che mettiamo a disposizione.
 
-Luccalug raccoglie delle quote associative per sostenere le spese di organizazione di eventi o per acquistare materiale per corsi, incontri ecc… Diventando soci si sostiene economicamente l’associazione e si ha diritto di voto durante le assemblee.
+Luccalug raccoglie delle quote associative per sostenere le spese di organizzazione di eventi o per acquistare materiale per corsi, incontri ecc… Diventando soci si sostiene economicamente l’associazione e si ha diritto di voto durante le assemblee.
 
 Inoltre si può richiedere gratuitamente:
 
-* Un sottodomionio del tipo tuonome.luccalug.it
+* Un sottodominio del tipo tuonome.luccalug.it
 * Un indirizzo di posta tuonome@luccalug.it (Gestibile sia via web che sul proprio pc)
 
 ## Come diventare socio
