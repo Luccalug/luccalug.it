@@ -25,10 +25,12 @@ Annunciamo le prime 5 serate a tema del 2020!
 Le serate a tema sono incontri dove un relatore introduce i partecipanti ad uno specifico argomento attraverso una presentazione e vari esempi.
 Gli interessati possono fare domande e chiedere approfondimenti in un clima informale e rilassato.
 
+## LA PARTECIPAZIONE È COMPLETAMENTE GRATUITA
+
 Di seguito le serate calendarizzate  
 
 
-#### Introduzione a Linux
+### Introduzione a Linux
 * **Lunedì 24 Febbraio**
 * **Conoscenze richieste: Nessuna**
 
