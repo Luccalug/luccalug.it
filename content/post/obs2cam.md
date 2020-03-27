@@ -16,7 +16,7 @@ tags:
 toc: false
 sidebar: false
 mathjax: false
-draft: true
+draft: false
 ---
 In questo post mostreremo come redirezionare l'output di OBS verso un device v4l di loopback in modo da avere un flusso video totalmente controllabile per tutte quelle applicazioni che sfruttano input da webcam (videoconferenze ecc).
 
