@@ -13,7 +13,7 @@ tags:
   - "v4l2loopback"
   - "v4l2sink"
   - "streaming"
-toc: false
+toc: true
 sidebar: false
 mathjax: false
 draft: false
