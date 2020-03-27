@@ -44,39 +44,49 @@ Schematizzando:
 ## Installazione
 - Installiamo ffmpeg e OBS utilizzando i ppa del progetto
 
-        sudo apt-get install ffmpeg
-        sudo add-apt-repository ppa:obsproject/obs-studio
-        sudo apt-get update
-        sudo apt-get install obs-studio
+```sh
+sudo apt-get install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt-get update
+sudo apt-get install obs-studio
+```
 
 Per le altre distro guardate il vostro package manager o le istruzioni ufficiali https://obsproject.com/wiki/install-instructions#linux
 
 - Installiamo v4l2loopback
 
-        sudo apt-get install v4l2loopback-dkms v4l2loopback-utils
+```sh
+sudo apt-get install v4l2loopback-dkms v4l2loopback-utils
+```
 
 Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](https://github.com/umlaeute/v4l2loopback)
 
 - Installiamo v4l2sink
 
-        wget https://github.com/CatxFish/obs-v4l2sink/releases/latest/download/obs-v4l2sink.deb
-        sudo apt install ./obs-v4l2sink.deb
+```sh
+wget https://github.com/CatxFish/obs-v4l2sink/releases/latest/download/obs-v4l2sink.deb
+sudo apt install ./obs-v4l2sink.deb
+```
   
 Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](çhttps://github.com/CatxFish/obs-v4l2sink)
 
 ## Uso
 Carichiamo il module v4l2loopback
 
-        sudo modprobe v4l2loopback video_nr=42 card_label="obs-cam" exclusive_caps=1
-        v4l2-ctl -d /dev/video42 -c timeout=3000
+```sh
+sudo modprobe v4l2loopback video_nr=42 card_label="obs-cam" exclusive_caps=1
+v4l2-ctl -d /dev/video42 -c timeout=3000
+```
 
 Dovrebbe essersi creato il device __/dev/video42__
 
-        Aprite OBS -> Strumenti -> v4l2sink 
+```
+Aprite OBS -> Strumenti -> v4l2sink 
+```
 
 Nella finestra che compare indicate il path del device appena creato (nel nostro caso /dev/video42), lasciate il campo "video format" invariato.
 
-Cliccate su start
+Cliccate su __start__
 
 Fatto! Lo stream video è redirezionato, provate il funzionamento con [questo sito](https://webcamtests.com/)
 
