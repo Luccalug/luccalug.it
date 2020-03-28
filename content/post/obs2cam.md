@@ -68,10 +68,10 @@ wget https://github.com/CatxFish/obs-v4l2sink/releases/latest/download/obs-v4l2s
 sudo apt install ./obs-v4l2sink.deb
 ```
   
-Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](çhttps://github.com/CatxFish/obs-v4l2sink)
+Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](https://github.com/CatxFish/obs-v4l2sink)
 
 ## Uso
-Carichiamo il module v4l2loopback
+Carichiamo il modulo v4l2loopback
 
 ```sh
 sudo modprobe v4l2loopback video_nr=42 card_label="obs-cam" exclusive_caps=1
