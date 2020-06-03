@@ -13,9 +13,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   avatar = "img/luccalug.png"
 
 [Params]
-  subtitle = "Lucca Linux user group" # Subtitle of your site
   description = "Il sito web di Luccalug" # Description of your site
-  logo ="img/luccalug.png"
   opengraph = true
   twitter_cards = true
   readmore = true # Show "Read more" button in list if true
@@ -29,8 +27,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   highlightColor = "#E95420" # Override highlight color
-  customCSS = ["css/custom.css"] # Include custom CSS files
+  #customCSS = ["css/custom.css"] # Include custom CSS files
   #customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.logo]
+  image ="img/luccalug.png"
+  subtitle = "Lucca Linux user group" # Subtitle of your site
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

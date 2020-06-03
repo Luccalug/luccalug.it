@@ -12,7 +12,12 @@ tags:
   - "v4l"
   - "v4l2loopback"
   - "v4l2sink"
+  - "webcam"
   - "streaming"
+  - "zoom"
+  - "hangout"
+  - "teams"
+  - "meet"
 toc: true
 sidebar: false
 mathjax: false
@@ -34,7 +39,7 @@ NB: La guida funziona solo su Linux ed è stata testata con Solus Budgie 4.1, Ub
 ## Cosa andremo a fare
 * Andremo a creare una webcam virtuale di loopback, ovvero un device v4l che riporta in output il video che riceve in input rispettando il formato di una webcam reale.
 
-* Utilizzeremo OBS per generare il contenuto video 
+* Utilizzeremo OBS per generare il contenuto video
 
 * Il Plugin per OBS v4l2sink fungerà da ponte per portare l'output di OBS alla webcam virtuale.
 
@@ -67,7 +72,7 @@ Per le altre distro guardate il vostro package manager o le istruzioni per la co
 wget https://github.com/CatxFish/obs-v4l2sink/releases/latest/download/obs-v4l2sink.deb
 sudo apt install ./obs-v4l2sink.deb
 ```
-  
+
 Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](https://github.com/CatxFish/obs-v4l2sink)
 
 ## Uso
@@ -81,7 +86,7 @@ v4l2-ctl -d /dev/video42 -c timeout=3000
 Dovrebbe essersi creato il device __/dev/video42__
 
 ```
-Aprite OBS -> Strumenti -> v4l2sink 
+Aprite OBS -> Strumenti -> v4l2sink
 ```
 
 Nella finestra che compare indicate il path del device appena creato (nel nostro caso /dev/video42), lasciate il campo "video format" invariato.
