@@ -25,14 +25,8 @@ Seguite il nostro sito web e le pagine social per tutti gli aggiornamenti
 
 <!--more-->
 
-Annunciamo le prime 5 serate a tema del 2020!
-
-Le serate a tema sono incontri dove un relatore introduce i partecipanti ad uno specifico argomento attraverso una presentazione e vari esempi.
-Gli interessati possono fare domande e chiedere approfondimenti in un clima informale e rilassato.
-
-## LA PARTECIPAZIONE È COMPLETAMENTE GRATUITA
-
-Di seguito le serate calendarizzate  
+Archiviamo questa pagina con la calendarizzazione originale delle serate a tema di inizio 2020 annullate a causa Coronavirus.
+Le serate verranno riprese a Settembre 2020 con una nuova programmazione, vi aspettiamo tutti, sempre in sicurezza.
 
 
 ### Introduzione a Linux
@@ -50,8 +44,8 @@ Di seguito le serate calendarizzate
 
 ---
 ### Blender Intro I: Interfaccia e uso base
-* **RIMANDAO CAUSA CORONAVIRUS**
-* **Conoscenze richieste: Nessuna** 
+* **RIMANDATO CAUSA CORONAVIRUS**
+* **Conoscenze richieste: Nessuna**
 
 > Introduzione a Blender, il famosissimo software di modellazione 3D, funzionamento di base e interfaccia
 
@@ -69,10 +63,6 @@ Di seguito le serate calendarizzate
 
 > Introduzione a Blender, in questa seconda serata modelleremo i primi oggetti 3D
 
-
-Le date sono presenti anche sul nostro calendario ufficiale e su tutti i social, per ulteriori informazioni contattateci direttamente
-
-Vi aspettiamo!
 
 **EVENTO ANNULLATO NEL RISPETTO DELLE NUOVE DIRETTIVE DEL COMUNE RELATIVE AL CORONAVIRUS.
 LE SERATE A TEMA SONO RIMANDATE FINO A DATA DA DESTINARSI.**
