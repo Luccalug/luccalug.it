@@ -16,11 +16,13 @@ mathjax: false
 draft: false
 ---
 
-## Luccalug riparte dopo la quarantena in totale sicurezza!
+**Luccalug riparte dopo la quarantena in totale sicurezza!**
 
-Sede sanificata, mascherine e disinfettante sempre disponibili, insieme alla nostra voglia di sperimentare, divertirci e creare con tecnologie libere!
+Sede sanificata, mascherine e disinfettante sempre disponibili insieme alla nostra voglia di sperimentare, divertirci e creare con tecnologie libere!
 
 <!--more-->
+
+Le serate a tema annullate durante la quarantena verranno ricalendarizzte da Settembre in poi!
 
 **Vi aspettiamo tutti i Lunedì sera dalle 21:00 in poi, seguite anche i nostri social per tutte le informazioni dell'ultimo minuto**
 
