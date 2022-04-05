@@ -7,11 +7,12 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
         with:
           submodules: true
+          fetch-depth: 0
 
       - name: Read .env
         id: hugo-version
@@ -20,7 +21,7 @@ jobs:
           echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'
 
@@ -28,7 +29,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           PUBLISH_BRANCH: gh-pages
