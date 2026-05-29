@@ -19,7 +19,7 @@ Visto il periodo di quarantena e l'aumento forzato della didattica digitale, ho 
 La guida funziona solo su Linux ed è stata testata con Solus Budgie 4.1, Ubuntu 18.04 LTS e Arch Linux. Per Windows consiglio di guardare [questo progetto](https://github.com/CatxFish/obs-virtual-cam).
 {{< /note >}}
 
-### Cosa andremo a fare
+## Cosa andremo a fare
 
 - Creare una webcam virtuale di loopback, ovvero un device v4l che riporta in output il video che riceve in input rispettando il formato di una webcam reale.
 - Utilizzare OBS per generare il contenuto video.
@@ -27,11 +27,11 @@ La guida funziona solo su Linux ed è stata testata con Solus Budgie 4.1, Ubuntu
 
 Schematizzando:
 
-```
+```text
 OBS -[v4l2sink]-> /dev/videoX (creata con v4l2loopback) -> Skype/Hangout/altro
 ```
 
-### Installazione
+## Installazione
 
 Installiamo ffmpeg e OBS utilizzando i PPA del progetto:
 
@@ -61,7 +61,7 @@ sudo apt install ./obs-v4l2sink.deb
 
 Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](https://github.com/CatxFish/obs-v4l2sink).
 
-### Uso
+## Uso
 
 Carichiamo il modulo v4l2loopback:
 
@@ -80,12 +80,12 @@ Cliccate su **Start**.
 
 Fatto! Lo stream video è redirezionato. Provate il funzionamento con [questo sito](https://webcamtests.com/).
 
-### Troubleshooting
+## Troubleshooting
 
-#### Format not supported
+### Format not supported
 
 Se cliccando su "start streaming" compare l'errore "format not supported", provate a reinstallare v4l2loopback compilandolo direttamente dalla repository ufficiale.
 
-#### Shifting dell'immagine/colori
+### Shifting dell'immagine/colori
 
 Se l'immagine emessa dalla webcam virtuale è shiftata o presenta una modifica nei colori, potrebbe esserci un problema nella configurazione video di OBS. Eseguite la configurazione automatica dal menu "Strumenti", oppure dalle impostazioni cliccate sulla tab "Avanzate" e modificate il formato video in `I444` e lo spazio colore in `601`.

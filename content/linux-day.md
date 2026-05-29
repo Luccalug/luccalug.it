@@ -22,7 +22,7 @@ Vuoi proporre un talk? Scrivici a **luccalug@protonmail.com**!
 ## 📚 Edizioni Passate
 
 | Edizione | Slogan | Dove | Note |
-|----------|--------|------|------|
+| ---------- | -------- | ------ | ------ |
 | 2025 | - | PRISMA, Prato | Edizione congiunta con PLUG, FLUG e GOLEM |
 | 2019 | "Ai,Ai,Ai!" | Foro Boario, Lucca | Tavoli tematici e dimostrazioni |
 | 2016 | "1+1=10" | Polo Tecnologico lucchese | In collaborazione con Coworking Multiverso e CoderDojo Lucca |

@@ -2,7 +2,12 @@
 exclude_path = ["public/feed.xml", "public/sitemap.xml"]
 
 # Skip mailto and tel links
-exclude = ['^mailto:', '^tel:']
+exclude = [
+    '^mailto:',
+    '^tel:',
+    # Skip internal links (they point to the live site, not the local build)
+    '^https://luccalug\.it/',
+]
 
 # Accept 429 (rate limited) as valid
 accept = [200, 429]

@@ -11,7 +11,7 @@ Siamo lieti di invitarvi agli incontri di promozione del corso di formazione CAO
 
 Il progetto è volto alla formazione di 24 nuove professionalità esperte nell'ambito della consulenza di soluzioni open source sia ad aziende che Enti Locali e cooperative.
 
-**L'OPEN SOURCE NELLA PUBBLICA AMMINISTRAZIONE**
+## L'OPEN SOURCE NELLA PUBBLICA AMMINISTRAZIONE
 
 Quale futuro e quali resistenze nell'adozione del software libero nella P.A.: esperienze locali
 
@@ -23,6 +23,7 @@ Durante l'incontro sarà presentato il corso CAOS Consulente Applicativo Open So
 Coordina l'incontro Stefano Giuntini (Lo Schermo)
 
 Interverranno:
+
 - Mirco Trielli (presidente Zefiro Società Cooperativa Sociale)
 - Stefano Tirabassi (Comune di Lucca)
 - Luca Falsiroli (Consulente informatico Unione Comuni Alta Versilia)
@@ -30,7 +31,7 @@ Interverranno:
 
 ---
 
-**L'OPEN SOURCE NELLE AZIENDE**
+## L'OPEN SOURCE NELLE AZIENDE
 
 Il software libero come strumento di lavoro e opportunità in aziende e cooperative di piccole/medie dimensioni
 
@@ -42,6 +43,7 @@ Durante l'incontro sarà presentato il corso CAOS Consulente Applicativo Open So
 Coordina l'incontro Stephano Tesi (direttore CNA Lucca)
 
 Interverranno:
+
 - Mirco Trielli (presidente Zefiro Società Cooperativa Sociale)
 - Umberto Carrara (Mediaus srl)
 - Giuseppe Fanucchi (Consorzio So and Co)

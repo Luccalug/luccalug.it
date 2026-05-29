@@ -9,7 +9,7 @@ description: "Serata dedicata ad AV Linux, la distribuzione basata su Debian ott
 
 {{< evento titolo="Pillole di Free Software: AV Linux" data="2012-04-23" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Serata dedicata ad AV Linux, la distribuzione GNU/Linux per la produzione audio e video." >}}
 
-**Lunedì 23 aprile 2012**
+## Lunedì 23 aprile 2012
 
 AV Linux è un sistema operativo basato su **Debian GNU/Linux**, leggero e perfettamente adatto ad un uso quotidiano del computer. Oltre a questo offre una delle migliori raccolte di software open source e demoware per creazioni audio e video, aggiornata e stabile.
 

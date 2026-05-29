@@ -1,0 +1,34 @@
+{
+  "version": "0.2",
+  "language": "it,en",
+  "dictionaries": [
+    "it-it",
+    "html",
+    "css",
+    "bash"
+  ],
+  "ignorePaths": [
+    "public/**",
+    "resources/**",
+    "static/**",
+    "assets/**",
+    "layouts/**",
+    "themes/**",
+    "*.toml",
+    "*.yaml",
+    "*.json"
+  ],
+  "ignoreRegExpList": [
+    "/^---[\\s\\S]*?^---/m",
+    "/\\{\\{[<>%].*?[<>%]\\}\\}/g"
+  ],
+  "words": [
+    "luccalug",
+    "neocities",
+    "webring",
+    "hugo",
+    "linux",
+    "woff",
+    "blender"
+  ]
+}

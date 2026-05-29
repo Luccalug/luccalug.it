@@ -92,21 +92,27 @@ $ hugo server -D
 
 {{< tabs >}}
 {{< tab name="Arch Linux" >}}
-```
+
+```bash
 sudo pacman -S hugo
 ```
+
 Il modo più semplice su Arch: direttamente dai repository ufficiali.
 {{< /tab >}}
 {{< tab name="Ubuntu/Debian" >}}
-```
+
+```bash
 sudo apt install hugo
 ```
+
 Oppure scarica il `.deb` dall'ultima release su GitHub per avere la versione più recente.
 {{< /tab >}}
 {{< tab name="Fedora" >}}
-```
+
+```bash
 sudo dnf install hugo
 ```
+
 Disponibile nei repository ufficiali di Fedora.
 {{< /tab >}}
 {{< /tabs >}}
@@ -133,15 +139,21 @@ Disponibile nei repository ufficiali di Fedora.
 
 {{< colonne >}}
 {{< colonna >}}
+
 ### Arch Linux
+
 Rolling release, minimalista, per utenti avanzati. Pacman come gestore pacchetti.
 {{< /colonna >}}
 {{< colonna >}}
+
 ### Ubuntu
+
 Release semestrali, user-friendly, grande comunità. APT come gestore pacchetti.
 {{< /colonna >}}
 {{< colonna >}}
+
 ### Fedora
+
 Cutting-edge, sponsorizzata Red Hat, focus su innovazione. DNF come gestore pacchetti.
 {{< /colonna >}}
 {{< /colonne >}}

@@ -19,7 +19,7 @@ Archiviamo questa pagina con la calendarizzazione originale delle serate a tema 
 
 ---
 
-### Introduzione a Linux
+## Introduzione a Linux
 
 - **Lunedì 24 Febbraio**
 - **Conoscenze richieste: Nessuna**
@@ -28,7 +28,7 @@ Archiviamo questa pagina con la calendarizzazione originale delle serate a tema 
 
 ---
 
-### CSS Grid
+## CSS Grid
 
 - **RIMANDATO CAUSA CORONAVIRUS**
 - **Conoscenze richieste: HTML, CSS**
@@ -37,7 +37,7 @@ Archiviamo questa pagina con la calendarizzazione originale delle serate a tema 
 
 ---
 
-### Blender Intro I: Interfaccia e uso base
+## Blender Intro I: Interfaccia e uso base
 
 - **RIMANDATO CAUSA CORONAVIRUS**
 - **Conoscenze richieste: Nessuna**
@@ -46,7 +46,7 @@ Archiviamo questa pagina con la calendarizzazione originale delle serate a tema 
 
 ---
 
-### SvelteJS
+## SvelteJS
 
 - **RIMANDATO CAUSA CORONAVIRUS**
 - **Conoscenze richieste: Javascript**
@@ -55,7 +55,7 @@ Archiviamo questa pagina con la calendarizzazione originale delle serate a tema 
 
 ---
 
-### Blender Intro II: Basi di modellazione
+## Blender Intro II: Basi di modellazione
 
 - **RIMANDATO CAUSA CORONAVIRUS**
 - **Conoscenze richieste: Nessuna**

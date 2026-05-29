@@ -7,7 +7,7 @@ tags: ["serata-a-tema", "openscad", "stampa-3d", "open-hardware"]
 description: "Serata dedicata a OpenSCAD nel ciclo Pillole di Free Software: modellazione 3D tramite geometria solida costruttiva (CSG) con esempi pratici."
 ---
 
-**Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD**
+## Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD
 
 [OpenSCAD](http://www.openscad.org/) è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.
 

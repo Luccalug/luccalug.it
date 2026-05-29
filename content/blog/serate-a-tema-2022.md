@@ -13,7 +13,7 @@ Ricominciano le serate a tema del Luccalug! Da lunedì 11 Aprile ci incontreremo
 
 ---
 
-### rclone - La potenza del cloud, nel palmo della mia mano
+## rclone - La potenza del cloud, nel palmo della mia mano
 
 - **Lunedì 11 Aprile**
 - **Conoscenze richieste: Nessuna**
@@ -22,7 +22,7 @@ Ricominciano le serate a tema del Luccalug! Da lunedì 11 Aprile ci incontreremo
 
 ---
 
-### Blender - Geometry Nodes
+## Blender - Geometry Nodes
 
 - **Lunedì 25 Aprile**
 - **Conoscenze richieste: Blender, modellazione 3D**
@@ -31,7 +31,7 @@ Ricominciano le serate a tema del Luccalug! Da lunedì 11 Aprile ci incontreremo
 
 ---
 
-### Introduzione all'IA (2 serate)
+## Introduzione all'IA (2 serate)
 
 - **Lunedì 9 Maggio**
 - **Lunedì 16 Maggio**

@@ -17,7 +17,7 @@ Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piac
 
 Le distribuzioni GNU/Linux possono essere suddivise in base alla tipologia di pacchetto adottata, dove con il termine pacchetto si intende un archivio compresso, contenente i file di un dato programma e le informazioni relative alle sue dipendenze, i permessi dei file da installare ed eventuali script pre e post installazione. Esistono, inoltre, alcuni pacchetti (chiamati metapacchetti) che hanno lo scopo di facilitare l'installazione di altri, strettamente correlati tra loro. Talvolta, i gruppi di pacchetti sono gestiti direttamente dal gestore: un esempio di metapacchetto o gruppo di pacchetti è quello dei Desktop Environment (GNOME, KDE ecc..).
 
-### I principali formati di pacchetti sono:
+## I principali formati di pacchetti sono:
 
 - RPM (Red Hat e derivate, Fedora, CentOS, OpenSUSE, SLES, ecc...)
 - DEB (Debian e derivate, Ubuntu e derivate, Mint, ecc...)
@@ -28,7 +28,7 @@ Altre distribuzioni hanno dei formati meno standard, ma personalizzati per i pro
 
 I vari formati dei pacchetti vengono, quindi, presi in gestione dai package manager adottati. Ecco i principali:
 
-### Gestori pacchetti da linea di comando:
+## Gestori pacchetti da linea di comando:
 
 - rpm (RedHat/CentOS/Fedora/OpenSUSE)
 - yum (CentOS/Fedora)
@@ -37,7 +37,7 @@ I vari formati dei pacchetti vengono, quindi, presi in gestione dai package mana
 - apt (Debian/Ubuntu)
 - pacman (ArchLinux)
 
-### Gestori pacchetti da interfaccia grafica:
+## Gestori pacchetti da interfaccia grafica:
 
 - Synaptic (Debian, Ubuntu)
 - YaST2 (OpenSUSE)
@@ -49,7 +49,7 @@ I gestori pacchetti recuperano i pacchetti dai repository, ovvero server su Inte
 
 Alcuni tra i repository più noti forniscono chiavi per la verifica delle firme dei pacchetti, proprio come quelli dei repository ufficiali. È, quindi, buona norma documentarsi su come abilitare correttamente tali repository e su come abilitarne la verifica. Tra i repository non ufficiali più famosi ci sono [EPEL (Red Hat/CentOS)](https://fedoraproject.org/wiki/EPEL), [RepoForge](http://repoforge.org/) (ex RPMForge per Red Hat, CentOS, ecc..), [repo-ck](http://repo-ck.com) (ArchLinux), i [Repository di Google](https://www.google.com/linuxrepositories) per le proprie app come Chrome, Earth e molti altri ancora.
 
-### Quali sono, dunque, le funzioni dei gestori di pacchetti?
+## Quali sono, dunque, le funzioni dei gestori di pacchetti?
 
 - Aggiornamento completo del sistema o del singolo pacchetto
 - Verifica delle dipendenze dei pacchetti
@@ -73,229 +73,229 @@ Ecco alcuni degli esempi che mi vengono in mente (certamente non potrei elencarl
 
 ## Pacman
 
-_Aggiornamento dell'elenco pacchetti_
+### Aggiornamento dell'elenco pacchetti
 
-```
+```bash
 pacman -Sy
 ```
 
-_Elenco degli aggiornamenti disponibili (dopo aver aggiornato l'elenco)_
+### Elenco degli aggiornamenti disponibili (dopo aver aggiornato l'elenco)
 
-```
+```bash
 pacman -Qu
 ```
 
-_Installazione di un pacchetto_
+### Installazione di un pacchetto
 
-```
+```bash
 pacman -S firefox
 ```
 
-_Rimozione di un pacchetto_
+### Rimozione di un pacchetto
 
-```
+```bash
 pacman -R firefox
 ```
 
-_Backup della lista pacchetti_
+### Backup della lista pacchetti
 
-```
+```bash
 pacman -Qqen > listapacchetti
 ```
 
-_Re-installazione dei pacchetti da una lista_
+### Re-installazione dei pacchetti da una lista
 
-```
+```bash
 pacman -S - < listapacchetti
 ```
 
-_Pulizia dei pacchetti non più installati (ad esempio, le vecchie versioni o vecchie dipendenze) dalla cache dei pacchetti_
+### Pulizia dei pacchetti non più installati (ad esempio, le vecchie versioni o vecchie dipendenze) dalla cache dei pacchetti
 
-```
+```bash
 pacman -Sc
 ```
 
-_Pulizia completa della cache dei pacchetti_
+### Pulizia completa della cache dei pacchetti
 
-```
+```bash
 pacman -Scc
 ```
 
-_Rimozione dei pacchetti installati, ma non più richiesti_
+### Rimozione dei pacchetti installati, ma non più richiesti
 
-```
+```bash
 pacman -Qdt
 ```
 
 ## RPM
 
-_Elencare i pacchetti installati_
+### Elencare i pacchetti installati
 
-```
+```bash
 rpm -qa
 ```
 
-_Elencare i file installati da un pacchetto_
+### Elencare i file installati da un pacchetto
 
-```
+```bash
 rpm -ql firefox
 ```
 
-_Ottenere il pacchetto che ha installato il file_
+### Ottenere il pacchetto che ha installato il file
 
-```
+```bash
 rpm -qf /usr/bin/firefox
 ```
 
 ## YUM
 
-_Aggiornamento dell'elenco dei pacchetti ed elenco degli aggiornamenti disponibili_
+### Aggiornamento dell'elenco dei pacchetti ed elenco degli aggiornamenti disponibili
 
-```
+```bash
 yum check-update
 ```
 
-_Aggiornamento del sistema_
+### Aggiornamento del sistema
 
-```
+```bash
 yum update
 ```
 
-_Installazione di un pacchetto_
+### Installazione di un pacchetto
 
-```
+```bash
 yum install firefox
 ```
 
-_Rimozione di un pacchetto_
+### Rimozione di un pacchetto
 
-```
+```bash
 yum remove firefox
 ```
 
-_Installazione di un gruppo di pacchetti_
+### Installazione di un gruppo di pacchetti
 
-```
+```bash
 yum groupinstall "KDE"
 ```
 
-_Rimozione di un gruppo di pacchetti_
+### Rimozione di un gruppo di pacchetti
 
-```
+```bash
 yum groupremove "KDE"
 ```
 
-_Pulizia completa della cache dei pacchetti_
+### Pulizia completa della cache dei pacchetti
 
-```
+```bash
 yum clean all
 ```
 
-_Elenco degli aggiornamenti specificando quali sono quelli di sicurezza_
+### Elenco degli aggiornamenti specificando quali sono quelli di sicurezza
 
-```
+```bash
 yum check-update --security
 ```
 
-_Verifica dell'integrità dei pacchetti e dei file installati (richiede il plugin yum-plugin-verify) - tutti i pacchetti_
+### Verifica dell'integrità dei pacchetti e dei file installati (richiede il plugin yum-plugin-verify) - tutti i pacchetti
 
-```
+```bash
 yum verify all
 ```
 
-_Singolo pacchetto_
+### Singolo pacchetto
 
-```
+```bash
 yum verify firefox
 ```
 
 ## zypper
 
-_Aggiornamento del sistema_
+### Aggiornamento del sistema
 
-```
+```bash
 zypper up
 ```
 
-_Aggiornamento della lista dei pacchetti ed elenco degli aggiornamenti_
+### Aggiornamento della lista dei pacchetti ed elenco degli aggiornamenti
 
-```
+```bash
 zypper lu
 ```
 
-_Installazione di un pacchetto_
+### Installazione di un pacchetto
 
-```
+```bash
 zypper in firefox
 ```
 
 ## dpkg
 
-_Elencare i pacchetti installati_
+### Elencare i pacchetti installati
 
-```
+```bash
 dpkg -l
 ```
 
-_Rimuovere un pacchetto_
+### Rimuovere un pacchetto
 
-```
+```bash
 dpkg -r firefox
 ```
 
-_Elencare i file installati da un pacchetto_
+### Elencare i file installati da un pacchetto
 
-```
+```bash
 dpkg -L firefox
 ```
 
-_Riconfigurare un pacchetto_
+### Riconfigurare un pacchetto
 
-```
+```bash
 dpkg --configure firefox
 ```
 
 ## APT
 
-_Aggiornamento dell'elenco dei pacchetti_
+### Aggiornamento dell'elenco dei pacchetti
 
-```
+```bash
 apt-get update
 ```
 
-_Aggiornamento del sistema_
+### Aggiornamento del sistema
 
-```
+```bash
 apt-get upgrade
 ```
 
-_Installazione di un pacchetto_
+### Installazione di un pacchetto
 
-```
+```bash
 apt-get install firefox
 ```
 
-_Rimozione di un pacchetto_
+### Rimozione di un pacchetto
 
-```
+```bash
 apt-get remove firefox
 ```
 
-_Rimozione di un pacchetto e delle relative configurazioni_
+### Rimozione di un pacchetto e delle relative configurazioni
 
-```
+```bash
 apt-get --purge remove firefox
 ```
 
-_Pulizia della cache dei pacchetti non installati sul sistema_
+### Pulizia della cache dei pacchetti non installati sul sistema
 
-```
+```bash
 apt-get autoclean
 ```
 
-_Pulizia completa della cache dei pacchetti_
+### Pulizia completa della cache dei pacchetti
 
-```
+```bash
 apt-get clean
 ```
 
@@ -309,7 +309,7 @@ apt-get clean
 
 Infine, ricordate sempre che il terminale vi è amico e se avete bisogno di informazioni su un comando potete sempre utilizzare il comando `man`:
 
-```
+```bash
 man yum
 ```
 

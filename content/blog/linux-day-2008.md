@@ -26,7 +26,7 @@ Le conferenze si sono articolate su **due percorsi paralleli**:
 *Queste conferenze non richiedono alcuna conoscenza pregressa sull'argomento.*
 
 | Orario | Talk | Relatore |
-|--------|------|----------|
+| -------- | ------ | ---------- |
 | 09:30-10:00 | Apertura della manifestazione e saluto delle autorità | Assessore Lara Pizza, Assessore provinciale Francesco Bambini |
 | 10:00-10:30 | Il software libero: introduzione al tema delle licenze aperte e al concetto di Copyleft | Andrea Guetti |
 | 10:45-11:15 | La storia di GNU/Linux: da Richard Stallman a Mark Shuttleworth | Alek Mugnozzo |
@@ -40,7 +40,7 @@ Le conferenze del mattino sono state registrate e proiettate in loop nel pomerig
 #### Divertirsi con GNU/Linux - pomeriggio
 
 | Orario | Talk | Relatore |
-|--------|------|----------|
+| -------- | ------ | ---------- |
 | 15:00-15:40 | Esempio di creazione musicale e montaggio video con Linux: dimostrazione di utilizzo di software free per audio e video editing | Paolo Dell'Osso e Francesco Pardini |
 | 16:00-16:20 | KDE 4: arriva il desktop del futuro | Matteo Lucchesi |
 | 17:00-17:20 | Ubuntu e la sua comunità | Flavia Weisghizzi |
@@ -52,7 +52,7 @@ Le conferenze del mattino sono state registrate e proiettate in loop nel pomerig
 ### Il Software Libero nella pubblica amministrazione
 
 | Orario | Talk | Relatore |
-|--------|------|----------|
+| -------- | ------ | ---------- |
 | 10:00-10:30 | La diffusione dell'opensource nelle amministrazioni della Provincia di Lucca e del Comune di Capannori | Marco Farulli e Paolo Bertamini |
 | 10:30-10:50 | Il Centro Open Source della Regione Toscana | Marcotulli Angelo, Regione Toscana |
 | 11:00-12:00 | Presentazione del nuovo sito internet del Comune di Capannori (realizzato con Drupal) | Giorgio Del Ghingaro (sindaco), Alberto Gistri, Antonio Le Donne |
