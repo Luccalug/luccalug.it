@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serata-a-Tema on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/serata-a-tema/</link><description>Recent content in Serata-a-Tema on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/serata-a-tema/feed.xml" rel="self" type="application/rss+xml"/><item><title>Prusa i3 - Terza serata di montaggio</title><link>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</link><pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</guid><description>&lt;p&gt;Si è svolta ieri la terza serata di montaggio della &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt; modificata del LuccaLUG.&lt;/p&gt;
+&lt;p&gt;È stata montata l&amp;rsquo;&lt;strong&gt;elettronica&lt;/strong&gt; e siamo andati avanti con l&amp;rsquo;armatura, fissando il frame al piano XY precedentemente creato. Purtroppo le cinghie acquistate per l&amp;rsquo;asse Y si sono rivelate inutili perché, avendo raddoppiato la lunghezza dell&amp;rsquo;asse, queste risultano troppo corte. Un ulteriore problema si è presentato con alcuni pezzi che avevamo stampato ma che sono risultati mal dimensionati. Dovremmo quindi ristamparli.&lt;/p&gt;</description></item><item><title>Prusa i3 - Seconda serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</link><pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</guid><description>&lt;p&gt;A causa di problemi logistici (non erano arrivati alcuni pezzi), la seconda serata di montaggio è stata rimandata più volte e si è finalmente svolta ieri sera (lunedì 22 luglio).&lt;/p&gt;
+&lt;p&gt;Abbiamo montato l&amp;rsquo;&lt;strong&gt;asse Z&lt;/strong&gt; (compresi i motori) e lo abbiamo fissato al frame.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lunedì prossimo (29 luglio)&lt;/strong&gt; abbiamo in programma di montare l&amp;rsquo;elettronica, caricando eventualmente anche il software, e di proseguire con l&amp;rsquo;armatura.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;unica cosa per cui non siamo ancora pronti è il piatto, la cui base va riprogettata e costruita (visto che lo abbiamo raddoppiato in lunghezza).&lt;/p&gt;</description></item><item><title>Prusa i3 modificata - Prima serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</link><pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</guid><description>&lt;p&gt;Ieri sera abbiamo montato l&amp;rsquo;armatura di base della nostra versione modificata di &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt;, una stampante 3D &lt;a href="http://it.wikipedia.org/wiki/Hardware_libero"&gt;Open Hardware&lt;/a&gt;. La modifica che proponiamo consiste nell&amp;rsquo;aumentare le dimensioni del piatto (da 20×20 cm a 20×40 cm) per poter stampare oggetti più grandi.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Il progetto Prusa i3 del LuccaLUG"
+ width="539"
+ height="424"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La nostra Prusa i3 modificata&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Non avendo ancora reperito tutti i pezzi, abbiamo montato solo l&amp;rsquo;armatura della base (barre degli assi X e Y).&lt;/p&gt;</description></item><item><title>Serata a tema: BLENDER e i nodi</title><link>https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/</link><pubDate>Mon, 25 Mar 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/</guid><description>&lt;h2 id="lunedì-25-marzo-2013---ore-2100"&gt;Lunedì 25 Marzo 2013 - Ore 21:00&lt;/h2&gt;
+&lt;p&gt;Si svolgerà una serata a tema per il ciclo &lt;strong&gt;&amp;ldquo;Pillole di Free Software&amp;rdquo;&lt;/strong&gt; dedicata a:&lt;/p&gt;
+&lt;h2 id="blender-e-lutilizzo-dei-nodi-uno-strumento-potente-per-il-rendering-e-non-solo"&gt;&amp;ldquo;BLENDER e l&amp;rsquo;utilizzo dei NODI: uno strumento potente per il rendering e non solo&amp;rdquo;&lt;/h2&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi_hu_311f17e8566b4991.webp 624w, https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi_hu_311f17e8566b4991.webp 624w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png"
+ srcset="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png 624w, https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png 624w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina della serata su Blender e i nodi"
+ width="624"
+ height="295"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software - Blender e i nodi&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id="programma-della-serata"&gt;Programma della serata&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduzione ai nodi in Blender: principi di funzionamento&lt;/li&gt;
+&lt;li&gt;Descrizione dei nodi più utilizzati&lt;/li&gt;
+&lt;li&gt;Possibili applicazioni e potenzialità dei nodi&lt;/li&gt;
+&lt;li&gt;Esempio di applicazione svolto passo per passo con spiegazioni e chiarimenti&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ Per partecipare è necessario aver pagato la quota associativa 2013. Chi non è ancora iscritto può fare la tessera anche la sera stessa.
+&lt;/div&gt;
+
+&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2013-03-25"&gt;25 marzo 2013&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Serata a tema: Blender e i nodi&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Lucca - ore 21:00&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata del ciclo Pillole di Free Software dedicata a Blender e all&amp;#39;utilizzo dei nodi per il rendering.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Serata a tema: OpenSCAD - disegnare in 3D programmando</title><link>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</link><pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</guid><description>&lt;h2 id="lunedì-10-dicembre-2012-per-pillole-di-free-software-serata-dedicata-a-openscad"&gt;Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt; è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Logo di OpenSCAD"
+ width="688"
+ height="567"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il logo di OpenSCAD&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Esso non si focalizza sulla modellazione artistica tipica di software come Blender, bensì mantiene un legame più stretto con la progettazione CAD.&lt;/p&gt;</description></item><item><title>Pillole di Free Software, serate a tema dedicate al mondo dell'informatica libera</title><link>https://luccalug.it/blog/2012/02/pillole-di-free-software-intro/</link><pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/02/pillole-di-free-software-intro/</guid><description>&lt;p&gt;Il LuccaLug è lieto di inaugurare un ciclo di incontri a tema dalla durata di una sera ciascuno, per la promozione del software libero e per il confronto sui temi dell&amp;rsquo;informatica libera.&lt;/p&gt;
+&lt;p&gt;Queste serate vogliono essere momenti di incontro e di confronto, e non corsi. Gli interventi dei relatori saranno brevi e di introduzione al tema, per dare poi spazio al dibattito fra soci.&lt;/p&gt;
+
+&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ L&amp;rsquo;organizzazione è libera: chi ha particolari abilità o conoscenze riguardo un determinato software libero può organizzare una serata a tema nella maniera che ritiene più efficace, scegliendo le modalità più adatte per strutturare la presentazione. I computer della sede restano a disposizione dei partecipanti.
+&lt;/div&gt;
+
+&lt;p&gt;Le serate sono aperte a tutti - soci e non - ogni &lt;strong&gt;lunedì sera&lt;/strong&gt; presso la sede del LuccaLug.&lt;/p&gt;</description></item></channel></rss>

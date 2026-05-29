@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package-Manager on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/package-manager/</link><description>Recent content in Package-Manager on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/package-manager/feed.xml" rel="self" type="application/rss+xml"/><item><title>I gestori di pacchetti</title><link>https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_d74b53ead87f2b37.webp 800w, https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_26d3eb9af2a3c32c.webp 1400w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_f98c679f3142aca5.png"
+ srcset="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_f98c679f3142aca5.png 800w, https://luccalug.it/images/blog/i-gestori-di-pacchetti/package.png 1400w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Illustrazione di pacchetti software"
+ width="800"
+ height="640"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;I gestori di pacchetti Linux&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Un&amp;rsquo;introduzione ai più comuni package manager&lt;/p&gt;
+&lt;p&gt;Senza alcun dubbio, da quando ho cominciato ad appassionarmi al mondo di GNU/Linux e a provare le varie distribuzioni, uno degli aspetti che mi ha affascinato maggiormente è stato l&amp;rsquo;uso dei gestori pacchetti (package manager).&lt;/p&gt;
+&lt;p&gt;Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piaciuto all&amp;rsquo;istante, in quanto permette di aggiornare completamente il sistema in pochi semplici passaggi, sia da terminale che tramite un&amp;rsquo;interfaccia grafica.&lt;/p&gt;</description></item></channel></rss>

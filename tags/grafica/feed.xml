@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Grafica on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/grafica/</link><description>Recent content in Grafica on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Mon, 25 Mar 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/grafica/feed.xml" rel="self" type="application/rss+xml"/><item><title>Serata a tema: BLENDER e i nodi</title><link>https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/</link><pubDate>Mon, 25 Mar 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/</guid><description>&lt;h2 id="lunedì-25-marzo-2013---ore-2100"&gt;Lunedì 25 Marzo 2013 - Ore 21:00&lt;/h2&gt;
+&lt;p&gt;Si svolgerà una serata a tema per il ciclo &lt;strong&gt;&amp;ldquo;Pillole di Free Software&amp;rdquo;&lt;/strong&gt; dedicata a:&lt;/p&gt;
+&lt;h2 id="blender-e-lutilizzo-dei-nodi-uno-strumento-potente-per-il-rendering-e-non-solo"&gt;&amp;ldquo;BLENDER e l&amp;rsquo;utilizzo dei NODI: uno strumento potente per il rendering e non solo&amp;rdquo;&lt;/h2&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi_hu_311f17e8566b4991.webp 624w, https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi_hu_311f17e8566b4991.webp 624w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png"
+ srcset="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png 624w, https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png 624w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina della serata su Blender e i nodi"
+ width="624"
+ height="295"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software - Blender e i nodi&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id="programma-della-serata"&gt;Programma della serata&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduzione ai nodi in Blender: principi di funzionamento&lt;/li&gt;
+&lt;li&gt;Descrizione dei nodi più utilizzati&lt;/li&gt;
+&lt;li&gt;Possibili applicazioni e potenzialità dei nodi&lt;/li&gt;
+&lt;li&gt;Esempio di applicazione svolto passo per passo con spiegazioni e chiarimenti&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ Per partecipare è necessario aver pagato la quota associativa 2013. Chi non è ancora iscritto può fare la tessera anche la sera stessa.
+&lt;/div&gt;
+
+&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2013-03-25"&gt;25 marzo 2013&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Serata a tema: Blender e i nodi&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Lucca - ore 21:00&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata del ciclo Pillole di Free Software dedicata a Blender e all&amp;#39;utilizzo dei nodi per il rendering.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Pillole di Free Software: Inkscape, software di disegno vettoriale</title><link>https://luccalug.it/blog/2012/02/pillole-inkscape/</link><pubDate>Mon, 27 Feb 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/02/pillole-inkscape/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-03-12"&gt;12 marzo 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Pillole di Free Software: Inkscape, software di disegno vettoriale&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata di presentazione di Inkscape, il programma open source per la grafica vettoriale SVG. Incontro aperto a tutti.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Lunedì 12 marzo 2012&lt;/strong&gt; - seconda serata del ciclo &lt;em&gt;Pillole di Free Software&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://inkscape.org/"&gt;Inkscape&lt;/a&gt; è il programma di riferimento del mondo open source per la &lt;strong&gt;grafica vettoriale&lt;/strong&gt;. Permette di creare e modificare immagini in formato SVG (Scalable Vector Graphics) con un&amp;rsquo;interfaccia intuitiva e funzionalità professionali: dai semplici loghi alle illustrazioni complesse, passando per la tipografia e il layout.&lt;/p&gt;</description></item><item><title>Pillole di Free Software: Blender, modellatore 3D</title><link>https://luccalug.it/blog/2012/02/pillole-blender-modellatore-3d/</link><pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/02/pillole-blender-modellatore-3d/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-02-21"&gt;21 febbraio 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Pillole di Free Software: Blender, modellatore 3D&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata di presentazione di Blender, il modellatore 3D open source. Incontro aperto a tutti, con breve introduzione al tema e spazio al dibattito.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Martedì 21 febbraio 2012&lt;/strong&gt; - prima serata del ciclo &lt;em&gt;Pillole di Free Software&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.blender.org/"&gt;Blender&lt;/a&gt; è uno dei più completi e potenti programmi di modellazione, animazione e rendering 3D, completamente gratuito e open source. In questa serata esploreremo le principali funzionalità dello strumento, con esempi pratici direttamente dai computer della sede.&lt;/p&gt;</description></item></channel></rss>

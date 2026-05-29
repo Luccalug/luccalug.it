@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Video on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/video/</link><description>Recent content in Video on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/video/feed.xml" rel="self" type="application/rss+xml"/><item><title>Da OBS alla webcam virtuale</title><link>https://luccalug.it/blog/2020/03/da-obs-alla-webcam/</link><pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/03/da-obs-alla-webcam/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam_hu_8fbf43e387ae3ae8.webp 710w, https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam_hu_8fbf43e387ae3ae8.webp 710w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg"
+ srcset="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg 710w, https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg 710w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Schema OBS verso webcam virtuale"
+ width="710"
+ height="241"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;OBS come sorgente per una webcam virtuale via v4l2loopback&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In questo post mostreremo come redirezionare l&amp;rsquo;output di OBS verso un device v4l di loopback in modo da avere un flusso video totalmente controllabile per tutte quelle applicazioni che sfruttano input da webcam (videoconferenze ecc).&lt;/p&gt;
+&lt;p&gt;Questa guida nasce a seguito di alcuni esperimenti partiti nel lontano 2016 insieme ai ragazzi del Gulli con l&amp;rsquo;obiettivo di creare uno streaming unificato dei vari Linux Day organizzati in Toscana quell&amp;rsquo;anno. A seguito dei vari smanettamenti, soddisfatti dalle potenzialità di OBS, emerse la curiosità di sfruttarlo al di fuori delle piattaforme di streaming che già supporta e impiegarlo anche con programmi come Skype, Hangout e simili per arricchire il proprio flusso video a favore degli altri partecipanti (immaginate una lezione online dove un professore può cambiare diverse webcam, aggiungere immagini o scritte al volo, indipendentemente dalla piattaforma).&lt;/p&gt;</description></item><item><title>AV Linux, la distribuzione Linux per l'Audio e il Video</title><link>https://luccalug.it/blog/2012/04/av-linux-audio-video/</link><pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/04/av-linux-audio-video/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-04-23"&gt;23 aprile 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Pillole di Free Software: AV Linux&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata dedicata ad AV Linux, la distribuzione GNU/Linux per la produzione audio e video.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="lunedì-23-aprile-2012"&gt;Lunedì 23 aprile 2012&lt;/h2&gt;
+&lt;p&gt;AV Linux è un sistema operativo basato su &lt;strong&gt;Debian GNU/Linux&lt;/strong&gt;, leggero e perfettamente adatto ad un uso quotidiano del computer. Oltre a questo offre una delle migliori raccolte di software open source e demoware per creazioni audio e video, aggiornata e stabile.&lt;/p&gt;</description></item></channel></rss>

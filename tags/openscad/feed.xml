@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Openscad on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/openscad/</link><description>Recent content in Openscad on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Mon, 19 Nov 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/openscad/feed.xml" rel="self" type="application/rss+xml"/><item><title>Serata a tema: OpenSCAD - disegnare in 3D programmando</title><link>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</link><pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</guid><description>&lt;h2 id="lunedì-10-dicembre-2012-per-pillole-di-free-software-serata-dedicata-a-openscad"&gt;Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt; è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Logo di OpenSCAD"
+ width="688"
+ height="567"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il logo di OpenSCAD&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Esso non si focalizza sulla modellazione artistica tipica di software come Blender, bensì mantiene un legame più stretto con la progettazione CAD.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/blog/</link><description>Recent content in Blog on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/blog/feed.xml" rel="self" type="application/rss+xml"/><item><title>Come eravamo: una macchina del tempo per il sito del LuccaLUG</title><link>https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/</link><pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/</guid><description>&lt;p&gt;Il nuovo sito appena andato online ci siamo affezionati a questa estetica un po&amp;rsquo; anni &amp;lsquo;90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: &lt;strong&gt;quanti siti ha avuto il LuccaLUG in tutti questi anni?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Tanti. Tantissimi. Uno per ogni moda del web che è passata di qui dal 2007 a oggi. Così abbiamo fatto la cosa più nerd possibile: siamo andati a ripescarli &lt;strong&gt;uno per uno dall&amp;rsquo;&lt;a href="https://web.archive.org/web/*/luccalug.it"&gt;Internet Archive&lt;/a&gt;&lt;/strong&gt;, gli abbiamo fatto lo screenshot e li abbiamo messi in fila.&lt;/p&gt;</description></item><item><title>Guida alla prima serata</title><link>https://luccalug.it/blog/2026/03/guida-alla-prima-serata/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/03/guida-alla-prima-serata/</guid><description>&lt;p&gt;Stai pensando di passare a trovarci ma non sai bene cosa aspettarti? Questa guida è per te.&lt;/p&gt;
+&lt;h2 id="non-devi-essere-un-esperto"&gt;Non devi essere un esperto&lt;/h2&gt;
+&lt;p&gt;Davvero. Questa è la cosa più importante: &lt;strong&gt;non serve sapere nulla di Linux&lt;/strong&gt; per venire ai nostri incontri. Tra di noi c&amp;rsquo;è chi usa Linux da vent&amp;rsquo;anni e chi ha appena scoperto che esiste qualcosa oltre Windows. Siamo un gruppo eterogeneo e ci piace così.&lt;/p&gt;
+&lt;p&gt;Se sai accendere un computer, sei già qualificato.&lt;/p&gt;</description></item><item><title>Benvenuti sul nuovo sito del Luccalug!</title><link>https://luccalug.it/blog/2026/03/benvenuti-sul-nuovo-sito-del-luccalug/</link><pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/03/benvenuti-sul-nuovo-sito-del-luccalug/</guid><description>&lt;p&gt;Siamo felici di annunciare il lancio del nuovo sito del &lt;strong&gt;Luccalug&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Abbiamo voluto creare qualcosa di diverso dal solito: un sito che richiama lo spirito del &lt;strong&gt;vecchio web&lt;/strong&gt;, quando internet era un posto strano, personale e pieno di creatività.&lt;/p&gt;
+&lt;h2 id="cosa-troverete"&gt;Cosa troverete&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Blog&lt;/strong&gt;: news, eventi, tutorial e racconti dalle nostre attività&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Archivio&lt;/strong&gt;: tutti i documenti ufficiali dell&amp;rsquo;associazione&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Informazioni&lt;/strong&gt;: chi siamo, come contattarci, come partecipare&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="il-software-libero-è-per-tutti"&gt;Il software libero è per tutti&lt;/h2&gt;
+&lt;p&gt;Il Luccalug è aperto a chiunque sia interessato a GNU/Linux e al software libero, dal principiante assoluto all&amp;rsquo;esperto.&lt;/p&gt;</description></item><item><title>Serate a tema 2022</title><link>https://luccalug.it/blog/2022/02/serate-a-tema-2022/</link><pubDate>Fri, 04 Feb 2022 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2022/02/serate-a-tema-2022/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serate-a-tema-2022/serateatema2022_hu_243a672055cb2d78.webp 800w, https://luccalug.it/images/blog/serate-a-tema-2022/serateatema2022_hu_baa0e34247701d3f.webp 900w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serate-a-tema-2022/serateatema2022_hu_121ec71988d1b7be.jpg"
+ srcset="https://luccalug.it/images/blog/serate-a-tema-2022/serateatema2022_hu_121ec71988d1b7be.jpg 800w, https://luccalug.it/images/blog/serate-a-tema-2022/serateatema2022.jpg 900w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina serate a tema 2022"
+ width="800"
+ height="622"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Serate a tema Luccalug 2022&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ricominciano le serate a tema del Luccalug! Da lunedì 11 Aprile ci incontreremo per parlare di tecnologia e informatica libera! Continua a leggere per le serate finora programmate.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="rclone---la-potenza-del-cloud-nel-palmo-della-mia-mano"&gt;rclone - La potenza del cloud, nel palmo della mia mano&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lunedì 11 Aprile&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conoscenze richieste: Nessuna&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Rclone è un programma che permette di gestire tantissimi servizi di cloud storage permettendo tutte le classiche operazioni di manipolazione dei file con un&amp;rsquo;interfaccia in riga di comando o via web; aggiunge inoltre alcune funzionalità avanzate come la &amp;ldquo;fusione&amp;rdquo; di più servizi in un unico spazio, la crittografia dei file, la compressione trasparente e molto altro.&lt;/p&gt;</description></item><item><title>Luccalug Reboot</title><link>https://luccalug.it/blog/2020/08/luccalug-reboot/</link><pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/08/luccalug-reboot/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/luccalug-reboot/reboot_hu_8b2fd8d32f234f05.webp 800w, https://luccalug.it/images/blog/luccalug-reboot/reboot_hu_8b2fd8d32f234f05.webp 800w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/luccalug-reboot/reboot.png"
+ srcset="https://luccalug.it/images/blog/luccalug-reboot/reboot.png 800w, https://luccalug.it/images/blog/luccalug-reboot/reboot.png 800w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Luccalug Reboot"
+ width="800"
+ height="848"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Luccalug riparte!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Luccalug riparte dopo la quarantena in totale sicurezza!&lt;/p&gt;
+&lt;p&gt;Sede sanificata, mascherine e disinfettante sempre disponibili insieme alla nostra voglia di sperimentare, divertirci e creare con tecnologie libere!&lt;/p&gt;
+&lt;p&gt;Le serate a tema annullate durante la quarantena verranno ricalendarizzate da Settembre in poi!&lt;/p&gt;
+&lt;p&gt;Vi aspettiamo tutti i Lunedì sera dalle 21:00 in poi, seguite anche i nostri social per tutte le informazioni dell&amp;rsquo;ultimo minuto.&lt;/p&gt;</description></item><item><title>Da OBS alla webcam virtuale</title><link>https://luccalug.it/blog/2020/03/da-obs-alla-webcam/</link><pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/03/da-obs-alla-webcam/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam_hu_8fbf43e387ae3ae8.webp 710w, https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam_hu_8fbf43e387ae3ae8.webp 710w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg"
+ srcset="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg 710w, https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg 710w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Schema OBS verso webcam virtuale"
+ width="710"
+ height="241"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;OBS come sorgente per una webcam virtuale via v4l2loopback&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In questo post mostreremo come redirezionare l&amp;rsquo;output di OBS verso un device v4l di loopback in modo da avere un flusso video totalmente controllabile per tutte quelle applicazioni che sfruttano input da webcam (videoconferenze ecc).&lt;/p&gt;
+&lt;p&gt;Questa guida nasce a seguito di alcuni esperimenti partiti nel lontano 2016 insieme ai ragazzi del Gulli con l&amp;rsquo;obiettivo di creare uno streaming unificato dei vari Linux Day organizzati in Toscana quell&amp;rsquo;anno. A seguito dei vari smanettamenti, soddisfatti dalle potenzialità di OBS, emerse la curiosità di sfruttarlo al di fuori delle piattaforme di streaming che già supporta e impiegarlo anche con programmi come Skype, Hangout e simili per arricchire il proprio flusso video a favore degli altri partecipanti (immaginate una lezione online dove un professore può cambiare diverse webcam, aggiungere immagini o scritte al volo, indipendentemente dalla piattaforma).&lt;/p&gt;</description></item><item><title>Arduracing</title><link>https://luccalug.it/blog/2020/01/arduracing/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/arduracing/</guid><description>&lt;p&gt;Arduracing è un progetto che aspira alla creazione di una robot car in grado di muoversi autonomamente all&amp;rsquo;interno di un circuito.&lt;/p&gt;
+&lt;p&gt;Il robot utilizza 4 sensori di distanza ad infrarossi per determinare la distanza dalle pareti laterali e frontali. Attraverso questi dati è in grado di estrapolare la distanza e l&amp;rsquo;angolo delle curve. Il robot è in grado di sterzare e viaggiare a velocità variabile in avanti ed indietro. Il telaio è realizzato con il Lego. Il progetto è stato presentato durante il Linux Day 2011 a Lucca ed ha dato risultati soddisfacenti; sono ovviamente stati individuati degli errori di progettazione che sono espressi nella sezione conclusioni.&lt;/p&gt;</description></item><item><title>I gestori di pacchetti</title><link>https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_d74b53ead87f2b37.webp 800w, https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_26d3eb9af2a3c32c.webp 1400w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_f98c679f3142aca5.png"
+ srcset="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_f98c679f3142aca5.png 800w, https://luccalug.it/images/blog/i-gestori-di-pacchetti/package.png 1400w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Illustrazione di pacchetti software"
+ width="800"
+ height="640"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;I gestori di pacchetti Linux&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Un&amp;rsquo;introduzione ai più comuni package manager&lt;/p&gt;
+&lt;p&gt;Senza alcun dubbio, da quando ho cominciato ad appassionarmi al mondo di GNU/Linux e a provare le varie distribuzioni, uno degli aspetti che mi ha affascinato maggiormente è stato l&amp;rsquo;uso dei gestori pacchetti (package manager).&lt;/p&gt;
+&lt;p&gt;Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piaciuto all&amp;rsquo;istante, in quanto permette di aggiornare completamente il sistema in pochi semplici passaggi, sia da terminale che tramite un&amp;rsquo;interfaccia grafica.&lt;/p&gt;</description></item><item><title>Serate a tema 2020</title><link>https://luccalug.it/blog/2020/01/serate-a-tema-2020/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/serate-a-tema-2020/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serate-a-tema-2020/serateatema2020_hu_12bd9447cc078525.webp 800w, https://luccalug.it/images/blog/serate-a-tema-2020/serateatema2020_hu_8cc766a650e4555b.webp 960w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serate-a-tema-2020/serateatema2020_hu_fca7a8453c12314f.jpg"
+ srcset="https://luccalug.it/images/blog/serate-a-tema-2020/serateatema2020_hu_fca7a8453c12314f.jpg 800w, https://luccalug.it/images/blog/serate-a-tema-2020/serateatema2020.jpg 960w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina serate a tema 2020"
+ width="800"
+ height="600"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Serate a tema Luccalug 2020&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;div class="note danger" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;🚫&lt;/span&gt; Pericolo
+ 
+ &lt;/div&gt;
+ &lt;p&gt;EVENTI ANNULLATI NEL RISPETTO DELLE NUOVE DIRETTIVE DEL COMUNE RELATIVE AL CORONAVIRUS. LE SERATE A TEMA SONO RIMANDATE FINO A DATA DA DESTINARSI.&lt;/p&gt;
+&lt;p&gt;Seguite il nostro sito web e le pagine social per tutti gli aggiornamenti.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Archiviamo questa pagina con la calendarizzazione originale delle serate a tema di inizio 2020 annullate a causa del Coronavirus. Le serate verranno riprese a Settembre 2020 con una nuova programmazione, vi aspettiamo tutti, sempre in sicurezza.&lt;/p&gt;</description></item><item><title>Hello Web</title><link>https://luccalug.it/blog/2020/01/hello-web/</link><pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/hello-web/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/hello-web/tux-hacking_hu_7a4552e92c89f35e.webp 800w, https://luccalug.it/images/blog/hello-web/tux-hacking_hu_b1953056d214dd68.webp 1100w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/hello-web/tux-hacking_hu_af13adf5f13ad1e2.jpg"
+ srcset="https://luccalug.it/images/blog/hello-web/tux-hacking_hu_af13adf5f13ad1e2.jpg 800w, https://luccalug.it/images/blog/hello-web/tux-hacking.jpg 1100w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Tux che lavora al computer"
+ width="800"
+ height="596"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Hello Web!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sito tutto nuovo!&lt;/p&gt;
+&lt;p&gt;Dopo anni abbiamo finalmente deciso di riprendere in mano il sito web!&lt;/p&gt;
+&lt;p&gt;Abbiamo cambiato generatore di siti statici, passando da &lt;a href="https://www.jekyllrb.com"&gt;Jekyll&lt;/a&gt; a &lt;a href="https://www.gohugo.io"&gt;Hugo&lt;/a&gt;, il tema è &lt;a href="https://github.com/Vimux/Mainroad"&gt;Mainroad&lt;/a&gt; a cui faremo qualche modifica nel corso del tempo, ma che abbiamo scelto per la sua semplicità ed eleganza.&lt;/p&gt;
+&lt;p&gt;Hugo è scritto in &lt;a href="https://golang.org"&gt;Go&lt;/a&gt;, un linguaggio molto più veloce e snello rispetto a Ruby, e vanta una documentazione decisamente migliore.&lt;/p&gt;</description></item><item><title>Pausa per i Santi</title><link>https://luccalug.it/blog/2016/10/pausa-santi/</link><pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2016/10/pausa-santi/</guid><description>&lt;p&gt;In questo piccolo post sul blog informiamo che ieri sera abbiamo deciso di fare una pausa &lt;strong&gt;lunedì prossimo, 31 Ottobre&lt;/strong&gt;: alcuni di noi se ne andranno per fare ponte, altri vogliono tirare il fiato, altri ancora si dedicheranno ai Comics al 100%.&lt;/p&gt;
+&lt;p&gt;Quindi: lunedì prossimo non ci saremo! &lt;strong&gt;Appuntamento al 7 Novembre.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Linux Day 2015</title><link>https://luccalug.it/blog/2015/10/linux-day-2015/</link><pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2015/10/linux-day-2015/</guid><description>&lt;p&gt;Siamo lieti di annunciarvi il &lt;strong&gt;Linux Day 2015&lt;/strong&gt;, quest&amp;rsquo;anno in forma ridotta, che si terrà alla nostra sede di Capannori.&lt;/p&gt;
+&lt;p&gt;Come ogni anno presenteremo i progetti completati durante l&amp;rsquo;anno, quelli ancora in sviluppo, parleremo di GNU/Linux e di progetti che si basano su software libero.&lt;/p&gt;
+&lt;p&gt;Ci sarà inoltre una serie di presentazioni riguardanti vari argomenti con &lt;strong&gt;aperitivo finale&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Per le informazioni complete guardate la &lt;a href="http://www.luccalug.it/linux-day-2015/"&gt;pagina dedicata&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Presentazione del Book Scanner</title><link>https://luccalug.it/blog/2015/04/presentazione-book-scanner/</link><pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2015/04/presentazione-book-scanner/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner_hu_b64d6aebd99a86a6.webp 647w, https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner_hu_b64d6aebd99a86a6.webp 647w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg"
+ srcset="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg 647w, https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg 647w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Book Scanner del Luccalug"
+ width="647"
+ height="400"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il book scanner: progetto open hardware per la digitalizzazione di libri storici&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sabato &lt;strong&gt;18 Aprile 2015 alle ore 15:00&lt;/strong&gt; vi aspettiamo tutti presso la nostra sede al Centro Giovani di Santa Margherita (&lt;a href="https://goo.gl/maps/5S5HT"&gt;mappa&lt;/a&gt;) per presentare il nostro progetto per la costruzione di un &lt;strong&gt;book scanner&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Lo scopo principale del progetto è quello di arricchire a livello digitale la cultura della zona in cui viviamo, scannerizzando libri storici (che sono entrati nel pubblico dominio) permettendo a tutti - studiosi e non - di consultarli online.&lt;/p&gt;</description></item><item><title>Corsi comunali 2014</title><link>https://luccalug.it/blog/2014/10/corsi-comunali-2014/</link><pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/10/corsi-comunali-2014/</guid><description>&lt;p&gt;Anche quest&amp;rsquo;anno alcuni soci del Luccalug fungeranno da docenti per alcuni corsi comunali con tema: &lt;a href="http://matteo.luccalug.it/2014/09/corso-base-arduino-2013-lucca/"&gt;Arduino&lt;/a&gt; e Linux.&lt;/p&gt;
+&lt;p&gt;I corsi hanno una durata di &lt;strong&gt;20 ore&lt;/strong&gt; e un costo di &lt;strong&gt;75€&lt;/strong&gt; e saranno organizzati presso il &lt;strong&gt;Centro Cultura di &amp;ldquo;Artemisia&amp;rdquo;&lt;/strong&gt; a Tassignano, Capannori (LU).&lt;/p&gt;
+&lt;p&gt;Per maggiori informazioni: &lt;a href="http://www.comune.capannori.lu.it/node/10890"&gt;http://www.comune.capannori.lu.it/node/10890&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Linux Day 2014</title><link>https://luccalug.it/blog/2014/10/linux-day-2014/</link><pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/10/linux-day-2014/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/linux-day-2014/banner_hu_699cdb14e3ae96be.webp 500w, https://luccalug.it/images/blog/linux-day-2014/banner_hu_699cdb14e3ae96be.webp 500w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/linux-day-2014/banner.png"
+ srcset="https://luccalug.it/images/blog/linux-day-2014/banner.png 500w, https://luccalug.it/images/blog/linux-day-2014/banner.png 500w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Banner Linux Day 2014"
+ width="500"
+ height="314"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Linux Day 2014 - Lucca&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Anche quest&amp;rsquo;anno siamo lieti di annunciare il &lt;strong&gt;Lucca Linux Day 2014&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Come ogni anno ci saranno talk e tavoli tematici. L&amp;rsquo;argomento di quest&amp;rsquo;anno è la &lt;strong&gt;libertà digitale&lt;/strong&gt;, tema assai caldo in una rete che, pur spacciandosi per libera, è sempre più controllata da pochi grandi gestori.&lt;/p&gt;
+&lt;p&gt;Visita la &lt;a href="http://www.luccalug.it/linux-day-2014/"&gt;pagina dedicata&lt;/a&gt; per il programma e i dettagli.&lt;/p&gt;</description></item><item><title>Project Gooseberry - il primo, vero open movie della storia</title><link>https://luccalug.it/blog/2014/04/project-gooseberry/</link><pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/04/project-gooseberry/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/project-gooseberry/gooseberry-project_hu_be31870d60310cc8.webp 200w, https://luccalug.it/images/blog/project-gooseberry/gooseberry-project_hu_be31870d60310cc8.webp 200w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/project-gooseberry/gooseberry-project.png"
+ srcset="https://luccalug.it/images/blog/project-gooseberry/gooseberry-project.png 200w, https://luccalug.it/images/blog/project-gooseberry/gooseberry-project.png 200w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Project Gooseberry - il primo open movie della storia"
+ width="200"
+ height="300"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Project Gooseberry: il primo film d&amp;#39;animazione completamente libero&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;La &lt;a href="http://blender.org"&gt;Blender Foundation&lt;/a&gt; sta chiedendo un finanziamento tramite crowdfunding per un grandissimo progetto: il primo Open Movie della storia, realizzato con Blender e completamente libero.&lt;/p&gt;
+&lt;p&gt;I lavori precedenti come &lt;a href="http://www.sintel.org/"&gt;Sintel&lt;/a&gt;, &lt;a href="http://mango.blender.org/"&gt;Tears of Steel&lt;/a&gt; o &lt;a href="http://www.bigbuckbunny.org/"&gt;Big Buck Bunny&lt;/a&gt; erano semplici cortometraggi di 15 minuti; questo è invece un &lt;strong&gt;film d&amp;rsquo;animazione di 90 minuti&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Node.js - Pillole di Free Software</title><link>https://luccalug.it/blog/2014/04/node-js-pillole-di-free-software/</link><pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/04/node-js-pillole-di-free-software/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/node-js-pillole-di-free-software/pillole-nodejs_hu_d3d13983302a31e1.webp 624w, https://luccalug.it/images/blog/node-js-pillole-di-free-software/pillole-nodejs_hu_d3d13983302a31e1.webp 624w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/node-js-pillole-di-free-software/pillole-nodejs.png"
+ srcset="https://luccalug.it/images/blog/node-js-pillole-di-free-software/pillole-nodejs.png 624w, https://luccalug.it/images/blog/node-js-pillole-di-free-software/pillole-nodejs.png 624w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina serata Node.js - Pillole di Free Software"
+ width="624"
+ height="403"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software: Node.js&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Lunedì 14 aprile si svolgerà una serata a tema dedicata a &lt;strong&gt;Node.js&lt;/strong&gt;, framework che permette di realizzare server-side web application usando JavaScript.&lt;/p&gt;
+&lt;p&gt;Il relatore &lt;strong&gt;Matteo Lucchesi&lt;/strong&gt; farà un breve introduzione al mondo di Node.js correlata da esempi pratici.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;evento inizierà alle &lt;strong&gt;21:00&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ricordiamo che per partecipare è necessaria la tessera per l&amp;rsquo;anno 2014, che costa 20€ e può essere fatta la sera stessa. La tessera darà accesso a tutti gli eventi dell&amp;rsquo;anno corrente.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>GPG (GNU Privacy Guard) - Pillole di Free Software</title><link>https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/</link><pubDate>Wed, 19 Mar 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg_hu_93ec762b0db16396.webp 624w, https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg_hu_93ec762b0db16396.webp 624w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg.png"
+ srcset="https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg.png 624w, https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg.png 624w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina serata GPG - Pillole di Free Software"
+ width="624"
+ height="403"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software: GPG (GNU Privacy Guard)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Lunedì &lt;strong&gt;24 marzo&lt;/strong&gt; si svolgerà una serata a tema dedicata a &lt;strong&gt;GNU Privacy Guard&lt;/strong&gt;, software Free e Open Source per la cifratura dei messaggi.&lt;/p&gt;
+&lt;p&gt;Nell&amp;rsquo;era dei Social Network e nella situazione attuale, in cui si può sapere tutto di tutti grazie ad Internet, è molto importante poter tutelare la riservatezza dei messaggi che si inviano. E per noi utenti Linux è fondamentale poterlo fare utilizzando strumenti free e open source.&lt;/p&gt;</description></item><item><title>Le licenze Creative Commons - Pillole di Free Software</title><link>https://luccalug.it/blog/2014/03/licenze-creative-commons/</link><pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/03/licenze-creative-commons/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/licenze-creative-commons/pillole_hu_33070fe3e6c083a7.webp 500w, https://luccalug.it/images/blog/licenze-creative-commons/pillole_hu_33070fe3e6c083a7.webp 500w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/licenze-creative-commons/pillole.png"
+ srcset="https://luccalug.it/images/blog/licenze-creative-commons/pillole.png 500w, https://luccalug.it/images/blog/licenze-creative-commons/pillole.png 500w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina ciclo Pillole di Free Software"
+ width="500"
+ height="282"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software - il ciclo di serate a tema del Luccalug&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Come già annunciato, anche quest&amp;rsquo;anno tornano le serate a tema del ciclo &lt;strong&gt;&amp;ldquo;Pillole di Free Software&amp;rdquo;&lt;/strong&gt; (&lt;a href="http://www.luccalug.it/eventi/"&gt;calendario completo&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Lunedì sera (&lt;strong&gt;10 Marzo 2014&lt;/strong&gt;) inizieremo con una serata tenuta da &lt;strong&gt;Davide Francesconi&lt;/strong&gt;, che illustrerà il funzionamento delle principali Licenze Libere, con particolare riferimento alle &lt;strong&gt;Creative Commons&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Cosino - Recensione</title><link>https://luccalug.it/blog/2013/11/recensione-cosino/</link><pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/11/recensione-cosino/</guid><description>&lt;p&gt;Abbiamo già scritto parecchi articoli sulla nostra nuova stampante 3D: una Prusa i3 con una modifica al piatto per aumentare l&amp;rsquo;area di stampa. Il controller di basso livello è Arduino, nota scheda Open Hardware.&lt;/p&gt;
+&lt;p&gt;Ma è il caso di spendere qualche parola anche su &lt;strong&gt;Cosino&lt;/strong&gt;, mini-computer che usiamo per il controllo della stampa ad &amp;ldquo;alto livello&amp;rdquo;, ovvero l&amp;rsquo;interfaccia tra uomo e macchina.&lt;/p&gt;
+&lt;p&gt;Per questo tipo di controllo si usa di solito un PC che, connesso via USB al controller di basso livello, permette di lanciare e controllare la stampa. Il problema legato a questo utilizzo della stampante è che il PC deve restare a essa collegato durante tutto il processo di stampa; e sappiamo che in alcuni casi questa può durare parecchie ore.&lt;/p&gt;</description></item><item><title>Stallman a Firenze - Tecnologia digitale: libera o soggiogante?</title><link>https://luccalug.it/blog/2013/09/stallman-a-firenze/</link><pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/09/stallman-a-firenze/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/stallman-a-firenze/richard-stallman_hu_cfe59cedb82eea86.webp 500w, https://luccalug.it/images/blog/stallman-a-firenze/richard-stallman_hu_cfe59cedb82eea86.webp 500w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/stallman-a-firenze/richard-stallman.jpg"
+ srcset="https://luccalug.it/images/blog/stallman-a-firenze/richard-stallman.jpg 500w, https://luccalug.it/images/blog/stallman-a-firenze/richard-stallman.jpg 500w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Richard Stallman"
+ width="500"
+ height="314"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Richard Stallman, fondatore della Free Software Foundation&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sabato 14 settembre tappa fiorentina per &lt;strong&gt;Richard Stallman&lt;/strong&gt;, che nella suggestiva altana dell&amp;rsquo;ex Convento delle Oblate, a due passi dalla Cupola del Brunelleschi e dal Campanile di Giotto, ha incontrato gli appassionati - e non solo - di software libero per parlare di &lt;em&gt;&amp;ldquo;Tecnologia digitale: libera o soggiogante? - Software libero ed economia solidale per difendere democrazia e libertà&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Prusa i3 - Terza serata di montaggio</title><link>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</link><pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</guid><description>&lt;p&gt;Si è svolta ieri la terza serata di montaggio della &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt; modificata del LuccaLUG.&lt;/p&gt;
+&lt;p&gt;È stata montata l&amp;rsquo;&lt;strong&gt;elettronica&lt;/strong&gt; e siamo andati avanti con l&amp;rsquo;armatura, fissando il frame al piano XY precedentemente creato. Purtroppo le cinghie acquistate per l&amp;rsquo;asse Y si sono rivelate inutili perché, avendo raddoppiato la lunghezza dell&amp;rsquo;asse, queste risultano troppo corte. Un ulteriore problema si è presentato con alcuni pezzi che avevamo stampato ma che sono risultati mal dimensionati. Dovremmo quindi ristamparli.&lt;/p&gt;</description></item><item><title>Prusa i3 - Seconda serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</link><pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</guid><description>&lt;p&gt;A causa di problemi logistici (non erano arrivati alcuni pezzi), la seconda serata di montaggio è stata rimandata più volte e si è finalmente svolta ieri sera (lunedì 22 luglio).&lt;/p&gt;
+&lt;p&gt;Abbiamo montato l&amp;rsquo;&lt;strong&gt;asse Z&lt;/strong&gt; (compresi i motori) e lo abbiamo fissato al frame.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lunedì prossimo (29 luglio)&lt;/strong&gt; abbiamo in programma di montare l&amp;rsquo;elettronica, caricando eventualmente anche il software, e di proseguire con l&amp;rsquo;armatura.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;unica cosa per cui non siamo ancora pronti è il piatto, la cui base va riprogettata e costruita (visto che lo abbiamo raddoppiato in lunghezza).&lt;/p&gt;</description></item><item><title>Stampare tutto, stampare tutti</title><link>https://luccalug.it/blog/2013/07/stampare-tutto-stampare-tutti/</link><pubDate>Sat, 20 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/stampare-tutto-stampare-tutti/</guid><description>&lt;p&gt;Si è concluso con grande successo lo workshop &lt;strong&gt;&amp;ldquo;Stampare Tutto, Stampare Tutti&amp;rdquo;&lt;/strong&gt;, tenutosi venerdì 19 luglio presso il &lt;a href="http://www.polotecnologicolucchese.it/"&gt;Polo Tecnologico Lucchese&lt;/a&gt;, organizzato da LuccaLUG e &lt;a href="http://www.multiverso.biz/"&gt;Multiverso&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina_hu_e78f51cb536534e1.webp 300w, https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina_hu_e78f51cb536534e1.webp 300w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg"
+ srcset="https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg 300w, https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg 300w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina del workshop Stampare tutto stampare tutti"
+ width="300"
+ height="424"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La locandina del workshop&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id="il-workshop"&gt;Il workshop&lt;/h2&gt;
+&lt;p&gt;Inizialmente Antonio Ardiccioni di Multiverso ha presentato il coworking e Fabio Angeli di Genau ha presentato le due successive conferenze.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://disegnodesign.com/"&gt;Stefano Giovacchini&lt;/a&gt;, decoratore, designer e attuale presidente del LuccaLUG, ha fatto una presentazione sulla stampa 3D come opportunità per designers e makers che vogliono fare prototipi a basso costo delle loro creazioni, sottolineando l&amp;rsquo;importanza e i vantaggi offerti dall&amp;rsquo;utilizzo di stampanti &lt;a href="http://it.wikipedia.org/wiki/Open_hardware"&gt;open hardware&lt;/a&gt; e di software &lt;a href="http://it.wikipedia.org/wiki/Open_source"&gt;open source&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Prusa i3 modificata - Prima serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</link><pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</guid><description>&lt;p&gt;Ieri sera abbiamo montato l&amp;rsquo;armatura di base della nostra versione modificata di &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt;, una stampante 3D &lt;a href="http://it.wikipedia.org/wiki/Hardware_libero"&gt;Open Hardware&lt;/a&gt;. La modifica che proponiamo consiste nell&amp;rsquo;aumentare le dimensioni del piatto (da 20×20 cm a 20×40 cm) per poter stampare oggetti più grandi.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Il progetto Prusa i3 del LuccaLUG"
+ width="539"
+ height="424"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La nostra Prusa i3 modificata&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Non avendo ancora reperito tutti i pezzi, abbiamo montato solo l&amp;rsquo;armatura della base (barre degli assi X e Y).&lt;/p&gt;</description></item><item><title>Linux Day 2013 - Innovazione. Di tutti. Per tutti</title><link>https://luccalug.it/blog/2013/05/linux-day-2013/</link><pubDate>Mon, 27 May 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/05/linux-day-2013/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/linux-day-2013/linuxday-banner_hu_43031a1c5cb7adf2.webp 180w, https://luccalug.it/images/blog/linux-day-2013/linuxday-banner_hu_43031a1c5cb7adf2.webp 180w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/linux-day-2013/linuxday-banner.png"
+ srcset="https://luccalug.it/images/blog/linux-day-2013/linuxday-banner.png 180w, https://luccalug.it/images/blog/linux-day-2013/linuxday-banner.png 180w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Banner Linux Day 2013"
+ width="180"
+ height="150"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Linux Day 2013&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;È uscito il tema ufficiale per il &lt;strong&gt;Linux Day 2013&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Innovazione. Di tutti. Per tutti&amp;rdquo;&lt;/em&gt;. (&lt;a href="http://www.linuxday.it"&gt;http://www.linuxday.it&lt;/a&gt;). Il Linux Day si svolgerà il &lt;strong&gt;26 ottobre&lt;/strong&gt;. Il luogo in cui lo organizzeremo è ancora da definire.&lt;/p&gt;
+&lt;p&gt;Stiamo iniziando a prepararci cercando idee, proposte e collaborazione nell&amp;rsquo;organizzazione dell&amp;rsquo;evento. Chi ha idee da proporre - socio o meno - che siano compatibili con il tema è invitato a venire a trovarci per proporle. Ci troviamo come sempre ogni lunedì sera a partire dalle 21:00 al Centro Giovani di Santa Margherita.&lt;/p&gt;</description></item><item><title>Serata a tema: BLENDER e i nodi</title><link>https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/</link><pubDate>Mon, 25 Mar 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/</guid><description>&lt;h2 id="lunedì-25-marzo-2013---ore-2100"&gt;Lunedì 25 Marzo 2013 - Ore 21:00&lt;/h2&gt;
+&lt;p&gt;Si svolgerà una serata a tema per il ciclo &lt;strong&gt;&amp;ldquo;Pillole di Free Software&amp;rdquo;&lt;/strong&gt; dedicata a:&lt;/p&gt;
+&lt;h2 id="blender-e-lutilizzo-dei-nodi-uno-strumento-potente-per-il-rendering-e-non-solo"&gt;&amp;ldquo;BLENDER e l&amp;rsquo;utilizzo dei NODI: uno strumento potente per il rendering e non solo&amp;rdquo;&lt;/h2&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi_hu_311f17e8566b4991.webp 624w, https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi_hu_311f17e8566b4991.webp 624w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png"
+ srcset="https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png 624w, https://luccalug.it/images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png 624w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina della serata su Blender e i nodi"
+ width="624"
+ height="295"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software - Blender e i nodi&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id="programma-della-serata"&gt;Programma della serata&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduzione ai nodi in Blender: principi di funzionamento&lt;/li&gt;
+&lt;li&gt;Descrizione dei nodi più utilizzati&lt;/li&gt;
+&lt;li&gt;Possibili applicazioni e potenzialità dei nodi&lt;/li&gt;
+&lt;li&gt;Esempio di applicazione svolto passo per passo con spiegazioni e chiarimenti&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ Per partecipare è necessario aver pagato la quota associativa 2013. Chi non è ancora iscritto può fare la tessera anche la sera stessa.
+&lt;/div&gt;
+
+&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2013-03-25"&gt;25 marzo 2013&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Serata a tema: Blender e i nodi&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Lucca - ore 21:00&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata del ciclo Pillole di Free Software dedicata a Blender e all&amp;#39;utilizzo dei nodi per il rendering.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Serata a tema: OpenSCAD - disegnare in 3D programmando</title><link>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</link><pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</guid><description>&lt;h2 id="lunedì-10-dicembre-2012-per-pillole-di-free-software-serata-dedicata-a-openscad"&gt;Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt; è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Logo di OpenSCAD"
+ width="688"
+ height="567"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il logo di OpenSCAD&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Esso non si focalizza sulla modellazione artistica tipica di software come Blender, bensì mantiene un legame più stretto con la progettazione CAD.&lt;/p&gt;</description></item><item><title>Arduino, l'elettronica diventa facile</title><link>https://luccalug.it/blog/2012/04/arduino-elettronica-diventa-facile/</link><pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/04/arduino-elettronica-diventa-facile/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-05-12"&gt;12 maggio 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Arduino, l&amp;#39;elettronica diventa facile!&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Conferenza di presentazione del progetto Arduino con esempi di applicazione dal vivo. Dalle ore 16:00 alle ore 18:00.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2_hu_1af30c3116b2a0b8.webp 424w, https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2_hu_1af30c3116b2a0b8.webp 424w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png"
+ srcset="https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png 424w, https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png 424w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina Arduino, l&amp;#39;elettronica diventa facile"
+ width="424"
+ height="600"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Sabato 12 maggio 2012 - conferenza Arduino al LuccaLUG&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sabato &lt;strong&gt;12 maggio&lt;/strong&gt; presso la sede del LuccaLUG (Centro Giovani di Capannori), Matteo terrà una conferenza di presentazione del progetto &lt;strong&gt;Arduino&lt;/strong&gt; mostrando esempi di applicazione dal vivo.&lt;/p&gt;</description></item><item><title>AV Linux, la distribuzione Linux per l'Audio e il Video</title><link>https://luccalug.it/blog/2012/04/av-linux-audio-video/</link><pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/04/av-linux-audio-video/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-04-23"&gt;23 aprile 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Pillole di Free Software: AV Linux&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata dedicata ad AV Linux, la distribuzione GNU/Linux per la produzione audio e video.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="lunedì-23-aprile-2012"&gt;Lunedì 23 aprile 2012&lt;/h2&gt;
+&lt;p&gt;AV Linux è un sistema operativo basato su &lt;strong&gt;Debian GNU/Linux&lt;/strong&gt;, leggero e perfettamente adatto ad un uso quotidiano del computer. Oltre a questo offre una delle migliori raccolte di software open source e demoware per creazioni audio e video, aggiornata e stabile.&lt;/p&gt;</description></item><item><title>Ubuntu Install Party, lunedì 2 aprile</title><link>https://luccalug.it/blog/2012/03/ubuntu-install-party-2012/</link><pubDate>Thu, 29 Mar 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/03/ubuntu-install-party-2012/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-04-02"&gt;2 aprile 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Ubuntu Install Party&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata dedicata all&amp;#39;installazione di Ubuntu. Porta il tuo PC e ti aiuteremo a installare l&amp;#39;ultima versione di Ubuntu.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Visto che abbiamo deciso di aggiornare la versione di Ubuntu sui computer del LuccaLUG, abbiamo pensato che chiunque potrà portare il proprio PC per installarci l&amp;rsquo;ultima versione di Ubuntu.&lt;/p&gt;
+&lt;p&gt;Quindi, se vuoi &lt;strong&gt;provare Ubuntu su un nostro PC&lt;/strong&gt;, o se vuoi &lt;strong&gt;aiuto per installare Ubuntu sul tuo portatile&lt;/strong&gt;, questa è la serata giusta!&lt;/p&gt;</description></item><item><title>Pillole di Free Software: Inkscape, software di disegno vettoriale</title><link>https://luccalug.it/blog/2012/02/pillole-inkscape/</link><pubDate>Mon, 27 Feb 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/02/pillole-inkscape/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-03-12"&gt;12 marzo 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Pillole di Free Software: Inkscape, software di disegno vettoriale&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata di presentazione di Inkscape, il programma open source per la grafica vettoriale SVG. Incontro aperto a tutti.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Lunedì 12 marzo 2012&lt;/strong&gt; - seconda serata del ciclo &lt;em&gt;Pillole di Free Software&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://inkscape.org/"&gt;Inkscape&lt;/a&gt; è il programma di riferimento del mondo open source per la &lt;strong&gt;grafica vettoriale&lt;/strong&gt;. Permette di creare e modificare immagini in formato SVG (Scalable Vector Graphics) con un&amp;rsquo;interfaccia intuitiva e funzionalità professionali: dai semplici loghi alle illustrazioni complesse, passando per la tipografia e il layout.&lt;/p&gt;</description></item><item><title>Pillole di Free Software, serate a tema dedicate al mondo dell'informatica libera</title><link>https://luccalug.it/blog/2012/02/pillole-di-free-software-intro/</link><pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/02/pillole-di-free-software-intro/</guid><description>&lt;p&gt;Il LuccaLug è lieto di inaugurare un ciclo di incontri a tema dalla durata di una sera ciascuno, per la promozione del software libero e per il confronto sui temi dell&amp;rsquo;informatica libera.&lt;/p&gt;
+&lt;p&gt;Queste serate vogliono essere momenti di incontro e di confronto, e non corsi. Gli interventi dei relatori saranno brevi e di introduzione al tema, per dare poi spazio al dibattito fra soci.&lt;/p&gt;
+
+&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ L&amp;rsquo;organizzazione è libera: chi ha particolari abilità o conoscenze riguardo un determinato software libero può organizzare una serata a tema nella maniera che ritiene più efficace, scegliendo le modalità più adatte per strutturare la presentazione. I computer della sede restano a disposizione dei partecipanti.
+&lt;/div&gt;
+
+&lt;p&gt;Le serate sono aperte a tutti - soci e non - ogni &lt;strong&gt;lunedì sera&lt;/strong&gt; presso la sede del LuccaLug.&lt;/p&gt;</description></item><item><title>Pillole di Free Software: Blender, modellatore 3D</title><link>https://luccalug.it/blog/2012/02/pillole-blender-modellatore-3d/</link><pubDate>Sat, 11 Feb 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/02/pillole-blender-modellatore-3d/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-02-21"&gt;21 febbraio 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Pillole di Free Software: Blender, modellatore 3D&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Serata di presentazione di Blender, il modellatore 3D open source. Incontro aperto a tutti, con breve introduzione al tema e spazio al dibattito.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Martedì 21 febbraio 2012&lt;/strong&gt; - prima serata del ciclo &lt;em&gt;Pillole di Free Software&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.blender.org/"&gt;Blender&lt;/a&gt; è uno dei più completi e potenti programmi di modellazione, animazione e rendering 3D, completamente gratuito e open source. In questa serata esploreremo le principali funzionalità dello strumento, con esempi pratici direttamente dai computer della sede.&lt;/p&gt;</description></item><item><title>Linux nella biblioteca di Camigliano!</title><link>https://luccalug.it/blog/2012/01/linux-nella-biblioteca-di-camigliano/</link><pubDate>Mon, 30 Jan 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/01/linux-nella-biblioteca-di-camigliano/</guid><description>&lt;p&gt;Sabato 27/01/2012 noi del LuccaLug siamo intervenuti presso la biblioteca &amp;ldquo;Mario Tobino&amp;rdquo; di Camigliano, dove abbiamo aggiornato il parco computer utilizzato dal servizio regionale &lt;a href="http://www.e.toscana.it/e-toscana/it/paas.wp"&gt;PAAS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;aggiornamento che abbiamo eseguito ha portato all&amp;rsquo;installazione di &lt;a href="http://linuxmint.com/"&gt;Linux Mint 12&lt;/a&gt;, configurando inoltre stampanti di rete in condivisione e un accesso remoto per l&amp;rsquo;assistenza tecnica.&lt;/p&gt;
+&lt;p&gt;Ora anche la biblioteca è completamente &lt;strong&gt;LIBERA&lt;/strong&gt; ed è aggiornata con le ultime novità dell&amp;rsquo;OpenSource!&lt;/p&gt;</description></item><item><title>Nuove cariche amministrative per il Luccalug</title><link>https://luccalug.it/blog/2012/01/nuove-cariche-amministrative-luccalug/</link><pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/01/nuove-cariche-amministrative-luccalug/</guid><description>&lt;p&gt;Nell&amp;rsquo;ultima assemblea il Luccalug ha rinnovato le sue cariche sociali per gli anni 2012/13. I nuovi eletti sono:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Presidente:&lt;/strong&gt; Stefano Giovacchini&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vicepresidente:&lt;/strong&gt; Daniele Conventi&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tesoriere:&lt;/strong&gt; Matteo Lucchesi&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Segretario:&lt;/strong&gt; Alessio Mugnani&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inoltre sono stati eletti come consiglieri amministrativi: Manuel Mazzuola, Paolo Dell&amp;rsquo;Osso, Matteo Lucchesi, Stefano Giovacchini, Daniele Conventi, Alessio Mugnani.&lt;/p&gt;</description></item><item><title>Linux Day 2011</title><link>https://luccalug.it/blog/2011/10/linux-day-2011/</link><pubDate>Sat, 22 Oct 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/10/linux-day-2011/</guid><description>&lt;p&gt;Il Linux Day 2011 è stato un grande successo! Di seguito il video realizzato da Dì Lucca che documenta la giornata del 22 ottobre 2011.&lt;/p&gt;
+&lt;a class="link-esterno" href="https://vimeo.com/30949991" target="_blank" rel="noopener noreferrer"&gt;Dì News - 22 Ottobre 2011 - Linux Day (video su Vimeo)&lt;span aria-hidden="true"&gt; ↗&lt;/span&gt;&lt;span class="sr-only"&gt; (si apre in una nuova finestra)&lt;/span&gt;&lt;/a&gt;</description></item><item><title>Aperte le iscrizioni ai corsi 2011!</title><link>https://luccalug.it/blog/2011/09/aperte-iscrizioni-corsi-2011/</link><pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/09/aperte-iscrizioni-corsi-2011/</guid><description>&lt;p&gt;Sono aperte le iscrizioni ai corsi del LuccaLug per il 2011/2012!&lt;/p&gt;
+&lt;p&gt;Le iscrizioni verranno chiuse il &lt;strong&gt;26 novembre&lt;/strong&gt; o ad esaurimento dei posti disponibili (12).&lt;/p&gt;
+&lt;p&gt;I corsi disponibili sono:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Corso Linux (28 ore)&lt;/li&gt;
+&lt;li&gt;Corso Arduino (28 ore)&lt;/li&gt;
+&lt;li&gt;Corso Android (28 ore)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ogni corso prevede una prima parte gratuita di 4 lezioni e una successiva parte a pagamento di 10 lezioni. Il costo della parte a pagamento è di &lt;strong&gt;75 €&lt;/strong&gt;. Per iscriversi è necessario versare una caparra di 15 € (rimborsata a fine corso gratuito, oppure scalata dall&amp;rsquo;importo finale nel caso del corso a pagamento).&lt;/p&gt;</description></item><item><title>Incontri sospesi</title><link>https://luccalug.it/blog/2011/07/incontri-sospesi/</link><pubDate>Sat, 09 Jul 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/07/incontri-sospesi/</guid><description>&lt;div class="note warning" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;⚠️&lt;/span&gt; Attenzione
+ 
+ &lt;/div&gt;
+ A causa della mancanza di volontari siamo costretti a sospendere fino a data da decidersi gli incontri del lunedì sera, questo ci rattrista molto ma le persone rimaste sono troppo poche per poter garantire l&amp;rsquo;apertura fissa settimanale.
+&lt;/div&gt;</description></item><item><title>Luccalug su Loschermo.it</title><link>https://luccalug.it/blog/2011/06/luccalug-su-loschermo/</link><pubDate>Tue, 14 Jun 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/06/luccalug-su-loschermo/</guid><description>&lt;p&gt;Quest&amp;rsquo;oggi è apparsa sul quotidiano online &lt;strong&gt;loschermo.it&lt;/strong&gt; un&amp;rsquo;intervista al nostro presidente riguardo al software libero ed in particolare all&amp;rsquo;attività della nostra associazione.&lt;/p&gt;
+&lt;a class="link-esterno" href="http://www.loschermo.it/articoli/view/35153" target="_blank" rel="noopener noreferrer"&gt;Leggi l&amp;#39;intervista su loschermo.it&lt;span aria-hidden="true"&gt; ↗&lt;/span&gt;&lt;span class="sr-only"&gt; (si apre in una nuova finestra)&lt;/span&gt;&lt;/a&gt;</description></item><item><title>Gruppo Open Hardware</title><link>https://luccalug.it/blog/2011/06/gruppo-open-hardware/</link><pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/06/gruppo-open-hardware/</guid><description>&lt;p&gt;In queste settimane stiamo valutando la possibilità di dare vita ad un sottogruppo del LuccaLug dedicato all&amp;rsquo;open Hardware e quindi di attrezzare un mini laboratorio per lavorare non solo su progetti software ma anche hardware. In questo momento abbiamo attivato su Facebook un sondaggio per stabilirne il nome.&lt;/p&gt;</description></item><item><title>TecnoWorkshop Lucca 2011</title><link>https://luccalug.it/blog/2011/05/tecnoworkshop-lucca2011/</link><pubDate>Thu, 19 May 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/05/tecnoworkshop-lucca2011/</guid><description>&lt;p&gt;Il giorno 1 ottobre (sabato) si terrà a Lucca, presso il &lt;a href="http://www.grandhotelguinigi.it/"&gt;Grand Hotel Guinigi&lt;/a&gt; - via Romana 1247 - il &lt;strong&gt;TecnoWorkshop Lucca 2011&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2011-10-01"&gt;1 ottobre 2011&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;TecnoWorkshop Lucca 2011&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Grand Hotel Guinigi, via Romana 1247, Lucca&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Workshop sulle tecnologie e l&amp;#39;open source organizzato a Lucca.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Campagna Caro Candidato</title><link>https://luccalug.it/blog/2011/05/campagna-caro-candidato/</link><pubDate>Wed, 11 May 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/05/campagna-caro-candidato/</guid><description>&lt;p&gt;Per le prossime elezioni provinciali la nostra associazione promuove la &lt;strong&gt;campagna &lt;a href="http://carocandidato.it"&gt;Caro Candidato&lt;/a&gt;&lt;/strong&gt;, con la quale si vuole &lt;strong&gt;sensibilizzare i politici sul tema del software libero&lt;/strong&gt;. Si invitano i candidati all&amp;rsquo;adesione firmando il Patto per il Software libero, con il quale questi si impegnano a promuovere il movimento durante il loro eventuale mandato. Dal sito della campagna è possibile visualizzare i politici aderenti.&lt;/p&gt;</description></item><item><title>Circolo di studio su Arduino!</title><link>https://luccalug.it/blog/2011/04/circolo-di-studio-su-arduino/</link><pubDate>Sat, 30 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/circolo-di-studio-su-arduino/</guid><description>&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ Le iscrizioni sono chiuse.
+&lt;/div&gt;
+
+&lt;p&gt;Il Luccalug è felice di comunicare che a breve partirà un circolo di studio sul progetto Arduino. Il circolo avrà una durata di &lt;strong&gt;27 ore&lt;/strong&gt; e si terrà ogni mercoledì dalle ore 20 alle ore 23.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;iscrizione è assolutamente &lt;strong&gt;gratuita&lt;/strong&gt;. &lt;strong&gt;Il corso comincerà mercoledì 11 maggio.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Il circolo, simile a tutti gli effetti a un corso, prevede l&amp;rsquo;apprendimento delle nozioni di base per imparare ad utilizzare Arduino con i più comuni sensori e renderlo in grado di comunicare con il computer. In una seconda parte saranno scelti uno o più progetti dai partecipanti che saranno sviluppati insieme.&lt;/p&gt;</description></item><item><title>Cos'è Arduino?</title><link>https://luccalug.it/blog/2011/04/cose-arduino/</link><pubDate>Fri, 29 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/cose-arduino/</guid><description>&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ A breve apriranno le iscrizioni per un circolo di studio di 27 ore gratuito su Arduino!
+&lt;/div&gt;
+
+&lt;p&gt;Arduino è una piattaforma hardware per il physical computing sviluppata all&amp;rsquo;Interaction Design Institute di Ivrea, un istituto fondato dalla Olivetti e da Telecom Italia. Arduino è basata su una semplicissima scheda di I/O e su un ambiente di sviluppo che usa una libreria Wiring per semplificare la scrittura di programmi in C e C++ da far girare sulla scheda.&lt;/p&gt;</description></item><item><title>Arduino</title><link>https://luccalug.it/blog/2011/04/arduino/</link><pubDate>Sun, 24 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/arduino/</guid><description>&lt;p&gt;Un video di introduzione ad Arduino, la piattaforma open hardware per il physical computing che il LuccaLug sta esplorando.&lt;/p&gt;
+&lt;a class="link-esterno" href="https://www.youtube.com/watch?v=U0L_IKsX5C4" target="_blank" rel="noopener noreferrer"&gt;Guarda il video su YouTube&lt;span aria-hidden="true"&gt; ↗&lt;/span&gt;&lt;span class="sr-only"&gt; (si apre in una nuova finestra)&lt;/span&gt;&lt;/a&gt;</description></item><item><title>Statistiche sito primo trimestre 2011</title><link>https://luccalug.it/blog/2011/04/statistiche-sito-primo-trimestre-2011/</link><pubDate>Fri, 08 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/statistiche-sito-primo-trimestre-2011/</guid><description>&lt;p&gt;In allegato le statistiche del nuovo sito nel primo trimestre 2011. Se anche tu vuoi proporre un articolo o un tema scrivi a &lt;a href="mailto:sito@luccalug.it"&gt;sito@luccalug.it&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Circolo di studio sullo sviluppo di applicazioni su piattaforma Android</title><link>https://luccalug.it/blog/2011/04/circolo-di-studio-android/</link><pubDate>Tue, 05 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/circolo-di-studio-android/</guid><description>&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ Le iscrizioni sono chiuse.
+&lt;/div&gt;
+
+&lt;p&gt;L&amp;rsquo;Agenzia formativa &lt;strong&gt;Tecnoware&lt;/strong&gt; ha ottenuto il finanziamento dalla Provincia di Lucca per erogare diversi circoli di studio su diverse tematiche, una delle quali riguarda l&amp;rsquo;Open Source.&lt;/p&gt;
+&lt;p&gt;Il circolo di studio sullo sviluppo di applicazioni per piattaforma &lt;strong&gt;Android&lt;/strong&gt; è organizzato in collaborazione con il LuccaLug e fa parte di un finanziamento della provincia.&lt;/p&gt;
+&lt;p&gt;Per maggiori informazioni potete scrivere a &lt;a href="mailto:sito@luccalug.it"&gt;sito@luccalug.it&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Django, sviluppare applicazioni web rapidamente</title><link>https://luccalug.it/blog/2010/11/django-sviluppare-applicazioni-web-rapidamente/</link><pubDate>Mon, 29 Nov 2010 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2010/11/django-sviluppare-applicazioni-web-rapidamente/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Django è un framework open source per lo sviluppo di applicazioni web, scritto in linguaggio Python, seguendo il pattern Model-View-Controller.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Lunedì 6 dicembre alle ore 21:00 presso la sede del Luccalug si terrà un incontro di introduzione a quest&amp;rsquo;ultimo, facendo particolare riferimento al software Tango sviluppato in collaborazione con la Croce Verde di Ponte a Moriano.&lt;/p&gt;
+&lt;p&gt;Durante la presentazione verrà messa in risalto l&amp;rsquo;estrema semplicità e velocità di sviluppo che questo ambiente offre, al solo prezzo di avere una conoscenza di base del linguaggio Python.&lt;/p&gt;</description></item><item><title>CAOS - Consulente Applicativo Open Source</title><link>https://luccalug.it/blog/2010/11/caos-consulente-applicativo-open-source/</link><pubDate>Fri, 26 Nov 2010 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2010/11/caos-consulente-applicativo-open-source/</guid><description>&lt;p&gt;Siamo lieti di invitarvi agli incontri di promozione del corso di formazione CAOS - Consulente Applicativo Open Source, organizzato dall&amp;rsquo;Agenzia formativa Zefiro e finanziato dalla Provincia di Lucca attraverso il FSE.&lt;/p&gt;
+&lt;p&gt;Il progetto è volto alla formazione di 24 nuove professionalità esperte nell&amp;rsquo;ambito della consulenza di soluzioni open source sia ad aziende che Enti Locali e cooperative.&lt;/p&gt;
+&lt;h2 id="lopen-source-nella-pubblica-amministrazione"&gt;L&amp;rsquo;OPEN SOURCE NELLA PUBBLICA AMMINISTRAZIONE&lt;/h2&gt;
+&lt;p&gt;Quale futuro e quali resistenze nell&amp;rsquo;adozione del software libero nella P.A.: esperienze locali&lt;/p&gt;</description></item><item><title>Corsi Linux a pagamento annullati</title><link>https://luccalug.it/blog/2010/11/corsi-linux-a-pagamento-annullati/</link><pubDate>Fri, 26 Nov 2010 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2010/11/corsi-linux-a-pagamento-annullati/</guid><description>&lt;p&gt;I corsi Linux a pagamento organizzati in collaborazione con il Comune di Capannori sono annullati perché ci sono stati pochissimi iscritti. Questo ci dispiace molto perché sarebbe stata un&amp;rsquo;ottima occasione per la nostra associazione. In questi giorni discuteremo sulla possibilità di tornare a fare dei corsi ovviamente ridotti ma gratuiti.&lt;/p&gt;</description></item><item><title>Tango</title><link>https://luccalug.it/blog/2010/11/tango/</link><pubDate>Mon, 22 Nov 2010 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2010/11/tango/</guid><description>&lt;p&gt;È iniziata la fase di test del software Tango sviluppato dal LuccaLug con Django.&lt;/p&gt;
+&lt;p&gt;Il software viene utilizzato dalla Croce Verde di Ponte a Moriano per l&amp;rsquo;organizzazione dei turni dei volontari. Il software permette in maniera visuale di vedere quali turni sono scoperti e di trovare facilmente i volontari da contattare in base ad un completo sistema di statistiche.&lt;/p&gt;</description></item><item><title>Prolungato il termine di iscrizione ai corsi!</title><link>https://luccalug.it/blog/2010/11/prolungato-termine-iscrizione-corsi/</link><pubDate>Sat, 20 Nov 2010 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2010/11/prolungato-termine-iscrizione-corsi/</guid><description>&lt;p&gt;Ci sono ancora alcuni posti disponibili, per cui sarà possibile iscriversi a Corsi organizzati dal Luccalug in collaborazione con il Comune di Capannori sino al 27 novembre 2010.&lt;/p&gt;</description></item><item><title>Sito in costruzione</title><link>https://luccalug.it/blog/2010/11/sito-in-costruzione/</link><pubDate>Wed, 03 Nov 2010 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2010/11/sito-in-costruzione/</guid><description>&lt;p&gt;Stiamo rinnovando il sito per problemi tecnici con il vecchio hosting, tutti i contenuti saranno ripristinati a breve.&lt;/p&gt;</description></item><item><title>Linux Day 2008</title><link>https://luccalug.it/blog/2008/10/linux-day-2008/</link><pubDate>Sat, 25 Oct 2008 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2008/10/linux-day-2008/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2008-10-25"&gt;25 ottobre 2008&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Linux Day 2008&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Villa Bruguier, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Manifestazione nazionale per la promozione di Linux e del software libero, organizzata localmente dal LuccaLug con il patrocinio del Comune di Capannori. Dalle ore 09:00 alle ore 19:00.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Il LuccaLug, dopo il successo dell&amp;rsquo;edizione 2007, ripropone anche quest&amp;rsquo;anno il &lt;strong&gt;Linux Day 2008&lt;/strong&gt; che si è tenuto sabato &lt;strong&gt;25 ottobre&lt;/strong&gt; a &lt;strong&gt;Villa Bruguier&lt;/strong&gt; (Capannori). La manifestazione è stata organizzata con il sostegno del Comune di Capannori e la collaborazione dell&amp;rsquo;Assessorato provinciale.&lt;/p&gt;</description></item></channel></rss>

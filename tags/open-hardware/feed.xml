@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open-Hardware on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/open-hardware/</link><description>Recent content in Open-Hardware on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/open-hardware/feed.xml" rel="self" type="application/rss+xml"/><item><title>Arduracing</title><link>https://luccalug.it/blog/2020/01/arduracing/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/arduracing/</guid><description>&lt;p&gt;Arduracing è un progetto che aspira alla creazione di una robot car in grado di muoversi autonomamente all&amp;rsquo;interno di un circuito.&lt;/p&gt;
+&lt;p&gt;Il robot utilizza 4 sensori di distanza ad infrarossi per determinare la distanza dalle pareti laterali e frontali. Attraverso questi dati è in grado di estrapolare la distanza e l&amp;rsquo;angolo delle curve. Il robot è in grado di sterzare e viaggiare a velocità variabile in avanti ed indietro. Il telaio è realizzato con il Lego. Il progetto è stato presentato durante il Linux Day 2011 a Lucca ed ha dato risultati soddisfacenti; sono ovviamente stati individuati degli errori di progettazione che sono espressi nella sezione conclusioni.&lt;/p&gt;</description></item><item><title>Presentazione del Book Scanner</title><link>https://luccalug.it/blog/2015/04/presentazione-book-scanner/</link><pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2015/04/presentazione-book-scanner/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner_hu_b64d6aebd99a86a6.webp 647w, https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner_hu_b64d6aebd99a86a6.webp 647w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg"
+ srcset="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg 647w, https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg 647w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Book Scanner del Luccalug"
+ width="647"
+ height="400"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il book scanner: progetto open hardware per la digitalizzazione di libri storici&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sabato &lt;strong&gt;18 Aprile 2015 alle ore 15:00&lt;/strong&gt; vi aspettiamo tutti presso la nostra sede al Centro Giovani di Santa Margherita (&lt;a href="https://goo.gl/maps/5S5HT"&gt;mappa&lt;/a&gt;) per presentare il nostro progetto per la costruzione di un &lt;strong&gt;book scanner&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Lo scopo principale del progetto è quello di arricchire a livello digitale la cultura della zona in cui viviamo, scannerizzando libri storici (che sono entrati nel pubblico dominio) permettendo a tutti - studiosi e non - di consultarli online.&lt;/p&gt;</description></item><item><title>Cosino - Recensione</title><link>https://luccalug.it/blog/2013/11/recensione-cosino/</link><pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/11/recensione-cosino/</guid><description>&lt;p&gt;Abbiamo già scritto parecchi articoli sulla nostra nuova stampante 3D: una Prusa i3 con una modifica al piatto per aumentare l&amp;rsquo;area di stampa. Il controller di basso livello è Arduino, nota scheda Open Hardware.&lt;/p&gt;
+&lt;p&gt;Ma è il caso di spendere qualche parola anche su &lt;strong&gt;Cosino&lt;/strong&gt;, mini-computer che usiamo per il controllo della stampa ad &amp;ldquo;alto livello&amp;rdquo;, ovvero l&amp;rsquo;interfaccia tra uomo e macchina.&lt;/p&gt;
+&lt;p&gt;Per questo tipo di controllo si usa di solito un PC che, connesso via USB al controller di basso livello, permette di lanciare e controllare la stampa. Il problema legato a questo utilizzo della stampante è che il PC deve restare a essa collegato durante tutto il processo di stampa; e sappiamo che in alcuni casi questa può durare parecchie ore.&lt;/p&gt;</description></item><item><title>Prusa i3 - Terza serata di montaggio</title><link>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</link><pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</guid><description>&lt;p&gt;Si è svolta ieri la terza serata di montaggio della &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt; modificata del LuccaLUG.&lt;/p&gt;
+&lt;p&gt;È stata montata l&amp;rsquo;&lt;strong&gt;elettronica&lt;/strong&gt; e siamo andati avanti con l&amp;rsquo;armatura, fissando il frame al piano XY precedentemente creato. Purtroppo le cinghie acquistate per l&amp;rsquo;asse Y si sono rivelate inutili perché, avendo raddoppiato la lunghezza dell&amp;rsquo;asse, queste risultano troppo corte. Un ulteriore problema si è presentato con alcuni pezzi che avevamo stampato ma che sono risultati mal dimensionati. Dovremmo quindi ristamparli.&lt;/p&gt;</description></item><item><title>Prusa i3 - Seconda serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</link><pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</guid><description>&lt;p&gt;A causa di problemi logistici (non erano arrivati alcuni pezzi), la seconda serata di montaggio è stata rimandata più volte e si è finalmente svolta ieri sera (lunedì 22 luglio).&lt;/p&gt;
+&lt;p&gt;Abbiamo montato l&amp;rsquo;&lt;strong&gt;asse Z&lt;/strong&gt; (compresi i motori) e lo abbiamo fissato al frame.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lunedì prossimo (29 luglio)&lt;/strong&gt; abbiamo in programma di montare l&amp;rsquo;elettronica, caricando eventualmente anche il software, e di proseguire con l&amp;rsquo;armatura.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;unica cosa per cui non siamo ancora pronti è il piatto, la cui base va riprogettata e costruita (visto che lo abbiamo raddoppiato in lunghezza).&lt;/p&gt;</description></item><item><title>Prusa i3 modificata - Prima serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</link><pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</guid><description>&lt;p&gt;Ieri sera abbiamo montato l&amp;rsquo;armatura di base della nostra versione modificata di &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt;, una stampante 3D &lt;a href="http://it.wikipedia.org/wiki/Hardware_libero"&gt;Open Hardware&lt;/a&gt;. La modifica che proponiamo consiste nell&amp;rsquo;aumentare le dimensioni del piatto (da 20×20 cm a 20×40 cm) per poter stampare oggetti più grandi.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Il progetto Prusa i3 del LuccaLUG"
+ width="539"
+ height="424"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La nostra Prusa i3 modificata&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Non avendo ancora reperito tutti i pezzi, abbiamo montato solo l&amp;rsquo;armatura della base (barre degli assi X e Y).&lt;/p&gt;</description></item><item><title>Serata a tema: OpenSCAD - disegnare in 3D programmando</title><link>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</link><pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</guid><description>&lt;h2 id="lunedì-10-dicembre-2012-per-pillole-di-free-software-serata-dedicata-a-openscad"&gt;Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt; è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Logo di OpenSCAD"
+ width="688"
+ height="567"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il logo di OpenSCAD&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Esso non si focalizza sulla modellazione artistica tipica di software come Blender, bensì mantiene un legame più stretto con la progettazione CAD.&lt;/p&gt;</description></item><item><title>Arduino, l'elettronica diventa facile</title><link>https://luccalug.it/blog/2012/04/arduino-elettronica-diventa-facile/</link><pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/04/arduino-elettronica-diventa-facile/</guid><description>&lt;div class="evento-card"&gt;
+ &lt;div class="evento-date"&gt;
+ &lt;time datetime="2012-05-12"&gt;12 maggio 2012&lt;/time&gt;
+ &lt;/div&gt;
+ &lt;div class="evento-details"&gt;
+ &lt;div class="evento-titolo"&gt;Arduino, l&amp;#39;elettronica diventa facile!&lt;/div&gt;
+ &lt;div class="evento-luogo"&gt;&lt;span aria-hidden="true"&gt;📍&lt;/span&gt; Sede del LuccaLUG, Capannori (Lucca)&lt;/div&gt;
+ &lt;div class="evento-descrizione"&gt;Conferenza di presentazione del progetto Arduino con esempi di applicazione dal vivo. Dalle ore 16:00 alle ore 18:00.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2_hu_1af30c3116b2a0b8.webp 424w, https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2_hu_1af30c3116b2a0b8.webp 424w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png"
+ srcset="https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png 424w, https://luccalug.it/images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png 424w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina Arduino, l&amp;#39;elettronica diventa facile"
+ width="424"
+ height="600"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Sabato 12 maggio 2012 - conferenza Arduino al LuccaLUG&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sabato &lt;strong&gt;12 maggio&lt;/strong&gt; presso la sede del LuccaLUG (Centro Giovani di Capannori), Matteo terrà una conferenza di presentazione del progetto &lt;strong&gt;Arduino&lt;/strong&gt; mostrando esempi di applicazione dal vivo.&lt;/p&gt;</description></item><item><title>Gruppo Open Hardware</title><link>https://luccalug.it/blog/2011/06/gruppo-open-hardware/</link><pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/06/gruppo-open-hardware/</guid><description>&lt;p&gt;In queste settimane stiamo valutando la possibilità di dare vita ad un sottogruppo del LuccaLug dedicato all&amp;rsquo;open Hardware e quindi di attrezzare un mini laboratorio per lavorare non solo su progetti software ma anche hardware. In questo momento abbiamo attivato su Facebook un sondaggio per stabilirne il nome.&lt;/p&gt;</description></item><item><title>Circolo di studio su Arduino!</title><link>https://luccalug.it/blog/2011/04/circolo-di-studio-su-arduino/</link><pubDate>Sat, 30 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/circolo-di-studio-su-arduino/</guid><description>&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ Le iscrizioni sono chiuse.
+&lt;/div&gt;
+
+&lt;p&gt;Il Luccalug è felice di comunicare che a breve partirà un circolo di studio sul progetto Arduino. Il circolo avrà una durata di &lt;strong&gt;27 ore&lt;/strong&gt; e si terrà ogni mercoledì dalle ore 20 alle ore 23.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;iscrizione è assolutamente &lt;strong&gt;gratuita&lt;/strong&gt;. &lt;strong&gt;Il corso comincerà mercoledì 11 maggio.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Il circolo, simile a tutti gli effetti a un corso, prevede l&amp;rsquo;apprendimento delle nozioni di base per imparare ad utilizzare Arduino con i più comuni sensori e renderlo in grado di comunicare con il computer. In una seconda parte saranno scelti uno o più progetti dai partecipanti che saranno sviluppati insieme.&lt;/p&gt;</description></item><item><title>Cos'è Arduino?</title><link>https://luccalug.it/blog/2011/04/cose-arduino/</link><pubDate>Fri, 29 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/cose-arduino/</guid><description>&lt;div class="note info" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;ℹ️&lt;/span&gt; Info
+ 
+ &lt;/div&gt;
+ A breve apriranno le iscrizioni per un circolo di studio di 27 ore gratuito su Arduino!
+&lt;/div&gt;
+
+&lt;p&gt;Arduino è una piattaforma hardware per il physical computing sviluppata all&amp;rsquo;Interaction Design Institute di Ivrea, un istituto fondato dalla Olivetti e da Telecom Italia. Arduino è basata su una semplicissima scheda di I/O e su un ambiente di sviluppo che usa una libreria Wiring per semplificare la scrittura di programmi in C e C++ da far girare sulla scheda.&lt;/p&gt;</description></item><item><title>Arduino</title><link>https://luccalug.it/blog/2011/04/arduino/</link><pubDate>Sun, 24 Apr 2011 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2011/04/arduino/</guid><description>&lt;p&gt;Un video di introduzione ad Arduino, la piattaforma open hardware per il physical computing che il LuccaLug sta esplorando.&lt;/p&gt;
+&lt;a class="link-esterno" href="https://www.youtube.com/watch?v=U0L_IKsX5C4" target="_blank" rel="noopener noreferrer"&gt;Guarda il video su YouTube&lt;span aria-hidden="true"&gt; ↗&lt;/span&gt;&lt;span class="sr-only"&gt; (si apre in una nuova finestra)&lt;/span&gt;&lt;/a&gt;</description></item></channel></rss>

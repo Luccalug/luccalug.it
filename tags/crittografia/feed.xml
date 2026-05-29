@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Crittografia on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/crittografia/</link><description>Recent content in Crittografia on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Wed, 19 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/crittografia/feed.xml" rel="self" type="application/rss+xml"/><item><title>GPG (GNU Privacy Guard) - Pillole di Free Software</title><link>https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/</link><pubDate>Wed, 19 Mar 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg_hu_93ec762b0db16396.webp 624w, https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg_hu_93ec762b0db16396.webp 624w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg.png"
+ srcset="https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg.png 624w, https://luccalug.it/images/blog/gpg-gnu-privacy-guard/pillole-gpg.png 624w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina serata GPG - Pillole di Free Software"
+ width="624"
+ height="403"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Pillole di Free Software: GPG (GNU Privacy Guard)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Lunedì &lt;strong&gt;24 marzo&lt;/strong&gt; si svolgerà una serata a tema dedicata a &lt;strong&gt;GNU Privacy Guard&lt;/strong&gt;, software Free e Open Source per la cifratura dei messaggi.&lt;/p&gt;
+&lt;p&gt;Nell&amp;rsquo;era dei Social Network e nella situazione attuale, in cui si può sapere tutto di tutti grazie ad Internet, è molto importante poter tutelare la riservatezza dei messaggi che si inviano. E per noi utenti Linux è fondamentale poterlo fare utilizzando strumenti free e open source.&lt;/p&gt;</description></item></channel></rss>

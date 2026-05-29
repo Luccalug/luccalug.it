@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardware on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/hardware/</link><description>Recent content in Hardware on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Wed, 08 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/hardware/feed.xml" rel="self" type="application/rss+xml"/><item><title>Presentazione del Book Scanner</title><link>https://luccalug.it/blog/2015/04/presentazione-book-scanner/</link><pubDate>Wed, 08 Apr 2015 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2015/04/presentazione-book-scanner/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner_hu_b64d6aebd99a86a6.webp 647w, https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner_hu_b64d6aebd99a86a6.webp 647w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg"
+ srcset="https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg 647w, https://luccalug.it/images/blog/presentazione-book-scanner/bookscanner.jpg 647w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Book Scanner del Luccalug"
+ width="647"
+ height="400"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il book scanner: progetto open hardware per la digitalizzazione di libri storici&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sabato &lt;strong&gt;18 Aprile 2015 alle ore 15:00&lt;/strong&gt; vi aspettiamo tutti presso la nostra sede al Centro Giovani di Santa Margherita (&lt;a href="https://goo.gl/maps/5S5HT"&gt;mappa&lt;/a&gt;) per presentare il nostro progetto per la costruzione di un &lt;strong&gt;book scanner&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Lo scopo principale del progetto è quello di arricchire a livello digitale la cultura della zona in cui viviamo, scannerizzando libri storici (che sono entrati nel pubblico dominio) permettendo a tutti - studiosi e non - di consultarli online.&lt;/p&gt;</description></item></channel></rss>

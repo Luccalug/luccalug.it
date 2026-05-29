@@ -1,11 +1,17 @@
 /* TEAM */
 
-    The entire Luccalug team, a bunch of friends from Lucca that love technology and free (as in freedom) stuff
+Presidente: Alek Mugnozzo
+Vicepresidente: Matteo Martinelli
 
 /* SITE */
 
-    Site Name: Luccalug - Lucca Linux User Group
-    Site URL: http://www.luccalug.it
-    Language: Italian
-    Facebook: https://www.facebook.com/luccalug-121848141161284/
-    Twitter: @luccalug
+Software: Hugo 0.161.1 extended
+Language: Italian
+Standards: HTML5, CSS3
+Fonts: Inter, Silkscreen, VT323 (self-hosted)
+Components: Vanilla JS, no frameworks
+Hosting: GitHub Pages
+
+/* THANKS */
+
+Lucca Linux User Group - https://luccalug.it

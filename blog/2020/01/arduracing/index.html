@@ -1,0 +1,280 @@
+<!doctype html><html lang=it><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=preload href=/fonts/inter-400-latin.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/inter-600-latin.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/silkscreen-400-latin.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/vt323-400-latin.woff2 as=font type=font/woff2 crossorigin><title>Arduracing - Luccalug - Lucca Linux User Group</title><meta name=description content="Arduracing: un robot car autonomo basato su Arduino in grado di percorrere un circuito usando sensori a infrarossi. Presentato al Linux Day 2011 di Lucca."><meta property="og:title" content="Arduracing - Luccalug - Lucca Linux User Group"><meta property="og:description" content="Arduracing: un robot car autonomo basato su Arduino in grado di percorrere un circuito usando sensori a infrarossi. Presentato al Linux Day 2011 di Lucca."><meta property="og:url" content="https://luccalug.it/blog/2020/01/arduracing/"><meta property="og:type" content="article"><meta property="og:site_name" content="Luccalug - Lucca Linux User Group"><meta property="og:locale" content="it_IT"><meta property="og:image" content="https://luccalug.it/images/luccalug.png"><meta property="og:image:alt" content="Arduracing - Luccalug - Lucca Linux User Group"><meta name=twitter:card content="summary"><meta name=twitter:title content="Arduracing - Luccalug - Lucca Linux User Group"><meta name=twitter:description content="Arduracing: un robot car autonomo basato su Arduino in grado di percorrere un circuito usando sensori a infrarossi. Presentato al Linux Day 2011 di Lucca."><meta name=twitter:image content="https://luccalug.it/images/luccalug.png"><meta name=twitter:image:alt content="Arduracing - Luccalug - Lucca Linux User Group"><meta property="article:published_time" content="2020-01-21T00:00:00Z"><meta property="article:author" content="Il Direttivo"><meta property="article:tag" content="progetti"><meta property="article:tag" content="arduino"><meta property="article:tag" content="open-hardware"><link rel=canonical href=https://luccalug.it/blog/2020/01/arduracing/><meta name=theme-color content="#1e1e1e" id=theme-color-meta><link rel=icon type=image/png href=/images/luccalug-favicon.png><link rel=apple-touch-icon href=/images/luccalug-favicon.png><link rel=author href=/humans.txt><script>(function(){var n,s,o=document.documentElement,t=localStorage.getItem("luccalug-mode")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"),e=localStorage.getItem("luccalug-scheme")||"default";e==="ubuntu"&&(e="default"),o.setAttribute("data-mode",t),e&&e!=="default"&&o.setAttribute("data-scheme",e),n={dark:{default:"#1e1e1e",fedora:"#181e2e",opensuse:"#182418",arch:"#1a1a24",debian:"#2a1620"},light:{default:"#fdf4f0",fedora:"#f0f4fa",opensuse:"#f2f8ee",arch:"#f0f6fa",debian:"#faf0f2"}},s=document.getElementById("theme-color-meta"),s&&n[t]&&(s.content=n[t][e]||n[t].default)})()</script><link rel=stylesheet href=/css/main.min.91e0b75b7c66d3f5cb90aea1f006b81fc2535ca9e30448054e257f130d41e9f6.css integrity="sha256-keC3W3xm0/XLkK6h8Aa4H8JTXKnjBEgFTiV/Ew1B6fY=" crossorigin=anonymous><noscript><style>.tabs__panel[hidden]{display:block!important}</style></noscript><link rel=alternate type=text/markdown href=/blog/2020/01/arduracing/index.md title="Arduracing (Markdown)"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","author":{"@type":"Person","name":"Il Direttivo"},"datePublished":"2020-01-21T00:00:00Z","headline":"Arduracing","inLanguage":"it-IT","publisher":{"@type":"Organization","name":"Luccalug"}}</script></head><body><a href=#main-content class=skip-link>Salta al contenuto principale</a><header><div class=top-bar role=marquee aria-label=Annunci><div class=top-bar-scroll><span aria-hidden=true>🐧 </span>★ Benvenuti su Luccalug - Lucca Linux User Group! ★ Software libero, conoscenza condivisa, pinguini felici! ★</div></div><nav class=nav aria-label="Menu principale"><a href=/>Home</a>
+<a href=/about/>Chi siamo</a>
+<a href=/blog/>Blog</a>
+<a href=/archivio/>Archivio</a>
+<a href=/calendario/>Calendario</a>
+<a href=/linux-day/>Linux Day</a>
+<a href=/contatti/>Contatti</a></nav></header><div class=theme-switcher role=group aria-label="Impostazioni tema"><button class=mode-toggle id=mode-toggle aria-label="Passa a modalità chiara" aria-pressed=true>🌙</button><div class=scheme-picker id=scheme-picker><button class=scheme-trigger id=scheme-trigger aria-label="Scegli schema colori" aria-expanded=false aria-controls=scheme-dropdown>
+<span class=dot-preview aria-hidden=true></span></button><div class=scheme-dropdown id=scheme-dropdown role=group aria-label="Schemi colore"><button class="scheme-btn active" data-s=default aria-pressed=true><span class=scheme-label>Ubuntu</span></button>
+<button class=scheme-btn data-s=fedora aria-pressed=false><span class=scheme-label>Fedora</span></button>
+<button class=scheme-btn data-s=opensuse aria-pressed=false><span class=scheme-label>openSUSE</span></button>
+<button class=scheme-btn data-s=arch aria-pressed=false><span class=scheme-label>Arch</span></button>
+<button class=scheme-btn data-s=debian aria-pressed=false><span class=scheme-label>Debian</span></button></div></div></div><script>(function(){var i,l,e=document.documentElement,t=document.getElementById("mode-toggle"),n=document.getElementById("scheme-picker"),s=document.getElementById("scheme-trigger"),u=document.getElementById("scheme-dropdown"),a=document.querySelectorAll(".scheme-btn");function r(n){e.setAttribute("data-mode",n),localStorage.setItem("luccalug-mode",n),t.textContent=n==="dark"?"🌙":"☀️",t.setAttribute("aria-label",n==="dark"?"Passa a modalità chiara":"Passa a modalità scura"),t.setAttribute("aria-pressed",n==="dark"?"true":"false")}function d(){n.classList.add("open"),s.setAttribute("aria-expanded","true")}function o(){n.classList.remove("open"),s.setAttribute("aria-expanded","false")}function c(t){t==="default"?e.removeAttribute("data-scheme"):e.setAttribute("data-scheme",t),localStorage.setItem("luccalug-scheme",t),a.forEach(function(e){var n=e.getAttribute("data-s")===t;e.classList.toggle("active",n),e.setAttribute("aria-pressed",n?"true":"false")}),o()}t.addEventListener("click",function(){r(e.getAttribute("data-mode")==="dark"?"light":"dark")}),s.addEventListener("click",function(e){e.stopPropagation(),n.classList.contains("open")?o():d()}),a.forEach(function(e){e.addEventListener("click",function(t){t.stopPropagation(),c(e.getAttribute("data-s"))})}),document.addEventListener("click",function(){o()}),document.addEventListener("keydown",function(e){e.key==="Escape"&&n.classList.contains("open")&&(o(),s.focus())}),l=e.getAttribute("data-mode")||"dark",i=localStorage.getItem("luccalug-scheme")||"default",i==="ubuntu"&&(i="default"),r(l),c(i)})()</script><main id=main-content class=page-wrapper><article><h1>Arduracing</h1><div class=post-meta><span><span aria-hidden=true>📅 </span>21 gennaio 2020</span>
+<span><span aria-hidden=true>✍️ </span>Il Direttivo</span></div><div class=post-tags><a href=/tags/progetti/ class=tag>#progetti</a>
+<a href=/tags/arduino/ class=tag>#arduino</a>
+<a href=/tags/open-hardware/ class=tag>#open-hardware</a></div><hr><div class=content><p>Arduracing è un progetto che aspira alla creazione di una robot car in grado di muoversi autonomamente all&rsquo;interno di un circuito.</p><p>Il robot utilizza 4 sensori di distanza ad infrarossi per determinare la distanza dalle pareti laterali e frontali. Attraverso questi dati è in grado di estrapolare la distanza e l&rsquo;angolo delle curve. Il robot è in grado di sterzare e viaggiare a velocità variabile in avanti ed indietro. Il telaio è realizzato con il Lego. Il progetto è stato presentato durante il Linux Day 2011 a Lucca ed ha dato risultati soddisfacenti; sono ovviamente stati individuati degli errori di progettazione che sono espressi nella sezione conclusioni.</p><h2 id=principio-di-funzionamento>Principio di funzionamento</h2><p>Il funzionamento si basa sul seguente schema geometrico: posizionando due sensori di distanza paralleli alla vettura ai lati della stessa è possibile, attraverso semplici formule goniometriche, ricavare l&rsquo;angolo di inclinazione della retta C, che non rappresenta altro che una linearizzazione del tratto di curva.</p><p>$$\alpha = (d1-d2/l)$$</p><p>Ovviamente, avendo a disposizione le distanze d1 e d2, è possibile anche conoscere a che distanza si trova l&rsquo;ostacolo oltre alla sua inclinazione.</p><figure class=figure><picture><source type=image/webp srcset="/images/blog/arduracing/ardualpha_hu_b5611376e7371f39.webp 410w, /images/blog/arduracing/ardualpha_hu_b5611376e7371f39.webp 410w" sizes="(max-width: 800px) 100vw, 800px"><img src=/images/blog/arduracing/ardualpha.jpg srcset="/images/blog/arduracing/ardualpha.jpg 410w, /images/blog/arduracing/ardualpha.jpg 410w" sizes="(max-width: 800px) 100vw, 800px" alt="Schema del principio di funzionamento di Arduracing" width=410 height=332 loading=lazy decoding=async></picture><figcaption>Principio di funzionamento: ricavare l'angolo di curva con due sensori laterali</figcaption></figure><p>Questo tipo di approccio permette al robot di differenziarsi da un classico line-follower in quanto è in grado di conoscere in anticipo le curve e quanto siano più o meno strette. In questo modo è in grado di regolare la propria velocità o eseguire manovre correttive nel caso, ad esempio, si trovi sul lato della pista corrispondente all&rsquo;interno curva.</p><h2 id=casi-particolari>Casi particolari</h2><p>Uno dei casi in cui l&rsquo;algoritmo sopra espresso fallisce è espresso nella figura sottostante: in questo caso i due sensori &ldquo;vedono&rdquo; uno l&rsquo;interno della pista e l&rsquo;altro l&rsquo;esterno, sottostimando l&rsquo;angolo di sterzo necessario ad evitare l&rsquo;interno curva.</p><p>Per ovviare a questo problema, nell&rsquo;esempio si calcola l&rsquo;angolo utilizzando il sensore laterale destro ed il posteriore destro.</p><figure class=figure><picture><source type=image/webp srcset="/images/blog/arduracing/ardualpha2_hu_dfc2c986d2206703.webp 410w, /images/blog/arduracing/ardualpha2_hu_dfc2c986d2206703.webp 410w" sizes="(max-width: 800px) 100vw, 800px"><img src=/images/blog/arduracing/ardualpha2.jpg srcset="/images/blog/arduracing/ardualpha2.jpg 410w, /images/blog/arduracing/ardualpha2.jpg 410w" sizes="(max-width: 800px) 100vw, 800px" alt="Schema del funzionamento in curva interna" width=410 height=332 loading=lazy decoding=async></picture><figcaption>Caso particolare: gestione dell'interno curva con sensori laterale e posteriore</figcaption></figure><p>Un altro caso problematico si manifesta quando la parete interna è quasi parallela all&rsquo;auto: in questo frangente si utilizzano i sensori laterali per evitare che l&rsquo;auto si avvicini troppo. Un&rsquo;ulteriore raffinazione dell&rsquo;algoritmo sviluppato valuta non solo la distanza laterale ma anche la velocità di avvicinamento ai bordi in modo da poter sfruttare maggiormente la pista.</p><h2 id=hardware>Hardware</h2><ul><li>1 x Arduino UNO</li><li>1 x Sparkfun Motor-Shield</li><li>4 x sensori distanza Sharp</li><li>1 x servomotore</li><li>4 x resistenze</li><li>5 x condensatori</li><li>1 x modellino LEGO</li></ul><h2 id=filtri-rc>Filtri RC</h2><p>Una prima analisi dei sensori di distanza ha evidenziato un notevole rumore sul segnale in uscita; per questo abbiamo deciso di costruire dei semplici filtri passa-basso passivi per ridurre le perturbazioni con una frequenza superiore a quella di taglio. Inoltre è stato connesso in serie all&rsquo;alimentazione dei sensori un condensatore elettrolitico al fine di evitare una tensione di alimentazione instabile.</p><figure class=figure><picture><source type=image/webp srcset="/images/blog/arduracing/sensori_hu_42586830b76479c8.webp 800w, /images/blog/arduracing/sensori_hu_42586830b76479c8.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img src=/images/blog/arduracing/sensori.jpg srcset="/images/blog/arduracing/sensori.jpg 800w, /images/blog/arduracing/sensori.jpg 800w" sizes="(max-width: 800px) 100vw, 800px" alt="I sensori di distanza Sharp con filtri RC" width=800 height=455 loading=lazy decoding=async></picture><figcaption>I sensori di distanza con filtri passa-basso passivi</figcaption></figure><h2 id=telaio>Telaio</h2><p>Il telaio rappresenta la parte più complessa dal punto di vista realizzativo pratico e, come meglio presentato nelle conclusioni, anche il punto di maggior debolezza del robot. Per realizzarlo è stato utilizzato il LEGO e i vari componenti sono stati fissati a mezzo di colla a caldo. Durante la sua realizzazione si sono manifestati diversi problemi: i principali sono stati gli attriti degli ingranaggi che generavano una quantità notevole di energia dissipata e lo sterzo in cui erano presenti innumerevoli &ldquo;giochi&rdquo;.</p><p>Per risolvere questi due problemi siamo ricorsi ad un motore che comprendesse già un rapporto di riduzione e lo sterzo è stato quanto più semplificato, togliendo ad esempio il sistema di ammortizzatori presente nella prima versione del robot.</p><figure class=figure><picture><source type=image/webp srcset="/images/blog/arduracing/sterzo_hu_f048c3e1208fd6b0.webp 337w, /images/blog/arduracing/sterzo_hu_f048c3e1208fd6b0.webp 337w" sizes="(max-width: 800px) 100vw, 800px"><img src=/images/blog/arduracing/sterzo.jpg srcset="/images/blog/arduracing/sterzo.jpg 337w, /images/blog/arduracing/sterzo.jpg 337w" sizes="(max-width: 800px) 100vw, 800px" alt="Il sistema di sterzo del robot" width=337 height=600 loading=lazy decoding=async></picture><figcaption>Il sistema di sterzo semplificato</figcaption></figure><h2 id=circuito-di-prova>Circuito di prova</h2><p>Il circuito è realizzato per gran parte in cartone; la base è stata realizzata con fogli di 100×80 cm di spessore 3 mm, mentre le pareti sono realizzate con delle bande ritagliate alte circa 30 cm di cartoncino meno spesso. Al fine di rendere la struttura più resistente agli urti del robot, sono stati costruiti con materiale plastico e colla a caldo dei pilastri all&rsquo;esterno delle pareti come evidente in foto.</p><figure class=figure><picture><source type=image/webp srcset="/images/blog/arduracing/pista_hu_885c0c8bd15430ef.webp 800w, /images/blog/arduracing/pista_hu_885c0c8bd15430ef.webp 800w" sizes="(max-width: 800px) 100vw, 800px"><img src=/images/blog/arduracing/pista.jpg srcset="/images/blog/arduracing/pista.jpg 800w, /images/blog/arduracing/pista.jpg 800w" sizes="(max-width: 800px) 100vw, 800px" alt="Il circuito di prova realizzato in cartone" width=800 height=450 loading=lazy decoding=async></picture><figcaption>Il circuito di prova con pareti in cartone e pilastri plastici</figcaption></figure><h2 id=software>Software</h2><p>La parte software è stata poco curata a causa dell&rsquo;avvicinarsi dell&rsquo;evento a cui dovevo presentare il progetto. In particolare non sono riuscito a sviluppare una funzione per &ldquo;frenare&rdquo; prima delle curve.</p><p>Le parti principali del codice verranno illustrate in una serie di articoli che gli dedicherò all&rsquo;interno del blog.</p><p>Di seguito è riportato il sorgente utilizzato per la dimostrazione:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#75715e>#define sinistra 1
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define destra 0
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define avanti HIGH
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define indietro LOW
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define POT_MIN 110
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define N_misure 15
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define S 125
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define D 35
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define C 80
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Servo myservo;  <span style=color:#75715e>// create servo object to control a servo
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// a maximum of eight servo objects can be created
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> pos <span style=color:#f92672>=</span> <span style=color:#ae81ff>90</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> pwm_a <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>;  <span style=color:#75715e>//PWM control for motor outputs 1 and 2 is on digital pin 10
+</span></span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> pwm_b <span style=color:#f92672>=</span> <span style=color:#ae81ff>11</span>;  <span style=color:#75715e>//PWM control for motor outputs 3 and 4 is on digital pin 11
+</span></span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> dir_a <span style=color:#f92672>=</span> <span style=color:#ae81ff>12</span>;  <span style=color:#75715e>//direction control for motor outputs 1 and 2 is on digital pin 12
+</span></span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> dir_b <span style=color:#f92672>=</span> <span style=color:#ae81ff>13</span>;  <span style=color:#75715e>//direction control for motor outputs 3 and 4 is on digital pin 13
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>float</span> AS, PD, AD, PS;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> dist_P_min, dist_P_max, dist_P_media, angolo_curva, dir_curva, inizio_curva;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> dist_A_min, dist_A_max, dist_A_media, rapporto;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> t;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> blocco <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setup</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// initialize the serial communication:
+</span></span></span><span style=display:flex><span>    Serial.begin(<span style=color:#ae81ff>9600</span>);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// initialize servo and motor-shield
+</span></span></span><span style=display:flex><span>    myservo.attach(<span style=color:#ae81ff>9</span>);
+</span></span><span style=display:flex><span>    pinMode(pwm_b, OUTPUT);
+</span></span><span style=display:flex><span>    pinMode(dir_b, OUTPUT);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// set initial value for the motor
+</span></span></span><span style=display:flex><span>    digitalWrite(dir_b, HIGH);
+</span></span><span style=display:flex><span>    analogWrite(pwm_b, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>aggiorna</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//vengono effettuate tutte le misure e ricalcolate le variabili
+</span></span></span><span style=display:flex><span>    AS <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    AD <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    PS <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    PD <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N_misure; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>        AS <span style=color:#f92672>+=</span> <span style=color:#ae81ff>2076.0</span> <span style=color:#f92672>/</span> (constrain(analogRead(A2), <span style=color:#ae81ff>80</span>, <span style=color:#ae81ff>530</span>) <span style=color:#f92672>-</span> <span style=color:#ae81ff>11.0</span>);
+</span></span><span style=display:flex><span>        AD <span style=color:#f92672>+=</span> <span style=color:#ae81ff>2076.0</span> <span style=color:#f92672>/</span> (constrain(analogRead(A4), <span style=color:#ae81ff>80</span>, <span style=color:#ae81ff>530</span>) <span style=color:#f92672>-</span> <span style=color:#ae81ff>11.0</span>);
+</span></span><span style=display:flex><span>        PS <span style=color:#f92672>+=</span> <span style=color:#ae81ff>9462.0</span> <span style=color:#f92672>/</span> (constrain(analogRead(A1), <span style=color:#ae81ff>80</span>, <span style=color:#ae81ff>550</span>) <span style=color:#f92672>-</span> <span style=color:#ae81ff>16.92</span>);
+</span></span><span style=display:flex><span>        PD <span style=color:#f92672>+=</span> <span style=color:#ae81ff>9462.0</span> <span style=color:#f92672>/</span> (constrain(analogRead(A3), <span style=color:#ae81ff>80</span>, <span style=color:#ae81ff>550</span>) <span style=color:#f92672>-</span> <span style=color:#ae81ff>16.92</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    AS <span style=color:#f92672>/=</span> N_misure;
+</span></span><span style=display:flex><span>    AD <span style=color:#f92672>/=</span> N_misure;
+</span></span><span style=display:flex><span>    PS <span style=color:#f92672>/=</span> N_misure;
+</span></span><span style=display:flex><span>    PD <span style=color:#f92672>/=</span> N_misure;
+</span></span><span style=display:flex><span>    PD <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1.5</span>;
+</span></span><span style=display:flex><span>    PD <span style=color:#f92672>=</span> constrain(PD, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>150</span>);
+</span></span><span style=display:flex><span>    dist_P_min <span style=color:#f92672>=</span> min(PD, PS);
+</span></span><span style=display:flex><span>    dist_P_max <span style=color:#f92672>=</span> max(PD, PS);
+</span></span><span style=display:flex><span>    dist_P_media <span style=color:#f92672>=</span> (PD <span style=color:#f92672>+</span> PS) <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>;
+</span></span><span style=display:flex><span>    dist_A_min <span style=color:#f92672>=</span> min(AD, AS);
+</span></span><span style=display:flex><span>    dist_A_max <span style=color:#f92672>=</span> max(AD, AS);
+</span></span><span style=display:flex><span>    dist_A_media <span style=color:#f92672>=</span> (AD <span style=color:#f92672>+</span> AS) <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> ((PD <span style=color:#f92672>-</span> PS) <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>        dir_curva <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>        dir_curva <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> angolo_curva_c <span style=color:#f92672>=</span> <span style=color:#ae81ff>9</span> <span style=color:#f92672>-</span> atan(abs(PD <span style=color:#f92672>-</span> PS) <span style=color:#f92672>/</span> <span style=color:#ae81ff>15.5</span>) <span style=color:#f92672>*</span> (<span style=color:#ae81ff>2</span> <span style=color:#f92672>/</span> <span style=color:#ae81ff>3.14</span>) <span style=color:#f92672>*</span> <span style=color:#ae81ff>9</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> angolo_curva_d <span style=color:#f92672>=</span> <span style=color:#ae81ff>9</span> <span style=color:#f92672>-</span> atan(abs(PD <span style=color:#f92672>-</span> <span style=color:#ae81ff>18</span>) <span style=color:#f92672>/</span> AD) <span style=color:#f92672>*</span> (<span style=color:#ae81ff>2</span> <span style=color:#f92672>/</span> <span style=color:#ae81ff>3.14</span>) <span style=color:#f92672>*</span> <span style=color:#ae81ff>9</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> angolo_curva_s <span style=color:#f92672>=</span> <span style=color:#ae81ff>9</span> <span style=color:#f92672>-</span> atan(abs(PS <span style=color:#f92672>-</span> <span style=color:#ae81ff>18</span>) <span style=color:#f92672>/</span> AS) <span style=color:#f92672>*</span> (<span style=color:#ae81ff>2</span> <span style=color:#f92672>/</span> <span style=color:#ae81ff>3.14</span>) <span style=color:#f92672>*</span> <span style=color:#ae81ff>9</span>;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//restituisce un valore da 0 a 10 per l&#39;angolo
+</span></span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (AS <span style=color:#f92672>&lt;</span> AD) {
+</span></span><span style=display:flex><span>        angolo_curva <span style=color:#f92672>=</span> max(angolo_curva_c, angolo_curva_s);
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>        angolo_curva <span style=color:#f92672>=</span> max(angolo_curva_d, angolo_curva_c);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>debug</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    Serial.print(AS);
+</span></span><span style=display:flex><span>    Serial.print(<span style=color:#e6db74>&#34;|&#34;</span>);
+</span></span><span style=display:flex><span>    Serial.print(AD);
+</span></span><span style=display:flex><span>    Serial.print(<span style=color:#e6db74>&#34;|&#34;</span>);
+</span></span><span style=display:flex><span>    Serial.print(PS);
+</span></span><span style=display:flex><span>    Serial.print(<span style=color:#e6db74>&#34;|&#34;</span>);
+</span></span><span style=display:flex><span>    Serial.print(PD);
+</span></span><span style=display:flex><span>    Serial.print(<span style=color:#e6db74>&#34;|&#34;</span>);
+</span></span><span style=display:flex><span>    Serial.println(angolo_curva);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>manuale</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> a, b;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (Serial.available() <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span>) {
+</span></span><span style=display:flex><span>        a <span style=color:#f92672>=</span> Serial.read();
+</span></span><span style=display:flex><span>        b <span style=color:#f92672>=</span> (Serial.read() <span style=color:#f92672>-</span> <span style=color:#ae81ff>48</span>);
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>switch</span> (a) {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;D&#39;</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>                sterzo(destra, b);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;S&#39;</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>                sterzo(sinistra, b);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;A&#39;</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>                motore(avanti, b, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>case</span> <span style=color:#e6db74>&#39;R&#39;</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>                motore(indietro, b, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>stato</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//la funzione ritorna lo stato della vettura: 0 rettilineo, 1 curva, 2 collisione
+</span></span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dist_P_min <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>19</span> <span style=color:#f92672>||</span> dist_A_min <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>5</span>) {
+</span></span><span style=display:flex><span>        blocco<span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>        blocco <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (blocco <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>25</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>2</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dist_P_min <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>35</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>motore</span>(boolean dir, <span style=color:#66d9ef>int</span> potenza, <span style=color:#66d9ef>int</span> angolo)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// la funzione compensa il maggior sforzo richiesto al motore con ruote sterzate e fissa il minimo della potenza
+</span></span></span><span style=display:flex><span>    <span style=color:#75715e>// la potenza deve avere un valore intero tra 0 e 10
+</span></span></span><span style=display:flex><span>    potenza <span style=color:#f92672>=</span> constrain(potenza, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (potenza <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>        potenza <span style=color:#f92672>=</span> constrain(map(potenza <span style=color:#f92672>+</span> angolo <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>10</span>, POT_MIN, <span style=color:#ae81ff>254</span>), POT_MIN, <span style=color:#ae81ff>214</span>);
+</span></span><span style=display:flex><span>    digitalWrite(dir_b, dir);
+</span></span><span style=display:flex><span>    analogWrite(pwm_b, potenza);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>sterzo</span>(<span style=color:#66d9ef>int</span> dir, <span style=color:#66d9ef>int</span> angolo)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> a <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// la funzione richiede in ingresso la direzione e l&#39;angolo di sterzata
+</span></span></span><span style=display:flex><span>    <span style=color:#75715e>// l&#39;angolo deve avere un valore tra 0 e 10
+</span></span></span><span style=display:flex><span>    angolo <span style=color:#f92672>=</span> constrain(angolo, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dir <span style=color:#f92672>==</span> sinistra)
+</span></span><span style=display:flex><span>        a <span style=color:#f92672>=</span> map(angolo, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>10</span>, C, S);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dir <span style=color:#f92672>==</span> destra)
+</span></span><span style=display:flex><span>        a <span style=color:#f92672>=</span> map(angolo, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>10</span>, C, D);
+</span></span><span style=display:flex><span>    myservo.write(a);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>sposta</span>(<span style=color:#66d9ef>int</span> dir, <span style=color:#66d9ef>int</span> potenza, <span style=color:#66d9ef>int</span> tempo)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    motore(avanti, potenza, <span style=color:#ae81ff>4</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dir <span style=color:#f92672>==</span> sinistra) {
+</span></span><span style=display:flex><span>        sterzo(sinistra, <span style=color:#ae81ff>4</span>);
+</span></span><span style=display:flex><span>        delay(tempo);
+</span></span><span style=display:flex><span>        sterzo(destra, <span style=color:#ae81ff>4</span>);
+</span></span><span style=display:flex><span>        delay(tempo);
+</span></span><span style=display:flex><span>        sterzo(sinistra, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dir <span style=color:#f92672>==</span> destra) {
+</span></span><span style=display:flex><span>        sterzo(destra, <span style=color:#ae81ff>4</span>);
+</span></span><span style=display:flex><span>        delay(tempo);
+</span></span><span style=display:flex><span>        sterzo(sinistra, <span style=color:#ae81ff>4</span>);
+</span></span><span style=display:flex><span>        delay(tempo);
+</span></span><span style=display:flex><span>        sterzo(sinistra, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>loop</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> x;
+</span></span><span style=display:flex><span>    aggiorna();
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>float</span> V_AS, V_AD;
+</span></span><span style=display:flex><span>    V_AS <span style=color:#f92672>=</span> AS;
+</span></span><span style=display:flex><span>    V_AD <span style=color:#f92672>=</span> AD;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (dist_P_min <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>60</span>) {
+</span></span><span style=display:flex><span>        delay(<span style=color:#ae81ff>20</span>);
+</span></span><span style=display:flex><span>        aggiorna();
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (AD <span style=color:#f92672>&gt;</span> V_AD <span style=color:#f92672>-</span> <span style=color:#ae81ff>0.2</span>) {
+</span></span><span style=display:flex><span>            sterzo(destra, (AD <span style=color:#f92672>-</span> V_AD) <span style=color:#f92672>*</span> <span style=color:#ae81ff>5</span>);
+</span></span><span style=display:flex><span>            delay(<span style=color:#ae81ff>20</span>);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (AS <span style=color:#f92672>&gt;</span> V_AS <span style=color:#f92672>-</span> <span style=color:#ae81ff>0.2</span>) {
+</span></span><span style=display:flex><span>            sterzo(sinistra, (AS <span style=color:#f92672>-</span> V_AS) <span style=color:#f92672>*</span> <span style=color:#ae81ff>5</span>);
+</span></span><span style=display:flex><span>            delay(<span style=color:#ae81ff>20</span>);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>switch</span> (stato()) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>0</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>            motore(avanti, map(pow(dist_P_min <span style=color:#f92672>/</span> <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>2</span>), <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>200</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>10</span>), <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (AS <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>6</span>) {
+</span></span><span style=display:flex><span>                sterzo(destra, <span style=color:#ae81ff>5</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (AD <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>6</span>) {
+</span></span><span style=display:flex><span>                sterzo(sinistra, <span style=color:#ae81ff>5</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (AS <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>7</span>) {
+</span></span><span style=display:flex><span>                sterzo(destra, <span style=color:#ae81ff>3</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (AD <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>7</span>) {
+</span></span><span style=display:flex><span>                sterzo(sinistra, <span style=color:#ae81ff>3</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (AS <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>8</span>) {
+</span></span><span style=display:flex><span>                sterzo(destra, <span style=color:#ae81ff>2</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (AD <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>8</span>) {
+</span></span><span style=display:flex><span>                sterzo(sinistra, <span style=color:#ae81ff>2</span>);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (V_AS <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>14</span> <span style=color:#f92672>&amp;&amp;</span> dir_curva <span style=color:#f92672>==</span> destra <span style=color:#f92672>&amp;&amp;</span> angolo_curva <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>5</span> <span style=color:#f92672>&amp;&amp;</span> dist_P_min <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>60</span>)
+</span></span><span style=display:flex><span>                sposta(sinistra, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>80</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (V_AD <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>14</span> <span style=color:#f92672>&amp;&amp;</span> dir_curva <span style=color:#f92672>==</span> sinistra <span style=color:#f92672>&amp;&amp;</span> angolo_curva <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>5</span> <span style=color:#f92672>&amp;&amp;</span> dist_P_min <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>60</span>)
+</span></span><span style=display:flex><span>                sposta(destra, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>80</span>);
+</span></span><span style=display:flex><span>            sterzo(sinistra, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>            <span style=color:#75715e>//curva
+</span></span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> ((dir_curva <span style=color:#f92672>==</span> destra <span style=color:#f92672>&amp;&amp;</span> AS <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>9</span>)
+</span></span><span style=display:flex><span>                    <span style=color:#f92672>||</span> (dir_curva <span style=color:#f92672>==</span> sinistra <span style=color:#f92672>&amp;&amp;</span> AD <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>9</span>) <span style=color:#f92672>||</span> (dist_P_media <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>41</span>)
+</span></span><span style=display:flex><span>                    <span style=color:#f92672>||</span> (dir_curva <span style=color:#f92672>==</span> destra <span style=color:#f92672>&amp;&amp;</span> PS <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>27</span>)
+</span></span><span style=display:flex><span>                    <span style=color:#f92672>||</span> (dir_curva <span style=color:#f92672>==</span> sinistra <span style=color:#f92672>&amp;&amp;</span> PD <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>27</span>)) {
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>if</span> (dist_P_media <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>25</span>) {
+</span></span><span style=display:flex><span>                    sterzo(dir_curva, angolo_curva);
+</span></span><span style=display:flex><span>                    motore(avanti,
+</span></span><span style=display:flex><span>                            constrain((dist_P_min <span style=color:#f92672>/</span> <span style=color:#ae81ff>30</span>) <span style=color:#f92672>-</span> angolo_curva <span style=color:#f92672>/</span> <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>10</span>),
+</span></span><span style=display:flex><span>                            angolo_curva);
+</span></span><span style=display:flex><span>                } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>                    sterzo(dir_curva, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>                    motore(avanti, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>                }
+</span></span><span style=display:flex><span>            } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>                sterzo(sinistra, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>            <span style=color:#75715e>//blocco
+</span></span></span><span style=display:flex><span>            motore(indietro, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>            delay(<span style=color:#ae81ff>30</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (dir_curva <span style=color:#f92672>==</span> sinistra)
+</span></span><span style=display:flex><span>                sterzo(destra, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (dir_curva <span style=color:#f92672>==</span> destra)
+</span></span><span style=display:flex><span>                sterzo(sinistra, <span style=color:#ae81ff>10</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>while</span> ((dist_P_min <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>19</span>) <span style=color:#f92672>||</span> (dist_A_min <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>6</span>)) {
+</span></span><span style=display:flex><span>                aggiorna();
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            sterzo(sinistra, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>            motore(avanti, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>0</span>);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=problemi>Problemi</h2><p>Durante la fase di test si sono evidenziati alcuni problemi che vado ad elencare in ordine di gravità.</p><ol><li><p><strong>Telaio poco rigido</strong>
+Il telaio si è rivelato troppo poco rigido e durante i vari test ci si è spesso accorti che l&rsquo;allineamento dei sensori non era corretto.</p></li><li><p><strong>Sensori</strong>
+Nonostante i filtri applicati, il rumore sui sensori è ancora presente; una possibile soluzione sarebbe quella di comprare sensori di qualità maggiore.</p></li><li><p><strong>Trasmissione</strong>
+Pur avendo utilizzato al minimo il numero di ingranaggi LEGO, la trasmissione potrebbe essere migliorata utilizzando ingranaggi metallici ed inserendo anche un differenziale.</p></li></ol></div><hr><nav class=post-nav><div><a href=/blog/2020/01/i-gestori-di-pacchetti/>◄ I gestori di pacchetti</a></div><div><a href=/blog/2020/03/da-obs-alla-webcam/>Da OBS alla webcam virtuale ►</a></div></nav></article></main><footer class=site-footer><hr><div class=footer-badges><span class=footer-badge><span aria-hidden=true>🐧 </span>Best viewed with any browser</span>
+<span class=footer-badge>Made with Hugo</span>
+<span class=footer-badge>Powered by Free Software</span></div><div class=visitor-counter>Visitatori: <span id=visitor-count>1337</span></div><script>(function(){var e=document.getElementById("visitor-count"),t=parseInt(e.textContent,10),n=new Date,s=Math.floor((n-new Date("2025-01-01"))/864e5);e.textContent=String(t+s*7+Math.floor(Math.random()*5)).padStart(6,"0")})()</script><div class=webring><a href=https://www.linux.it/LUG/>LUG Italiani</a> · <a href=https://neocities.org/>Neocities</a> · <a href=https://luccalug.it/blog/feed.xml>RSS Feed</a></div><p>&copy; 2026 Luccalug - Lucca Linux User Group</p></footer></body></html>

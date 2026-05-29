@@ -1,0 +1,75 @@
+# Luccalug - Lucca Linux User Group
+
+> Il Linux User Group di Lucca
+
+Il sito del Lucca Linux User Group: software libero, eventi, documenti ufficiali e risorse per la comunità.
+
+## Pagine principali
+- [Calendario](https://luccalug.it/calendario/index.md)
+- [Chi Siamo](https://luccalug.it/about/index.md)
+- [Contatti](https://luccalug.it/contatti/index.md)
+- [Linux Day](https://luccalug.it/linux-day/index.md)
+
+## Blog
+- [Come eravamo: una macchina del tempo per il sito del LuccaLUG](https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/index.md) (29/05/2026)
+- [Guida alla prima serata](https://luccalug.it/blog/2026/03/guida-alla-prima-serata/index.md) (19/03/2026)
+- [Benvenuti sul nuovo sito del Luccalug!](https://luccalug.it/blog/2026/03/benvenuti-sul-nuovo-sito-del-luccalug/index.md) (17/03/2026)
+- [Serate a tema 2022](https://luccalug.it/blog/2022/02/serate-a-tema-2022/index.md) (04/02/2022)
+- [Luccalug Reboot](https://luccalug.it/blog/2020/08/luccalug-reboot/index.md) (21/08/2020)
+- [Da OBS alla webcam virtuale](https://luccalug.it/blog/2020/03/da-obs-alla-webcam/index.md) (27/03/2020)
+- [Arduracing](https://luccalug.it/blog/2020/01/arduracing/index.md) (21/01/2020)
+- [I gestori di pacchetti](https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/index.md) (21/01/2020)
+- [Serate a tema 2020](https://luccalug.it/blog/2020/01/serate-a-tema-2020/index.md) (21/01/2020)
+- [Hello Web](https://luccalug.it/blog/2020/01/hello-web/index.md) (20/01/2020)
+- [Pausa per i Santi](https://luccalug.it/blog/2016/10/pausa-santi/index.md) (25/10/2016)
+- [Linux Day 2015](https://luccalug.it/blog/2015/10/linux-day-2015/index.md) (21/10/2015)
+- [Presentazione del Book Scanner](https://luccalug.it/blog/2015/04/presentazione-book-scanner/index.md) (08/04/2015)
+- [Corsi comunali 2014](https://luccalug.it/blog/2014/10/corsi-comunali-2014/index.md) (30/10/2014)
+- [Linux Day 2014](https://luccalug.it/blog/2014/10/linux-day-2014/index.md) (20/10/2014)
+- [Project Gooseberry - il primo, vero open movie della storia](https://luccalug.it/blog/2014/04/project-gooseberry/index.md) (11/04/2014)
+- [Node.js - Pillole di Free Software](https://luccalug.it/blog/2014/04/node-js-pillole-di-free-software/index.md) (09/04/2014)
+- [GPG (GNU Privacy Guard) - Pillole di Free Software](https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/index.md) (19/03/2014)
+- [Le licenze Creative Commons - Pillole di Free Software](https://luccalug.it/blog/2014/03/licenze-creative-commons/index.md) (08/03/2014)
+- [Cosino - Recensione](https://luccalug.it/blog/2013/11/recensione-cosino/index.md) (25/11/2013)
+- [Stallman a Firenze - Tecnologia digitale: libera o soggiogante?](https://luccalug.it/blog/2013/09/stallman-a-firenze/index.md) (30/09/2013)
+- [Prusa i3 - Terza serata di montaggio](https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/index.md) (20/08/2013)
+- [Prusa i3 - Seconda serata di montaggio](https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/index.md) (23/07/2013)
+- [Stampare tutto, stampare tutti](https://luccalug.it/blog/2013/07/stampare-tutto-stampare-tutti/index.md) (20/07/2013)
+- [Prusa i3 modificata - Prima serata di montaggio](https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/index.md) (01/07/2013)
+- [Linux Day 2013 - Innovazione. Di tutti. Per tutti](https://luccalug.it/blog/2013/05/linux-day-2013/index.md) (27/05/2013)
+- [Serata a tema: BLENDER e i nodi](https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/index.md) (25/03/2013)
+- [Serata a tema: OpenSCAD - disegnare in 3D programmando](https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/index.md) (19/11/2012)
+- [Arduino, l'elettronica diventa facile](https://luccalug.it/blog/2012/04/arduino-elettronica-diventa-facile/index.md) (29/04/2012)
+- [AV Linux, la distribuzione Linux per l'Audio e il Video](https://luccalug.it/blog/2012/04/av-linux-audio-video/index.md) (12/04/2012)
+- [Ubuntu Install Party, lunedì 2 aprile](https://luccalug.it/blog/2012/03/ubuntu-install-party-2012/index.md) (29/03/2012)
+- [Pillole di Free Software: Inkscape, software di disegno vettoriale](https://luccalug.it/blog/2012/02/pillole-inkscape/index.md) (27/02/2012)
+- [Pillole di Free Software, serate a tema dedicate al mondo dell'informatica libera](https://luccalug.it/blog/2012/02/pillole-di-free-software-intro/index.md) (11/02/2012)
+- [Pillole di Free Software: Blender, modellatore 3D](https://luccalug.it/blog/2012/02/pillole-blender-modellatore-3d/index.md) (11/02/2012)
+- [Linux nella biblioteca di Camigliano!](https://luccalug.it/blog/2012/01/linux-nella-biblioteca-di-camigliano/index.md) (30/01/2012)
+- [Nuove cariche amministrative per il Luccalug](https://luccalug.it/blog/2012/01/nuove-cariche-amministrative-luccalug/index.md) (18/01/2012)
+- [Linux Day 2011](https://luccalug.it/blog/2011/10/linux-day-2011/index.md) (22/10/2011)
+- [Aperte le iscrizioni ai corsi 2011!](https://luccalug.it/blog/2011/09/aperte-iscrizioni-corsi-2011/index.md) (26/09/2011)
+- [Incontri sospesi](https://luccalug.it/blog/2011/07/incontri-sospesi/index.md) (09/07/2011)
+- [Luccalug su Loschermo.it](https://luccalug.it/blog/2011/06/luccalug-su-loschermo/index.md) (14/06/2011)
+- [Gruppo Open Hardware](https://luccalug.it/blog/2011/06/gruppo-open-hardware/index.md) (01/06/2011)
+- [TecnoWorkshop Lucca 2011](https://luccalug.it/blog/2011/05/tecnoworkshop-lucca2011/index.md) (19/05/2011)
+- [Campagna Caro Candidato](https://luccalug.it/blog/2011/05/campagna-caro-candidato/index.md) (11/05/2011)
+- [Circolo di studio su Arduino!](https://luccalug.it/blog/2011/04/circolo-di-studio-su-arduino/index.md) (30/04/2011)
+- [Cos'è Arduino?](https://luccalug.it/blog/2011/04/cose-arduino/index.md) (29/04/2011)
+- [Arduino](https://luccalug.it/blog/2011/04/arduino/index.md) (24/04/2011)
+- [Statistiche sito primo trimestre 2011](https://luccalug.it/blog/2011/04/statistiche-sito-primo-trimestre-2011/index.md) (08/04/2011)
+- [Circolo di studio sullo sviluppo di applicazioni su piattaforma Android](https://luccalug.it/blog/2011/04/circolo-di-studio-android/index.md) (05/04/2011)
+- [Django, sviluppare applicazioni web rapidamente](https://luccalug.it/blog/2010/11/django-sviluppare-applicazioni-web-rapidamente/index.md) (29/11/2010)
+- [CAOS - Consulente Applicativo Open Source](https://luccalug.it/blog/2010/11/caos-consulente-applicativo-open-source/index.md) (26/11/2010)
+- [Corsi Linux a pagamento annullati](https://luccalug.it/blog/2010/11/corsi-linux-a-pagamento-annullati/index.md) (26/11/2010)
+- [Tango](https://luccalug.it/blog/2010/11/tango/index.md) (22/11/2010)
+- [Prolungato il termine di iscrizione ai corsi!](https://luccalug.it/blog/2010/11/prolungato-termine-iscrizione-corsi/index.md) (20/11/2010)
+- [Sito in costruzione](https://luccalug.it/blog/2010/11/sito-in-costruzione/index.md) (03/11/2010)
+- [Linux Day 2008](https://luccalug.it/blog/2008/10/linux-day-2008/index.md) (25/10/2008)
+
+## Archivio
+- [Statuto dell'Associazione Luccalug](https://luccalug.it/archivio/statuto/statuto-vigente/index.md)
+
+## Contenuto completo
+
+Per il contenuto completo di tutte le pagine in un unico file: [llms-full.txt](https://luccalug.it/llms-full.txt)

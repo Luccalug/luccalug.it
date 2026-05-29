@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>News on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/news/</link><description>Recent content in News on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/news/feed.xml" rel="self" type="application/rss+xml"/><item><title>Luccalug Reboot</title><link>https://luccalug.it/blog/2020/08/luccalug-reboot/</link><pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/08/luccalug-reboot/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/luccalug-reboot/reboot_hu_8b2fd8d32f234f05.webp 800w, https://luccalug.it/images/blog/luccalug-reboot/reboot_hu_8b2fd8d32f234f05.webp 800w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/luccalug-reboot/reboot.png"
+ srcset="https://luccalug.it/images/blog/luccalug-reboot/reboot.png 800w, https://luccalug.it/images/blog/luccalug-reboot/reboot.png 800w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Luccalug Reboot"
+ width="800"
+ height="848"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Luccalug riparte!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Luccalug riparte dopo la quarantena in totale sicurezza!&lt;/p&gt;
+&lt;p&gt;Sede sanificata, mascherine e disinfettante sempre disponibili insieme alla nostra voglia di sperimentare, divertirci e creare con tecnologie libere!&lt;/p&gt;
+&lt;p&gt;Le serate a tema annullate durante la quarantena verranno ricalendarizzate da Settembre in poi!&lt;/p&gt;
+&lt;p&gt;Vi aspettiamo tutti i Lunedì sera dalle 21:00 in poi, seguite anche i nostri social per tutte le informazioni dell&amp;rsquo;ultimo minuto.&lt;/p&gt;</description></item><item><title>Hello Web</title><link>https://luccalug.it/blog/2020/01/hello-web/</link><pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/hello-web/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/hello-web/tux-hacking_hu_7a4552e92c89f35e.webp 800w, https://luccalug.it/images/blog/hello-web/tux-hacking_hu_b1953056d214dd68.webp 1100w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/hello-web/tux-hacking_hu_af13adf5f13ad1e2.jpg"
+ srcset="https://luccalug.it/images/blog/hello-web/tux-hacking_hu_af13adf5f13ad1e2.jpg 800w, https://luccalug.it/images/blog/hello-web/tux-hacking.jpg 1100w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Tux che lavora al computer"
+ width="800"
+ height="596"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Hello Web!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sito tutto nuovo!&lt;/p&gt;
+&lt;p&gt;Dopo anni abbiamo finalmente deciso di riprendere in mano il sito web!&lt;/p&gt;
+&lt;p&gt;Abbiamo cambiato generatore di siti statici, passando da &lt;a href="https://www.jekyllrb.com"&gt;Jekyll&lt;/a&gt; a &lt;a href="https://www.gohugo.io"&gt;Hugo&lt;/a&gt;, il tema è &lt;a href="https://github.com/Vimux/Mainroad"&gt;Mainroad&lt;/a&gt; a cui faremo qualche modifica nel corso del tempo, ma che abbiamo scelto per la sua semplicità ed eleganza.&lt;/p&gt;
+&lt;p&gt;Hugo è scritto in &lt;a href="https://golang.org"&gt;Go&lt;/a&gt;, un linguaggio molto più veloce e snello rispetto a Ruby, e vanta una documentazione decisamente migliore.&lt;/p&gt;</description></item></channel></rss>

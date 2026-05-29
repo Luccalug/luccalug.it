@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guide on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/guide/</link><description>Recent content in Guide on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/guide/feed.xml" rel="self" type="application/rss+xml"/><item><title>Da OBS alla webcam virtuale</title><link>https://luccalug.it/blog/2020/03/da-obs-alla-webcam/</link><pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/03/da-obs-alla-webcam/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam_hu_8fbf43e387ae3ae8.webp 710w, https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam_hu_8fbf43e387ae3ae8.webp 710w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg"
+ srcset="https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg 710w, https://luccalug.it/images/blog/da-obs-alla-webcam/obs2cam.jpg 710w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Schema OBS verso webcam virtuale"
+ width="710"
+ height="241"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;OBS come sorgente per una webcam virtuale via v4l2loopback&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In questo post mostreremo come redirezionare l&amp;rsquo;output di OBS verso un device v4l di loopback in modo da avere un flusso video totalmente controllabile per tutte quelle applicazioni che sfruttano input da webcam (videoconferenze ecc).&lt;/p&gt;
+&lt;p&gt;Questa guida nasce a seguito di alcuni esperimenti partiti nel lontano 2016 insieme ai ragazzi del Gulli con l&amp;rsquo;obiettivo di creare uno streaming unificato dei vari Linux Day organizzati in Toscana quell&amp;rsquo;anno. A seguito dei vari smanettamenti, soddisfatti dalle potenzialità di OBS, emerse la curiosità di sfruttarlo al di fuori delle piattaforme di streaming che già supporta e impiegarlo anche con programmi come Skype, Hangout e simili per arricchire il proprio flusso video a favore degli altri partecipanti (immaginate una lezione online dove un professore può cambiare diverse webcam, aggiungere immagini o scritte al volo, indipendentemente dalla piattaforma).&lt;/p&gt;</description></item><item><title>I gestori di pacchetti</title><link>https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_d74b53ead87f2b37.webp 800w, https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_26d3eb9af2a3c32c.webp 1400w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_f98c679f3142aca5.png"
+ srcset="https://luccalug.it/images/blog/i-gestori-di-pacchetti/package_hu_f98c679f3142aca5.png 800w, https://luccalug.it/images/blog/i-gestori-di-pacchetti/package.png 1400w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Illustrazione di pacchetti software"
+ width="800"
+ height="640"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;I gestori di pacchetti Linux&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Un&amp;rsquo;introduzione ai più comuni package manager&lt;/p&gt;
+&lt;p&gt;Senza alcun dubbio, da quando ho cominciato ad appassionarmi al mondo di GNU/Linux e a provare le varie distribuzioni, uno degli aspetti che mi ha affascinato maggiormente è stato l&amp;rsquo;uso dei gestori pacchetti (package manager).&lt;/p&gt;
+&lt;p&gt;Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piaciuto all&amp;rsquo;istante, in quanto permette di aggiornare completamente il sistema in pochi semplici passaggi, sia da terminale che tramite un&amp;rsquo;interfaccia grafica.&lt;/p&gt;</description></item></channel></rss>

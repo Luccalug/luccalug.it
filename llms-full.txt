@@ -1,0 +1,2444 @@
+# Luccalug - Lucca Linux User Group
+
+> Il Linux User Group di Lucca
+
+---
+
+# Calendario
+
+URL: https://luccalug.it/calendario/
+
+
+## 📅 Prossimi Eventi
+
+{{< eventi >}}
+
+{{< download url="/calendario.ics" tipo="ics" testo="Scarica il calendario iCal" >}}
+
+## 🔁 Incontri Regolari
+
+Ci incontriamo **ogni lunedì**, dalle **21:00 in poi**, presso il [Foro Boario di Lucca](https://osm.org/go/xX4710WmM).
+
+Gli incontri sono aperti a tutti e non richiedono iscrizione.
+
+## 📢 Resta Aggiornato
+
+Seguici sul [blog]({{< ref "blog" >}}) o su [Telegram](https://t.me/luccalug) per non perdere nessun evento!
+
+Oppure [scrivici al nostro indirizzo mail](mailto:luccalug@protonmail.com)
+
+
+---
+
+# Chi Siamo
+
+URL: https://luccalug.it/about/
+
+
+## 🐧 Chi Siamo
+
+Il **Luccalug** (Lucca Linux User Group) è un'associazione di promozione sociale che riunisce appassionati di **GNU/Linux** e **software libero** nella provincia di Lucca.
+
+## La Nostra Missione
+
+- **Diffondere** la conoscenza del software libero e open source
+- **Aiutare** chiunque voglia avvicinarsi a Linux
+- **Organizzare** eventi, workshop e install party
+- **Condividere** competenze e passione per la tecnologia libera
+
+## Dove Trovarci
+
+Ci incontriamo ogni lunedì al **Foro Boario di Lucca**, dalle 21:00 in poi.
+
+## Come Partecipare
+
+**Non serve essere esperti!** Il LUG è aperto a tutti: curiosi, principianti, appassionati e professionisti.
+
+Per unirti a noi:
+
+1. Vieni a uno dei nostri incontri
+2. Presentati, siamo gente amichevole! 🐧
+3. Se vuoi, diventa socio (quota annuale: €20)
+
+[Leggi la nostra guida alla prima serata]({{< ref "blog/guida-alla-prima-serata" >}})
+
+---
+
+{{< figure src="images/glider.jpg" alt="Hacker Emblem - il Glider dal Gioco della Vita di Conway">}}
+
+
+---
+
+# Contatti
+
+URL: https://luccalug.it/contatti/
+
+
+## 📬 Scrivici
+
+- **Email**: luccalug@protonmail.com
+
+## 📍 Dove Siamo
+
+{{< mappa lat="43.8566" lon="10.5087" zoom="17" titolo="Foro Boario, Lucca" >}}
+
+Ci incontriamo ogni lunedì, dalle 21:00 in poi, al Foro Boario di Lucca.
+
+## 🌐 Online
+
+- **Sito web**: [luccalug.it](https://luccalug.it)
+- **Telegram**: [t.me/luccalug](https://t.me/luccalug)
+
+## 💬 Vuoi Partecipare?
+
+Non serve essere esperti! Vieni a trovarci a uno dei nostri [incontri]({{< ref "calendario" >}}) o scrivici una mail. Siamo sempre felici di accogliere nuovi appassionati di software libero. 🐧
+
+[Leggi la nostra guida alla prima serata]({{< ref "blog/guida-alla-prima-serata" >}})
+
+
+---
+
+# Linux Day
+
+URL: https://luccalug.it/linux-day/
+
+
+## 🐧 Cos'è il Linux Day?
+
+Il **Linux Day** è la principale manifestazione italiana dedicata a GNU/Linux, al software libero e alla cultura aperta. Si tiene ogni anno l'**ultimo sabato di ottobre** in centinaia di città italiane, organizzata dai LUG locali.
+
+Il Luccalug partecipa attivamente al Linux Day con talk, workshop e dimostrazioni pratiche.
+
+## 📅 Linux Day 2026
+
+**Data**: Sabato 24 ottobre 2026
+**Luogo**: Da definire
+**Ingresso**: Gratuito e aperto a tutti
+
+{{< note type="info" >}}
+Vuoi proporre un talk? Scrivici a **luccalug@protonmail.com**!
+{{< /note >}}
+
+## 📚 Edizioni Passate
+
+| Edizione | Slogan | Dove | Note |
+| ---------- | -------- | ------ | ------ |
+| 2025 | - | PRISMA, Prato | Edizione congiunta con PLUG, FLUG e GOLEM |
+| 2019 | "Ai,Ai,Ai!" | Foro Boario, Lucca | Tavoli tematici e dimostrazioni |
+| 2016 | "1+1=10" | Polo Tecnologico lucchese | In collaborazione con Coworking Multiverso e CoderDojo Lucca |
+| 2015 | "Stile libero" | Centro giovani, Capannori | |
+| 2014 | "Libertà digitale" | Centro culturale Artemisia | |
+| 2013 | "Innovazione. Di tutti. Per tutti." | Polo Tecnologico lucchese | |
+| 2012 | "Free Software Free Business" | Centro culturale Artemisia | |
+| 2011 | - | I.T.I.S. Enrico Fermi, Lucca | |
+| 2010 | - | I.T.I.S. Enrico Fermi, Lucca | |
+| 2009 | - | Forum giovani, Capannori | |
+| 2008 | - | Villa Bruguier, Capannori | |
+| 2007 | - | Foro Boario, Lucca | Prima edizione Luccalug |
+
+## 🔗 Link Utili
+
+- [Linux Day Italia](https://www.linuxday.it/) - il sito nazionale del Linux Day
+- [Italian Linux Society](https://www.ils.org/) - l'associazione che coordina il Linux Day
+
+
+---
+
+
+# Come eravamo: una macchina del tempo per il sito del LuccaLUG
+
+URL: https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/
+Data: 29/05/2026
+Autore: Il Direttivo
+Tag: sito, storia, retrocomputing, meta
+
+
+Il nuovo sito appena andato online ci siamo affezionati a questa estetica un po' anni '90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: **quanti siti ha avuto il LuccaLUG in tutti questi anni?**
+
+Tanti. Tantissimi. Uno per ogni moda del web che è passata di qui dal 2007 a oggi. Così abbiamo fatto la cosa più nerd possibile: siamo andati a ripescarli **uno per uno dall'[Internet Archive](https://web.archive.org/web/*/luccalug.it)**, gli abbiamo fatto lo screenshot e li abbiamo messi in fila.
+
+Allacciate le cinture: si parte con la macchina del tempo. 🐧
+
+{{< note type="tip" >}}
+Ogni tappa di questo viaggio è ancora **visitabile di persona**! Sotto ogni screenshot trovi il link diretto alla copia conservata dalla Wayback Machine: cliccaci e ti ritroverai davvero in quell'anno.
+{{< /note >}}
+
+---
+
+## 2007-2011 · L'era Drupal (con tanto di wiki e forum)
+
+Tecnologie: {{< badge testo="Drupal" colore="alt" >}} {{< badge testo="MediaWiki" colore="alt" >}} {{< badge testo="PHP" >}} {{< badge testo="MySQL" >}}
+
+In principio era **Drupal**. Le primissime tracce nei cataloghi dell'Internet Archive risalgono al **2007**: un CMS in piena regola, con tanto di **forum** interno (il mitico "uieforum"), un **wiki MediaWiki** per la documentazione, l'area soci, i corsi e perfino il bottone PayPal per le donazioni.
+
+{{< figure src="images/blog/come-eravamo-evoluzione-del-sito/01-drupal-2007-2011.png" alt="Homepage del LuccaLUG in versione Drupal, anno 2010" caption="Il sito Drupal nel 2010. L'Internet Archive ha salvato i contenuti ma non il foglio di stile: lo vedete così, in mutande. Però quanta roba - corsi di Linux, Android, Arduino, una serata su Django e una pagina Facebook con ben 265 fan!" >}}
+
+Era l'epoca dei corsi comunali, delle prime serate su Arduino e di una community che si organizzava soprattutto sul forum. Curiosità: la Wayback Machine è riuscita a conservare le pagine, ma il CSS del tema è andato perduto negli anni, quindi quello che vedete è il sito "a nudo". A noi, onestamente, fa un certo tenerezza.
+
+{{< link-esterno url="https://web.archive.org/web/20101204054242/http://www.luccalug.it/" testo="Visita il sito Drupal del 2010 sulla Wayback Machine" >}}
+
+---
+
+## 2012-2015 · L'era WordPress
+
+Tecnologie: {{< badge testo="WordPress" colore="alt" >}} {{< badge testo="PHP" >}} {{< badge testo="MySQL" >}}
+
+Arriva **WordPress** e con lui un sito finalmente colorato, rosso fiammante e pieno di articoli. È l'epoca d'oro del blog: la rubrica **"Pillole di Free Software"**, la grande avventura della **stampante 3D Prusa i3** montata serata dopo serata, i **Linux Day** e i workshop di stampa 3D aperti alla città.
+
+{{< figure src="images/blog/come-eravamo-evoluzione-del-sito/02-wordpress-2012-2015.png" alt="Homepage del LuccaLUG in versione WordPress, anno 2013" caption="Il sito WordPress nel 2013: tema rosso, griglia di articoli e quel banner gigante che invitava tutti al montaggio della stampante 3D." >}}
+
+Se hai letto gli altri articoli del blog avrai notato che **gran parte dei post di quegli anni vengono proprio da qui**: li abbiamo recuperati e riportati in vita su questo sito, immagini comprese.
+
+{{< link-esterno url="https://web.archive.org/web/20131009112300/http://www.luccalug.it/" testo="Visita il sito WordPress del 2013 sulla Wayback Machine" >}}
+
+---
+
+## 2016-2018 · L'era Jekyll (e HTML5UP)
+
+Tecnologie: {{< badge testo="Jekyll" colore="alt" >}} {{< badge testo="Ruby" >}} {{< badge testo="Liquid" >}} {{< badge testo="HTML5 UP" colore="warm" >}}
+
+Cambio di filosofia: basta database, benvenuto **sito statico**. Il LuccaLUG passa a **Jekyll**, il generatore scritto in Ruby, vestito con l'elegante template "Read Only" di HTML5 UP. Pulito, minimale, tutto bianco e grigio, con le card dei progetti in bella vista (Arduracing, Book Scanner, la Prusa i3 autocostruita).
+
+{{< figure src="images/blog/come-eravamo-evoluzione-del-sito/03-jekyll-2016-2018.png" alt="Homepage del LuccaLUG in versione Jekyll/HTML5UP, anno 2017" caption="Il sito Jekyll nel 2017: minimalismo, font Source Sans Pro e la sezione 'I nostri progetti'. È qui che è comparso il primo 'Il LuccaLug è un gruppo nato nel 2007'." >}}
+
+È la prima volta che il sito diventa **versionabile** e gestibile come si gestisce del codice: niente più pannello di amministrazione, ma file di testo e build. Una scelta che, in fondo, non abbiamo più abbandonato.
+
+{{< link-esterno url="https://web.archive.org/web/20170619081800/http://www.luccalug.it/" testo="Visita il sito Jekyll del 2017 sulla Wayback Machine" >}}
+
+---
+
+## 2019-2024 · L'era Hugo + Mainroad
+
+Tecnologie: {{< badge testo="Hugo" colore="green" >}} {{< badge testo="Go" colore="green" >}} {{< badge testo="Mainroad" colore="alt" >}}
+
+Il sito statico piace, ma Jekyll è lentino. Si passa ad **Hugo**, il generatore scritto in Go, velocissimo, con il tema **Mainroad**: barra laterale con social, categorie e tag, articoli organizzati per *Guide*, *Progetti* e *Serate a tema*. È l'era del **reboot post-COVID**, delle serate in streaming con OBS e del ritorno in presenza.
+
+{{< figure src="images/blog/come-eravamo-evoluzione-del-sito/04-hugo-mainroad-2019-2024.png" alt="Homepage del LuccaLUG in versione Hugo con tema Mainroad, anno 2022" caption="Il sito Hugo + Mainroad nel 2022: nav rossa, sidebar con tag e categorie, e gli articoli su OBS, il reboot e le serate a tema." >}}
+
+{{< link-esterno url="https://web.archive.org/web/20220204075023/https://www.luccalug.it/" testo="Visita il sito Hugo/Mainroad del 2022 sulla Wayback Machine" >}}
+
+---
+
+## 2026 · Oggi: la rinascita in salsa Neocities
+
+Tecnologie: {{< badge testo="Hugo" colore="green" >}} {{< badge testo="CSS custom" colore="green" >}} {{< badge testo="Vanilla JS" colore="green" >}} {{< badge testo="Font self-hosted" colore="warm" >}} {{< badge testo="Zero tracker" colore="red" >}}
+
+E così arriviamo a **oggi**. Abbiamo tenuto Hugo (è troppo comodo), ma abbiamo buttato via il tema e ci siamo costruiti tutto in casa, con un'estetica che è una lettera d'amore al **vecchio web** e a [Neocities](https://neocities.org/): marquee che scorre, font a pixel, nav a bottoni, contatore delle visite e webring.
+
+{{< figure src="images/blog/come-eravamo-evoluzione-del-sito/05-neocities-2026.png" alt="Homepage del nuovo sito del LuccaLUG, 2026, in tema scuro retro" caption="Il sito di oggi: estetica retro, ma con tutta la sostanza moderna sotto il cofano." >}}
+
+Sotto la nostalgia, però, c'è roba serissima:
+
+- **Zero richieste a terzi** sulle pagine normali: niente Google Fonts, niente CDN, niente tracker. I font (Inter, Silkscreen, VT323) sono ospitati da noi.
+- **Sei temi colore** ispirati alle distro (Ubuntu, Fedora, openSUSE, Arch, Debian) per **chiaro e scuro**. Prova il selettore in alto a destra!
+- **Accessibilità WCAG 2.1 AA**: skip link, focus visibili, `prefers-reduced-motion`, ARIA dove serve.
+- Feed **RSS**, **iCal** per il calendario, perfino un output **Markdown** e `llms.txt` di ogni pagina.
+
+{{< details summary="Curiosità nerd: come abbiamo fatto questi screenshot?" >}}
+Niente magie: abbiamo interrogato l'**API CDX** dell'Internet Archive per trovare, per ogni epoca, una copia "buona" della homepage, poi abbiamo aperto ciascuna pagina archiviata con un browser **headless** (Chromium) e scattato la foto. L'ultimo screenshot, quello del 2026, è invece preso in diretta dal sito che stai leggendo. Software libero che documenta la storia del software libero: ci piace. 🐧
+{{< /details >}}
+
+---
+
+## Il viaggio continua
+
+Cinque siti, quasi vent'anni, una sola community. Ogni tecnologia ha lasciato qualcosa, e in fondo il filo conduttore è sempre lo stesso: **gente appassionata che si trova il lunedì sera a parlare di software libero**.
+
+Il prossimo capitolo? Lo scriviamo insieme. Se vuoi farne parte, dai un'occhiata alla [guida alla prima serata]({{< ref "guida-alla-prima-serata" >}}) e vieni a trovarci. Magari tra qualche anno saremo qui a fare lo screenshot anche di *questo* sito, ridendo di quanto eravamo retrò. 😄
+
+
+---
+
+# Guida alla prima serata
+
+URL: https://luccalug.it/blog/2026/03/guida-alla-prima-serata/
+Data: 19/03/2026
+Autore: Il Direttivo
+Tag: guida, community
+
+
+Stai pensando di passare a trovarci ma non sai bene cosa aspettarti? Questa guida è per te.
+
+## Non devi essere un esperto
+
+Davvero. Questa è la cosa più importante: **non serve sapere nulla di Linux** per venire ai nostri incontri. Tra di noi c'è chi usa Linux da vent'anni e chi ha appena scoperto che esiste qualcosa oltre Windows. Siamo un gruppo eterogeneo e ci piace così.
+
+Se sai accendere un computer, sei già qualificato.
+
+## Quando e dove
+
+Ci troviamo **ogni lunedì sera dalle 21:00** al [Foro Boario di Lucca](https://osm.org/go/xX4710WmM). Non serve prenotare, non serve avvisare: la porta è aperta, basta entrare.
+
+Controlla il [calendario]({{< ref "calendario" >}}) per eventuali variazioni o eventi speciali.
+
+## Come si svolge una serata tipica
+
+Non c'è un format rigido. Una serata al Luccalug assomiglia più a un ritrovo tra amici che a una lezione. Di solito succede un po' di tutto:
+
+- **Chiacchiere libere** - si parla di Linux, di software, di hardware, di qualsiasi cosa legata alla tecnologia (e non solo)
+- **Aiuto reciproco** - qualcuno ha un problema con il Wi-Fi su Linux? Un driver che non va? Un server che si comporta in modo strano? Si ragiona insieme
+- **Smanettamento** - c'è chi porta il portatile e prova una nuova distro, chi configura un Raspberry Pi, chi scrive codice
+- **Progetti del LUG** - a volte lavoriamo su iniziative comuni, come il sito che stai leggendo o la preparazione del [Linux Day]({{< ref "linux-day" >}})
+
+A volte c'è un argomento principale, altre volte si improvvisa. L'unica costante è che si impara sempre qualcosa di nuovo.
+
+## Cosa portare
+
+- **Te stesso** - è l'unica cosa obbligatoria
+- **Un portatile** - se ce l'hai e vuoi farti aiutare con qualcosa, portalo. Ma non è necessario
+- **Curiosità** - le domande sono benvenute, tutte, anche quelle che ti sembrano banali
+
+## Domande frequenti da prima serata
+
+**"E se non conosco nessuno?"**
+Nessun problema: presentati e ti presenteremo il gruppo. Siamo gente amichevole e ci fa piacere vedere facce nuove.
+
+**"Devo iscrivermi prima?"**
+No. Gli incontri sono aperti a tutti, soci e non soci. Se poi ti trovi bene e vuoi sostenere l'associazione, puoi diventare socio con una quota annuale di 20 euro, ma non c'è nessuna pressione.
+
+**"Uso ancora Windows/Mac, posso venire lo stesso?"**
+Certo. Anzi, se stai pensando di provare Linux è il posto perfetto per farti consigliare e magari fare un'installazione guidata insieme.
+
+**"Non capisco niente di informatica, vengo a fare la figura dell'ignorante?"**
+No. Tutti abbiamo iniziato da zero. Le uniche domande stupide sono quelle che non fai.
+
+**"Devo restare tutta la sera?"**
+Vieni e vai quando vuoi. C'è chi arriva alle 21 in punto e chi passa dopo cena per un saluto veloce.
+
+## Fai il primo passo
+
+Il più è venire la prima volta. Dopo, vedrai che diventa naturale.
+
+Se vuoi rompere il ghiaccio prima di persona, scrivici su [Telegram](https://t.me/luccalug) o mandaci una [mail](mailto:luccalug@protonmail.com): ci presentiamo volentieri anche online.
+
+Ti aspettiamo al prossimo lunedì sera!
+
+
+---
+
+# Benvenuti sul nuovo sito del Luccalug!
+
+URL: https://luccalug.it/blog/2026/03/benvenuti-sul-nuovo-sito-del-luccalug/
+Data: 17/03/2026
+Autore: Il Direttivo
+Tag: annuncio, sito
+
+
+Siamo felici di annunciare il lancio del nuovo sito del **Luccalug**!
+
+Abbiamo voluto creare qualcosa di diverso dal solito: un sito che richiama lo spirito del **vecchio web**, quando internet era un posto strano, personale e pieno di creatività.
+
+## Cosa troverete
+
+- **Blog**: news, eventi, tutorial e racconti dalle nostre attività
+- **Archivio**: tutti i documenti ufficiali dell'associazione
+- **Informazioni**: chi siamo, come contattarci, come partecipare
+
+## Il software libero è per tutti
+
+Il Luccalug è aperto a chiunque sia interessato a GNU/Linux e al software libero, dal principiante assoluto all'esperto.
+
+> "La libertà del software è la libertà della conoscenza."
+
+Venite a trovarci ai nostri incontri! 🐧
+
+
+---
+
+# Serate a tema 2022
+
+URL: https://luccalug.it/blog/2022/02/serate-a-tema-2022/
+Data: 04/02/2022
+Autore: Il Direttivo
+Tag: serate-a-tema, eventi
+
+
+{{< figure src="images/blog/serate-a-tema-2022/serateatema2022.jpg" alt="Locandina serate a tema 2022" caption="Serate a tema Luccalug 2022" >}}
+
+Ricominciano le serate a tema del Luccalug! Da lunedì 11 Aprile ci incontreremo per parlare di tecnologia e informatica libera! Continua a leggere per le serate finora programmate.
+
+---
+
+## rclone - La potenza del cloud, nel palmo della mia mano
+
+- **Lunedì 11 Aprile**
+- **Conoscenze richieste: Nessuna**
+
+> Rclone è un programma che permette di gestire tantissimi servizi di cloud storage permettendo tutte le classiche operazioni di manipolazione dei file con un'interfaccia in riga di comando o via web; aggiunge inoltre alcune funzionalità avanzate come la "fusione" di più servizi in un unico spazio, la crittografia dei file, la compressione trasparente e molto altro.
+
+---
+
+## Blender - Geometry Nodes
+
+- **Lunedì 25 Aprile**
+- **Conoscenze richieste: Blender, modellazione 3D**
+
+> Blender e Geometry Nodes: approfondimento sul sistema procedurale di modellazione introdotto nelle versioni recenti di Blender.
+
+---
+
+## Introduzione all'IA (2 serate)
+
+- **Lunedì 9 Maggio**
+- **Lunedì 16 Maggio**
+- **Conoscenze richieste: Nessuna**
+
+> Introduzione all'intelligenza artificiale: concetti fondamentali, machine learning e applicazioni pratiche.
+
+
+---
+
+# Luccalug Reboot
+
+URL: https://luccalug.it/blog/2020/08/luccalug-reboot/
+Data: 21/08/2020
+Autore: Il Direttivo
+Tag: news
+
+
+{{< figure src="images/blog/luccalug-reboot/reboot.png" alt="Luccalug Reboot" caption="Luccalug riparte!" >}}
+
+Luccalug riparte dopo la quarantena in totale sicurezza!
+
+Sede sanificata, mascherine e disinfettante sempre disponibili insieme alla nostra voglia di sperimentare, divertirci e creare con tecnologie libere!
+
+Le serate a tema annullate durante la quarantena verranno ricalendarizzate da Settembre in poi!
+
+Vi aspettiamo tutti i Lunedì sera dalle 21:00 in poi, seguite anche i nostri social per tutte le informazioni dell'ultimo minuto.
+
+
+---
+
+# Da OBS alla webcam virtuale
+
+URL: https://luccalug.it/blog/2020/03/da-obs-alla-webcam/
+Data: 27/03/2020
+Autore: Il Direttivo
+Tag: guide, video
+
+
+{{< figure src="images/blog/da-obs-alla-webcam/obs2cam.jpg" alt="Schema OBS verso webcam virtuale" caption="OBS come sorgente per una webcam virtuale via v4l2loopback" >}}
+
+In questo post mostreremo come redirezionare l'output di OBS verso un device v4l di loopback in modo da avere un flusso video totalmente controllabile per tutte quelle applicazioni che sfruttano input da webcam (videoconferenze ecc).
+
+Questa guida nasce a seguito di alcuni esperimenti partiti nel lontano 2016 insieme ai ragazzi del Gulli con l'obiettivo di creare uno streaming unificato dei vari Linux Day organizzati in Toscana quell'anno. A seguito dei vari smanettamenti, soddisfatti dalle potenzialità di OBS, emerse la curiosità di sfruttarlo al di fuori delle piattaforme di streaming che già supporta e impiegarlo anche con programmi come Skype, Hangout e simili per arricchire il proprio flusso video a favore degli altri partecipanti (immaginate una lezione online dove un professore può cambiare diverse webcam, aggiungere immagini o scritte al volo, indipendentemente dalla piattaforma).
+
+Visto il periodo di quarantena e l'aumento forzato della didattica digitale, ho deciso di riprendere in mano la questione e ho finalmente trovato una soluzione funzionale e semplice.
+
+{{< note type="warning" >}}
+La guida funziona solo su Linux ed è stata testata con Solus Budgie 4.1, Ubuntu 18.04 LTS e Arch Linux. Per Windows consiglio di guardare [questo progetto](https://github.com/CatxFish/obs-virtual-cam).
+{{< /note >}}
+
+## Cosa andremo a fare
+
+- Creare una webcam virtuale di loopback, ovvero un device v4l che riporta in output il video che riceve in input rispettando il formato di una webcam reale.
+- Utilizzare OBS per generare il contenuto video.
+- Il plugin per OBS **v4l2sink** fungerà da ponte per portare l'output di OBS alla webcam virtuale.
+
+Schematizzando:
+
+```text
+OBS -[v4l2sink]-> /dev/videoX (creata con v4l2loopback) -> Skype/Hangout/altro
+```
+
+## Installazione
+
+Installiamo ffmpeg e OBS utilizzando i PPA del progetto:
+
+{{< terminal title="Installazione OBS (Ubuntu/Debian)" >}}
+sudo apt-get install ffmpeg
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt-get update
+sudo apt-get install obs-studio
+{{< /terminal >}}
+
+Per le altre distro guardate il vostro package manager o le istruzioni ufficiali: [https://obsproject.com/wiki/install-instructions#linux](https://obsproject.com/wiki/install-instructions#linux)
+
+Installiamo v4l2loopback:
+
+{{< terminal title="Installazione v4l2loopback (Ubuntu/Debian)" >}}
+sudo apt-get install v4l2loopback-dkms v4l2loopback-utils
+{{< /terminal >}}
+
+Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](https://github.com/umlaeute/v4l2loopback).
+
+Installiamo v4l2sink:
+
+{{< terminal title="Installazione v4l2sink (Ubuntu/Debian)" >}}
+wget https://github.com/CatxFish/obs-v4l2sink/releases/latest/download/obs-v4l2sink.deb
+sudo apt install ./obs-v4l2sink.deb
+{{< /terminal >}}
+
+Per le altre distro guardate il vostro package manager o le istruzioni per la compilazione dalla [repo](https://github.com/CatxFish/obs-v4l2sink).
+
+## Uso
+
+Carichiamo il modulo v4l2loopback:
+
+{{< terminal title="Caricamento del modulo e verifica del device" >}}
+sudo modprobe v4l2loopback video_nr=42 card_label="obs-cam" exclusive_caps=1
+v4l2-ctl -d /dev/video42 -c timeout=3000
+{{< /terminal >}}
+
+Dovrebbe essersi creato il device **/dev/video42**.
+
+Aprite OBS → **Strumenti** → **v4l2sink**.
+
+Nella finestra che compare, indicate il path del device appena creato (nel nostro caso `/dev/video42`), lasciate il campo "video format" invariato.
+
+Cliccate su **Start**.
+
+Fatto! Lo stream video è redirezionato. Provate il funzionamento con [questo sito](https://webcamtests.com/).
+
+## Troubleshooting
+
+### Format not supported
+
+Se cliccando su "start streaming" compare l'errore "format not supported", provate a reinstallare v4l2loopback compilandolo direttamente dalla repository ufficiale.
+
+### Shifting dell'immagine/colori
+
+Se l'immagine emessa dalla webcam virtuale è shiftata o presenta una modifica nei colori, potrebbe esserci un problema nella configurazione video di OBS. Eseguite la configurazione automatica dal menu "Strumenti", oppure dalle impostazioni cliccate sulla tab "Avanzate" e modificate il formato video in `I444` e lo spazio colore in `601`.
+
+
+---
+
+# Arduracing
+
+URL: https://luccalug.it/blog/2020/01/arduracing/
+Data: 21/01/2020
+Autore: Il Direttivo
+Tag: progetti, arduino, open-hardware
+
+
+Arduracing è un progetto che aspira alla creazione di una robot car in grado di muoversi autonomamente all'interno di un circuito.
+
+Il robot utilizza 4 sensori di distanza ad infrarossi per determinare la distanza dalle pareti laterali e frontali. Attraverso questi dati è in grado di estrapolare la distanza e l'angolo delle curve. Il robot è in grado di sterzare e viaggiare a velocità variabile in avanti ed indietro. Il telaio è realizzato con il Lego. Il progetto è stato presentato durante il Linux Day 2011 a Lucca ed ha dato risultati soddisfacenti; sono ovviamente stati individuati degli errori di progettazione che sono espressi nella sezione conclusioni.
+
+## Principio di funzionamento
+
+Il funzionamento si basa sul seguente schema geometrico: posizionando due sensori di distanza paralleli alla vettura ai lati della stessa è possibile, attraverso semplici formule goniometriche, ricavare l'angolo di inclinazione della retta C, che non rappresenta altro che una linearizzazione del tratto di curva.
+
+$$\alpha = (d1-d2/l)$$
+
+Ovviamente, avendo a disposizione le distanze d1 e d2, è possibile anche conoscere a che distanza si trova l'ostacolo oltre alla sua inclinazione.
+
+{{< figure src="images/blog/arduracing/ardualpha.jpg" alt="Schema del principio di funzionamento di Arduracing" caption="Principio di funzionamento: ricavare l'angolo di curva con due sensori laterali" >}}
+
+Questo tipo di approccio permette al robot di differenziarsi da un classico line-follower in quanto è in grado di conoscere in anticipo le curve e quanto siano più o meno strette. In questo modo è in grado di regolare la propria velocità o eseguire manovre correttive nel caso, ad esempio, si trovi sul lato della pista corrispondente all'interno curva.
+
+## Casi particolari
+
+Uno dei casi in cui l'algoritmo sopra espresso fallisce è espresso nella figura sottostante: in questo caso i due sensori "vedono" uno l'interno della pista e l'altro l'esterno, sottostimando l'angolo di sterzo necessario ad evitare l'interno curva.
+
+Per ovviare a questo problema, nell'esempio si calcola l'angolo utilizzando il sensore laterale destro ed il posteriore destro.
+
+{{< figure src="images/blog/arduracing/ardualpha2.jpg" alt="Schema del funzionamento in curva interna" caption="Caso particolare: gestione dell'interno curva con sensori laterale e posteriore" >}}
+
+Un altro caso problematico si manifesta quando la parete interna è quasi parallela all'auto: in questo frangente si utilizzano i sensori laterali per evitare che l'auto si avvicini troppo. Un'ulteriore raffinazione dell'algoritmo sviluppato valuta non solo la distanza laterale ma anche la velocità di avvicinamento ai bordi in modo da poter sfruttare maggiormente la pista.
+
+## Hardware
+
+- 1 x Arduino UNO
+- 1 x Sparkfun Motor-Shield
+- 4 x sensori distanza Sharp
+- 1 x servomotore
+- 4 x resistenze
+- 5 x condensatori
+- 1 x modellino LEGO
+
+## Filtri RC
+
+Una prima analisi dei sensori di distanza ha evidenziato un notevole rumore sul segnale in uscita; per questo abbiamo deciso di costruire dei semplici filtri passa-basso passivi per ridurre le perturbazioni con una frequenza superiore a quella di taglio. Inoltre è stato connesso in serie all'alimentazione dei sensori un condensatore elettrolitico al fine di evitare una tensione di alimentazione instabile.
+
+{{< figure src="images/blog/arduracing/sensori.jpg" alt="I sensori di distanza Sharp con filtri RC" caption="I sensori di distanza con filtri passa-basso passivi" >}}
+
+## Telaio
+
+Il telaio rappresenta la parte più complessa dal punto di vista realizzativo pratico e, come meglio presentato nelle conclusioni, anche il punto di maggior debolezza del robot. Per realizzarlo è stato utilizzato il LEGO e i vari componenti sono stati fissati a mezzo di colla a caldo. Durante la sua realizzazione si sono manifestati diversi problemi: i principali sono stati gli attriti degli ingranaggi che generavano una quantità notevole di energia dissipata e lo sterzo in cui erano presenti innumerevoli "giochi".
+
+Per risolvere questi due problemi siamo ricorsi ad un motore che comprendesse già un rapporto di riduzione e lo sterzo è stato quanto più semplificato, togliendo ad esempio il sistema di ammortizzatori presente nella prima versione del robot.
+
+{{< figure src="images/blog/arduracing/sterzo.jpg" alt="Il sistema di sterzo del robot" caption="Il sistema di sterzo semplificato" >}}
+
+## Circuito di prova
+
+Il circuito è realizzato per gran parte in cartone; la base è stata realizzata con fogli di 100×80 cm di spessore 3 mm, mentre le pareti sono realizzate con delle bande ritagliate alte circa 30 cm di cartoncino meno spesso. Al fine di rendere la struttura più resistente agli urti del robot, sono stati costruiti con materiale plastico e colla a caldo dei pilastri all'esterno delle pareti come evidente in foto.
+
+{{< figure src="images/blog/arduracing/pista.jpg" alt="Il circuito di prova realizzato in cartone" caption="Il circuito di prova con pareti in cartone e pilastri plastici" >}}
+
+## Software
+
+La parte software è stata poco curata a causa dell'avvicinarsi dell'evento a cui dovevo presentare il progetto. In particolare non sono riuscito a sviluppare una funzione per "frenare" prima delle curve.
+
+Le parti principali del codice verranno illustrate in una serie di articoli che gli dedicherò all'interno del blog.
+
+Di seguito è riportato il sorgente utilizzato per la dimostrazione:
+
+```cpp
+#define sinistra 1
+#define destra 0
+#define avanti HIGH
+#define indietro LOW
+#define POT_MIN 110
+#define N_misure 15
+#define S 125
+#define D 35
+#define C 80
+
+Servo myservo;  // create servo object to control a servo
+// a maximum of eight servo objects can be created
+
+int pos = 90;
+int pwm_a = 10;  //PWM control for motor outputs 1 and 2 is on digital pin 10
+int pwm_b = 11;  //PWM control for motor outputs 3 and 4 is on digital pin 11
+int dir_a = 12;  //direction control for motor outputs 1 and 2 is on digital pin 12
+int dir_b = 13;  //direction control for motor outputs 3 and 4 is on digital pin 13
+
+float AS, PD, AD, PS;
+int dist_P_min, dist_P_max, dist_P_media, angolo_curva, dir_curva, inizio_curva;
+int dist_A_min, dist_A_max, dist_A_media, rapporto;
+int t;
+int blocco = 0;
+
+void setup()
+{
+    // initialize the serial communication:
+    Serial.begin(9600);
+    // initialize servo and motor-shield
+    myservo.attach(9);
+    pinMode(pwm_b, OUTPUT);
+    pinMode(dir_b, OUTPUT);
+    // set initial value for the motor
+    digitalWrite(dir_b, HIGH);
+    analogWrite(pwm_b, 0);
+}
+
+void aggiorna()
+{
+    //vengono effettuate tutte le misure e ricalcolate le variabili
+    AS = 0;
+    AD = 0;
+    PS = 0;
+    PD = 0;
+    int i = 0;
+    for (i = 0; i < N_misure; i++) {
+        AS += 2076.0 / (constrain(analogRead(A2), 80, 530) - 11.0);
+        AD += 2076.0 / (constrain(analogRead(A4), 80, 530) - 11.0);
+        PS += 9462.0 / (constrain(analogRead(A1), 80, 550) - 16.92);
+        PD += 9462.0 / (constrain(analogRead(A3), 80, 550) - 16.92);
+    }
+    AS /= N_misure;
+    AD /= N_misure;
+    PS /= N_misure;
+    PD /= N_misure;
+    PD += 1.5;
+    PD = constrain(PD, 0, 150);
+    dist_P_min = min(PD, PS);
+    dist_P_max = max(PD, PS);
+    dist_P_media = (PD + PS) / 2;
+    dist_A_min = min(AD, AS);
+    dist_A_max = max(AD, AS);
+    dist_A_media = (AD + AS) / 2;
+    if ((PD - PS) > 0)
+        dir_curva = 0;
+    else
+        dir_curva = 1;
+    int angolo_curva_c = 9 - atan(abs(PD - PS) / 15.5) * (2 / 3.14) * 9;
+    int angolo_curva_d = 9 - atan(abs(PD - 18) / AD) * (2 / 3.14) * 9;
+    int angolo_curva_s = 9 - atan(abs(PS - 18) / AS) * (2 / 3.14) * 9;
+    //restituisce un valore da 0 a 10 per l'angolo
+    if (AS < AD) {
+        angolo_curva = max(angolo_curva_c, angolo_curva_s);
+    } else {
+        angolo_curva = max(angolo_curva_d, angolo_curva_c);
+    }
+}
+
+void debug()
+{
+    Serial.print(AS);
+    Serial.print("|");
+    Serial.print(AD);
+    Serial.print("|");
+    Serial.print(PS);
+    Serial.print("|");
+    Serial.print(PD);
+    Serial.print("|");
+    Serial.println(angolo_curva);
+}
+
+void manuale()
+{
+    int a, b;
+    if (Serial.available() > 1) {
+        a = Serial.read();
+        b = (Serial.read() - 48);
+        switch (a) {
+            case 'D':
+                sterzo(destra, b);
+                break;
+            case 'S':
+                sterzo(sinistra, b);
+                break;
+            case 'A':
+                motore(avanti, b, 0);
+                break;
+            case 'R':
+                motore(indietro, b, 0);
+                break;
+        }
+    }
+}
+
+int stato()
+{
+    //la funzione ritorna lo stato della vettura: 0 rettilineo, 1 curva, 2 collisione
+    if (dist_P_min < 19 || dist_A_min < 5) {
+        blocco++;
+    } else
+        blocco = 0;
+    if (blocco > 25)
+        return 2;
+    if (dist_P_min > 35)
+        return 0;
+    else
+        return 1;
+}
+
+void motore(boolean dir, int potenza, int angolo)
+{
+    // la funzione compensa il maggior sforzo richiesto al motore con ruote sterzate e fissa il minimo della potenza
+    // la potenza deve avere un valore intero tra 0 e 10
+    potenza = constrain(potenza, 0, 10);
+    if (potenza != 0)
+        potenza = constrain(map(potenza + angolo / 2 + 1, 1, 10, POT_MIN, 254), POT_MIN, 214);
+    digitalWrite(dir_b, dir);
+    analogWrite(pwm_b, potenza);
+}
+
+void sterzo(int dir, int angolo)
+{
+    int a = 0;
+    // la funzione richiede in ingresso la direzione e l'angolo di sterzata
+    // l'angolo deve avere un valore tra 0 e 10
+    angolo = constrain(angolo, 0, 10);
+    if (dir == sinistra)
+        a = map(angolo, 0, 10, C, S);
+    if (dir == destra)
+        a = map(angolo, 0, 10, C, D);
+    myservo.write(a);
+}
+
+void sposta(int dir, int potenza, int tempo)
+{
+    motore(avanti, potenza, 4);
+    if (dir == sinistra) {
+        sterzo(sinistra, 4);
+        delay(tempo);
+        sterzo(destra, 4);
+        delay(tempo);
+        sterzo(sinistra, 0);
+    }
+    if (dir == destra) {
+        sterzo(destra, 4);
+        delay(tempo);
+        sterzo(sinistra, 4);
+        delay(tempo);
+        sterzo(sinistra, 0);
+    }
+}
+
+void loop()
+{
+    int x;
+    aggiorna();
+    float V_AS, V_AD;
+    V_AS = AS;
+    V_AD = AD;
+    if (dist_P_min > 60) {
+        delay(20);
+        aggiorna();
+        if (AD > V_AD - 0.2) {
+            sterzo(destra, (AD - V_AD) * 5);
+            delay(20);
+        }
+        if (AS > V_AS - 0.2) {
+            sterzo(sinistra, (AS - V_AS) * 5);
+            delay(20);
+        }
+    }
+    switch (stato()) {
+        case 0:
+            motore(avanti, map(pow(dist_P_min / 10, 2), 0, 200, 1, 10), 0);
+            if (AS < 6) {
+                sterzo(destra, 5);
+                break;
+            }
+            if (AD < 6) {
+                sterzo(sinistra, 5);
+                break;
+            }
+            if (AS < 7) {
+                sterzo(destra, 3);
+                break;
+            }
+            if (AD < 7) {
+                sterzo(sinistra, 3);
+                break;
+            }
+            if (AS < 8) {
+                sterzo(destra, 2);
+                break;
+            }
+            if (AD < 8) {
+                sterzo(sinistra, 2);
+                break;
+            }
+            if (V_AS > 14 && dir_curva == destra && angolo_curva > 5 && dist_P_min > 60)
+                sposta(sinistra, 1, 80);
+            if (V_AD > 14 && dir_curva == sinistra && angolo_curva > 5 && dist_P_min > 60)
+                sposta(destra, 1, 80);
+            sterzo(sinistra, 0);
+            break;
+        case 1:
+            //curva
+            if ((dir_curva == destra && AS < 9)
+                    || (dir_curva == sinistra && AD < 9) || (dist_P_media < 41)
+                    || (dir_curva == destra && PS < 27)
+                    || (dir_curva == sinistra && PD < 27)) {
+                if (dist_P_media > 25) {
+                    sterzo(dir_curva, angolo_curva);
+                    motore(avanti,
+                            constrain((dist_P_min / 30) - angolo_curva / 3, 1, 10),
+                            angolo_curva);
+                } else {
+                    sterzo(dir_curva, 10);
+                    motore(avanti, 1, 10);
+                }
+            } else {
+                sterzo(sinistra, 0);
+            }
+            break;
+        case 2:
+            //blocco
+            motore(indietro, 1, 10);
+            delay(30);
+            if (dir_curva == sinistra)
+                sterzo(destra, 10);
+            if (dir_curva == destra)
+                sterzo(sinistra, 10);
+            while ((dist_P_min < 19) || (dist_A_min < 6)) {
+                aggiorna();
+            }
+            sterzo(sinistra, 0);
+            motore(avanti, 1, 0);
+            break;
+    }
+}
+```
+
+## Problemi
+
+Durante la fase di test si sono evidenziati alcuni problemi che vado ad elencare in ordine di gravità.
+
+1. **Telaio poco rigido**
+   Il telaio si è rivelato troppo poco rigido e durante i vari test ci si è spesso accorti che l'allineamento dei sensori non era corretto.
+
+2. **Sensori**
+   Nonostante i filtri applicati, il rumore sui sensori è ancora presente; una possibile soluzione sarebbe quella di comprare sensori di qualità maggiore.
+
+3. **Trasmissione**
+   Pur avendo utilizzato al minimo il numero di ingranaggi LEGO, la trasmissione potrebbe essere migliorata utilizzando ingranaggi metallici ed inserendo anche un differenziale.
+
+
+---
+
+# I gestori di pacchetti
+
+URL: https://luccalug.it/blog/2020/01/i-gestori-di-pacchetti/
+Data: 21/01/2020
+Autore: Claudio
+Tag: guide, package-manager
+
+
+{{< figure src="images/blog/i-gestori-di-pacchetti/package.png" alt="Illustrazione di pacchetti software" caption="I gestori di pacchetti Linux" >}}
+
+Un'introduzione ai più comuni package manager
+
+Senza alcun dubbio, da quando ho cominciato ad appassionarmi al mondo di GNU/Linux e a provare le varie distribuzioni, uno degli aspetti che mi ha affascinato maggiormente è stato l'uso dei gestori pacchetti (package manager).
+
+Arrivando da Windows, il meccanismo di installazione ed aggiornamento mi è piaciuto all'istante, in quanto permette di aggiornare completamente il sistema in pochi semplici passaggi, sia da terminale che tramite un'interfaccia grafica.
+
+Le distribuzioni GNU/Linux possono essere suddivise in base alla tipologia di pacchetto adottata, dove con il termine pacchetto si intende un archivio compresso, contenente i file di un dato programma e le informazioni relative alle sue dipendenze, i permessi dei file da installare ed eventuali script pre e post installazione. Esistono, inoltre, alcuni pacchetti (chiamati metapacchetti) che hanno lo scopo di facilitare l'installazione di altri, strettamente correlati tra loro. Talvolta, i gruppi di pacchetti sono gestiti direttamente dal gestore: un esempio di metapacchetto o gruppo di pacchetti è quello dei Desktop Environment (GNOME, KDE ecc..).
+
+## I principali formati di pacchetti sono:
+
+- RPM (Red Hat e derivate, Fedora, CentOS, OpenSUSE, SLES, ecc...)
+- DEB (Debian e derivate, Ubuntu e derivate, Mint, ecc...)
+
+[Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+
+Altre distribuzioni hanno dei formati meno standard, ma personalizzati per i propri gestori pacchetti; ad esempio, ArchLinux usa file con estensione pkg.tar.xz. Altre ancora prediligono la compilazione dei pacchetti e la risoluzione delle dipendenze manuali.
+
+I vari formati dei pacchetti vengono, quindi, presi in gestione dai package manager adottati. Ecco i principali:
+
+## Gestori pacchetti da linea di comando:
+
+- rpm (RedHat/CentOS/Fedora/OpenSUSE)
+- yum (CentOS/Fedora)
+- zypper (OpenSUSE)
+- dpkg (Debian/Ubuntu e derivate)
+- apt (Debian/Ubuntu)
+- pacman (ArchLinux)
+
+## Gestori pacchetti da interfaccia grafica:
+
+- Synaptic (Debian, Ubuntu)
+- YaST2 (OpenSUSE)
+- packagekit (multi distribuzione: ArchLinux, Fedora, ecc..)
+
+La scelta tra interfaccia grafica o linea di comando è sicuramente influenzata dai gusti e dalle abitudini dell'utente ma, di sicuro, una volta ottenuta la giusta dimestichezza, la seconda via risulta sempre più rapida e immediata e, con il tempo e la pratica, anche chi preferisce le interfacce grafiche non ne potrà fare a meno.
+
+I gestori pacchetti recuperano i pacchetti dai repository, ovvero server su Internet appositamente creati e contenenti i pacchetti, suddivisi per versione della distribuzione e architettura del sistema. Normalmente, i repository sono preconfigurati in fase di installazione, ma l'utente è libero di modificarli o di aggiungerne di personalizzati, così da poter installare altri pacchetti che la distribuzione non mette a disposizione. È bene tener presente che l'aggiunta di repository esterni deve sempre essere fatta con molta cautela, in quanto i rischi sono molteplici: dall'installazione di pacchetti esterni possono derivare sia l'instabilità del sistema che conflitti di versioni (nel caso in cui sul repository esterno siano presenti pacchetti in comune con quelli di base) oppure, nel peggiore dei casi, l'installazione di pacchetti malevoli, se il repository non è fidato.
+
+Alcuni tra i repository più noti forniscono chiavi per la verifica delle firme dei pacchetti, proprio come quelli dei repository ufficiali. È, quindi, buona norma documentarsi su come abilitare correttamente tali repository e su come abilitarne la verifica. Tra i repository non ufficiali più famosi ci sono [EPEL (Red Hat/CentOS)](https://fedoraproject.org/wiki/EPEL), [RepoForge](http://repoforge.org/) (ex RPMForge per Red Hat, CentOS, ecc..), [repo-ck](http://repo-ck.com) (ArchLinux), i [Repository di Google](https://www.google.com/linuxrepositories) per le proprie app come Chrome, Earth e molti altri ancora.
+
+## Quali sono, dunque, le funzioni dei gestori di pacchetti?
+
+- Aggiornamento completo del sistema o del singolo pacchetto
+- Verifica delle dipendenze dei pacchetti
+- Installazione e rimozione dei pacchetti
+- Ricerca di pacchetti all'interno dei repository
+- Elencare i pacchetti installati
+- Effettuare un backup della lista dei pacchetti installati (in vista di una successiva installazione su un nuovo sistema)
+- Rimozione dal sistema dei pacchetti non più necessari (solitamente dipendenze di altri pacchetti non più presenti)
+- Pulizia delle cache dei pacchetti archiviati localmente (utile per liberare spazio su disco)
+- Verificare quale pacchetto ha installato un certo file
+
+e molto altro ancora.
+
+Certi gestori pacchetti, come yum, hanno la possibilità di essere estesi nelle loro funzionalità grazie ad appositi plug-in; ad esempio, sono funzionalità aggiuntive: la creazione di uno snapshot LVM del filesystem prima dell'aggiornamento (richiede una installazione su volumi logici LVM); la verifica dell'integrità dei pacchetti installati e dei file installati da essi; la ricerca dei mirror più veloci (i mirror altro non sono che fonti diverse e geolocalizzate dei repository).
+
+Un'altra interessante peculiarità di alcuni gestori pacchetti (come yum) è la gestione dei delta. Il delta non è un pacchetto completo, bensì una patch da applicare alla versione precedente del pacchetto, così da ottenere la versione più aggiornata.
+
+L'uso dei delta, da un lato, diminuisce il tempo e il traffico di download, dall'altro aumenta, di poco, il tempo di applicazione degli aggiornamenti, poiché il pacchetto finale viene "costruito" localmente con l'applicazione del delta. Si noti, però, che se l'utente non aggiorna spesso e la versione locale è troppo vecchia per l'applicazione del delta, il gestore pacchetti opta per il download del pacchetto completo più aggiornato.
+
+Ecco alcuni degli esempi che mi vengono in mente (certamente non potrei elencarli tutti!):
+
+## Pacman
+
+### Aggiornamento dell'elenco pacchetti
+
+```bash
+pacman -Sy
+```
+
+### Elenco degli aggiornamenti disponibili (dopo aver aggiornato l'elenco)
+
+```bash
+pacman -Qu
+```
+
+### Installazione di un pacchetto
+
+```bash
+pacman -S firefox
+```
+
+### Rimozione di un pacchetto
+
+```bash
+pacman -R firefox
+```
+
+### Backup della lista pacchetti
+
+```bash
+pacman -Qqen > listapacchetti
+```
+
+### Re-installazione dei pacchetti da una lista
+
+```bash
+pacman -S - < listapacchetti
+```
+
+### Pulizia dei pacchetti non più installati (ad esempio, le vecchie versioni o vecchie dipendenze) dalla cache dei pacchetti
+
+```bash
+pacman -Sc
+```
+
+### Pulizia completa della cache dei pacchetti
+
+```bash
+pacman -Scc
+```
+
+### Rimozione dei pacchetti installati, ma non più richiesti
+
+```bash
+pacman -Qdt
+```
+
+## RPM
+
+### Elencare i pacchetti installati
+
+```bash
+rpm -qa
+```
+
+### Elencare i file installati da un pacchetto
+
+```bash
+rpm -ql firefox
+```
+
+### Ottenere il pacchetto che ha installato il file
+
+```bash
+rpm -qf /usr/bin/firefox
+```
+
+## YUM
+
+### Aggiornamento dell'elenco dei pacchetti ed elenco degli aggiornamenti disponibili
+
+```bash
+yum check-update
+```
+
+### Aggiornamento del sistema
+
+```bash
+yum update
+```
+
+### Installazione di un pacchetto
+
+```bash
+yum install firefox
+```
+
+### Rimozione di un pacchetto
+
+```bash
+yum remove firefox
+```
+
+### Installazione di un gruppo di pacchetti
+
+```bash
+yum groupinstall "KDE"
+```
+
+### Rimozione di un gruppo di pacchetti
+
+```bash
+yum groupremove "KDE"
+```
+
+### Pulizia completa della cache dei pacchetti
+
+```bash
+yum clean all
+```
+
+### Elenco degli aggiornamenti specificando quali sono quelli di sicurezza
+
+```bash
+yum check-update --security
+```
+
+### Verifica dell'integrità dei pacchetti e dei file installati (richiede il plugin yum-plugin-verify) - tutti i pacchetti
+
+```bash
+yum verify all
+```
+
+### Singolo pacchetto
+
+```bash
+yum verify firefox
+```
+
+## zypper
+
+### Aggiornamento del sistema
+
+```bash
+zypper up
+```
+
+### Aggiornamento della lista dei pacchetti ed elenco degli aggiornamenti
+
+```bash
+zypper lu
+```
+
+### Installazione di un pacchetto
+
+```bash
+zypper in firefox
+```
+
+## dpkg
+
+### Elencare i pacchetti installati
+
+```bash
+dpkg -l
+```
+
+### Rimuovere un pacchetto
+
+```bash
+dpkg -r firefox
+```
+
+### Elencare i file installati da un pacchetto
+
+```bash
+dpkg -L firefox
+```
+
+### Riconfigurare un pacchetto
+
+```bash
+dpkg --configure firefox
+```
+
+## APT
+
+### Aggiornamento dell'elenco dei pacchetti
+
+```bash
+apt-get update
+```
+
+### Aggiornamento del sistema
+
+```bash
+apt-get upgrade
+```
+
+### Installazione di un pacchetto
+
+```bash
+apt-get install firefox
+```
+
+### Rimozione di un pacchetto
+
+```bash
+apt-get remove firefox
+```
+
+### Rimozione di un pacchetto e delle relative configurazioni
+
+```bash
+apt-get --purge remove firefox
+```
+
+### Pulizia della cache dei pacchetti non installati sul sistema
+
+```bash
+apt-get autoclean
+```
+
+### Pulizia completa della cache dei pacchetti
+
+```bash
+apt-get clean
+```
+
+## Link utili
+
+- [ArchLinux Wiki - pacman](https://wiki.archlinux.org/index.php/Pacman)
+- [The Debian GNU/Linux FAQ - Capitolo 8 - Gli strumenti di gestione dei pacchetti Debian](https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.it.html)
+- [CentOS Wiki - RPM](https://wiki.centos.org/PackageManagement/Rpm) (contiene altri link molto utili)
+- [Managing Software with yum](https://www.centos.org/docs/4/html/yum/)
+- [CentOS Wiki - Yum and RPM tricks](https://wiki.centos.org/TipsAndTricks/YumAndRPM)
+
+Infine, ricordate sempre che il terminale vi è amico e se avete bisogno di informazioni su un comando potete sempre utilizzare il comando `man`:
+
+```bash
+man yum
+```
+
+_Articolo di Claudio, con revisione di Davide e Alek._
+
+
+---
+
+# Serate a tema 2020
+
+URL: https://luccalug.it/blog/2020/01/serate-a-tema-2020/
+Data: 21/01/2020
+Autore: Il Direttivo
+Tag: serate-a-tema, eventi
+
+
+{{< figure src="images/blog/serate-a-tema-2020/serateatema2020.jpg" alt="Locandina serate a tema 2020" caption="Serate a tema Luccalug 2020" >}}
+
+{{< note type="danger" >}}
+EVENTI ANNULLATI NEL RISPETTO DELLE NUOVE DIRETTIVE DEL COMUNE RELATIVE AL CORONAVIRUS. LE SERATE A TEMA SONO RIMANDATE FINO A DATA DA DESTINARSI.
+
+Seguite il nostro sito web e le pagine social per tutti gli aggiornamenti.
+{{< /note >}}
+
+Archiviamo questa pagina con la calendarizzazione originale delle serate a tema di inizio 2020 annullate a causa del Coronavirus. Le serate verranno riprese a Settembre 2020 con una nuova programmazione, vi aspettiamo tutti, sempre in sicurezza.
+
+---
+
+## Introduzione a Linux
+
+- **Lunedì 24 Febbraio**
+- **Conoscenze richieste: Nessuna**
+
+> Un'introduzione a Linux, al suo funzionamento e alla sua storia.
+
+---
+
+## CSS Grid
+
+- **RIMANDATO CAUSA CORONAVIRUS**
+- **Conoscenze richieste: HTML, CSS**
+
+> Grid è il sistema di layout definitivo per CSS; gestendo sia righe che colonne permette di creare interfacce complesse in pochissimo tempo.
+
+---
+
+## Blender Intro I: Interfaccia e uso base
+
+- **RIMANDATO CAUSA CORONAVIRUS**
+- **Conoscenze richieste: Nessuna**
+
+> Introduzione a Blender, il famosissimo software di modellazione 3D: funzionamento di base e interfaccia.
+
+---
+
+## SvelteJS
+
+- **RIMANDATO CAUSA CORONAVIRUS**
+- **Conoscenze richieste: Javascript**
+
+> Una nuova libreria per lo sviluppo di interfacce frontend in JS; parleremo di programmazione reactive e delle peculiarità di Svelte.
+
+---
+
+## Blender Intro II: Basi di modellazione
+
+- **RIMANDATO CAUSA CORONAVIRUS**
+- **Conoscenze richieste: Nessuna**
+
+> Introduzione a Blender: in questa seconda serata modelleremo i primi oggetti 3D.
+
+
+---
+
+# Hello Web
+
+URL: https://luccalug.it/blog/2020/01/hello-web/
+Data: 20/01/2020
+Autore: Il Direttivo
+Tag: news
+
+
+{{< figure src="images/blog/hello-web/tux-hacking.jpg" alt="Tux che lavora al computer" caption="Hello Web!" >}}
+
+Sito tutto nuovo!
+
+Dopo anni abbiamo finalmente deciso di riprendere in mano il sito web!
+
+Abbiamo cambiato generatore di siti statici, passando da [Jekyll](https://www.jekyllrb.com) a [Hugo](https://www.gohugo.io), il tema è [Mainroad](https://github.com/Vimux/Mainroad) a cui faremo qualche modifica nel corso del tempo, ma che abbiamo scelto per la sua semplicità ed eleganza.
+
+Hugo è scritto in [Go](https://golang.org), un linguaggio molto più veloce e snello rispetto a Ruby, e vanta una documentazione decisamente migliore.
+
+Ci stiamo anche impegnando per riavviare i social e gli incontri pubblici (serate a tema e simili) che con la nostra [nuova sede al Foro Boario](/contatti) saranno sicuramente più facili da organizzare.
+
+Ci aspetta un bel 2020!
+
+
+---
+
+# Pausa per i Santi
+
+URL: https://luccalug.it/blog/2016/10/pausa-santi/
+Data: 25/10/2016
+Autore: Il Direttivo
+Tag: avvisi
+
+
+In questo piccolo post sul blog informiamo che ieri sera abbiamo deciso di fare una pausa **lunedì prossimo, 31 Ottobre**: alcuni di noi se ne andranno per fare ponte, altri vogliono tirare il fiato, altri ancora si dedicheranno ai Comics al 100%.
+
+Quindi: lunedì prossimo non ci saremo! **Appuntamento al 7 Novembre.**
+
+
+---
+
+# Linux Day 2015
+
+URL: https://luccalug.it/blog/2015/10/linux-day-2015/
+Data: 21/10/2015
+Autore: Il Direttivo
+Tag: linux-day, eventi
+
+
+Siamo lieti di annunciarvi il **Linux Day 2015**, quest'anno in forma ridotta, che si terrà alla nostra sede di Capannori.
+
+Come ogni anno presenteremo i progetti completati durante l'anno, quelli ancora in sviluppo, parleremo di GNU/Linux e di progetti che si basano su software libero.
+
+Ci sarà inoltre una serie di presentazioni riguardanti vari argomenti con **aperitivo finale**.
+
+Per le informazioni complete guardate la [pagina dedicata](http://www.luccalug.it/linux-day-2015/).
+
+
+---
+
+# Presentazione del Book Scanner
+
+URL: https://luccalug.it/blog/2015/04/presentazione-book-scanner/
+Data: 08/04/2015
+Autore: Il Direttivo
+Tag: progetti, hardware, open-hardware
+
+
+{{< figure src="images/blog/presentazione-book-scanner/bookscanner.jpg" alt="Book Scanner del Luccalug" caption="Il book scanner: progetto open hardware per la digitalizzazione di libri storici" >}}
+
+Sabato **18 Aprile 2015 alle ore 15:00** vi aspettiamo tutti presso la nostra sede al Centro Giovani di Santa Margherita ([mappa](https://goo.gl/maps/5S5HT)) per presentare il nostro progetto per la costruzione di un **book scanner**.
+
+Lo scopo principale del progetto è quello di arricchire a livello digitale la cultura della zona in cui viviamo, scannerizzando libri storici (che sono entrati nel pubblico dominio) permettendo a tutti - studiosi e non - di consultarli online.
+
+È ben accetto chiunque sia interessato a supportare il progetto in qualsiasi modo: manodopera, aiuto nella progettazione, supporto economico, etc...
+
+Sabato 18 presenteremo ai partecipanti il nostro progetto e discuteremo su come svilupparlo. **Vi aspettiamo numerosi.**
+
+
+---
+
+# Corsi comunali 2014
+
+URL: https://luccalug.it/blog/2014/10/corsi-comunali-2014/
+Data: 30/10/2014
+Autore: Il Direttivo
+Tag: corsi, eventi
+
+
+Anche quest'anno alcuni soci del Luccalug fungeranno da docenti per alcuni corsi comunali con tema: [Arduino](http://matteo.luccalug.it/2014/09/corso-base-arduino-2013-lucca/) e Linux.
+
+I corsi hanno una durata di **20 ore** e un costo di **75€** e saranno organizzati presso il **Centro Cultura di "Artemisia"** a Tassignano, Capannori (LU).
+
+Per maggiori informazioni: [http://www.comune.capannori.lu.it/node/10890](http://www.comune.capannori.lu.it/node/10890)
+
+
+---
+
+# Linux Day 2014
+
+URL: https://luccalug.it/blog/2014/10/linux-day-2014/
+Data: 20/10/2014
+Autore: Il Direttivo
+Tag: linux-day, eventi
+
+
+{{< figure src="images/blog/linux-day-2014/banner.png" alt="Banner Linux Day 2014" caption="Linux Day 2014 - Lucca" >}}
+
+Anche quest'anno siamo lieti di annunciare il **Lucca Linux Day 2014**.
+
+Come ogni anno ci saranno talk e tavoli tematici. L'argomento di quest'anno è la **libertà digitale**, tema assai caldo in una rete che, pur spacciandosi per libera, è sempre più controllata da pochi grandi gestori.
+
+Visita la [pagina dedicata](http://www.luccalug.it/linux-day-2014/) per il programma e i dettagli.
+
+Vi invitiamo a venire a trovarci per vedere i nostri stand e per condividere con noi le vostre opinioni e i vostri pensieri.
+
+Aiutaci a promuovere l'evento condividendolo sui social network!
+
+
+---
+
+# Project Gooseberry - il primo, vero open movie della storia
+
+URL: https://luccalug.it/blog/2014/04/project-gooseberry/
+Data: 11/04/2014
+Autore: Il Direttivo
+Tag: software-libero, blender, open-movie
+
+
+{{< figure src="images/blog/project-gooseberry/gooseberry-project.png" alt="Project Gooseberry - il primo open movie della storia" caption="Project Gooseberry: il primo film d'animazione completamente libero" >}}
+
+La [Blender Foundation](http://blender.org) sta chiedendo un finanziamento tramite crowdfunding per un grandissimo progetto: il primo Open Movie della storia, realizzato con Blender e completamente libero.
+
+I lavori precedenti come [Sintel](http://www.sintel.org/), [Tears of Steel](http://mango.blender.org/) o [Big Buck Bunny](http://www.bigbuckbunny.org/) erano semplici cortometraggi di 15 minuti; questo è invece un **film d'animazione di 90 minuti**.
+
+Purtroppo i giorni rimasti sono pochi e i soldi che mancano a completare il crowdfunding sono molti, come si può vedere direttamente sul portale: [https://cloud.blender.org/gooseberry/](https://cloud.blender.org/gooseberry/)
+
+La realizzazione di una tale opera sarebbe un grandissimo evento per l'immagine del mondo Free e Open Source e rappresenterebbe un importante fattore per lo sviluppo di [Blender](http://blender.org) (che tra i software Open Source è il più competitivo verso le controparti proprietarie).
+
+Riteniamo quindi che sia importante il contributo di tutti: sia finanziando il progetto nei limiti del proprio budget, sia condividendo queste informazioni per ampliare il numero di potenziali finanziatori.
+
+Tutte le informazioni sul progetto e sul crowdfunding si trovano su: [https://cloud.blender.org/gooseberry/](https://cloud.blender.org/gooseberry/)
+
+
+---
+
+# Node.js - Pillole di Free Software
+
+URL: https://luccalug.it/blog/2014/04/node-js-pillole-di-free-software/
+Data: 09/04/2014
+Autore: Il Direttivo
+Tag: pillole-di-free-software, javascript, programmazione
+
+
+{{< figure src="images/blog/node-js-pillole-di-free-software/pillole-nodejs.png" alt="Locandina serata Node.js - Pillole di Free Software" caption="Pillole di Free Software: Node.js" >}}
+
+Lunedì 14 aprile si svolgerà una serata a tema dedicata a **Node.js**, framework che permette di realizzare server-side web application usando JavaScript.
+
+Il relatore **Matteo Lucchesi** farà un breve introduzione al mondo di Node.js correlata da esempi pratici.
+
+L'evento inizierà alle **21:00**.
+
+**Ricordiamo che per partecipare è necessaria la tessera per l'anno 2014, che costa 20€ e può essere fatta la sera stessa. La tessera darà accesso a tutti gli eventi dell'anno corrente.**
+
+
+---
+
+# GPG (GNU Privacy Guard) - Pillole di Free Software
+
+URL: https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/
+Data: 19/03/2014
+Autore: Il Direttivo
+Tag: pillole-di-free-software, sicurezza, crittografia
+
+
+{{< figure src="images/blog/gpg-gnu-privacy-guard/pillole-gpg.png" alt="Locandina serata GPG - Pillole di Free Software" caption="Pillole di Free Software: GPG (GNU Privacy Guard)" >}}
+
+Lunedì **24 marzo** si svolgerà una serata a tema dedicata a **GNU Privacy Guard**, software Free e Open Source per la cifratura dei messaggi.
+
+Nell'era dei Social Network e nella situazione attuale, in cui si può sapere tutto di tutti grazie ad Internet, è molto importante poter tutelare la riservatezza dei messaggi che si inviano. E per noi utenti Linux è fondamentale poterlo fare utilizzando strumenti free e open source.
+
+Il relatore **Matteo Martinelli** racconterà la storia di GPG e ne illustrerà il funzionamento.
+
+L'evento inizierà alle **21:00**.
+
+**Ricordiamo che per partecipare è necessaria la tessera per l'anno 2014, che costa 20€ e può essere fatta la sera stessa. La tessera darà accesso a tutti gli eventi dell'anno corrente.**
+
+
+---
+
+# Le licenze Creative Commons - Pillole di Free Software
+
+URL: https://luccalug.it/blog/2014/03/licenze-creative-commons/
+Data: 08/03/2014
+Autore: Il Direttivo
+Tag: pillole-di-free-software, licenze, software-libero
+
+
+{{< figure src="images/blog/licenze-creative-commons/pillole.png" alt="Locandina ciclo Pillole di Free Software" caption="Pillole di Free Software - il ciclo di serate a tema del Luccalug" >}}
+
+Come già annunciato, anche quest'anno tornano le serate a tema del ciclo **"Pillole di Free Software"** ([calendario completo](http://www.luccalug.it/eventi/)).
+
+Lunedì sera (**10 Marzo 2014**) inizieremo con una serata tenuta da **Davide Francesconi**, che illustrerà il funzionamento delle principali Licenze Libere, con particolare riferimento alle **Creative Commons**.
+
+Per partecipare è necessaria la tessera per l'anno 2014, che costa **20€**, può essere fatta la sera stessa e dà accesso a tutti gli eventi dell'anno corrente.
+
+**Vi aspettiamo numerosi!**
+
+
+---
+
+# Cosino - Recensione
+
+URL: https://luccalug.it/blog/2013/11/recensione-cosino/
+Data: 25/11/2013
+Autore: Il Direttivo
+Tag: open-hardware, recensione, embedded
+
+
+Abbiamo già scritto parecchi articoli sulla nostra nuova stampante 3D: una Prusa i3 con una modifica al piatto per aumentare l'area di stampa. Il controller di basso livello è Arduino, nota scheda Open Hardware.
+
+Ma è il caso di spendere qualche parola anche su **Cosino**, mini-computer che usiamo per il controllo della stampa ad "alto livello", ovvero l'interfaccia tra uomo e macchina.
+
+Per questo tipo di controllo si usa di solito un PC che, connesso via USB al controller di basso livello, permette di lanciare e controllare la stampa. Il problema legato a questo utilizzo della stampante è che il PC deve restare a essa collegato durante tutto il processo di stampa; e sappiamo che in alcuni casi questa può durare parecchie ore.
+
+{{< figure src="images/blog/recensione-cosino/cosino.jpg" alt="La scheda Cosino" caption="Cosino: mini-computer industriale modulare compatibile con Arduino Mega 2560" >}}
+
+Cosino risolve questo problema. Vi abbiamo installato sopra **Octoprint**, un sistema operativo che gestisce un server di stampa con interfaccia web. Questo significa che la stampa può essere avviata e controllata da qualsiasi dispositivo dotato di un browser web. Parliamo quindi anche di smartphone e tablet.
+
+## Cos'è Cosino
+
+Ma Cosino non è un semplice controller per stampanti 3D: è una **scheda industriale modulare per la prototipazione rapida**. È inoltre totalmente compatibile con il mondo Arduino Mega 2560. Quindi un programma già scritto per Arduino può essere trasferito su Cosino senza doverne cambiare una virgola.
+
+È importante sottolineare che il progetto non si limita ad Arduino. Vi sono infatti molte altre estensioni disponibili (ad esempio GSM, GPRS, RFID, ecc.).
+
+Il progetto cura sia l'hardware che il software e comprende anche una serie di tutorial e un forum per aiutare coloro che usano Cosino.
+
+Scopo ulteriore del progetto è quello di aiutare chi ha realizzato un prototipo con Cosino nell'industrializzazione del proprio prodotto e dell'eventuale vendita.
+
+{{< note type="tip" >}}
+Tutti i dati tecnici e le informazioni si possono trovare su [http://cosino.it](http://cosino.it).
+{{< /note >}}
+
+
+---
+
+# Stallman a Firenze - Tecnologia digitale: libera o soggiogante?
+
+URL: https://luccalug.it/blog/2013/09/stallman-a-firenze/
+Data: 30/09/2013
+Autore: Il Direttivo
+Tag: software-libero, eventi, gnu
+
+
+{{< figure src="images/blog/stallman-a-firenze/richard-stallman.jpg" alt="Richard Stallman" caption="Richard Stallman, fondatore della Free Software Foundation" >}}
+
+Sabato 14 settembre tappa fiorentina per **Richard Stallman**, che nella suggestiva altana dell'ex Convento delle Oblate, a due passi dalla Cupola del Brunelleschi e dal Campanile di Giotto, ha incontrato gli appassionati - e non solo - di software libero per parlare di *"Tecnologia digitale: libera o soggiogante? - Software libero ed economia solidale per difendere democrazia e libertà"*.
+
+L'evento, collocato nell'ambito delle attività del Distretto di Economia Solidale di Firenze, è stato organizzato da Solidarius Italia in collaborazione con Associazione Libera Informatica, l'Altracittà, Battiti, Fondazione Culturale Responsabilità Etica, perUnaltracittà, Social Watch.
+
+## Libertà e tecnologia digitale
+
+Tema dell'incontro è stato il binomio libertà e tecnologia digitale, in ragione di quanto la seconda possa essere al servizio della prima così come, al contrario, funzionale alla limitazione o (perfino) alla privazione di essa.
+
+Stallman ha ripercorso i momenti salienti della formazione del movimento del software libero, dalla fondazione della FSF allo sviluppo del sistema libero GNU, l'"incontro" con Torvalds per l'apporto del kernel, che ha permesso di completare il lavoro degli sviluppatori del sistema (GNU-Linux), fino ad arrivare ai giorni nostri, tempo in cui l'informatica libera diventa di rilevante importanza per scongiurare le minacce del software proprietario o di applicazioni web non controllabili.
+
+## I pericoli del software proprietario
+
+Il pericolo deriva dall'impossibilità per l'utente di controllare ciò che *realmente* la macchina fa, poiché i programmi o i servizi on line possono giungere fino al punto di impadronirsi del nostro computer in modo occulto, magari modificando le impostazioni da noi scelte, per carpire dati personali - che non vorremmo certo diffondere - per scopi commerciali o di controllo da parte degli Stati.
+
+Pratiche di "phishing", "spyware", "backdoors" sono stati i termini più ripetuti nelle oltre due ore dell'intervento di Stallman; il quale, d'altra parte, ha richiamato l'attenzione sull'uso, pregiudizievole in sé, dei social network, nonché sui pregiudizi che possono generare programmi di elaborazione di ogni genere, di riproduzione di file multimediali, di fotoritocco, fino a certi software installati sui telefoni cellulari o sui lettori di e-book. Programmi all'interno dei quali l'utilizzatore non può vedere né operare: software privato che può privare l'utente del controllo del proprio computer.
+
+## Le quattro libertà
+
+Software *libero* è, al contrario, quello che assicura all'utente le quattro libertà:
+
+0. Libertà di eseguire il programma per qualsiasi scopo
+1. Libertà di studiare e modificare il codice sorgente come lo si desidera
+2. Libertà di ridistribuire copie, a beneficio altrui
+3. Libertà di distribuire copie delle versioni modificate, in modo che tutta la comunità ne tragga beneficio, con la (pre)condizione dell'accesso al codice sorgente
+
+Per incentivarne l'uso e diffonderne la conoscenza, Stallman ha invitato tutti a navigare tra le pagine del sito [www.fsf.org](http://www.fsf.org), in particolare nella sezione "resources", con ampia scelta di applicativi e di distribuzioni GNU/Linux libere.
+
+## Saint IGNUcius
+
+Infine, poiché la divulgazione del software libero è una missione quasi religiosa, Stallman ha svestito i panni del rigoroso divulgatore per assumere quelli più "mistici" - e molto "comici" - di **Saint IGNUcius della Chiesa di Emacs** e si è improvvisato banditore dell'asta di un piccolo pupazzo dalle sembianze di Gnu, il cui prezzo è andato a beneficio della FSF. Quasi a ricordare che "free" non equivale a gratis!
+
+{{< note type="info" >}}
+Maggiori informazioni sul software libero e sulla Free Software Foundation su [www.fsf.org](http://www.fsf.org).
+{{< /note >}}
+
+
+---
+
+# Prusa i3 - Terza serata di montaggio
+
+URL: https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/
+Data: 20/08/2013
+Autore: Il Direttivo
+Tag: stampa-3d, prusa-i3, open-hardware, serata-a-tema
+
+
+Si è svolta ieri la terza serata di montaggio della [Prusa i3](http://reprap.org/wiki/Prusa_i3) modificata del LuccaLUG.
+
+È stata montata l'**elettronica** e siamo andati avanti con l'armatura, fissando il frame al piano XY precedentemente creato. Purtroppo le cinghie acquistate per l'asse Y si sono rivelate inutili perché, avendo raddoppiato la lunghezza dell'asse, queste risultano troppo corte. Un ulteriore problema si è presentato con alcuni pezzi che avevamo stampato ma che sono risultati mal dimensionati. Dovremmo quindi ristamparli.
+
+Stiamo inoltre provando a stampare tramite [Raspberry Pi](http://it.wikipedia.org/wiki/Raspberry_Pi) (sulla [Prusa Mendel](http://reprap.org/wiki/Prusa_Mendel/it) di [Stefano Giovacchini](http://disegnodesign.com/) e [Matteo Lucchesi](http://matteo.luccalug.it/)). In questo modo, quando qualcuno avrà da lanciare una stampa di molte ore, non dovrà lasciare il proprio PC al lavoro.
+
+I prossimi step sono:
+
+- La stampa dei pezzi mal dimensionati e degli ultimi pezzi mancanti (che effettueremo in settimana)
+- Il progetto di un piatto 20×40 adattato alla nostra modifica
+- L'acquisto delle cinghie
+- L'assemblaggio del tutto
+
+{{< figure src="images/blog/prusa-i3-terza-serata-di-montaggio/img-4373.jpg" alt="Foto della terza serata di montaggio Prusa i3" caption="La Prusa i3 durante la terza serata di montaggio con l'elettronica installata" >}}
+
+Vi aspettiamo lunedì prossimo (26 agosto) per continuare il lavoro.
+
+
+---
+
+# Prusa i3 - Seconda serata di montaggio
+
+URL: https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/
+Data: 23/07/2013
+Autore: Il Direttivo
+Tag: stampa-3d, prusa-i3, open-hardware, serata-a-tema
+
+
+A causa di problemi logistici (non erano arrivati alcuni pezzi), la seconda serata di montaggio è stata rimandata più volte e si è finalmente svolta ieri sera (lunedì 22 luglio).
+
+Abbiamo montato l'**asse Z** (compresi i motori) e lo abbiamo fissato al frame.
+
+**Lunedì prossimo (29 luglio)** abbiamo in programma di montare l'elettronica, caricando eventualmente anche il software, e di proseguire con l'armatura.
+
+L'unica cosa per cui non siamo ancora pronti è il piatto, la cui base va riprogettata e costruita (visto che lo abbiamo raddoppiato in lunghezza).
+
+{{< figure src="images/blog/prusa-i3-seconda-serata-di-montaggio/img-2240.jpg" alt="Foto della seconda serata di montaggio Prusa i3" caption="Il frame con l'asse Z montato" >}}
+
+Vi aspettiamo numerosi!
+
+
+---
+
+# Stampare tutto, stampare tutti
+
+URL: https://luccalug.it/blog/2013/07/stampare-tutto-stampare-tutti/
+Data: 20/07/2013
+Autore: Il Direttivo
+Tag: stampa-3d, workshop, eventi
+
+
+Si è concluso con grande successo lo workshop **"Stampare Tutto, Stampare Tutti"**, tenutosi venerdì 19 luglio presso il [Polo Tecnologico Lucchese](http://www.polotecnologicolucchese.it/), organizzato da LuccaLUG e [Multiverso](http://www.multiverso.biz/).
+
+{{< figure src="images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg" alt="Locandina del workshop Stampare tutto stampare tutti" caption="La locandina del workshop" >}}
+
+## Il workshop
+
+Inizialmente Antonio Ardiccioni di Multiverso ha presentato il coworking e Fabio Angeli di Genau ha presentato le due successive conferenze.
+
+[Stefano Giovacchini](http://disegnodesign.com/), decoratore, designer e attuale presidente del LuccaLUG, ha fatto una presentazione sulla stampa 3D come opportunità per designers e makers che vogliono fare prototipi a basso costo delle loro creazioni, sottolineando l'importanza e i vantaggi offerti dall'utilizzo di stampanti [open hardware](http://it.wikipedia.org/wiki/Open_hardware) e di software [open source](http://it.wikipedia.org/wiki/Open_source).
+
+Successivamente è intervenuto [Matteo Lucchesi](http://matteo.luccalug.it/), fondatore e primo presidente del LuccaLUG. Matteo ha parlato della stampa 3D da un punto di vista tecnico, descrivendo i meccanismi di base dell'estrusione e il funzionamento di una stampante 3D.
+
+## Il programma del workshop
+
+Il workshop si è articolato attraverso tre step:
+
+1. Come è costruita e come funziona una stampante 3D open hardware
+2. Dal disegno all'oggetto in tre mosse
+3. Dalla produzione di pezzi unici alla prototipazione rapida, opportunità per progettisti e piccoli imprenditori
+
+## In sala
+
+Durante le due conferenze erano presenti in sala due stampanti: la nostra [Prusa i3](http://reprap.org/wiki/Prusa_i3) in fase di costruzione e una [Prusa Mendel](http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29) in funzione che ha prodotto in diretta alcuni gadget per i partecipanti.
+
+{{< gallery >}}
+{{< gallery-img src="/images/blog/stampare-tutto-stampare-tutti/img-2138.jpg" alt="Il workshop in corso - conferenza di Stefano Giovacchini" >}}
+{{< gallery-img src="/images/blog/stampare-tutto-stampare-tutti/img-2141.jpg" alt="Il pubblico durante il workshop sulla stampa 3D" >}}
+{{< /gallery >}}
+
+Siamo rimasti molto soddisfatti dal pubblico, che ha partecipato attivamente e si è mostrato molto interessato all'argomento.
+
+
+---
+
+# Prusa i3 modificata - Prima serata di montaggio
+
+URL: https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/
+Data: 01/07/2013
+Autore: Il Direttivo
+Tag: stampa-3d, prusa-i3, open-hardware, serata-a-tema
+
+
+Ieri sera abbiamo montato l'armatura di base della nostra versione modificata di [Prusa i3](http://reprap.org/wiki/Prusa_i3), una stampante 3D [Open Hardware](http://it.wikipedia.org/wiki/Hardware_libero). La modifica che proponiamo consiste nell'aumentare le dimensioni del piatto (da 20×20 cm a 20×40 cm) per poter stampare oggetti più grandi.
+
+{{< figure src="images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png" alt="Il progetto Prusa i3 del LuccaLUG" caption="La nostra Prusa i3 modificata" >}}
+
+Non avendo ancora reperito tutti i pezzi, abbiamo montato solo l'armatura della base (barre degli assi X e Y).
+
+Questa settimana cercheremo di reperire ciò che manca: compreremo gli ultimi pezzi di ferramenta (barre asse Z, bulloni e dadi vari) e i cuscinetti, e stamperemo le parti in plastica mancanti.
+
+**Lunedì prossimo (8 luglio) proseguiremo con la costruzione.**
+
+{{< figure src="images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-stampa3d.png" alt="Progetto stampa 3D Prusa i3 LuccaLUG" caption="Schema del progetto Prusa i3 con piatto allargato" >}}
+
+{{< figure src="images/blog/prusa-i3-prima-serata-di-montaggio/img-1568.jpg" alt="Foto della prima serata di montaggio Prusa i3" caption="La prima serata di montaggio: le barre degli assi X e Y in assemblaggio" >}}
+
+{{< note type="info" >}}
+L'evento è aperto a tutti i soci 2013. Chi non è iscritto e vuole partecipare può fare la tessera per il 2013 direttamente lunedì.
+{{< /note >}}
+
+Vi aspettiamo numerosi!
+
+
+---
+
+# Linux Day 2013 - Innovazione. Di tutti. Per tutti
+
+URL: https://luccalug.it/blog/2013/05/linux-day-2013/
+Data: 27/05/2013
+Autore: Il Direttivo
+Tag: linux-day, eventi
+
+
+{{< figure src="images/blog/linux-day-2013/linuxday-banner.png" alt="Banner Linux Day 2013" caption="Linux Day 2013" >}}
+
+È uscito il tema ufficiale per il **Linux Day 2013**: *"Innovazione. Di tutti. Per tutti"*. ([http://www.linuxday.it](http://www.linuxday.it)). Il Linux Day si svolgerà il **26 ottobre**. Il luogo in cui lo organizzeremo è ancora da definire.
+
+Stiamo iniziando a prepararci cercando idee, proposte e collaborazione nell'organizzazione dell'evento. Chi ha idee da proporre - socio o meno - che siano compatibili con il tema è invitato a venire a trovarci per proporle. Ci troviamo come sempre ogni lunedì sera a partire dalle 21:00 al Centro Giovani di Santa Margherita.
+
+{{< note type="tip" >}}
+Hai un'idea per un talk o un'attività da proporre al Linux Day 2013? Vieni a parlarcene uno dei prossimi lunedì!
+{{< /note >}}
+
+
+---
+
+# Serata a tema: BLENDER e i nodi
+
+URL: https://luccalug.it/blog/2013/03/serata-blender-e-i-nodi/
+Data: 25/03/2013
+Autore: Il Direttivo
+Tag: serata-a-tema, blender, pillole-di-free-software, grafica
+
+
+## Lunedì 25 Marzo 2013 - Ore 21:00
+
+Si svolgerà una serata a tema per il ciclo **"Pillole di Free Software"** dedicata a:
+
+## "BLENDER e l'utilizzo dei NODI: uno strumento potente per il rendering e non solo"
+
+{{< figure src="images/blog/serata-blender-e-i-nodi/pillole-blender-nodi.png" alt="Locandina della serata su Blender e i nodi" caption="Pillole di Free Software - Blender e i nodi" >}}
+
+## Programma della serata
+
+- Introduzione ai nodi in Blender: principi di funzionamento
+- Descrizione dei nodi più utilizzati
+- Possibili applicazioni e potenzialità dei nodi
+- Esempio di applicazione svolto passo per passo con spiegazioni e chiarimenti
+
+{{< note type="info" >}}
+Per partecipare è necessario aver pagato la quota associativa 2013. Chi non è ancora iscritto può fare la tessera anche la sera stessa.
+{{< /note >}}
+
+{{< evento titolo="Serata a tema: Blender e i nodi" data="2013-03-25" luogo="Sede del LuccaLUG, Lucca - ore 21:00" descrizione="Serata del ciclo Pillole di Free Software dedicata a Blender e all'utilizzo dei nodi per il rendering." >}}
+
+
+---
+
+# Serata a tema: OpenSCAD - disegnare in 3D programmando
+
+URL: https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/
+Data: 19/11/2012
+Autore: matteo
+Tag: serata-a-tema, openscad, stampa-3d, open-hardware
+
+
+## Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD
+
+[OpenSCAD](http://www.openscad.org/) è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.
+
+{{< figure src="images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png" alt="Logo di OpenSCAD" caption="Il logo di OpenSCAD" >}}
+
+Esso non si focalizza sulla modellazione artistica tipica di software come Blender, bensì mantiene un legame più stretto con la progettazione CAD.
+
+OpenSCAD è qualcosa di simile a un compilatore 3D che legge un file script per descrivere un oggetto e renderizzarlo. Questo garantisce un controllo completo al designer e permette di modificare con semplicità ogni passaggio nel processo di modellazione o di creare modelli definiti da parametri configurabili.
+
+Il programma offre principalmente due tecniche di modellazione:
+
+- Geometria solida costruttiva (CSG, vedi sotto)
+- Estrusione di perimetri 2D
+
+Come formato di scambio per i perimetri 2D è utilizzato il formato DXF, dal quale è inoltre possibile leggere dei parametri. OpenSCAD può leggere e creare modelli 3D nel formato STL e OFF.
+
+## Geometria Solida Costruttiva (CSG)
+
+La geometria solida costruttiva, abbreviata spesso in **CSG**, è un modello di rappresentazione di oggetti 3D, di tipo volume-based. In questo approccio le forme vengono costruite a partire da una famiglia di solidi geometrici elementari, chiamati *primitive*, come ad esempio il parallelepipedo, il cilindro, la sfera, il cono, il toro.
+
+Per costruire volumi complessi a partire da questi volumi elementari si fa uso di operazioni booleane, che derivano dalle operazioni sugli insiemi:
+
+- **Somma** (unione)
+- **Sottrazione** (differenza)
+- **Intersezione**
+
+Il procedimento che porta a ottenere il solido finale può essere organizzato in uno schema, chiamato **albero CSG**: ogni foglia rappresenta un solido e a ogni nodo corrisponde un'operazione booleana, mentre in cima troviamo l'oggetto finale.
+
+{{< figure src="images/blog/serata-openscad-disegnare-in-3d-programmando/csg-tree.png" alt="Esempio di albero CSG" caption="L'albero CSG mostra come i solidi primitivi vengono combinati tramite operazioni booleane" >}}
+
+## Un esempio: il cilindro
+
+Vediamo come creare una forma primitiva. Sperimentiamo con un cilindro modificando vari parametri:
+
+```openscad
+cylinder(h = 10, r1 = 10, r2 = 20, center = false);
+cylinder(h = 20, r1 = 20, r2 = 10, center = true);
+```
+
+Adesso proviamo a vedere cosa succede unendo i due oggetti o intersecandoli:
+
+```openscad
+union() {
+  cylinder(h = 10, r1 = 10, r2 = 20, center = false);
+  cylinder(h = 20, r1 = 20, r2 = 10, center = true);
+}
+
+difference() {
+  cylinder(h = 10, r1 = 10, r2 = 20, center = false);
+  cylinder(h = 20, r1 = 20, r2 = 10, center = true);
+}
+```
+
+## La serata: modellare un anemometro passo per passo
+
+Nel corso dell'incontro vedremo come modellare passo passo un **anemometro** completo, partendo dalle primitive e combinandole con le operazioni CSG. Sarà un ottimo modo per mettere in pratica i concetti illustrati e capire come OpenSCAD rende la progettazione 3D ripetibile e parametrizzabile.
+
+{{< note type="info" >}}
+Ricordiamo che è ancora valida la promozione **tessera 2012/2013 + maglietta LuccaLUG a soli € 20,00**! È possibile iscriversi al LuccaLUG anche la sera stessa degli incontri.
+{{< /note >}}
+
+{{< evento titolo="Serata a tema: OpenSCAD" data="2012-12-10" luogo="Sede del LuccaLUG, Lucca" descrizione="Serata del ciclo Pillole di Free Software dedicata a OpenSCAD: modellazione 3D con geometria solida costruttiva, con esempio pratico di un anemometro." >}}
+
+
+---
+
+# Arduino, l'elettronica diventa facile
+
+URL: https://luccalug.it/blog/2012/04/arduino-elettronica-diventa-facile/
+Data: 29/04/2012
+Autore: matteo
+Tag: arduino, open-hardware, eventi
+
+
+{{< evento titolo="Arduino, l'elettronica diventa facile!" data="2012-05-12" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Conferenza di presentazione del progetto Arduino con esempi di applicazione dal vivo. Dalle ore 16:00 alle ore 18:00." >}}
+
+{{< figure src="images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png" alt="Locandina Arduino, l'elettronica diventa facile" caption="Sabato 12 maggio 2012 - conferenza Arduino al LuccaLUG" >}}
+
+Sabato **12 maggio** presso la sede del LuccaLUG (Centro Giovani di Capannori), Matteo terrà una conferenza di presentazione del progetto **Arduino** mostrando esempi di applicazione dal vivo.
+
+La conferenza si terrà dalle ore **16:00** alle ore **18:00** circa.
+
+La conferenza sarà anche l'occasione per presentare il **corso** che seguirà sull'argomento.
+
+{{< note type="info" >}}
+Arduino è una piattaforma hardware open source per il physical computing, basata su una scheda di I/O e un ambiente di sviluppo semplice. Con Arduino è possibile realizzare progetti di domotica, robotica e automazione in generale. L'evento è aperto a tutti, soci e non.
+{{< /note >}}
+
+
+---
+
+# AV Linux, la distribuzione Linux per l'Audio e il Video
+
+URL: https://luccalug.it/blog/2012/04/av-linux-audio-video/
+Data: 12/04/2012
+Autore: mugnozzo
+Tag: distro, audio, video
+
+
+{{< evento titolo="Pillole di Free Software: AV Linux" data="2012-04-23" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Serata dedicata ad AV Linux, la distribuzione GNU/Linux per la produzione audio e video." >}}
+
+## Lunedì 23 aprile 2012
+
+AV Linux è un sistema operativo basato su **Debian GNU/Linux**, leggero e perfettamente adatto ad un uso quotidiano del computer. Oltre a questo offre una delle migliori raccolte di software open source e demoware per creazioni audio e video, aggiornata e stabile.
+
+All'interno di questo ambiente daremo un assaggio delle potenzialità in campo **audio** di GNU/Linux.
+
+{{< note type="tip" >}}
+AV Linux include strumenti professionali come Ardour, JACK, Hydrogen e molti altri, tutti preconfigurati e pronti all'uso. Un'ottima scelta per musicisti, sound designer e videomaker che vogliono passare al software libero.
+{{< /note >}}
+
+
+---
+
+# Ubuntu Install Party, lunedì 2 aprile
+
+URL: https://luccalug.it/blog/2012/03/ubuntu-install-party-2012/
+Data: 29/03/2012
+Autore: stefano
+Tag: ubuntu, install-party, eventi
+
+
+{{< evento titolo="Ubuntu Install Party" data="2012-04-02" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Serata dedicata all'installazione di Ubuntu. Porta il tuo PC e ti aiuteremo a installare l'ultima versione di Ubuntu." >}}
+
+Visto che abbiamo deciso di aggiornare la versione di Ubuntu sui computer del LuccaLUG, abbiamo pensato che chiunque potrà portare il proprio PC per installarci l'ultima versione di Ubuntu.
+
+Quindi, se vuoi **provare Ubuntu su un nostro PC**, o se vuoi **aiuto per installare Ubuntu sul tuo portatile**, questa è la serata giusta!
+
+{{< note type="info" >}}
+La serata è aperta a tutti, soci e non. Portate il vostro PC e i dati di cui avete bisogno. Vi aspettiamo lunedì 2 aprile alle ore 21:15 presso la nostra sede.
+{{< /note >}}
+
+
+---
+
+# Pillole di Free Software: Inkscape, software di disegno vettoriale
+
+URL: https://luccalug.it/blog/2012/02/pillole-inkscape/
+Data: 27/02/2012
+Autore: mugnozzo
+Tag: pillole-di-free-software, inkscape, grafica
+
+
+{{< evento titolo="Pillole di Free Software: Inkscape, software di disegno vettoriale" data="2012-03-12" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Serata di presentazione di Inkscape, il programma open source per la grafica vettoriale SVG. Incontro aperto a tutti." >}}
+
+**Lunedì 12 marzo 2012** - seconda serata del ciclo *Pillole di Free Software*.
+
+[Inkscape](https://inkscape.org/) è il programma di riferimento del mondo open source per la **grafica vettoriale**. Permette di creare e modificare immagini in formato SVG (Scalable Vector Graphics) con un'interfaccia intuitiva e funzionalità professionali: dai semplici loghi alle illustrazioni complesse, passando per la tipografia e il layout.
+
+In questa serata vedremo le funzionalità principali di Inkscape con esempi pratici, confrontandolo con i principali software proprietari del settore.
+
+La serata fa parte del ciclo **Pillole di Free Software**, incontri a tema aperti a tutti per la promozione del software libero.
+
+
+---
+
+# Pillole di Free Software, serate a tema dedicate al mondo dell'informatica libera
+
+URL: https://luccalug.it/blog/2012/02/pillole-di-free-software-intro/
+Data: 11/02/2012
+Autore: stefano
+Tag: pillole-di-free-software, serata-a-tema
+
+
+Il LuccaLug è lieto di inaugurare un ciclo di incontri a tema dalla durata di una sera ciascuno, per la promozione del software libero e per il confronto sui temi dell'informatica libera.
+
+Queste serate vogliono essere momenti di incontro e di confronto, e non corsi. Gli interventi dei relatori saranno brevi e di introduzione al tema, per dare poi spazio al dibattito fra soci.
+
+{{< note type="info" >}}
+L'organizzazione è libera: chi ha particolari abilità o conoscenze riguardo un determinato software libero può organizzare una serata a tema nella maniera che ritiene più efficace, scegliendo le modalità più adatte per strutturare la presentazione. I computer della sede restano a disposizione dei partecipanti.
+{{< /note >}}
+
+Le serate sono aperte a tutti - soci e non - ogni **lunedì sera** presso la sede del LuccaLug.
+
+
+---
+
+# Pillole di Free Software: Blender, modellatore 3D
+
+URL: https://luccalug.it/blog/2012/02/pillole-blender-modellatore-3d/
+Data: 11/02/2012
+Autore: stefano
+Tag: pillole-di-free-software, blender, grafica
+
+
+{{< evento titolo="Pillole di Free Software: Blender, modellatore 3D" data="2012-02-21" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Serata di presentazione di Blender, il modellatore 3D open source. Incontro aperto a tutti, con breve introduzione al tema e spazio al dibattito." >}}
+
+**Martedì 21 febbraio 2012** - prima serata del ciclo *Pillole di Free Software*.
+
+[Blender](https://www.blender.org/) è uno dei più completi e potenti programmi di modellazione, animazione e rendering 3D, completamente gratuito e open source. In questa serata esploreremo le principali funzionalità dello strumento, con esempi pratici direttamente dai computer della sede.
+
+La serata fa parte del ciclo **Pillole di Free Software**, incontri a tema aperti a tutti per la promozione del software libero.
+
+
+---
+
+# Linux nella biblioteca di Camigliano!
+
+URL: https://luccalug.it/blog/2012/01/linux-nella-biblioteca-di-camigliano/
+Data: 30/01/2012
+Autore: daniele.conventi
+Tag: eventi, trashware
+
+
+Sabato 27/01/2012 noi del LuccaLug siamo intervenuti presso la biblioteca "Mario Tobino" di Camigliano, dove abbiamo aggiornato il parco computer utilizzato dal servizio regionale [PAAS](http://www.e.toscana.it/e-toscana/it/paas.wp).
+
+L'aggiornamento che abbiamo eseguito ha portato all'installazione di [Linux Mint 12](http://linuxmint.com/), configurando inoltre stampanti di rete in condivisione e un accesso remoto per l'assistenza tecnica.
+
+Ora anche la biblioteca è completamente **LIBERA** ed è aggiornata con le ultime novità dell'OpenSource!
+
+
+---
+
+# Nuove cariche amministrative per il Luccalug
+
+URL: https://luccalug.it/blog/2012/01/nuove-cariche-amministrative-luccalug/
+Data: 18/01/2012
+Autore: daniele.conventi
+Tag: associazione
+
+
+Nell'ultima assemblea il Luccalug ha rinnovato le sue cariche sociali per gli anni 2012/13. I nuovi eletti sono:
+
+- **Presidente:** Stefano Giovacchini
+- **Vicepresidente:** Daniele Conventi
+- **Tesoriere:** Matteo Lucchesi
+- **Segretario:** Alessio Mugnani
+
+Inoltre sono stati eletti come consiglieri amministrativi: Manuel Mazzuola, Paolo Dell'Osso, Matteo Lucchesi, Stefano Giovacchini, Daniele Conventi, Alessio Mugnani.
+
+
+---
+
+# Linux Day 2011
+
+URL: https://luccalug.it/blog/2011/10/linux-day-2011/
+Data: 22/10/2011
+Autore: matteo
+Tag: linux-day, eventi
+
+
+Il Linux Day 2011 è stato un grande successo! Di seguito il video realizzato da Dì Lucca che documenta la giornata del 22 ottobre 2011.
+
+{{< link-esterno url="https://vimeo.com/30949991" testo="Dì News - 22 Ottobre 2011 - Linux Day (video su Vimeo)" >}}
+
+
+---
+
+# Aperte le iscrizioni ai corsi 2011!
+
+URL: https://luccalug.it/blog/2011/09/aperte-iscrizioni-corsi-2011/
+Data: 26/09/2011
+Autore: matteo
+Tag: corsi
+
+
+Sono aperte le iscrizioni ai corsi del LuccaLug per il 2011/2012!
+
+Le iscrizioni verranno chiuse il **26 novembre** o ad esaurimento dei posti disponibili (12).
+
+I corsi disponibili sono:
+
+- Corso Linux (28 ore)
+- Corso Arduino (28 ore)
+- Corso Android (28 ore)
+
+Ogni corso prevede una prima parte gratuita di 4 lezioni e una successiva parte a pagamento di 10 lezioni. Il costo della parte a pagamento è di **75 €**. Per iscriversi è necessario versare una caparra di 15 € (rimborsata a fine corso gratuito, oppure scalata dall'importo finale nel caso del corso a pagamento).
+
+Per iscriversi è possibile rivolgersi il lunedì sera dalle ore 21:00 alle ore 23:00 presso la nostra sede, oppure in orario pomeridiano presso la Biblioteca Comunale di Capannori, oppure scrivendo a sito@luccalug.it
+
+
+---
+
+# Incontri sospesi
+
+URL: https://luccalug.it/blog/2011/07/incontri-sospesi/
+Data: 09/07/2011
+Autore: matteo
+Tag: luccalug
+
+
+{{< note type="warning" >}}A causa della mancanza di volontari siamo costretti a sospendere fino a data da decidersi gli incontri del lunedì sera, questo ci rattrista molto ma le persone rimaste sono troppo poche per poter garantire l'apertura fissa settimanale.{{< /note >}}
+
+
+---
+
+# Luccalug su Loschermo.it
+
+URL: https://luccalug.it/blog/2011/06/luccalug-su-loschermo/
+Data: 14/06/2011
+Autore: matteo
+Tag: associazione
+
+
+Quest'oggi è apparsa sul quotidiano online **loschermo.it** un'intervista al nostro presidente riguardo al software libero ed in particolare all'attività della nostra associazione.
+
+{{< link-esterno url="http://www.loschermo.it/articoli/view/35153" testo="Leggi l'intervista su loschermo.it" >}}
+
+
+---
+
+# Gruppo Open Hardware
+
+URL: https://luccalug.it/blog/2011/06/gruppo-open-hardware/
+Data: 01/06/2011
+Autore: matteo
+Tag: open-hardware, arduino, progetti
+
+
+In queste settimane stiamo valutando la possibilità di dare vita ad un sottogruppo del LuccaLug dedicato all'open Hardware e quindi di attrezzare un mini laboratorio per lavorare non solo su progetti software ma anche hardware. In questo momento abbiamo attivato su Facebook un sondaggio per stabilirne il nome.
+
+
+---
+
+# TecnoWorkshop Lucca 2011
+
+URL: https://luccalug.it/blog/2011/05/tecnoworkshop-lucca2011/
+Data: 19/05/2011
+Autore: matteo
+Tag: eventi
+
+
+Il giorno 1 ottobre (sabato) si terrà a Lucca, presso il [Grand Hotel Guinigi](http://www.grandhotelguinigi.it/) - via Romana 1247 - il **TecnoWorkshop Lucca 2011**.
+
+{{< evento titolo="TecnoWorkshop Lucca 2011" data="2011-10-01" luogo="Grand Hotel Guinigi, via Romana 1247, Lucca" descrizione="Workshop sulle tecnologie e l'open source organizzato a Lucca." >}}
+
+
+---
+
+# Campagna Caro Candidato
+
+URL: https://luccalug.it/blog/2011/05/campagna-caro-candidato/
+Data: 11/05/2011
+Autore: DelLo
+Tag: eventi, software-libero
+
+
+Per le prossime elezioni provinciali la nostra associazione promuove la **campagna [Caro Candidato](http://carocandidato.it)**, con la quale si vuole **sensibilizzare i politici sul tema del software libero**. Si invitano i candidati all'adesione firmando il Patto per il Software libero, con il quale questi si impegnano a promuovere il movimento durante il loro eventuale mandato. Dal sito della campagna è possibile visualizzare i politici aderenti.
+
+
+---
+
+# Circolo di studio su Arduino!
+
+URL: https://luccalug.it/blog/2011/04/circolo-di-studio-su-arduino/
+Data: 30/04/2011
+Autore: matteo
+Tag: arduino, open-hardware, corsi
+
+
+{{< note type="info" >}}Le iscrizioni sono chiuse.{{< /note >}}
+
+Il Luccalug è felice di comunicare che a breve partirà un circolo di studio sul progetto Arduino. Il circolo avrà una durata di **27 ore** e si terrà ogni mercoledì dalle ore 20 alle ore 23.
+
+L'iscrizione è assolutamente **gratuita**. **Il corso comincerà mercoledì 11 maggio.**
+
+Il circolo, simile a tutti gli effetti a un corso, prevede l'apprendimento delle nozioni di base per imparare ad utilizzare Arduino con i più comuni sensori e renderlo in grado di comunicare con il computer. In una seconda parte saranno scelti uno o più progetti dai partecipanti che saranno sviluppati insieme.
+
+Il corso è organizzato dall'agenzia formativa Tecnoware in collaborazione con il LuccaLug e fa parte di un finanziamento della provincia.
+
+Per maggiori informazioni potete scrivere a sito@luccalug.it
+
+## Come iscriversi
+
+Per effettuare l'iscrizione è necessario: essere maggiorenni, avere una fotocopia di un documento di identità e compilare il modulo di iscrizione, disponibile al LUG o presso l'agenzia Tecnoware.
+
+I documenti possono essere consegnati sia al Luccalug (lunedì o giovedì dalle 20 alle 23) che presso la Tecnoware (mattina e pomeriggio).
+
+**Tecnoware Srl**
+Dott.ssa Martina Talini - Formazione
+Via di Carraia, 137 - 55061 Capannori (LU)
+Tel. 0583-981759 - Fax 0583-981706 - Cell. 329-0659293
+
+
+---
+
+# Cos'è Arduino?
+
+URL: https://luccalug.it/blog/2011/04/cose-arduino/
+Data: 29/04/2011
+Autore: matteo
+Tag: arduino, open-hardware
+
+
+{{< note type="info" >}}A breve apriranno le iscrizioni per un circolo di studio di 27 ore gratuito su Arduino!{{< /note >}}
+
+Arduino è una piattaforma hardware per il physical computing sviluppata all'Interaction Design Institute di Ivrea, un istituto fondato dalla Olivetti e da Telecom Italia. Arduino è basata su una semplicissima scheda di I/O e su un ambiente di sviluppo che usa una libreria Wiring per semplificare la scrittura di programmi in C e C++ da far girare sulla scheda.
+
+Con Arduino è possibile realizzare progetti di domotica o automazione in generale. Può essere utilizzato per controllare le luci di casa così come l'impianto di irrigazione o un robot.
+
+Le caratteristiche principali che distinguono questa scheda sono il suo prezzo contenuto e la semplicità con cui è possibile programmarla, per questo ha conquistato il cuore di tantissimi hobbisti, ma anche artisti, raggiungendo una grandissima popolarità nel mondo hacker.
+
+**Arduino è open hardware.** La piattaforma hardware è distribuita agli hobbisti in versione generalmente pre-assemblata, acquistabile in internet o in negozi specializzati, ma le informazioni sul progetto hardware sono rese disponibili a tutti in modo che chiunque lo desideri possa legalmente costruirsi un clone o una versione modificata.
+
+La Arduino esibisce molti dei connettori di Input/Output per microcontroller usati da altri circuiti. La Uno, ad esempio, che ha soppiantato la Duemilanove, offre 14 connettori per l'I/O digitale, 6 dei quali possono produrre segnali PWM, mentre 6 sono dedicati a ingressi di segnali analogici. Questi pin sono disponibili sulla parte superiore della scheda, mediante connettori femmina da 0,1". Inoltre, sono disponibili commercialmente molte schede applicative plug-in, note come "shields".
+
+
+---
+
+# Arduino
+
+URL: https://luccalug.it/blog/2011/04/arduino/
+Data: 24/04/2011
+Autore: matteo
+Tag: arduino, progetti, open-hardware
+
+
+Un video di introduzione ad Arduino, la piattaforma open hardware per il physical computing che il LuccaLug sta esplorando.
+
+{{< link-esterno url="https://www.youtube.com/watch?v=U0L_IKsX5C4" testo="Guarda il video su YouTube" >}}
+
+
+---
+
+# Statistiche sito primo trimestre 2011
+
+URL: https://luccalug.it/blog/2011/04/statistiche-sito-primo-trimestre-2011/
+Data: 08/04/2011
+Autore: matteo
+Tag: sito, statistiche
+
+
+In allegato le statistiche del nuovo sito nel primo trimestre 2011. Se anche tu vuoi proporre un articolo o un tema scrivi a sito@luccalug.it
+
+
+---
+
+# Circolo di studio sullo sviluppo di applicazioni su piattaforma Android
+
+URL: https://luccalug.it/blog/2011/04/circolo-di-studio-android/
+Data: 05/04/2011
+Autore: matteo
+Tag: corsi, android, sviluppo
+
+
+{{< note type="info" >}}Le iscrizioni sono chiuse.{{< /note >}}
+
+L'Agenzia formativa **Tecnoware** ha ottenuto il finanziamento dalla Provincia di Lucca per erogare diversi circoli di studio su diverse tematiche, una delle quali riguarda l'Open Source.
+
+Il circolo di studio sullo sviluppo di applicazioni per piattaforma **Android** è organizzato in collaborazione con il LuccaLug e fa parte di un finanziamento della provincia.
+
+Per maggiori informazioni potete scrivere a sito@luccalug.it
+
+
+---
+
+# Django, sviluppare applicazioni web rapidamente
+
+URL: https://luccalug.it/blog/2010/11/django-sviluppare-applicazioni-web-rapidamente/
+Data: 29/11/2010
+Autore: matteo
+Tag: django, eventi, incontri
+
+
+> "Django è un framework open source per lo sviluppo di applicazioni web, scritto in linguaggio Python, seguendo il pattern Model-View-Controller."
+
+Lunedì 6 dicembre alle ore 21:00 presso la sede del Luccalug si terrà un incontro di introduzione a quest'ultimo, facendo particolare riferimento al software Tango sviluppato in collaborazione con la Croce Verde di Ponte a Moriano.
+
+Durante la presentazione verrà messa in risalto l'estrema semplicità e velocità di sviluppo che questo ambiente offre, al solo prezzo di avere una conoscenza di base del linguaggio Python.
+
+Relatore: Matteo Lucchesi
+
+{{< evento titolo="Introduzione a Django" data="2010-12-06" luogo="Sede del LuccaLUG, Lucca" descrizione="Incontro introduttivo su Django con focus sul software Tango per la Croce Verde di Ponte a Moriano. Relatore: Matteo Lucchesi." >}}
+
+
+---
+
+# CAOS - Consulente Applicativo Open Source
+
+URL: https://luccalug.it/blog/2010/11/caos-consulente-applicativo-open-source/
+Data: 26/11/2010
+Autore: matteo
+Tag: eventi, corsi
+
+
+Siamo lieti di invitarvi agli incontri di promozione del corso di formazione CAOS - Consulente Applicativo Open Source, organizzato dall'Agenzia formativa Zefiro e finanziato dalla Provincia di Lucca attraverso il FSE.
+
+Il progetto è volto alla formazione di 24 nuove professionalità esperte nell'ambito della consulenza di soluzioni open source sia ad aziende che Enti Locali e cooperative.
+
+## L'OPEN SOURCE NELLA PUBBLICA AMMINISTRAZIONE
+
+Quale futuro e quali resistenze nell'adozione del software libero nella P.A.: esperienze locali
+
+Lucca, 2 dicembre 2010 ore 17.30
+Presso la sede della Cooperativa Sociale Zefiro, Via delle Cornacchie 960/E
+
+Durante l'incontro sarà presentato il corso CAOS Consulente Applicativo Open Source finanziato dalla Provincia di Lucca attraverso il FSE e gli interessati potranno compilare direttamente la domanda di iscrizione.
+
+Coordina l'incontro Stefano Giuntini (Lo Schermo)
+
+Interverranno:
+
+- Mirco Trielli (presidente Zefiro Società Cooperativa Sociale)
+- Stefano Tirabassi (Comune di Lucca)
+- Luca Falsiroli (Consulente informatico Unione Comuni Alta Versilia)
+- Marco Farulli (Comune di Capannori)
+
+---
+
+## L'OPEN SOURCE NELLE AZIENDE
+
+Il software libero come strumento di lavoro e opportunità in aziende e cooperative di piccole/medie dimensioni
+
+Viareggio, 7 dicembre 2010 ore 18.00
+Presso la sede CNA, Largo Risorgimento n. 9
+
+Durante l'incontro sarà presentato il corso CAOS Consulente Applicativo Open Source finanziato dalla Provincia di Lucca attraverso il FSE e gli interessati potranno compilare direttamente la domanda di iscrizione.
+
+Coordina l'incontro Stephano Tesi (direttore CNA Lucca)
+
+Interverranno:
+
+- Mirco Trielli (presidente Zefiro Società Cooperativa Sociale)
+- Umberto Carrara (Mediaus srl)
+- Giuseppe Fanucchi (Consorzio So and Co)
+- Stefano Giuntini (Lo Schermo)
+
+
+---
+
+# Corsi Linux a pagamento annullati
+
+URL: https://luccalug.it/blog/2010/11/corsi-linux-a-pagamento-annullati/
+Data: 26/11/2010
+Autore: matteo
+Tag: corsi
+
+
+I corsi Linux a pagamento organizzati in collaborazione con il Comune di Capannori sono annullati perché ci sono stati pochissimi iscritti. Questo ci dispiace molto perché sarebbe stata un'ottima occasione per la nostra associazione. In questi giorni discuteremo sulla possibilità di tornare a fare dei corsi ovviamente ridotti ma gratuiti.
+
+
+---
+
+# Tango
+
+URL: https://luccalug.it/blog/2010/11/tango/
+Data: 22/11/2010
+Autore: matteo
+Tag: tango, django, progetti
+
+
+È iniziata la fase di test del software Tango sviluppato dal LuccaLug con Django.
+
+Il software viene utilizzato dalla Croce Verde di Ponte a Moriano per l'organizzazione dei turni dei volontari. Il software permette in maniera visuale di vedere quali turni sono scoperti e di trovare facilmente i volontari da contattare in base ad un completo sistema di statistiche.
+
+
+---
+
+# Prolungato il termine di iscrizione ai corsi!
+
+URL: https://luccalug.it/blog/2010/11/prolungato-termine-iscrizione-corsi/
+Data: 20/11/2010
+Autore: matteo
+Tag: corsi
+
+
+Ci sono ancora alcuni posti disponibili, per cui sarà possibile iscriversi a Corsi organizzati dal Luccalug in collaborazione con il Comune di Capannori sino al 27 novembre 2010.
+
+
+---
+
+# Sito in costruzione
+
+URL: https://luccalug.it/blog/2010/11/sito-in-costruzione/
+Data: 03/11/2010
+Autore: matteo
+Tag: sito
+
+
+Stiamo rinnovando il sito per problemi tecnici con il vecchio hosting, tutti i contenuti saranno ripristinati a breve.
+
+
+---
+
+# Linux Day 2008
+
+URL: https://luccalug.it/blog/2008/10/linux-day-2008/
+Data: 25/10/2008
+Autore: Il Direttivo
+Tag: linux-day, eventi
+
+
+{{< evento titolo="Linux Day 2008" data="2008-10-25" luogo="Villa Bruguier, Capannori (Lucca)" descrizione="Manifestazione nazionale per la promozione di Linux e del software libero, organizzata localmente dal LuccaLug con il patrocinio del Comune di Capannori. Dalle ore 09:00 alle ore 19:00." >}}
+
+Il LuccaLug, dopo il successo dell'edizione 2007, ripropone anche quest'anno il **Linux Day 2008** che si è tenuto sabato **25 ottobre** a **Villa Bruguier** (Capannori). La manifestazione è stata organizzata con il sostegno del Comune di Capannori e la collaborazione dell'Assessorato provinciale.
+
+Il Linux Day è una manifestazione nazionale articolata in eventi locali, promossa da [ILS (Italian Linux Society)](https://www.ils.org/), con lo scopo di promuovere Linux e il software libero.
+
+---
+
+## Programma delle conferenze
+
+Le conferenze si sono articolate su **due percorsi paralleli**:
+
+### Linux per tutti
+
+#### Introduzione a GNU/Linux - mattina
+
+*Queste conferenze non richiedono alcuna conoscenza pregressa sull'argomento.*
+
+| Orario | Talk | Relatore |
+| -------- | ------ | ---------- |
+| 09:30-10:00 | Apertura della manifestazione e saluto delle autorità | Assessore Lara Pizza, Assessore provinciale Francesco Bambini |
+| 10:00-10:30 | Il software libero: introduzione al tema delle licenze aperte e al concetto di Copyleft | Andrea Guetti |
+| 10:45-11:15 | La storia di GNU/Linux: da Richard Stallman a Mark Shuttleworth | Alek Mugnozzo |
+| 11:45-12:05 | Linux dal vivo: ecco cosa mi troverei sullo schermo del PC | Tommaso Pardi |
+| 12:05-12:35 | Per quale motivo dovrei passare al software libero? | Mirko Panicali |
+
+{{< note type="info" >}}
+Le conferenze del mattino sono state registrate e proiettate in loop nel pomeriggio, per chi voleva avere nozioni di base ma aveva altri impegni la mattina.
+{{< /note >}}
+
+#### Divertirsi con GNU/Linux - pomeriggio
+
+| Orario | Talk | Relatore |
+| -------- | ------ | ---------- |
+| 15:00-15:40 | Esempio di creazione musicale e montaggio video con Linux: dimostrazione di utilizzo di software free per audio e video editing | Paolo Dell'Osso e Francesco Pardini |
+| 16:00-16:20 | KDE 4: arriva il desktop del futuro | Matteo Lucchesi |
+| 17:00-17:20 | Ubuntu e la sua comunità | Flavia Weisghizzi |
+| 17:30-17:50 | Creatività e Linux: strumenti liberi per grafici e creativi (GIMP, Inkscape, Scribus) | Stefano Giovacchini |
+| 18:00-18:20 | OpenStreetMap: mappare liberamente | Luca DeLucchi |
+
+---
+
+### Il Software Libero nella pubblica amministrazione
+
+| Orario | Talk | Relatore |
+| -------- | ------ | ---------- |
+| 10:00-10:30 | La diffusione dell'opensource nelle amministrazioni della Provincia di Lucca e del Comune di Capannori | Marco Farulli e Paolo Bertamini |
+| 10:30-10:50 | Il Centro Open Source della Regione Toscana | Marcotulli Angelo, Regione Toscana |
+| 11:00-12:00 | Presentazione del nuovo sito internet del Comune di Capannori (realizzato con Drupal) | Giorgio Del Ghingaro (sindaco), Alberto Gistri, Antonio Le Donne |
+| 12:10-12:30 | Riuso e Open Source, opportunità reciproche | Giovanni A. Cignoni, CRC.R |
+| 12:40-13:00 | I vantaggi del software libero per l'educazione, la ricerca e lo sviluppo dell'economia locale | Simone Piccardi |
+| 14:45-15:15 | PloneGov.org: un progetto di e-government che collega 70 paesi in 3 continenti | Fabio Adezio, Noze s.r.l. |
+| 15:30-16:00 | FUSS: Software libero per la scuola | Christopher Gabriel, Truelite |
+| 16:15-16:45 | Il software libero per le analisi geografiche (GIS) | Luca DeLucchi, GFOSS.it |
+
+---
+
+## Stand interattivi
+
+Durante tutta la giornata erano presenti stand con gadget e dimostrazioni:
+
+- **PC in prova** - Postazioni con Linux preinstallato disponibili per la prova
+- **LuccaLug** - Informazioni sull'associazione, magliette e gadget; possibilità di iscriversi al corso base in anteprima; distribuzione di CD e DVD di GNU/Linux
+- **Trashware** - Dimostrazioni e materiale sul recupero di PC considerati rifiuto; esempio di architettura Terminal Server per il riutilizzo di hardware obsoleto
+- **TORCS** - *The Open Racing Car Simulator*: sfida automobilistica; in regalo la maglietta del LuccaLug al miglior tempo
+- **LevelHead** - Gioco di realtà aumentata con tecnologia innovativa
+
+---
+
+## Pranzo a buffet
+
+Alle ore 13:00 il **Comune di Capannori** ha offerto a tutti i partecipanti un pranzo a buffet.
+
+---
+
+## Sponsorizzazione
+
+L'evento è stato organizzato con il patrocinio del Comune di Capannori. Per informazioni sulle sponsorizzazioni: sponsor@luccalug.it
+
+{{< note type="info" >}}
+Per chi voleva installare Linux sul proprio PC: martedì 28 e giovedì 30 ottobre si sono tenute sessioni speciali dell'help desk (non era possibile installare durante la manifestazione per motivi logistici).
+{{< /note >}}
+
+
+---
+
+
+# Statuto dell'Associazione Luccalug
+
+URL: https://luccalug.it/archivio/statuto/statuto-vigente/
+
+
+## Art. 1 - Denominazione e sede
+
+È costituita l'associazione denominata **"Luccalug - Lucca Linux User Group"**, con sede nel Comune di Lucca.
+
+## Art. 2 - Finalità
+
+L'associazione ha lo scopo di:
+
+- Promuovere la diffusione del sistema operativo GNU/Linux e del software libero
+- Favorire lo scambio di conoscenze e competenze informatiche
+- Organizzare eventi, corsi e incontri sul software libero
+- Collaborare con altre associazioni, enti e istituzioni
+
+## Art. 3 - Soci
+
+Possono essere soci dell'associazione tutte le persone che ne condividono le finalità.
+
+L'ammissione è deliberata dal Consiglio Direttivo su domanda dell'interessato.
+
+## Art. 4 - Organi dell'associazione
+
+Sono organi dell'associazione:
+
+1. L'Assemblea dei Soci
+2. Il Consiglio Direttivo
+3. Il Presidente
+
+## Art. 5 - Assemblea
+
+L'Assemblea è l'organo sovrano dell'associazione. Si riunisce almeno una volta l'anno in via ordinaria.
+
+## Art. 6 - Consiglio Direttivo
+
+Il Consiglio Direttivo è composto da un minimo di 3 a un massimo di 7 membri eletti dall'Assemblea.
+
+## Art. 7 - Patrimonio
+
+Il patrimonio dell'associazione è costituito da:
+
+- Quote associative
+- Contributi e donazioni
+- Proventi da attività
+
+## Art. 8 - Scioglimento
+
+In caso di scioglimento, il patrimonio residuo sarà devoluto ad altra associazione con finalità analoghe.
+
+
+---
+

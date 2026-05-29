@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stampa-3d on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/stampa-3d/</link><description>Recent content in Stampa-3d on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/stampa-3d/feed.xml" rel="self" type="application/rss+xml"/><item><title>Prusa i3 - Terza serata di montaggio</title><link>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</link><pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</guid><description>&lt;p&gt;Si è svolta ieri la terza serata di montaggio della &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt; modificata del LuccaLUG.&lt;/p&gt;
+&lt;p&gt;È stata montata l&amp;rsquo;&lt;strong&gt;elettronica&lt;/strong&gt; e siamo andati avanti con l&amp;rsquo;armatura, fissando il frame al piano XY precedentemente creato. Purtroppo le cinghie acquistate per l&amp;rsquo;asse Y si sono rivelate inutili perché, avendo raddoppiato la lunghezza dell&amp;rsquo;asse, queste risultano troppo corte. Un ulteriore problema si è presentato con alcuni pezzi che avevamo stampato ma che sono risultati mal dimensionati. Dovremmo quindi ristamparli.&lt;/p&gt;</description></item><item><title>Prusa i3 - Seconda serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</link><pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</guid><description>&lt;p&gt;A causa di problemi logistici (non erano arrivati alcuni pezzi), la seconda serata di montaggio è stata rimandata più volte e si è finalmente svolta ieri sera (lunedì 22 luglio).&lt;/p&gt;
+&lt;p&gt;Abbiamo montato l&amp;rsquo;&lt;strong&gt;asse Z&lt;/strong&gt; (compresi i motori) e lo abbiamo fissato al frame.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lunedì prossimo (29 luglio)&lt;/strong&gt; abbiamo in programma di montare l&amp;rsquo;elettronica, caricando eventualmente anche il software, e di proseguire con l&amp;rsquo;armatura.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;unica cosa per cui non siamo ancora pronti è il piatto, la cui base va riprogettata e costruita (visto che lo abbiamo raddoppiato in lunghezza).&lt;/p&gt;</description></item><item><title>Stampare tutto, stampare tutti</title><link>https://luccalug.it/blog/2013/07/stampare-tutto-stampare-tutti/</link><pubDate>Sat, 20 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/stampare-tutto-stampare-tutti/</guid><description>&lt;p&gt;Si è concluso con grande successo lo workshop &lt;strong&gt;&amp;ldquo;Stampare Tutto, Stampare Tutti&amp;rdquo;&lt;/strong&gt;, tenutosi venerdì 19 luglio presso il &lt;a href="http://www.polotecnologicolucchese.it/"&gt;Polo Tecnologico Lucchese&lt;/a&gt;, organizzato da LuccaLUG e &lt;a href="http://www.multiverso.biz/"&gt;Multiverso&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina_hu_e78f51cb536534e1.webp 300w, https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina_hu_e78f51cb536534e1.webp 300w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg"
+ srcset="https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg 300w, https://luccalug.it/images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg 300w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina del workshop Stampare tutto stampare tutti"
+ width="300"
+ height="424"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La locandina del workshop&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id="il-workshop"&gt;Il workshop&lt;/h2&gt;
+&lt;p&gt;Inizialmente Antonio Ardiccioni di Multiverso ha presentato il coworking e Fabio Angeli di Genau ha presentato le due successive conferenze.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://disegnodesign.com/"&gt;Stefano Giovacchini&lt;/a&gt;, decoratore, designer e attuale presidente del LuccaLUG, ha fatto una presentazione sulla stampa 3D come opportunità per designers e makers che vogliono fare prototipi a basso costo delle loro creazioni, sottolineando l&amp;rsquo;importanza e i vantaggi offerti dall&amp;rsquo;utilizzo di stampanti &lt;a href="http://it.wikipedia.org/wiki/Open_hardware"&gt;open hardware&lt;/a&gt; e di software &lt;a href="http://it.wikipedia.org/wiki/Open_source"&gt;open source&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Prusa i3 modificata - Prima serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</link><pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-prima-serata-di-montaggio/</guid><description>&lt;p&gt;Ieri sera abbiamo montato l&amp;rsquo;armatura di base della nostra versione modificata di &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt;, una stampante 3D &lt;a href="http://it.wikipedia.org/wiki/Hardware_libero"&gt;Open Hardware&lt;/a&gt;. La modifica che proponiamo consiste nell&amp;rsquo;aumentare le dimensioni del piatto (da 20×20 cm a 20×40 cm) per poter stampare oggetti più grandi.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug_hu_92ef6f62b493387.webp 539w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png"
+ srcset="https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w, https://luccalug.it/images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png 539w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Il progetto Prusa i3 del LuccaLUG"
+ width="539"
+ height="424"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La nostra Prusa i3 modificata&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Non avendo ancora reperito tutti i pezzi, abbiamo montato solo l&amp;rsquo;armatura della base (barre degli assi X e Y).&lt;/p&gt;</description></item><item><title>Serata a tema: OpenSCAD - disegnare in 3D programmando</title><link>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</link><pubDate>Mon, 19 Nov 2012 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2012/11/serata-openscad-disegnare-in-3d-programmando/</guid><description>&lt;h2 id="lunedì-10-dicembre-2012-per-pillole-di-free-software-serata-dedicata-a-openscad"&gt;Lunedì 10 dicembre 2012, per Pillole di Free Software, serata dedicata a OpenSCAD&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt; è un software per creare oggetti CAD 3D. Stiamo parlando di un software libero e disponibile per Linux/UNIX, MS Windows e Mac OS X.&lt;/p&gt;
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo_hu_1e513c29a302200e.webp 688w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png"
+ srcset="https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w, https://luccalug.it/images/blog/serata-openscad-disegnare-in-3d-programmando/openscad-logo.png 688w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Logo di OpenSCAD"
+ width="688"
+ height="567"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Il logo di OpenSCAD&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Esso non si focalizza sulla modellazione artistica tipica di software come Blender, bensì mantiene un legame più stretto con la progettazione CAD.&lt;/p&gt;</description></item></channel></rss>
