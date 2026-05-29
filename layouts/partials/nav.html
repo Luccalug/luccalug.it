@@ -1,0 +1,5 @@
+<nav class="nav" aria-label="Menu principale">
+  {{- range .Site.Menus.main }}
+    <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+  {{- end }}
+</nav>

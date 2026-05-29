@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+
+  {{ if not .Date.IsZero }}
+  <div class="post-meta">
+    <span><span aria-hidden="true">📅 </span>{{ time.Format "02 January 2006" .Date }}</span>
+    {{ with .Params.author }}<span><span aria-hidden="true">✍️ </span>{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

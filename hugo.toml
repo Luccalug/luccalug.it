@@ -1,0 +1,101 @@
+baseURL = "https://luccalug.it/"
+defaultContentLanguage = "it"
+title = "Luccalug - Lucca Linux User Group"
+enableRobotsTXT = true
+
+[languages]
+  [languages.it]
+    label = "Italiano"
+    locale = "it_IT"
+    weight = 1
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Il Linux User Group di Lucca"
+  marqueeText = "★ Benvenuti su Luccalug - Lucca Linux User Group! ★ Software libero, conoscenza condivisa, pinguini felici! ★"
+  visitorCounterSeed = 1337
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[outputs]
+  home = ["HTML", "RSS", "MD", "llms", "llms-full"]
+  section = ["HTML", "RSS", "MD"]
+  page = ["HTML", "MD"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "feed"
+
+[outputFormats.MD]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.llms-full]
+  mediaType = "text/plain"
+  baseName = "llms-full"
+  isPlainText = true
+  notAlternative = true
+
+[mediaTypes."text/calendar"]
+  suffixes = ["ics"]
+
+[outputFormats.ical]
+  mediaType = "text/calendar"
+  baseName = "calendario"
+  isPlainText = true
+  notAlternative = true
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  [permalinks.page]
+    blog = "/blog/:year/:month/:slug/"
+  [permalinks.section]
+    blog = "/blog/"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Chi siamo"
+    url = "/about/"
+    weight = 2
+  [[menus.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+  [[menus.main]]
+    name = "Archivio"
+    url = "/archivio/"
+    weight = 4
+  [[menus.main]]
+    name = "Calendario"
+    url = "/calendario/"
+    weight = 5
+  [[menus.main]]
+    name = "Linux Day"
+    url = "/linux-day/"
+    weight = 6
+  [[menus.main]]
+    name = "Contatti"
+    url = "/contatti/"
+    weight = 7

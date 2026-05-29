@@ -1,0 +1,30 @@
+{{- /* llms.txt - machine-readable site index per llmstxt.org */ -}}
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+
+Il sito del Lucca Linux User Group: software libero, eventi, documenti ufficiali e risorse per la comunità.
+
+## Pagine principali
+
+{{- range where .Site.RegularPages "Section" "" }}
+- [{{ .Title }}]({{ .Permalink }}index.md)
+{{- end }}
+
+## Blog
+
+{{- range where .Site.RegularPages "Section" "blog" }}
+- [{{ .Title }}]({{ .Permalink }}index.md){{ with .Date }} ({{ time.Format "02/01/2006" . }}){{ end }}
+{{- end }}
+
+## Archivio
+
+{{- range where .Site.Pages "Section" "archivio" }}
+{{- if .IsPage }}
+- [{{ .Title }}]({{ .Permalink }}index.md)
+{{- end }}
+{{- end }}
+
+## Contenuto completo
+
+Per il contenuto completo di tutte le pagine in un unico file: [llms-full.txt]({{ "llms-full.txt" | absURL }})

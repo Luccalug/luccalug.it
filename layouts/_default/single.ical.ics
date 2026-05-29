@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Luccalug//Calendario Eventi//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:{{ .Site.Title }} - Eventi
+X-WR-TIMEZONE:Europe/Rome
+{{ range .Params.events -}}
+{{ $start := time.AsTime (printf "%sT%s:00Z" .date (.time | default "00:00")) -}}
+{{ $end := $start.Add (time.ParseDuration (.duration | default "2h")) -}}
+BEGIN:VEVENT
+DTSTAMP:{{ now.UTC.Format "20060102T150405Z" }}
+DTSTART:{{ $start.Format "20060102T150405" }}
+DTEND:{{ $end.Format "20060102T150405" }}
+SUMMARY:{{ partial "ical-escape.html" .summary }}
+LOCATION:{{ partial "ical-escape.html" .location }}
+DESCRIPTION:{{ partial "ical-escape.html" .description }}
+UID:{{ .date }}-{{ .summary | urlize }}@luccalug.it
+END:VEVENT
+{{ end -}}
+END:VCALENDAR

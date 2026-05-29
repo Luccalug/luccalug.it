@@ -1,16 +1,51 @@
 ---
-title: Calendario
-date: 20-01-2020
-authorbox: false
-sidebar: false
-toc: false
-menu: main
+title: "Calendario"
+description: "Calendario degli eventi e incontri del Luccalug"
+outputs:
+  - HTML
+  - MD
+  - ical
+events:
+  - date: "2026-03-23"
+    time: "21:00"
+    duration: "4h"
+    summary: "Incontro ordinario"
+    location: "Foro Boario, Lucca"
+    description: "Incontro settimanale del Luccalug"
+  - date: "2026-03-30"
+    time: "21:00"
+    duration: "4h"
+    summary: "Incontro ordinario"
+    location: "Foro Boario, Lucca"
+    description: "Incontro settimanale del Luccalug"
+  - date: "2026-04-06"
+    time: "21:00"
+    duration: "4h"
+    summary: "Incontro ordinario"
+    location: "Foro Boario, Lucca"
+    description: "Incontro settimanale del Luccalug"
+  - date: "2026-04-13"
+    time: "21:00"
+    duration: "4h"
+    summary: "Inaugurazione sede rinnovata(?)"
+    location: "Pizza e Foro Boario, Lucca"
+    description: "Inaugurazione della sede rinnovata del Luccalug"
 ---
 
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=ok4j7f3ih5gai1lgo7arij6etg%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Europe%2FRome" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+## 📅 Prossimi Eventi
 
-## *Quando e dove*
-Il calendario sovrastante elenca gli eventi che svolgeremo durante l’arco dell’anno, compresi gli usuali incontri settimanali.
+{{< eventi >}}
 
-Consigliamo comunque di rimanere aggiornati tramite la pagina [Facebook](https://www.facebook.com/luccalug) per comunicazioni dell’ultimo minuto.
+{{< download url="/calendario.ics" tipo="ics" testo="Scarica il calendario iCal" >}}
 
+## 🔁 Incontri Regolari
+
+Ci incontriamo **ogni lunedì**, dalle **21:00 in poi**, presso il [Foro Boario di Lucca](https://osm.org/go/xX4710WmM).
+
+Gli incontri sono aperti a tutti e non richiedono iscrizione.
+
+## 📢 Resta Aggiornato
+
+Seguici sul [blog]({{< ref "blog" >}}) o su [Telegram](https://t.me/luccalug) per non perdere nessun evento!
+
+Oppure [scrivici al nostro indirizzo mail](mailto:luccalug@protonmail.com)

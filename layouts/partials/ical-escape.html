@@ -1,0 +1,2 @@
+{{- /* Escapes a string for an iCal TEXT value per RFC 5545 (\, ;, comma, newlines). */ -}}
+{{- . | replaceRE `\\` `\\` | replaceRE `;` `\;` | replaceRE `,` `\,` | replaceRE `\r?\n` `\n` -}}

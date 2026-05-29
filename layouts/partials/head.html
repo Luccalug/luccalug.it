@@ -1,0 +1,94 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/silkscreen-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/vt323-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+{{- $title := cond .IsHome .Site.Title (printf "%s - %s" .Title .Site.Title) -}}
+{{- $description := cond (ne .Description "") .Description .Site.Params.description -}}
+{{- $image := cond (isset .Params "image") .Params.image "/images/luccalug.png" -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ cond (eq .Section "blog") "article" "website" }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image" content="{{ $image | absURL }}">
+<meta property="og:image:alt" content="{{ $title }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image | absURL }}">
+<meta name="twitter:image:alt" content="{{ $title }}">
+
+{{- if eq .Section "blog" }}
+<!-- Article metadata -->
+{{- with .Date }}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- with .Params.author }}
+<meta property="article:author" content="{{ . }}">
+{{- end }}
+{{- range .Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
+{{- end }}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<meta name="theme-color" content="#1e1e1e" id="theme-color-meta">
+<link rel="icon" type="image/png" href="/images/luccalug-favicon.png">
+<link rel="apple-touch-icon" href="/images/luccalug-favicon.png">
+<link rel="author" href="/humans.txt">
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var m=localStorage.getItem('luccalug-mode')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+  var s=localStorage.getItem('luccalug-scheme')||'default';
+  if(s==='ubuntu')s='default';
+  d.setAttribute('data-mode',m);
+  if(s&&s!=='default')d.setAttribute('data-scheme',s);
+  var bg={dark:{default:'#1e1e1e',fedora:'#181e2e',opensuse:'#182418',arch:'#1a1a24',debian:'#2a1620'},light:{default:'#fdf4f0',fedora:'#f0f4fa',opensuse:'#f2f8ee',arch:'#f0f6fa',debian:'#faf0f2'}};
+  var tc=document.getElementById('theme-color-meta');
+  if(tc&&bg[m])tc.content=bg[m][s]||bg[m]['default'];
+})();
+</script>
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+<noscript><style>.tabs__panel[hidden]{display:block !important}</style></noscript>
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="{{ .MediaType }}" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">
+{{ end }}
+{{- with .OutputFormats.Get "MD" }}
+<link rel="alternate" type="text/markdown" href="{{ .RelPermalink }}" title="{{ $.Title }} (Markdown)">
+{{- end }}
+
+<!-- Schema.org JSON-LD -->
+{{- if .IsHome }}
+{{- $ld := dict
+    "@context" "https://schema.org"
+    "@type" "Organization"
+    "name" "Luccalug"
+    "description" .Site.Params.description
+    "url" .Permalink
+    "inLanguage" "it-IT" }}
+<script type="application/ld+json">{{ $ld | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- else if and (eq .Section "blog") .IsPage }}
+{{- $ld := dict
+    "@context" "https://schema.org"
+    "@type" "Article"
+    "headline" .Title
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "inLanguage" "it-IT"
+    "publisher" (dict "@type" "Organization" "name" "Luccalug") }}
+{{- with .Params.author }}{{ $ld = merge $ld (dict "author" (dict "@type" "Person" "name" .)) }}{{ end }}
+<script type="application/ld+json">{{ $ld | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- end }}

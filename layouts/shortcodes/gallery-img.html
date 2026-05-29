@@ -1,0 +1,29 @@
+{{- /*
+  Single gallery image - must be used inside {{< gallery >}}.
+
+  Usage:
+    {{< gallery-img src="/images/photo.jpg" alt="Description" >}}
+
+  Parameters:
+    src - path to the image, in assets/ (processed) or static/ (raw fallback) (required)
+    alt - alt text (required)
+*/ -}}
+
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+
+{{/* Process through Hugo Pipes when the image lives in assets/; fall back to a raw path (e.g. static/) otherwise. */}}
+{{- $img := resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- if $img -}}
+  {{- $thumb := $img -}}
+  {{- if gt $img.Width 400 }}{{ $thumb = $img.Resize "400x webp q85" }}{{ end -}}
+  {{- $full := $img -}}
+  {{- if gt $img.Width 1600 }}{{ $full = $img.Resize "1600x" }}{{ end -}}
+  <div class="gallery-item" data-gallery-src="{{ $full.RelPermalink }}" data-gallery-alt="{{ $alt }}">
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ $alt }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" decoding="async">
+  </div>
+{{- else -}}
+  <div class="gallery-item" data-gallery-src="{{ $src }}" data-gallery-alt="{{ $alt }}">
+    <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  </div>
+{{- end -}}

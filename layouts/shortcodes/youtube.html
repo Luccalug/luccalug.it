@@ -1,0 +1,24 @@
+{{- /*
+  Privacy-respecting YouTube embed using youtube-nocookie.com.
+
+  Usage:
+    {{< youtube id="dQw4w9WgXcQ" title="Video title" >}}
+
+  Parameters:
+    id    - YouTube video ID (required)
+    title - accessible title for the iframe (required)
+*/ -}}
+
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" | default "Video YouTube" -}}
+
+<div class="youtube-embed">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+    title="{{ $title }}"
+    loading="lazy"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>

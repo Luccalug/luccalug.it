@@ -1,0 +1,12 @@
+{{ $name := .Get "name" }}
+{{ $role := .Get "role" }}
+{{ $avatar := .Get "avatar" | default "" }}
+<div class="member-card">
+  {{ if $avatar }}
+    {{ partial "img.html" (dict "src" $avatar "alt" $name "width" 128 "class" "member-avatar") }}
+  {{ else }}
+    <div class="member-avatar" style="width:64px;height:64px;background:var(--bg-card);border:2px solid var(--accent);display:inline-block;line-height:64px;font-size:32px;"><span aria-hidden="true">🐧</span></div>
+  {{ end }}
+  <div class="member-name">{{ $name }}</div>
+  <div class="member-role">{{ $role }}</div>
+</div>

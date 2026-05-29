@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+  <header>
+    {{- partial "marquee.html" . -}}
+    {{- partial "nav.html" . -}}
+  </header>
+  {{- partial "theme-switcher.html" . -}}
+
+  <main id="main-content" class="page-wrapper">
+    {{- block "main" . }}{{ end -}}
+  </main>
+
+  {{- partial "footer.html" . -}}
+</body>
+</html>

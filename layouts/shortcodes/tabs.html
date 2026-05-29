@@ -1,0 +1,92 @@
+{{- /*
+  Tabs container with accessible keyboard navigation.
+
+  Usage:
+    {{< tabs >}}
+      {{< tab name="Ubuntu" >}}Ubuntu instructions{{< /tab >}}
+      {{< tab name="Fedora" >}}Fedora instructions{{< /tab >}}
+    {{< /tabs >}}
+*/ -}}
+
+{{- $id := printf "tabs-%d" .Ordinal -}}
+<div class="tabs" id="{{ $id }}">
+  <div class="tabs__panels">
+    {{ .Inner }}
+  </div>
+</div>
+<script>
+(function() {
+  var container = document.getElementById('{{ $id }}');
+  if (!container) return;
+  var panels = container.querySelectorAll('.tabs__panel');
+  if (!panels.length) return;
+
+  var tablist = document.createElement('div');
+  tablist.setAttribute('role', 'tablist');
+  tablist.setAttribute('aria-label', 'Schede');
+  tablist.className = 'tabs__list';
+
+  panels.forEach(function(panel, i) {
+    var name = panel.getAttribute('data-tab-name');
+    var tabId = '{{ $id }}-tab-' + i;
+    var panelId = '{{ $id }}-panel-' + i;
+
+    panel.setAttribute('id', panelId);
+    panel.setAttribute('aria-labelledby', tabId);
+    panel.setAttribute('tabindex', '0');
+    if (i === 0) panel.removeAttribute('hidden');
+
+    var btn = document.createElement('button');
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('id', tabId);
+    btn.setAttribute('aria-controls', panelId);
+    btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+    btn.setAttribute('tabindex', i === 0 ? '0' : '-1');
+    btn.className = 'tabs__tab';
+    btn.textContent = name;
+    tablist.appendChild(btn);
+  });
+
+  container.insertBefore(tablist, container.firstChild);
+
+  tablist.addEventListener('click', function(e) {
+    var tab = e.target.closest('[role="tab"]');
+    if (tab) activateTab(tab);
+  });
+
+  tablist.addEventListener('keydown', function(e) {
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var current = tablist.querySelector('[aria-selected="true"]');
+    var idx = tabs.indexOf(current);
+    var next;
+
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      next = tabs[(idx + 1) % tabs.length];
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      next = tabs[(idx - 1 + tabs.length) % tabs.length];
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      next = tabs[0];
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      next = tabs[tabs.length - 1];
+    }
+    if (next) { activateTab(next); next.focus(); }
+  });
+
+  function activateTab(tab) {
+    tablist.querySelectorAll('[role="tab"]').forEach(function(t) {
+      t.setAttribute('aria-selected', 'false');
+      t.setAttribute('tabindex', '-1');
+    });
+    tab.setAttribute('aria-selected', 'true');
+    tab.setAttribute('tabindex', '0');
+
+    panels.forEach(function(p) { p.setAttribute('hidden', ''); });
+    var target = document.getElementById(tab.getAttribute('aria-controls'));
+    if (target) target.removeAttribute('hidden');
+  }
+})();
+</script>

@@ -1,1 +1,23 @@
-public
+# Hugo output
+public/
+
+# Hugo cache
+resources/_gen/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+nohup.out
+
+# Misc
+*.bak

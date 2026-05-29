@@ -1,0 +1,35 @@
+{{- /*
+  Event card with semantic date.
+
+  Usage:
+    {{< evento titolo="Linux Day 2026" data="2026-10-24" luogo="Foro Boario, Lucca" >}}
+
+  Parameters:
+    titolo      - event title (required)
+    data        - date in YYYY-MM-DD format (required)
+    luogo       - location (required)
+    descrizione - short description (optional)
+    url         - link for more info (optional)
+*/ -}}
+
+{{- $titolo := .Get "titolo" -}}
+{{- $data := .Get "data" -}}
+{{- $luogo := .Get "luogo" -}}
+{{- $descrizione := .Get "descrizione" | default "" -}}
+{{- $url := .Get "url" | default "" -}}
+
+<div class="evento-card">
+  <div class="evento-date">
+    <time datetime="{{ $data }}">{{ time.Format "2 January 2006" $data }}</time>
+  </div>
+  <div class="evento-details">
+    <div class="evento-titolo">{{ $titolo }}</div>
+    <div class="evento-luogo"><span aria-hidden="true">📍</span> {{ $luogo }}</div>
+    {{- with $descrizione }}
+    <div class="evento-descrizione">{{ . }}</div>
+    {{- end }}
+    {{- with $url }}
+    <a class="evento-link" href="{{ . }}">Maggiori informazioni &rarr;</a>
+    {{- end }}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{{- with .Page.Params.events -}}
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Evento</th>
+      <th>Luogo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range . -}}
+    {{- $d := time .date -}}
+    <tr>
+      <td>{{ $d.Day }} {{ strings.FirstUpper (time.Format "January" .date) }} {{ $d.Year }}</td>
+      <td>{{ .summary }}</td>
+      <td>{{ .location }}</td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+{{- end -}}

@@ -1,0 +1,32 @@
+{{- /*
+  Download link with icon and optional file size.
+
+  Usage:
+    {{< download url="/files/statuto.pdf" testo="Statuto (PDF)" dimensione="120 KB" >}}
+
+  Parameters:
+    url        - file URL (required)
+    testo      - link text (required)
+    dimensione - file size display (optional)
+    tipo       - file type icon: "pdf", "zip", "iso", "doc", "ics", "generic" (optional, default "generic")
+*/ -}}
+
+{{- $url := .Get "url" -}}
+{{- $testo := .Get "testo" -}}
+{{- $dimensione := .Get "dimensione" | default "" -}}
+{{- $tipo := .Get "tipo" | default "generic" -}}
+
+{{- $icone := dict "pdf" "📕" "zip" "📦" "iso" "💿" "doc" "📝" "ics" "📅" -}}
+{{- $icona := index $icone $tipo | default "📄" -}}
+
+<a class="download-link" href="{{ $url }}" download>
+  <span class="download-icon" aria-hidden="true">{{ $icona }}</span>
+  <span class="download-info">
+    <span class="sr-only">Scarica: </span>
+    <span class="download-testo">{{ $testo }}</span>
+    {{- with $dimensione }}
+    <span class="download-dim">({{ . }})</span>
+    {{- end }}
+  </span>
+  <span class="download-arrow" aria-hidden="true">⬇</span>
+</a>

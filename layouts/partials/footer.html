@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <hr>
+  <div class="footer-badges">
+    <span class="footer-badge"><span aria-hidden="true">🐧 </span>Best viewed with any browser</span>
+    <span class="footer-badge">Made with Hugo</span>
+    <span class="footer-badge">Powered by Free Software</span>
+  </div>
+
+  <div class="visitor-counter">
+    Visitatori: <span id="visitor-count">{{ .Site.Params.visitorCounterSeed }}</span>
+  </div>
+  <script>
+    (function() {
+      var el = document.getElementById('visitor-count');
+      var seed = parseInt(el.textContent, 10);
+      var d = new Date();
+      var days = Math.floor((d - new Date('2025-01-01')) / 86400000);
+      el.textContent = String(seed + days * 7 + Math.floor(Math.random() * 5)).padStart(6, '0');
+    })();
+  </script>
+
+  <div class="webring">
+    <a href="https://www.linux.it/LUG/">LUG Italiani</a> · <a href="https://neocities.org/">Neocities</a> · <a href="{{ "blog/feed.xml" | absURL }}">RSS Feed</a>
+  </div>
+
+  <p>&copy; {{ now.Year }} Luccalug - Lucca Linux User Group</p>
+</footer>

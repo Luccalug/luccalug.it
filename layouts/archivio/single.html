@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="archivio-layout">
+  {{ partial "sidebar.html" . }}
+
+  <div class="archivio-content">
+    {{/* Breadcrumbs */}}
+    <div class="breadcrumbs">
+      <a href="/">Home</a><span class="sep">/</span>
+      {{ range .Ancestors.Reverse }}
+        {{ if ne .Kind "home" }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="sep">/</span>
+        {{ end }}
+      {{ end }}
+      <span>{{ .Title }}</span>
+    </div>
+
+    <h1>{{ .Title }}</h1>
+
+    {{/* Document metadata */}}
+    {{ if or .Params.author .Params.status .Params.date }}
+    <dl class="doc-meta">
+      {{ with .Params.status }}
+        <dt>Stato</dt>
+        <dd><span class="doc-status {{ . }}">{{ . }}</span></dd>
+      {{ end }}
+      {{ if not .Date.IsZero }}
+        <dt>Data</dt>
+        <dd>{{ time.Format "02 January 2006" .Date }}</dd>
+      {{ end }}
+      {{ with .Params.author }}
+        <dt>Autore</dt>
+        <dd>{{ . }}</dd>
+      {{ end }}
+    </dl>
+    {{ end }}
+
+    {{/* Table of Contents */}}
+    {{ if .Truncated | or (gt (len .TableOfContents) 100) }}
+    <div class="toc">
+      <div class="toc-title"><span aria-hidden="true">📋 </span>Indice</div>
+      {{ .TableOfContents }}
+    </div>
+    {{ end }}
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}

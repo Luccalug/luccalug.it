@@ -1,0 +1,15 @@
+{{- /*
+  External link with icon.
+
+  Usage:
+    {{< link-esterno url="https://example.com" testo="Example" >}}
+
+  Parameters:
+    url   - destination URL (required)
+    testo - link text (required)
+*/ -}}
+
+{{- $url := .Get "url" -}}
+{{- $testo := .Get "testo" -}}
+
+<a class="link-esterno" href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $testo }}<span aria-hidden="true"> ↗</span><span class="sr-only"> (si apre in una nuova finestra)</span></a>

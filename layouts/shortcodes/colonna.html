@@ -1,0 +1,10 @@
+{{- /*
+  Single column - must be used inside {{< colonne >}}.
+
+  Usage:
+    {{< colonna >}}Content here{{< /colonna >}}
+*/ -}}
+
+<div class="colonna">
+  {{ .Inner | markdownify }}
+</div>

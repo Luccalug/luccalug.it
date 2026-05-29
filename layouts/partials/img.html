@@ -1,0 +1,64 @@
+{{- /*
+  Image processing partial.
+
+  Usage:
+    {{ partial "img.html" (dict "src" "images/photo.jpg" "alt" "Description" "class" "my-class" "page" .) }}
+
+  Parameters:
+    src     - path relative to assets/ (required)
+    alt     - alt text (required)
+    class   - CSS class (optional)
+    width   - max width in px (optional, default 800)
+    loading - "lazy" or "eager" (optional, default "lazy")
+
+  Produces:
+    - Resized to max width
+    - WebP version via <picture> with original format fallback
+    - srcset at 1x and 2x
+*/ -}}
+
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $width := .width | default 800 -}}
+{{- $loading := .loading | default "lazy" -}}
+
+{{- $img := resources.Get $src -}}
+{{- if $img -}}
+  {{- $small := $img -}}
+  {{- $large := $img -}}
+
+  {{/* Only resize if image is larger than target */}}
+  {{- if gt $img.Width $width -}}
+    {{- $small = $img.Resize (printf "%dx" $width) -}}
+  {{- end -}}
+
+  {{- $width2x := mul $width 2 -}}
+  {{- if gt $img.Width $width2x -}}
+    {{- $large = $img.Resize (printf "%dx" $width2x) -}}
+  {{- end -}}
+
+  {{/* Generate WebP variants */}}
+  {{- $smallWebP := $small.Process "webp" -}}
+  {{- $largeWebP := $large.Process "webp" -}}
+
+  <picture>
+    <source
+      type="image/webp"
+      srcset="{{ $smallWebP.RelPermalink }} {{ $small.Width }}w, {{ $largeWebP.RelPermalink }} {{ $large.Width }}w"
+      sizes="(max-width: {{ $width }}px) 100vw, {{ $width }}px">
+    <img
+      src="{{ $small.RelPermalink }}"
+      srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w"
+      sizes="(max-width: {{ $width }}px) 100vw, {{ $width }}px"
+      alt="{{ $alt }}"
+      width="{{ $small.Width }}"
+      height="{{ $small.Height }}"
+      loading="{{ $loading }}"
+      decoding="async"
+      {{- with $class }} class="{{ . }}"{{ end }}>
+  </picture>
+{{- else -}}
+  <!-- img partial: "{{ $src }}" not found in assets/ -->
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="{{ $loading }}"{{ with $class }} class="{{ . }}"{{ end }}>
+{{- end -}}

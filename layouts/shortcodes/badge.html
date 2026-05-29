@@ -1,0 +1,16 @@
+{{- /*
+  Inline badge/label.
+
+  Usage:
+    {{< badge testo="FLOSS" >}}
+    {{< badge testo="Nuovo" colore="warm" >}}
+
+  Parameters:
+    testo  - badge text (required)
+    colore - color variant: "accent", "alt", "warm", "green", "red" (optional, default "accent")
+*/ -}}
+
+{{- $testo := .Get "testo" -}}
+{{- $colore := .Get "colore" | default "accent" -}}
+
+<span class="badge badge--{{ $colore }}">{{ $testo }}</span>

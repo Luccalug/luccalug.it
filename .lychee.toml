@@ -1,0 +1,14 @@
+# Lychee link checker configuration
+exclude_path = ["public/feed.xml", "public/sitemap.xml"]
+
+# Skip mailto and tel links
+exclude = ['^mailto:', '^tel:']
+
+# Accept 429 (rate limited) as valid
+accept = [200, 429]
+
+# Timeout per request
+timeout = 30
+
+# Max concurrent requests
+max_concurrency = 5

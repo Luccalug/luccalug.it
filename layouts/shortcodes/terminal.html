@@ -1,0 +1,19 @@
+{{- /*
+  Fake retro terminal block.
+
+  Usage:
+    {{< terminal title="Installare Hugo" >}}sudo pacman -S hugo{{< /terminal >}}
+
+  Parameters:
+    title - title bar text (optional, default "Terminal")
+*/ -}}
+
+{{- $title := .Get "title" | default "Terminal" -}}
+
+<div class="terminal" role="region" aria-label="{{ $title }}">
+  <div class="terminal-titlebar" aria-hidden="true">
+    <span class="terminal-dots">● ● ●</span>
+    <span class="terminal-title">{{ $title }}</span>
+  </div>
+  <pre class="terminal-body"><code>{{ .Inner }}</code></pre>
+</div>

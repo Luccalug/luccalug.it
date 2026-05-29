@@ -1,0 +1,24 @@
+{{ define "main" }}
+<h1><span aria-hidden="true">📰 </span>{{ .Title }}</h1>
+
+{{ .Content }}
+
+{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+<ul class="post-list">
+  {{ range $paginator.Pages }}
+  <li class="post-item">
+    <span class="post-date">{{ time.Format "02/01/2006" .Date }}</span>
+    <span class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    {{ with .Params.tags }}
+      <div class="post-tags">
+      {{ range . }}
+        <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
+      {{ end }}
+      </div>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "pagination.html" . }}
+{{ end }}

@@ -1,0 +1,96 @@
+<div class="theme-switcher" role="group" aria-label="Impostazioni tema">
+  <button class="mode-toggle" id="mode-toggle" aria-label="Passa a modalità chiara" aria-pressed="true">🌙</button>
+  <div class="scheme-picker" id="scheme-picker">
+    <button class="scheme-trigger" id="scheme-trigger" aria-label="Scegli schema colori" aria-expanded="false" aria-controls="scheme-dropdown">
+      <span class="dot-preview" aria-hidden="true"></span>
+    </button>
+    <div class="scheme-dropdown" id="scheme-dropdown" role="group" aria-label="Schemi colore">
+      <button class="scheme-btn active" data-s="default" aria-pressed="true"><span class="scheme-label">Ubuntu</span></button>
+      <button class="scheme-btn" data-s="fedora" aria-pressed="false"><span class="scheme-label">Fedora</span></button>
+      <button class="scheme-btn" data-s="opensuse" aria-pressed="false"><span class="scheme-label">openSUSE</span></button>
+      <button class="scheme-btn" data-s="arch" aria-pressed="false"><span class="scheme-label">Arch</span></button>
+      <button class="scheme-btn" data-s="debian" aria-pressed="false"><span class="scheme-label">Debian</span></button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var root = document.documentElement;
+  var modeBtn = document.getElementById('mode-toggle');
+  var picker = document.getElementById('scheme-picker');
+  var trigger = document.getElementById('scheme-trigger');
+  var dropdown = document.getElementById('scheme-dropdown');
+  var schemeBtns = document.querySelectorAll('.scheme-btn');
+
+  function setMode(m) {
+    root.setAttribute('data-mode', m);
+    localStorage.setItem('luccalug-mode', m);
+    modeBtn.textContent = m === 'dark' ? '🌙' : '☀️';
+    modeBtn.setAttribute('aria-label', m === 'dark' ? 'Passa a modalità chiara' : 'Passa a modalità scura');
+    modeBtn.setAttribute('aria-pressed', m === 'dark' ? 'true' : 'false');
+  }
+
+  function openDropdown() {
+    picker.classList.add('open');
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeDropdown() {
+    picker.classList.remove('open');
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+
+  function setScheme(s) {
+    if (s === 'default') {
+      root.removeAttribute('data-scheme');
+    } else {
+      root.setAttribute('data-scheme', s);
+    }
+    localStorage.setItem('luccalug-scheme', s);
+    schemeBtns.forEach(function(b) {
+      var isActive = b.getAttribute('data-s') === s;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+    closeDropdown();
+  }
+
+  modeBtn.addEventListener('click', function() {
+    setMode(root.getAttribute('data-mode') === 'dark' ? 'light' : 'dark');
+  });
+
+  trigger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (picker.classList.contains('open')) {
+      closeDropdown();
+    } else {
+      openDropdown();
+    }
+  });
+
+  schemeBtns.forEach(function(b) {
+    b.addEventListener('click', function(e) {
+      e.stopPropagation();
+      setScheme(b.getAttribute('data-s'));
+    });
+  });
+
+  document.addEventListener('click', function() {
+    closeDropdown();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && picker.classList.contains('open')) {
+      closeDropdown();
+      trigger.focus();
+    }
+  });
+
+  // Sync UI with the state already applied by the anti-flash script in <head>
+  var curMode = root.getAttribute('data-mode') || 'dark';
+  var curScheme = localStorage.getItem('luccalug-scheme') || 'default';
+  if (curScheme === 'ubuntu') curScheme = 'default';
+  setMode(curMode);
+  setScheme(curScheme);
+})();
+</script>

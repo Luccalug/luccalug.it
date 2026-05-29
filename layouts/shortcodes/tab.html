@@ -1,0 +1,14 @@
+{{- /*
+  Individual tab - must be used inside {{< tabs >}}.
+
+  Usage:
+    {{< tab name="Ubuntu" >}}Content here{{< /tab >}}
+
+  Parameters:
+    name - tab label (required)
+*/ -}}
+
+{{- $name := .Get "name" -}}
+<div class="tabs__panel" data-tab-name="{{ $name }}" role="tabpanel" hidden>
+  {{ .Inner | markdownify }}
+</div>

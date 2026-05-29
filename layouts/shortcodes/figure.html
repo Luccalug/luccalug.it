@@ -1,0 +1,26 @@
+{{- /*
+  Figure shortcode with image processing.
+
+  Usage:
+    {{< figure src="images/photo.jpg" alt="Description" caption="Optional caption" >}}
+
+  Parameters:
+    src     - path relative to assets/ (required)
+    alt     - alt text (required)
+    caption - figure caption (optional)
+    width   - max width in px (optional, default 800)
+    class   - additional CSS class (optional)
+*/ -}}
+
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+{{- $width := .Get "width" | default 800 -}}
+{{- $class := .Get "class" | default "" -}}
+
+<figure class="figure{{ with $class }} {{ . }}{{ end }}">
+  {{ partial "img.html" (dict "src" $src "alt" $alt "width" $width) }}
+  {{- with $caption }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

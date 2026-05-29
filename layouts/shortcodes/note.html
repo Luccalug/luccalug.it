@@ -1,0 +1,11 @@
+{{ $type := .Get "type" | default "info" }}
+<div class="note {{ $type }}" role="note">
+  <div class="note-title">
+    {{ if eq $type "warning" }}<span aria-hidden="true">⚠️</span> Attenzione
+    {{ else if eq $type "danger" }}<span aria-hidden="true">🚫</span> Pericolo
+    {{ else if eq $type "tip" }}<span aria-hidden="true">💡</span> Suggerimento
+    {{ else }}<span aria-hidden="true">ℹ️</span> Info
+    {{ end }}
+  </div>
+  {{ .Inner | markdownify }}
+</div>

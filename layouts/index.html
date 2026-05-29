@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="hero">
+  {{ partial "img.html" (dict "src" "images/luccalug.png" "alt" "Luccalug" "class" "hero-logo" "width" 240 "loading" "eager") }}
+  <h1>{{ .Site.Title }}</h1>
+  <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+
+  <div class="hero-actions">
+    <a href="/blog/" class="enter-btn"><span aria-hidden="true">📰 </span>Blog</a>
+    <a href="/archivio/" class="enter-btn"><span aria-hidden="true">📁 </span>Archivio</a>
+    <a href="/about/" class="enter-btn"><span aria-hidden="true">👥 </span>Chi Siamo</a>
+  </div>
+</div>
+
+{{ with .Content }}
+<div class="homepage-content">
+  {{ . }}
+</div>
+{{ end }}
+
+<hr>
+
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ with $posts | first 5 }}
+<div class="latest-posts">
+  <h2>Ultimi Articoli</h2>
+  <ul class="post-list">
+    {{ range . }}
+    <li class="post-item">
+      <span class="post-date">{{ time.Format "02/01/2006" .Date }}</span>
+      <span class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+{{ end }}

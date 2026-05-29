@@ -1,0 +1,12 @@
+config:
+  # Allow HTML in markdown (Hugo shortcodes, raw HTML)
+  MD033: false
+  # Allow duplicate headings in different sections
+  MD024:
+    siblings_only: true
+  # Don't enforce line length (content files)
+  MD013: false
+  # Allow trailing punctuation in headings
+  MD026: false
+  # Allow bare URLs
+  MD034: false

@@ -1,0 +1,37 @@
+{{- /* llms-full.txt - all site content concatenated for LLM consumption */ -}}
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+
+---
+{{ range where .Site.RegularPages "Section" "" }}
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ if not .Date.IsZero }}Data: {{ .Date.Format "02/01/2006" }}
+{{ end }}
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ range where .Site.RegularPages "Section" "blog" }}
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{ if not .Date.IsZero }}Data: {{ .Date.Format "02/01/2006" }}
+{{ end }}{{ with .Params.author }}Autore: {{ . }}
+{{ end }}{{ with .Params.tags }}Tag: {{ delimit . ", " }}
+{{ end }}
+{{ .RawContent }}
+
+---
+{{ end }}
+{{ range where .Site.Pages "Section" "archivio" }}{{ if .IsPage }}
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+
+{{ .RawContent }}
+
+---
+{{ end }}{{ end }}

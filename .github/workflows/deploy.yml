@@ -1,38 +1,92 @@
-name: Hugo deploy
+name: Deploy Hugo to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-20.04
+  lint:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v19
         with:
-          submodules: true
-          fetch-depth: 0
+          globs: 'content/**/*.md'
 
-      - name: Read .env
-        id: hugo-version
-        run: |
-          . ./.env
-          echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Spell check
+        uses: streetsidesoftware/cspell-action@v6
         with:
-          hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'
+          files: 'content/**/*.md'
+          language: it,en
 
-      - name: Build
-        run: hugo --minify
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: peaceiris/actions-hugo@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
-          emptyCommits: false
+          hugo-version: '0.161.1'
+          extended: true
 
+      - uses: actions/cache@v4
+        with:
+          path: resources
+          key: hugo-images-${{ hashFiles('assets/images/**') }}
+          restore-keys: hugo-images-
+
+      - run: hugo --minify --baseURL "https://luccalug.it/"
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: '--no-progress ./public'
+          fail: true
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [lint, link-check]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.161.1'
+          extended: true
+
+      - uses: actions/cache@v4
+        with:
+          path: resources
+          key: hugo-images-${{ hashFiles('assets/images/**') }}
+          restore-keys: hugo-images-
+
+      - uses: actions/configure-pages@v5
+        id: pages
+
+      - run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

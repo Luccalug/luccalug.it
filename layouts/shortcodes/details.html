@@ -1,0 +1,18 @@
+{{- /*
+  Collapsible details/summary block.
+
+  Usage:
+    {{< details summary="FAQ" >}}Markdown content here{{< /details >}}
+
+  Parameters:
+    summary - title text shown in the summary element (required)
+*/ -}}
+
+{{- $summary := .Get "summary" -}}
+
+<details class="details-block">
+  <summary>{{ $summary }}</summary>
+  <div class="details-content">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

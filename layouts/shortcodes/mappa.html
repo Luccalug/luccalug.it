@@ -1,0 +1,37 @@
+{{- /*
+  OpenStreetMap embed.
+
+  Usage:
+    {{< mappa lat="43.843" lon="10.505" zoom="16" titolo="Foro Boario, Lucca" >}}
+
+  Parameters:
+    lat    - latitude (required)
+    lon    - longitude (required)
+    zoom   - zoom level 1-19 (optional, default "16")
+    titolo - accessible title and marker label (optional, default "Mappa")
+*/ -}}
+
+{{- $lat := .Get "lat" -}}
+{{- $lon := .Get "lon" -}}
+{{- $zoom := .Get "zoom" | default "16" -}}
+{{- $titolo := .Get "titolo" | default "Mappa" -}}
+
+{{- $bbox_size := 0.005 -}}
+{{- $lat_f := float $lat -}}
+{{- $lon_f := float $lon -}}
+
+<div class="mappa-embed">
+  <div class="mappa-titlebar">
+    <span aria-hidden="true">📍</span> {{ $titolo }}
+  </div>
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox={{ sub $lon_f $bbox_size }}%2C{{ sub $lat_f $bbox_size }}%2C{{ add $lon_f $bbox_size }}%2C{{ add $lat_f $bbox_size }}&layer=mapnik&marker={{ $lat }}%2C{{ $lon }}"
+    title="{{ $titolo }}"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
+  <a class="mappa-link" href="https://www.openstreetmap.org/?mlat={{ $lat }}&mlon={{ $lon }}#map={{ $zoom }}/{{ $lat }}/{{ $lon }}" target="_blank" rel="noopener noreferrer">
+    Vedi su OpenStreetMap<span aria-hidden="true"> ↗</span><span class="sr-only"> (si apre in una nuova finestra)</span>
+  </a>
+</div>

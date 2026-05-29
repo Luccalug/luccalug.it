@@ -1,0 +1,93 @@
+{{- /*
+  Image gallery with lightbox.
+
+  Usage:
+    {{< gallery >}}
+      {{< gallery-img src="/images/photo1.jpg" alt="First photo" >}}
+      {{< gallery-img src="/images/photo2.jpg" alt="Second photo" >}}
+    {{< /gallery >}}
+*/ -}}
+
+<div class="gallery" role="region" aria-label="Galleria immagini">
+  <div class="gallery-grid">
+    {{ .Inner }}
+  </div>
+</div>
+
+<div class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Visualizzatore immagini" hidden>
+  <div class="gallery-lightbox-overlay"></div>
+  <div class="gallery-lightbox-content">
+    <button class="gallery-lightbox-close" aria-label="Chiudi"><span aria-hidden="true">&#10005;</span></button>
+    <button class="gallery-lightbox-prev" aria-label="Immagine precedente"><span aria-hidden="true">&#10094;</span></button>
+    <img class="gallery-lightbox-img" src="" alt="">
+    <button class="gallery-lightbox-next" aria-label="Immagine successiva"><span aria-hidden="true">&#10095;</span></button>
+    <p class="gallery-lightbox-caption"></p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var lightbox = document.currentScript.previousElementSibling;
+  var grid = lightbox.previousElementSibling.querySelector('.gallery-grid');
+  var items = grid.querySelectorAll('.gallery-item');
+  var overlay = lightbox.querySelector('.gallery-lightbox-overlay');
+  var img = lightbox.querySelector('.gallery-lightbox-img');
+  var caption = lightbox.querySelector('.gallery-lightbox-caption');
+  var btnClose = lightbox.querySelector('.gallery-lightbox-close');
+  var btnPrev = lightbox.querySelector('.gallery-lightbox-prev');
+  var btnNext = lightbox.querySelector('.gallery-lightbox-next');
+  var current = 0;
+  var triggerEl = null;
+  var focusableEls = [btnClose, btnPrev, btnNext];
+
+  function show(index) {
+    current = index;
+    var item = items[current];
+    img.src = item.getAttribute('data-gallery-src');
+    img.alt = item.getAttribute('data-gallery-alt');
+    caption.textContent = item.getAttribute('data-gallery-alt');
+    btnPrev.style.visibility = current === 0 ? 'hidden' : 'visible';
+    btnNext.style.visibility = current === items.length - 1 ? 'hidden' : 'visible';
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    btnClose.focus();
+  }
+
+  function hide() {
+    lightbox.hidden = true;
+    document.body.style.overflow = '';
+    if (triggerEl) triggerEl.focus();
+  }
+
+  items.forEach(function (item, i) {
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('role', 'button');
+    item.setAttribute('aria-label', item.getAttribute('data-gallery-alt'));
+    item.addEventListener('click', function () { triggerEl = item; show(i); });
+    item.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); triggerEl = item; show(i); }
+    });
+  });
+
+  btnClose.addEventListener('click', hide);
+  overlay.addEventListener('click', hide);
+  btnPrev.addEventListener('click', function () { if (current > 0) show(current - 1); });
+  btnNext.addEventListener('click', function () { if (current < items.length - 1) show(current + 1); });
+
+  lightbox.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { hide(); return; }
+    if (e.key === 'ArrowLeft' && current > 0) { show(current - 1); return; }
+    if (e.key === 'ArrowRight' && current < items.length - 1) { show(current + 1); return; }
+    if (e.key === 'Tab') {
+      var visibleEls = focusableEls.filter(function (el) { return el.style.visibility !== 'hidden'; });
+      var first = visibleEls[0];
+      var last = visibleEls[visibleEls.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+  });
+})();
+</script>

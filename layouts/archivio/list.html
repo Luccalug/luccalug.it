@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="archivio-layout">
+  {{ partial "sidebar.html" . }}
+
+  <div class="archivio-content">
+    <h1><span aria-hidden="true">📁 </span>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ if .Sections }}
+    <h2>Sezioni</h2>
+    <ul class="section-tree">
+      {{ range .Sections }}
+      <li>
+        <span class="section-icon"></span><a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+        {{ with .Pages }}
+        <ul>
+          {{ range .ByWeight }}
+          <li><span class="page-icon"></span><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ if .RegularPages }}
+    <h2>Documenti</h2>
+    <ul class="section-tree">
+      {{ range .RegularPages.ByWeight }}
+      <li>
+        <span class="page-icon"></span><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Params.status }}
+          <span class="doc-status {{ . }}">{{ . }}</span>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

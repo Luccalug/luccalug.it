@@ -1,73 +1,429 @@
-<html>
-    <head>
-        <title>404 - Page not Found</title>
-        <style type="text/css">
-            @font-face {
-                font-family: C64base;
-                font-style: normal;
-                font-weight: normal;
-                src: url(/404/c64.ttf);
-            }
-            BODY {
-                padding: 0;
-                margin: 0;
-                font-family: C64base;
-                text-align: center;
-                font-size: 12pt
-            }
-            IMG {
-                padding: 0;
-                margin: 0
-            }
-            .bg-type1 {
-                background-color: #6076c5
-            }
-            .bg-type2 {
-                background-color: #20398d
-            }
-            .font-type1 {
-                color: #6076c5;
-                text-transform: uppercase
-            }
-            .text-space {
-                letter-spacing: 2pt
-            }
-            .basicscreen {
-                margin: 5% auto 0 auto;
-                text-align: left;
-                width: 550pt;
-                height: 350pt;
-                padding: 2px
-            }
-            ul, li {
-                margin: 0;
-                padding: 0;
-                list-style-type: none
-            }
-            .txt-header {
-                padding-top: 15pt
-            }
-            .txt-header-list LI {
-                text-align: center;
-                padding: 0 0 15pt 0
-            }
-            .txt-real {
-                line-height: 14pt
-            }
-        </style>
-    </head>
+{{ define "main" }}
+<div class="error-page">
+  <div class="error-terminal">
+    <div class="terminal-bar">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-title">bash - errore@luccalug:~</span>
+    </div>
+    <div class="terminal-body">
+      <p class="terminal-line"><span class="terminal-prompt">luccalug@tux:~$</span> <span class="terminal-cmd" id="typed-cmd"></span><span class="terminal-cursor">_</span></p>
+      <div id="terminal-output" class="terminal-output"></div>
+    </div>
+  </div>
 
-    <body class="bg-type1">
-        <div class="bg-type2 basicscreen font-type1 text-space">
-            <div class="txt-header">
-                <ul class="txt-header-list">
-                    <li>**** COMMODORE 64 BASIC V2 ****</li>
-                    <li>64K RAM SYSTEM 38911 BASIC BYTES FREE</li>
-                </ul>
-                Error 404: Page not Found<br>
-            </div>
-            <img src="/404/prompt.gif">
-        </div>
-    </body>
-</html>
+  <div class="error-hero">
+    <div class="error-code" aria-label="Errore 404">
+      <span class="flicker-4">4</span><span class="spin-0">0</span><span class="flicker-4b">4</span>
+    </div>
+    <h1>Pagina non trovata!</h1>
+    <p class="error-subtitle" id="error-subtitle"></p>
+  </div>
 
+  <div class="error-gif-row" aria-hidden="true">
+    <img src="/images/linux.gif" alt="" class="error-gif" loading="lazy">
+    <img src="/images/wizard.gif" alt="" class="error-gif" loading="lazy">
+    <img src="/images/bsd.gif" alt="" class="error-gif" loading="lazy">
+  </div>
+
+  <div class="error-wisdom">
+    <p id="error-wisdom"></p>
+  </div>
+
+  <div class="error-actions">
+    <a href="/" class="enter-btn">Torna alla Home</a>
+    <a href="/blog/" class="enter-btn">Vai al Blog</a>
+    <button class="enter-btn" id="try-again-btn" type="button">Riprova (non funzionerà)</button>
+  </div>
+
+  <div class="error-under-construction" aria-hidden="true">
+    <p>🚧 QUESTA PAGINA È IN COSTRUZIONE DAL 1996 🚧</p>
+    <div class="construction-bar">
+      <div class="construction-stripe"></div>
+    </div>
+  </div>
+
+  <div class="error-guestbook">
+    <h2>Libro degli ospiti perduti</h2>
+    <div class="guestbook-entries" id="guestbook-entries"></div>
+    <p class="guestbook-counter">Visitatori smarriti: <span id="lost-count"></span></p>
+  </div>
+</div>
+
+<style>
+/* --- Terminal --- */
+.error-terminal {
+  background: #0a0a0a;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  font-family: var(--font-mono);
+}
+
+.terminal-bar {
+  background: var(--bg-card);
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-dot.red { background: #ff5f57; }
+.terminal-dot.yellow { background: #febc2e; }
+.terminal-dot.green { background: #28c840; }
+
+.terminal-title {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
+.terminal-body {
+  padding: 16px;
+  font-size: 18px;
+  color: #33ff33;
+  min-height: 120px;
+}
+
+.terminal-prompt { color: #5eead4; }
+.terminal-cmd { color: #33ff33; }
+
+.terminal-cursor {
+  animation: blink-cursor 0.7s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-output {
+  margin-top: 8px;
+  white-space: pre-wrap;
+}
+
+.terminal-output .error-line { color: #ff5f57; }
+.terminal-output .info-line { color: #febc2e; }
+.terminal-output .ok-line { color: #33ff33; }
+
+/* --- Error Hero --- */
+.error-hero {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.error-code {
+  font-family: var(--font-mono);
+  font-size: 96px;
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: 12px;
+  margin-bottom: 8px;
+}
+
+.error-hero h1 {
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+.error-subtitle {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--accent-alt);
+  min-height: 1.5em;
+}
+
+/* --- Number animations --- */
+.flicker-4, .flicker-4b {
+  display: inline-block;
+  animation: flicker 3s ease-in-out infinite;
+}
+
+.flicker-4b { animation-delay: 0.5s; }
+
+@keyframes flicker {
+  0%, 95%, 100% { opacity: 1; }
+  96% { opacity: 0.3; }
+  97% { opacity: 1; }
+  98% { opacity: 0.5; }
+}
+
+.spin-0 {
+  display: inline-block;
+  animation: wiggle 4s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 90%, 100% { transform: rotate(0deg); }
+  93% { transform: rotate(15deg); }
+  96% { transform: rotate(-10deg); }
+}
+
+/* --- GIF Row --- */
+.error-gif-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.error-gif {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  image-rendering: pixelated;
+}
+
+/* --- Wisdom Box --- */
+.error-wisdom {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent-warm);
+  padding: 12px 16px;
+  margin: 24px 0;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--accent-warm);
+  text-align: center;
+  min-height: 2.5em;
+}
+
+/* --- Actions --- */
+.error-actions {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* --- Under Construction --- */
+.error-under-construction {
+  text-align: center;
+  margin: 32px 0 24px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--accent-warm);
+}
+
+.construction-bar {
+  height: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  margin-top: 8px;
+}
+
+.construction-stripe {
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--accent-warm) 0 8px,
+    transparent 8px 16px,
+    var(--accent) 16px 24px,
+    transparent 24px 32px
+  );
+  animation: stripe-move 2s linear infinite;
+}
+
+@keyframes stripe-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* --- Guestbook --- */
+.error-guestbook {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  margin: 24px 0;
+}
+
+.error-guestbook h2 {
+  font-size: 16px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.guestbook-entries {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.guestbook-entries p {
+  margin: 4px 0;
+  padding: 4px 8px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.guestbook-entries .entry-name { color: var(--accent); }
+.guestbook-entries .entry-date { color: var(--text-muted); font-size: 14px; }
+
+.guestbook-counter {
+  text-align: center;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor,
+  .flicker-4, .flicker-4b,
+  .spin-0,
+  .construction-stripe {
+    animation: none;
+  }
+
+  .error-gif { display: none; }
+}
+</style>
+
+<script>
+(function() {
+  // === Typing terminal ===
+  var commands = [
+    { cmd: 'cat /var/www/pagina_che_cercavi.html', delay: 60 },
+    { cmd: 'find / -name "pagina_perduta" 2>/dev/null', delay: 50 },
+    { cmd: 'sudo locate speranza_di_trovarla', delay: 55 },
+    { cmd: 'curl -s https://luccalug.it/pagina_fantasma', delay: 45 },
+    { cmd: 'grep -r "contenuto" /dev/null', delay: 60 }
+  ];
+
+  var outputResponses = [
+    '<span class="error-line">cat: /var/www/pagina_che_cercavi.html: File o directory non esistente</span>\n<span class="info-line">Suggerimento: hai provato ad accendere e spegnere il router?</span>',
+    '<span class="ok-line">[ricerca in corso...]</span>\n<span class="error-line">Nessun risultato. Forse è scappata con i file di configurazione.</span>',
+    '<span class="error-line">sudo: speranza_di_trovarla: comando non trovato</span>\n<span class="info-line">La speranza non è un comando valido, ma noi ci crediamo comunque.</span>',
+    '<span class="error-line">curl: (404) Il server ha risposto con un pinguino confuso.</span>\n<span class="info-line">Tux si scusa per l\'inconveniente. 🐧</span>',
+    '<span class="ok-line">(nessun output)</span>\n<span class="info-line">Tecnicamente corretto. Il tipo migliore di corretto.</span>'
+  ];
+
+  var pick = Math.floor(Math.random() * commands.length);
+  var cmdEl = document.getElementById('typed-cmd');
+  var outEl = document.getElementById('terminal-output');
+  var text = commands[pick].cmd;
+  var i = 0;
+
+  function typeChar() {
+    if (i < text.length) {
+      cmdEl.textContent += text[i];
+      i++;
+      setTimeout(typeChar, commands[pick].delay + Math.random() * 40);
+    } else {
+      setTimeout(function() {
+        outEl.innerHTML = outputResponses[pick];
+      }, 400);
+    }
+  }
+  setTimeout(typeChar, 600);
+
+  // === Random subtitle ===
+  var subtitles = [
+    'Il pinguino ha mangiato questa pagina.',
+    'Errore: la pagina è stata compilata con gcc -O404.',
+    'Segmentation fault (core dumped) - ma con stile.',
+    'La pagina che cerchi è in un\'altra distribuzione.',
+    'rm -rf /pagina_trovata - qualcuno è stato troppo entusiasta.',
+    'Kernel panic: pagina non trovata, niente panico (o forse sì).',
+    'Questa pagina è stata liberata. È software libero, dopotutto.',
+    'Error 404: anche apt-get non riesce a trovarla.',
+    'La pagina è andata a un install party e non è più tornata.',
+    'Permission denied: non hai i permessi per vedere pagine inesistenti.'
+  ];
+  document.getElementById('error-subtitle').textContent = subtitles[Math.floor(Math.random() * subtitles.length)];
+
+  // === Random wisdom ===
+  var wisdoms = [
+    '" In un universo di infinite pagine, hai trovato l\'unica che non esiste. Complimenti. "',
+    '" Chi cerca trova, a meno che non cerchi questa pagina. " - Confucio, probabilmente',
+    '" Il 404 è il vero viaggio, non la destinazione. " - Linus Torvalds, mai',
+    '" sudo make me a sandwich - 404: sandwich non trovato "',
+    '" There is no place like 127.0.0.1, ma questa pagina non è lì. "',
+    '" Un buon programmatore è chi sa trovare la soluzione. Un ottimo programmatore è chi evita di finire qui. "',
+    '" L\'unico vero errore è non usare Linux. Il 404 è il secondo. "',
+    '" Nella vita ci sono 10 tipi di errori: quelli che capisci in binario e i 404. "'
+  ];
+  document.getElementById('error-wisdom').textContent = wisdoms[Math.floor(Math.random() * wisdoms.length)];
+
+  // === Try Again button ===
+  var tryBtn = document.getElementById('try-again-btn');
+  var tryCount = 0;
+  var tryMessages = [
+    'Te l\'avevo detto.',
+    'Ancora? Sul serio?',
+    'La definizione di follia è...',
+    'Ok, adesso mi stai sfidando.',
+    'STAHP.',
+    '...va bene, un ultimo tentativo.',
+    'Spoiler: non funziona neanche questa volta.',
+    'Hai vinto la medaglia della perseveranza! 🏅',
+    'A questo punto sei praticamente di casa.',
+    'sudo rm -rf /tua-pazienza'
+  ];
+  tryBtn.addEventListener('click', function() {
+    var msg = tryMessages[Math.min(tryCount, tryMessages.length - 1)];
+    tryBtn.textContent = msg;
+    tryCount++;
+    if (tryCount > tryMessages.length) {
+      tryBtn.textContent = 'Ok, ti porto alla home...';
+      setTimeout(function() { window.location.href = '/'; }, 1500);
+    }
+  });
+
+  // === Fake guestbook ===
+  var names = [
+    'TuxFan1998', 'PinguinoSmarrito', 'ArchBTW', 'sudo_rm_dash_rf',
+    'DebianDave', 'FedoraFrancesco', 'LinuxNewbie42', 'CompilaTutto',
+    'MintCondition', 'KernelPanicLuca', 'OpenSorcerer', 'GNUovo_utente',
+    'apt_get_lost', 'chmod777', 'Il_Pinguino_Triste', 'MakeInstallMarco'
+  ];
+  var messages = [
+    'Anche io cercavo questa pagina... nel 2003.',
+    'Sono arrivato qui per sbaglio e non me ne pento.',
+    'Questa è la pagina più bella che non esiste.',
+    'Ho compilato il kernel 47 volte e sono finito qui.',
+    'btw I use Arch, e anche le mie pagine 404 sono minimaliste.',
+    'Pensavo fosse un feature, non un bug.',
+    'La pagina non c\'è, ma l\'amicizia sì. ❤️',
+    'rm -rf / <- non fatelo a casa.',
+    'Almeno qui non ci sono cookie banner.',
+    'Bel 404, lo metto nei preferiti.',
+    'Sono qui dal 1996. Mando un fax se trovo la pagina.',
+    'Questa pagina gira su Gentoo? Ci ha messo un po\' a non caricarsi.',
+  ];
+  var dates = ['12/03/1999', '25/08/2001', '01/01/2000', '14/02/2003', '31/12/1998', '17/06/2002', '03/11/1997', '28/09/2004'];
+
+  var entries = document.getElementById('guestbook-entries');
+  var count = 3 + Math.floor(Math.random() * 3);
+  var used = [];
+  for (var g = 0; g < count; g++) {
+    var ni, mi;
+    do { ni = Math.floor(Math.random() * names.length); } while (used.indexOf(ni) !== -1);
+    used.push(ni);
+    mi = Math.floor(Math.random() * messages.length);
+    var di = Math.floor(Math.random() * dates.length);
+    var p = document.createElement('p');
+    p.innerHTML = '<span class="entry-name">' + names[ni] + '</span> <span class="entry-date">(' + dates[di] + ')</span>: ' + messages[mi];
+    entries.appendChild(p);
+  }
+
+  // === Lost visitor counter ===
+  var seed = 404;
+  var d = new Date();
+  var days = Math.floor((d - new Date('1999-01-01')) / 86400000);
+  document.getElementById('lost-count').textContent = String(seed + days * 3 + Math.floor(Math.random() * 10)).padStart(6, '0');
+})();
+</script>
+{{ end }}

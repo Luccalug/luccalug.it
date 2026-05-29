@@ -1,0 +1,18 @@
+{{ $archivio := .Site.GetPage "/archivio" }}
+<aside class="sidebar" aria-label="Navigazione archivio">
+  <h3><span aria-hidden="true">📁 </span>Archivio</h3>
+  <ul>
+    {{ range $archivio.Sections }}
+    <li>
+      <a href="{{ .RelPermalink }}"{{ if $.Page.IsDescendant . }} class="active" aria-current="true"{{ end }}>{{ .Title }}</a>
+      {{ if .Pages }}
+      <ul>
+        {{ range .Pages.ByWeight }}
+        <li><a href="{{ .RelPermalink }}"{{ if eq $.Page.RelPermalink .RelPermalink }} class="active" aria-current="page"{{ end }}>{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</aside>

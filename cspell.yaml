@@ -1,0 +1,23 @@
+version: "0.2"
+language: it,en
+ignorePaths:
+  - "public/**"
+  - "resources/**"
+  - "static/**"
+  - "assets/**"
+  - "layouts/**"
+  - "themes/**"
+  - "*.toml"
+  - "*.yaml"
+  - "*.json"
+# Ignore Hugo frontmatter keys and shortcodes
+ignoreRegExpList:
+  - '/^---[\s\S]*?^---/m'
+  - '/\{\{[<>%].*?[<>%]\}\}/g'
+words:
+  - luccalug
+  - neocities
+  - webring
+  - hugo
+  - linux
+  - woff
