@@ -7,7 +7,7 @@ tags: ["sito", "storia", "retrocomputing", "meta"]
 description: "Un viaggio nostalgico tra tutti i siti web che il LuccaLUG ha avuto dal 2007 a oggi: Drupal, WordPress, Jekyll, Hugo... con screenshot veri pescati dall'Internet Archive."
 ---
 
-Il nuovo sito appena andato online ma ci siamo affezionati a questa estetica un po' anni '90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: **quanti siti ha avuto il LuccaLUG in tutti questi anni?**
+Il nuovo sito appena andato online ma ci siamo già affezionati a questa estetica un po' anni '90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: **quanti siti ha avuto il LuccaLUG in tutti questi anni?**
 
 Tanti. Tantissimi. Uno per ogni moda del web che è passata di qui dal 2007 a oggi. Così abbiamo fatto la cosa più nerd possibile: siamo andati a ripescarli **uno per uno dall'[Internet Archive](https://web.archive.org/web/*/luccalug.it)**, gli abbiamo fatto lo screenshot e li abbiamo messi in fila.
 

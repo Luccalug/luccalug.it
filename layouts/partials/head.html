@@ -5,27 +5,52 @@
 <link rel="preload" href="/fonts/silkscreen-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/vt323-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 {{- $title := cond .IsHome .Site.Title (printf "%s - %s" .Title .Site.Title) -}}
+{{- $ogTitle := cond .IsHome .Site.Title .Title -}}
+{{- $siteName := .Site.Params.shortTitle | default .Site.Title -}}
 {{- $description := cond (ne .Description "") .Description .Site.Params.description -}}
-{{- $image := cond (isset .Params "image") .Params.image "/images/luccalug.png" -}}
+{{- $image := "" -}}
+{{- $ogImageRes := false -}}
+{{- if isset .Params "image" -}}
+  {{- $image = .Params.image | absURL -}}
+{{- else -}}
+  {{- with resources.Get "images/social-card.png" -}}
+    {{- $ogImageRes = .Fill "1200x630 Center" -}}
+    {{- $image = $ogImageRes.Permalink -}}
+  {{- end -}}
+{{- end -}}
+{{- $ogSquare := false -}}
+{{- with resources.Get "images/squared-logo.png" -}}
+  {{- $ogSquare = . -}}
+{{- end -}}
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">
 
 <!-- Open Graph -->
-<meta property="og:title" content="{{ $title }}">
+<meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ cond (eq .Section "blog") "article" "website" }}">
-<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:site_name" content="{{ $siteName }}">
 <meta property="og:locale" content="it_IT">
-<meta property="og:image" content="{{ $image | absURL }}">
-<meta property="og:image:alt" content="{{ $title }}">
+<meta property="og:image" content="{{ $image }}">
+{{- with $ogImageRes }}
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+{{- end }}
+<meta property="og:image:alt" content="{{ $ogTitle }}">
+{{- with $ogSquare }}
+<meta property="og:image" content="{{ .Permalink }}">
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+<meta property="og:image:alt" content="{{ $ogTitle }}">
+{{- end }}
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $ogTitle }}">
 <meta name="twitter:description" content="{{ $description }}">
-<meta name="twitter:image" content="{{ $image | absURL }}">
-<meta name="twitter:image:alt" content="{{ $title }}">
+<meta name="twitter:image" content="{{ $image }}">
+<meta name="twitter:image:alt" content="{{ $ogTitle }}">
 
 {{- if eq .Section "blog" }}
 <!-- Article metadata -->

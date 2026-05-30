@@ -14,6 +14,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Il Linux User Group di Lucca"
+  shortTitle = "Luccalug"
   marqueeText = "★ Benvenuti su Luccalug - Lucca Linux User Group! ★ Software libero, conoscenza condivisa, pinguini felici! ★"
   visitorCounterSeed = 1337
 
