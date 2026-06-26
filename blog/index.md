@@ -4,6 +4,7 @@
 Tutte le novità, gli eventi e gli articoli del Linux User Group di Lucca.
 
 
+- [Serata a tema: Parallel Computing su GPU](https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/index.md) (22/06/2026)
 - [Come eravamo: una macchina del tempo per il sito del LuccaLUG](https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/index.md) (29/05/2026)
 - [Guida alla prima serata](https://luccalug.it/blog/2026/03/guida-alla-prima-serata/index.md) (19/03/2026)
 - [Benvenuti sul nuovo sito del Luccalug!](https://luccalug.it/blog/2026/03/benvenuti-sul-nuovo-sito-del-luccalug/index.md) (17/03/2026)

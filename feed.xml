@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/</link><description>Recent content on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/feed.xml" rel="self" type="application/rss+xml"/><item><title>Statuto dell'Associazione Luccalug</title><link>https://luccalug.it/archivio/statuto/statuto-vigente/</link><pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate><guid>https://luccalug.it/archivio/statuto/statuto-vigente/</guid><description>&lt;h2 id="art-1---denominazione-e-sede"&gt;Art. 1 - Denominazione e sede&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/</link><description>Recent content on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/feed.xml" rel="self" type="application/rss+xml"/><item><title>Statuto dell'Associazione Luccalug</title><link>https://luccalug.it/archivio/statuto/statuto-vigente/</link><pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate><guid>https://luccalug.it/archivio/statuto/statuto-vigente/</guid><description>&lt;h2 id="art-1---denominazione-e-sede"&gt;Art. 1 - Denominazione e sede&lt;/h2&gt;
 &lt;p&gt;È costituita l&amp;rsquo;associazione denominata &lt;strong&gt;&amp;ldquo;Luccalug - Lucca Linux User Group&amp;rdquo;&lt;/strong&gt;, con sede nel Comune di Lucca.&lt;/p&gt;
 &lt;h2 id="art-2---finalità"&gt;Art. 2 - Finalità&lt;/h2&gt;
 &lt;p&gt;L&amp;rsquo;associazione ha lo scopo di:&lt;/p&gt;
@@ -9,7 +9,30 @@
 &lt;li&gt;Collaborare con altre associazioni, enti e istituzioni&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="art-3---soci"&gt;Art. 3 - Soci&lt;/h2&gt;
-&lt;p&gt;Possono essere soci dell&amp;rsquo;associazione tutte le persone che ne condividono le finalità.&lt;/p&gt;</description></item><item><title>Come eravamo: una macchina del tempo per il sito del LuccaLUG</title><link>https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/</link><pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/</guid><description>&lt;p&gt;Il nuovo sito appena andato online ma ci siamo già affezionati a questa estetica un po&amp;rsquo; anni &amp;lsquo;90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: &lt;strong&gt;quanti siti ha avuto il LuccaLUG in tutti questi anni?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Possono essere soci dell&amp;rsquo;associazione tutte le persone che ne condividono le finalità.&lt;/p&gt;</description></item><item><title>Serata a tema: Parallel Computing su GPU</title><link>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</link><pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</guid><description>&lt;p&gt;&lt;strong&gt;Sabato 27 giugno&lt;/strong&gt;, a partire &lt;strong&gt;dalle 16:30 in poi&lt;/strong&gt;, vi aspettiamo per una serata a tema dedicata al &lt;strong&gt;parallel computing&lt;/strong&gt;, presentata dal nostro membro &lt;strong&gt;Massimiliano Ghilardi&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Scopriamo insieme come sfruttare il parallelismo delle GPU per migliorare le prestazioni del nostro software. Com&amp;rsquo;è fatto l&amp;rsquo;hardware e il software alla base dell&amp;rsquo;intelligenza artificiale?&lt;/p&gt;
+&lt;h2 id="programma-della-serata"&gt;Programma della serata&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fondamenti&lt;/strong&gt; del calcolo parallelo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architettura&lt;/strong&gt; delle GPU&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modelli di programmazione&lt;/strong&gt; per lo sviluppo su GPU&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ottimizzazioni&lt;/strong&gt; per lo sviluppo su GPU NVIDIA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differenze principali&lt;/strong&gt; rispetto a OpenCL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="il-relatore"&gt;Il relatore&lt;/h2&gt;
+
+
+
+&lt;div class="member-card"&gt;
+ 
+ &lt;div class="member-avatar" style="width:64px;height:64px;background:var(--bg-card);border:2px solid var(--accent);display:inline-block;line-height:64px;font-size:32px;"&gt;&lt;span aria-hidden="true"&gt;🐧&lt;/span&gt;&lt;/div&gt;
+ 
+ &lt;div class="member-name"&gt;Massimiliano Ghilardi&lt;/div&gt;
+ &lt;div class="member-role"&gt;Relatore della serata&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="a-seguire-pizza-tutti-insieme"&gt;A seguire: pizza tutti insieme!&lt;/h2&gt;
+&lt;p&gt;Al termine della serata andremo a mangiare una &lt;strong&gt;pizza tutti insieme&lt;/strong&gt; per festeggiare la nostra &lt;strong&gt;nuova sede&lt;/strong&gt;, insieme agli altri LUG che parteciperanno. Un&amp;rsquo;ottima occasione per fare quattro chiacchiere e conoscerci meglio davanti a una buona pizza!&lt;/p&gt;</description></item><item><title>Come eravamo: una macchina del tempo per il sito del LuccaLUG</title><link>https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/</link><pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/</guid><description>&lt;p&gt;Il nuovo sito appena andato online ma ci siamo già affezionati a questa estetica un po&amp;rsquo; anni &amp;lsquo;90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: &lt;strong&gt;quanti siti ha avuto il LuccaLUG in tutti questi anni?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Tanti. Tantissimi. Uno per ogni moda del web che è passata di qui dal 2007 a oggi. Così abbiamo fatto la cosa più nerd possibile: siamo andati a ripescarli &lt;strong&gt;uno per uno dall&amp;rsquo;&lt;a href="https://web.archive.org/web/*/luccalug.it"&gt;Internet Archive&lt;/a&gt;&lt;/strong&gt;, gli abbiamo fatto lo screenshot e li abbiamo messi in fila.&lt;/p&gt;</description></item><item><title>Guida alla prima serata</title><link>https://luccalug.it/blog/2026/03/guida-alla-prima-serata/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/03/guida-alla-prima-serata/</guid><description>&lt;p&gt;Stai pensando di passare a trovarci ma non sai bene cosa aspettarti? Questa guida è per te.&lt;/p&gt;
 &lt;h2 id="non-devi-essere-un-esperto"&gt;Non devi essere un esperto&lt;/h2&gt;
 &lt;p&gt;Davvero. Questa è la cosa più importante: &lt;strong&gt;non serve sapere nulla di Linux&lt;/strong&gt; per venire ai nostri incontri. Tra di noi c&amp;rsquo;è chi usa Linux da vent&amp;rsquo;anni e chi ha appena scoperto che esiste qualcosa oltre Windows. Siamo un gruppo eterogeneo e ci piace così.&lt;/p&gt;

@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serata-a-Tema on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/serata-a-tema/</link><description>Recent content in Serata-a-Tema on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/serata-a-tema/feed.xml" rel="self" type="application/rss+xml"/><item><title>Prusa i3 - Terza serata di montaggio</title><link>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</link><pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</guid><description>&lt;p&gt;Si è svolta ieri la terza serata di montaggio della &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt; modificata del LuccaLUG.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serata-a-Tema on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/serata-a-tema/</link><description>Recent content in Serata-a-Tema on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/tags/serata-a-tema/feed.xml" rel="self" type="application/rss+xml"/><item><title>Serata a tema: Parallel Computing su GPU</title><link>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</link><pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</guid><description>&lt;p&gt;&lt;strong&gt;Sabato 27 giugno&lt;/strong&gt;, a partire &lt;strong&gt;dalle 16:30 in poi&lt;/strong&gt;, vi aspettiamo per una serata a tema dedicata al &lt;strong&gt;parallel computing&lt;/strong&gt;, presentata dal nostro membro &lt;strong&gt;Massimiliano Ghilardi&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Scopriamo insieme come sfruttare il parallelismo delle GPU per migliorare le prestazioni del nostro software. Com&amp;rsquo;è fatto l&amp;rsquo;hardware e il software alla base dell&amp;rsquo;intelligenza artificiale?&lt;/p&gt;
+&lt;h2 id="programma-della-serata"&gt;Programma della serata&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fondamenti&lt;/strong&gt; del calcolo parallelo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architettura&lt;/strong&gt; delle GPU&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modelli di programmazione&lt;/strong&gt; per lo sviluppo su GPU&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ottimizzazioni&lt;/strong&gt; per lo sviluppo su GPU NVIDIA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Differenze principali&lt;/strong&gt; rispetto a OpenCL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="il-relatore"&gt;Il relatore&lt;/h2&gt;
+
+
+
+&lt;div class="member-card"&gt;
+ 
+ &lt;div class="member-avatar" style="width:64px;height:64px;background:var(--bg-card);border:2px solid var(--accent);display:inline-block;line-height:64px;font-size:32px;"&gt;&lt;span aria-hidden="true"&gt;🐧&lt;/span&gt;&lt;/div&gt;
+ 
+ &lt;div class="member-name"&gt;Massimiliano Ghilardi&lt;/div&gt;
+ &lt;div class="member-role"&gt;Relatore della serata&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="a-seguire-pizza-tutti-insieme"&gt;A seguire: pizza tutti insieme!&lt;/h2&gt;
+&lt;p&gt;Al termine della serata andremo a mangiare una &lt;strong&gt;pizza tutti insieme&lt;/strong&gt; per festeggiare la nostra &lt;strong&gt;nuova sede&lt;/strong&gt;, insieme agli altri LUG che parteciperanno. Un&amp;rsquo;ottima occasione per fare quattro chiacchiere e conoscerci meglio davanti a una buona pizza!&lt;/p&gt;</description></item><item><title>Prusa i3 - Terza serata di montaggio</title><link>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</link><pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/08/prusa-i3-terza-serata-di-montaggio/</guid><description>&lt;p&gt;Si è svolta ieri la terza serata di montaggio della &lt;a href="http://reprap.org/wiki/Prusa_i3"&gt;Prusa i3&lt;/a&gt; modificata del LuccaLUG.&lt;/p&gt;
 &lt;p&gt;È stata montata l&amp;rsquo;&lt;strong&gt;elettronica&lt;/strong&gt; e siamo andati avanti con l&amp;rsquo;armatura, fissando il frame al piano XY precedentemente creato. Purtroppo le cinghie acquistate per l&amp;rsquo;asse Y si sono rivelate inutili perché, avendo raddoppiato la lunghezza dell&amp;rsquo;asse, queste risultano troppo corte. Un ulteriore problema si è presentato con alcuni pezzi che avevamo stampato ma che sono risultati mal dimensionati. Dovremmo quindi ristamparli.&lt;/p&gt;</description></item><item><title>Prusa i3 - Seconda serata di montaggio</title><link>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</link><pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2013/07/prusa-i3-seconda-serata-di-montaggio/</guid><description>&lt;p&gt;A causa di problemi logistici (non erano arrivati alcuni pezzi), la seconda serata di montaggio è stata rimandata più volte e si è finalmente svolta ieri sera (lunedì 22 luglio).&lt;/p&gt;
 &lt;p&gt;Abbiamo montato l&amp;rsquo;&lt;strong&gt;asse Z&lt;/strong&gt; (compresi i motori) e lo abbiamo fissato al frame.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Lunedì prossimo (29 luglio)&lt;/strong&gt; abbiamo in programma di montare l&amp;rsquo;elettronica, caricando eventualmente anche il software, e di proseguire con l&amp;rsquo;armatura.&lt;/p&gt;
