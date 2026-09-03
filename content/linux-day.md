@@ -1,6 +1,6 @@
 ---
 title: "Linux Day"
-description: "Il Linux Day organizzato dal Luccalug"
+description: "Il Linux Day 2026 a Prato: sabato 24 ottobre, con ingresso gratuito e Call for Papers aperta fino al 15 settembre."
 ---
 
 ## 🐧 Cos'è il Linux Day?
@@ -11,13 +11,20 @@ Il Luccalug partecipa attivamente al Linux Day con talk, workshop e dimostrazion
 
 ## 📅 Linux Day 2026
 
-**Data**: Sabato 24 ottobre 2026
-**Luogo**: Da definire
-**Ingresso**: Gratuito e aperto a tutti
+{{< figure src="images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png" alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre" caption="Linux Day Prato 2026: la Call for Papers è aperta." >}}
+
+Il Luccalug torna a unire le forze con **[GOLEM](https://golem.linux.it/)**, **[GULLi](https://linux.livorno.it/)** e **[PLUG](https://prato.linux.it/)** per organizzare una giornata di talk, laboratori e comunità dedicata a Linux e alla cultura libera.
+
+- **Data**: sabato 24 ottobre 2026
+- **Luogo**: [PRISMA Prato](https://www.prismaprato.it/), via Galcianese
+- **Ingresso**: gratuito e aperto a tutti
+- **Programma**: in preparazione
 
 {{< note type="info" >}}
-Vuoi proporre un talk? Scrivici a **luccalug@protonmail.com**!
+Hai un progetto, un'idea o un'esperienza da condividere? La **Call for Papers è aperta fino al 15 settembre 2026**.
 {{< /note >}}
+
+{{< link-esterno url="https://day.linux.prato.it/cfp/" testo="Invia la tua proposta" >}}
 
 ## 📚 Edizioni Passate
 
@@ -38,5 +45,7 @@ Vuoi proporre un talk? Scrivici a **luccalug@protonmail.com**!
 
 ## 🔗 Link Utili
 
-- [Linux Day Italia](https://www.linuxday.it/) - il sito nazionale del Linux Day
+- [Linux Day Prato 2026](https://day.linux.prato.it/) - il sito ufficiale dell'evento locale
+- [Call for Papers](https://day.linux.prato.it/cfp/) - proponi un talk o un laboratorio entro il 15 settembre
+- [Linux Day Italia 2026](https://www.linuxday.it/2026/) - il sito nazionale del Linux Day
 - [Italian Linux Society](https://www.ils.org/) - l'associazione che coordina il Linux Day
