@@ -4,6 +4,7 @@
 Tutte le novità, gli eventi e gli articoli del Linux User Group di Lucca.
 
 
+- [Linux Day 2026: aperta la Call for Papers](https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/index.md) (25/07/2026)
 - [Serata a tema: Parallel Computing su GPU](https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/index.md) (22/06/2026)
 - [Come eravamo: una macchina del tempo per il sito del LuccaLUG](https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/index.md) (29/05/2026)
 - [Guida alla prima serata](https://luccalug.it/blog/2026/03/guida-alla-prima-serata/index.md) (19/03/2026)

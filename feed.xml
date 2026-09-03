@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/</link><description>Recent content on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/feed.xml" rel="self" type="application/rss+xml"/><item><title>Statuto dell'Associazione Luccalug</title><link>https://luccalug.it/archivio/statuto/statuto-vigente/</link><pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate><guid>https://luccalug.it/archivio/statuto/statuto-vigente/</guid><description>&lt;h2 id="art-1---denominazione-e-sede"&gt;Art. 1 - Denominazione e sede&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/</link><description>Recent content on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Sat, 25 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://luccalug.it/feed.xml" rel="self" type="application/rss+xml"/><item><title>Statuto dell'Associazione Luccalug</title><link>https://luccalug.it/archivio/statuto/statuto-vigente/</link><pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate><guid>https://luccalug.it/archivio/statuto/statuto-vigente/</guid><description>&lt;h2 id="art-1---denominazione-e-sede"&gt;Art. 1 - Denominazione e sede&lt;/h2&gt;
 &lt;p&gt;È costituita l&amp;rsquo;associazione denominata &lt;strong&gt;&amp;ldquo;Luccalug - Lucca Linux User Group&amp;rdquo;&lt;/strong&gt;, con sede nel Comune di Lucca.&lt;/p&gt;
 &lt;h2 id="art-2---finalità"&gt;Art. 2 - Finalità&lt;/h2&gt;
 &lt;p&gt;L&amp;rsquo;associazione ha lo scopo di:&lt;/p&gt;
@@ -9,7 +9,27 @@
 &lt;li&gt;Collaborare con altre associazioni, enti e istituzioni&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="art-3---soci"&gt;Art. 3 - Soci&lt;/h2&gt;
-&lt;p&gt;Possono essere soci dell&amp;rsquo;associazione tutte le persone che ne condividono le finalità.&lt;/p&gt;</description></item><item><title>Serata a tema: Parallel Computing su GPU</title><link>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</link><pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</guid><description>&lt;p&gt;&lt;strong&gt;Sabato 27 giugno&lt;/strong&gt;, a partire &lt;strong&gt;dalle 16:30 in poi&lt;/strong&gt;, vi aspettiamo per una serata a tema dedicata al &lt;strong&gt;parallel computing&lt;/strong&gt;, presentata dal nostro membro &lt;strong&gt;Massimiliano Ghilardi&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Possono essere soci dell&amp;rsquo;associazione tutte le persone che ne condividono le finalità.&lt;/p&gt;</description></item><item><title>Linux Day 2026: aperta la Call for Papers</title><link>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</link><pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp_hu_9dfec7f48b8f87ad.webp 800w, https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp_hu_9dfec7f48b8f87ad.webp 800w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png"
+ srcset="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png 800w, https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png 800w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre"
+ width="800"
+ height="420"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;La Call for Papers del Linux Day Prato 2026 è aperta!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Sabato 24 ottobre&lt;/strong&gt; torna il &lt;strong&gt;&lt;a href="https://www.linuxday.it/2026/"&gt;Linux Day&lt;/a&gt;&lt;/strong&gt;, la principale manifestazione comunitaria italiana dedicata a Linux, al software libero, alla cultura aperta e alla condivisione.&lt;/p&gt;
+&lt;p&gt;Anche quest&amp;rsquo;anno ci troveremo al &lt;strong&gt;&lt;a href="https://www.prismaprato.it/"&gt;PRISMA Prato&lt;/a&gt;, in via Galcianese&lt;/strong&gt;, per una giornata gratuita di talk, laboratori e comunità, organizzata insieme agli amici di &lt;strong&gt;&lt;a href="https://golem.linux.it/"&gt;GOLEM&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://linux.livorno.it/"&gt;GULLi&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a href="https://prato.linux.it/"&gt;PLUG&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Serata a tema: Parallel Computing su GPU</title><link>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</link><pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/</guid><description>&lt;p&gt;&lt;strong&gt;Sabato 27 giugno&lt;/strong&gt;, a partire &lt;strong&gt;dalle 16:30 in poi&lt;/strong&gt;, vi aspettiamo per una serata a tema dedicata al &lt;strong&gt;parallel computing&lt;/strong&gt;, presentata dal nostro membro &lt;strong&gt;Massimiliano Ghilardi&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Scopriamo insieme come sfruttare il parallelismo delle GPU per migliorare le prestazioni del nostro software. Com&amp;rsquo;è fatto l&amp;rsquo;hardware e il software alla base dell&amp;rsquo;intelligenza artificiale?&lt;/p&gt;
 &lt;h2 id="programma-della-serata"&gt;Programma della serata&lt;/h2&gt;
 &lt;ul&gt;
@@ -654,21 +674,77 @@
  &lt;/tr&gt;
  &lt;/thead&gt;
  &lt;tbody&gt;&lt;tr&gt;
- &lt;td&gt;23 Marzo 2026&lt;/td&gt;
+ &lt;td&gt;7 Settembre 2026&lt;/td&gt;
  &lt;td&gt;Incontro ordinario&lt;/td&gt;
  &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
  &lt;/tr&gt;&lt;tr&gt;
- &lt;td&gt;30 Marzo 2026&lt;/td&gt;
+ &lt;td&gt;14 Settembre 2026&lt;/td&gt;
  &lt;td&gt;Incontro ordinario&lt;/td&gt;
  &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
  &lt;/tr&gt;&lt;tr&gt;
- &lt;td&gt;6 Aprile 2026&lt;/td&gt;
+ &lt;td&gt;21 Settembre 2026&lt;/td&gt;
+ &lt;td&gt;Serata a tema: Negative Space Programming con Zanna&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;28 Settembre 2026&lt;/td&gt;
  &lt;td&gt;Incontro ordinario&lt;/td&gt;
  &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
  &lt;/tr&gt;&lt;tr&gt;
- &lt;td&gt;13 Aprile 2026&lt;/td&gt;
- &lt;td&gt;Inaugurazione sede rinnovata(?)&lt;/td&gt;
- &lt;td&gt;Pizza e Foro Boario, Lucca&lt;/td&gt;
+ &lt;td&gt;5 Ottobre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;12 Ottobre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;19 Ottobre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;24 Ottobre 2026&lt;/td&gt;
+ &lt;td&gt;Linux Day 2026&lt;/td&gt;
+ &lt;td&gt;PRISMA Prato, via Galcianese, Prato&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;26 Ottobre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;2 Novembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;9 Novembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;16 Novembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;23 Novembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;30 Novembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;7 Dicembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;14 Dicembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;21 Dicembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
+ &lt;/tr&gt;&lt;tr&gt;
+ &lt;td&gt;28 Dicembre 2026&lt;/td&gt;
+ &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
@@ -682,8 +758,7 @@
 &lt;/a&gt;
 
 &lt;h2 id="-incontri-regolari"&gt;🔁 Incontri Regolari&lt;/h2&gt;
-&lt;p&gt;Ci incontriamo &lt;strong&gt;ogni lunedì&lt;/strong&gt;, dalle &lt;strong&gt;21:00 in poi&lt;/strong&gt;, presso il &lt;a href="https://osm.org/go/xX4710WmM"&gt;Foro Boario di Lucca&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Gli incontri sono aperti a tutti e non richiedono iscrizione.&lt;/p&gt;</description></item><item><title>Chi Siamo</title><link>https://luccalug.it/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://luccalug.it/about/</guid><description>&lt;h2 id="-chi-siamo"&gt;🐧 Chi Siamo&lt;/h2&gt;
+&lt;p&gt;Ci incontriamo &lt;strong&gt;ogni lunedì&lt;/strong&gt;, dalle &lt;strong&gt;21:00 in poi&lt;/strong&gt;, presso il &lt;a href="https://osm.org/go/xX4710WmM"&gt;Foro Boario di Lucca&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Chi Siamo</title><link>https://luccalug.it/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://luccalug.it/about/</guid><description>&lt;h2 id="-chi-siamo"&gt;🐧 Chi Siamo&lt;/h2&gt;
 &lt;p&gt;Il &lt;strong&gt;Luccalug&lt;/strong&gt; (Lucca Linux User Group) è un&amp;rsquo;associazione di promozione sociale che riunisce appassionati di &lt;strong&gt;GNU/Linux&lt;/strong&gt; e &lt;strong&gt;software libero&lt;/strong&gt; nella provincia di Lucca.&lt;/p&gt;
 &lt;h2 id="la-nostra-missione"&gt;La Nostra Missione&lt;/h2&gt;
 &lt;ul&gt;
@@ -725,6 +800,23 @@
 &lt;p&gt;Il &lt;strong&gt;Linux Day&lt;/strong&gt; è la principale manifestazione italiana dedicata a GNU/Linux, al software libero e alla cultura aperta. Si tiene ogni anno l&amp;rsquo;&lt;strong&gt;ultimo sabato di ottobre&lt;/strong&gt; in centinaia di città italiane, organizzata dai LUG locali.&lt;/p&gt;
 &lt;p&gt;Il Luccalug partecipa attivamente al Linux Day con talk, workshop e dimostrazioni pratiche.&lt;/p&gt;
 &lt;h2 id="-linux-day-2026"&gt;📅 Linux Day 2026&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Sabato 24 ottobre 2026
-&lt;strong&gt;Luogo&lt;/strong&gt;: Da definire
-&lt;strong&gt;Ingresso&lt;/strong&gt;: Gratuito e aperto a tutti&lt;/p&gt;</description></item></channel></rss>
+&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp_hu_9dfec7f48b8f87ad.webp 800w, https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp_hu_9dfec7f48b8f87ad.webp 800w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png"
+ srcset="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png 800w, https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png 800w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre"
+ width="800"
+ height="420"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Linux Day Prato 2026: la Call for Papers è aperta.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Il Luccalug torna a unire le forze con &lt;strong&gt;&lt;a href="https://golem.linux.it/"&gt;GOLEM&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://linux.livorno.it/"&gt;GULLi&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a href="https://prato.linux.it/"&gt;PLUG&lt;/a&gt;&lt;/strong&gt; per organizzare una giornata di talk, laboratori e comunità dedicata a Linux e alla cultura libera.&lt;/p&gt;</description></item></channel></rss>

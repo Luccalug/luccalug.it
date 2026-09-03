@@ -111,13 +111,20 @@ Il Luccalug partecipa attivamente al Linux Day con talk, workshop e dimostrazion
 
 ## 📅 Linux Day 2026
 
-**Data**: Sabato 24 ottobre 2026
-**Luogo**: Da definire
-**Ingresso**: Gratuito e aperto a tutti
+{{< figure src="images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png" alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre" caption="Linux Day Prato 2026: la Call for Papers è aperta." >}}
+
+Il Luccalug torna a unire le forze con **[GOLEM](https://golem.linux.it/)**, **[GULLi](https://linux.livorno.it/)** e **[PLUG](https://prato.linux.it/)** per organizzare una giornata di talk, laboratori e comunità dedicata a Linux e alla cultura libera.
+
+- **Data**: sabato 24 ottobre 2026
+- **Luogo**: [PRISMA Prato](https://www.prismaprato.it/), via Galcianese
+- **Ingresso**: gratuito e aperto a tutti
+- **Programma**: in preparazione
 
 {{< note type="info" >}}
-Vuoi proporre un talk? Scrivici a **luccalug@protonmail.com**!
+Hai un progetto, un'idea o un'esperienza da condividere? La **Call for Papers è aperta fino al 15 settembre 2026**.
 {{< /note >}}
+
+{{< link-esterno url="https://day.linux.prato.it/cfp/" testo="Invia la tua proposta" >}}
 
 ## 📚 Edizioni Passate
 
@@ -138,12 +145,41 @@ Vuoi proporre un talk? Scrivici a **luccalug@protonmail.com**!
 
 ## 🔗 Link Utili
 
-- [Linux Day Italia](https://www.linuxday.it/) - il sito nazionale del Linux Day
+- [Linux Day Prato 2026](https://day.linux.prato.it/) - il sito ufficiale dell'evento locale
+- [Call for Papers](https://day.linux.prato.it/cfp/) - proponi un talk o un laboratorio entro il 15 settembre
+- [Linux Day Italia 2026](https://www.linuxday.it/2026/) - il sito nazionale del Linux Day
 - [Italian Linux Society](https://www.ils.org/) - l'associazione che coordina il Linux Day
 
 
 ---
 
+
+# Linux Day 2026: aperta la Call for Papers
+
+URL: https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/
+Data: 25/07/2026
+Autore: Il Direttivo
+Tag: linux-day, eventi, call-for-papers, software-libero
+
+
+{{< figure src="images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png" alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre" caption="La Call for Papers del Linux Day Prato 2026 è aperta!" >}}
+
+**Sabato 24 ottobre** torna il **[Linux Day](https://www.linuxday.it/2026/)**, la principale manifestazione comunitaria italiana dedicata a Linux, al software libero, alla cultura aperta e alla condivisione.
+
+Anche quest'anno ci troveremo al **[PRISMA Prato](https://www.prismaprato.it/), in via Galcianese**, per una giornata gratuita di talk, laboratori e comunità, organizzata insieme agli amici di **[GOLEM](https://golem.linux.it/)**, **[GULLi](https://linux.livorno.it/)** e **[PLUG](https://prato.linux.it/)**.
+
+## Proponi il tuo intervento
+
+Hai un progetto, un'idea o un'esperienza da condividere? La **Call for Papers è aperta fino al 15 settembre**: proponi un talk o un laboratorio e aiutaci a costruire il programma del Linux Day 2026!
+
+{{< link-esterno url="https://day.linux.prato.it/cfp/" testo="Invia la tua proposta" >}}
+
+{{< note type="info" >}}
+La partecipazione al Linux Day è gratuita. Tutti i dettagli sull'evento saranno pubblicati sul [sito ufficiale](https://day.linux.prato.it/).
+{{< /note >}}
+
+
+---
 
 # Serata a tema: Parallel Computing su GPU
 
