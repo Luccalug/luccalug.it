@@ -12,8 +12,13 @@ exclude = [
 # Accept 429 (rate limited) as valid
 accept = [200, 429]
 
-# Timeout per request
-timeout = 30
+# Check the rendered site only; Markdown, feeds and llms-full duplicate the same links
+extensions = ["html", "css"]
+
+# Keep slow or redirecting historical sites from holding up the pipeline
+timeout = 10
+max_retries = 0
+max_redirects = 3
 
 # Max concurrent requests
-max_concurrency = 5
+max_concurrency = 16

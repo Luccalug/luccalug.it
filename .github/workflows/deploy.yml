@@ -10,7 +10,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   lint:
@@ -31,6 +31,7 @@ jobs:
 
   link-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
 
@@ -50,7 +51,7 @@ jobs:
       - name: Link check
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --root-dir ./public --no-progress ./public
+          args: --config .lychee.toml --root-dir ./public --no-progress ./public
           fail: false
 
   deploy:
