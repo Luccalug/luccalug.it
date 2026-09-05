@@ -2,6 +2,7 @@ baseURL = "https://luccalug.it/"
 defaultContentLanguage = "it"
 title = "Luccalug - Lucca Linux User Group"
 enableRobotsTXT = true
+enableGitInfo = true
 
 [languages]
   [languages.it]

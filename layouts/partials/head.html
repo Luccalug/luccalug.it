@@ -29,7 +29,7 @@
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:type" content="{{ cond (eq .Section "blog") "article" "website" }}">
+<meta property="og:type" content="{{ cond (and (eq .Section "blog") .IsPage) "article" "website" }}">
 <meta property="og:site_name" content="{{ $siteName }}">
 <meta property="og:locale" content="it_IT">
 <meta property="og:image" content="{{ $image }}">
@@ -52,10 +52,13 @@
 <meta name="twitter:image" content="{{ $image }}">
 <meta name="twitter:image:alt" content="{{ $ogTitle }}">
 
-{{- if eq .Section "blog" }}
+{{- if and (eq .Section "blog") .IsPage }}
 <!-- Article metadata -->
 {{- with .Date }}
 <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
 {{- end }}
 {{- with .Params.author }}
 <meta property="article:author" content="{{ . }}">
@@ -112,6 +115,7 @@
     "@type" "Article"
     "headline" .Title
     "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
     "inLanguage" "it-IT"
     "publisher" (dict "@type" "Organization" "name" "Luccalug") }}
 {{- with .Params.author }}{{ $ld = merge $ld (dict "author" (dict "@type" "Person" "name" .)) }}{{ end }}
