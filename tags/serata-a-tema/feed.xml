@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serata-a-Tema on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/serata-a-tema/</link><description>Recent content in Serata-a-Tema on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 11 Sep 2026 18:42:04 +0200</lastBuildDate><atom:link href="https://luccalug.it/tags/serata-a-tema/feed.xml" rel="self" type="application/rss+xml"/><item><title>Code shibari: programmando lo spazio negativo</title><link>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</guid><description>&lt;figure class="figure"&gt;
- 
- &lt;img src="images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png" alt="Copertina della serata Code shibari: Programmando lo spazio negativo" loading="lazy"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari_hu_4f833ae4167b9f7d.webp 800w, https://luccalug.it/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari_hu_9a38496976c618cd.webp 1055w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari_hu_d57515e3cb3d4ee1.png"
+ srcset="https://luccalug.it/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari_hu_d57515e3cb3d4ee1.png 800w, https://luccalug.it/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png 1055w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Copertina della serata Code shibari: Programmando lo spazio negativo"
+ width="800"
+ height="983"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;C’è un endpoint dell’applicativo che esiste praticamente da sempre.&lt;/p&gt;
