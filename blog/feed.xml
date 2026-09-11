@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/blog/</link><description>Recent content in Blog on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><atom:link href="https://luccalug.it/blog/feed.xml" rel="self" type="application/rss+xml"/><item><title>Linux Day 2026: aperta la Call for Papers</title><link>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</link><pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</guid><description>&lt;figure class="figure"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/blog/</link><description>Recent content in Blog on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><atom:link href="https://luccalug.it/blog/feed.xml" rel="self" type="application/rss+xml"/><item><title>Code shibari: programmando lo spazio negativo</title><link>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</guid><description>&lt;figure class="figure"&gt;
+ 
+ &lt;img src="images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png" alt="Copertina della serata Code shibari: Programmando lo spazio negativo" loading="lazy"&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;C’è un endpoint dell’applicativo che esiste praticamente da sempre.&lt;/p&gt;
+&lt;p&gt;È riservato agli amministratori. È stato scritto con attenzione, modificato nel tempo con commit ponderati, revisionato e mantenuto da persone che sapevano perfettamente cosa stavano facendo.&lt;/p&gt;
+&lt;p&gt;Eppure oggi quei dati sono accessibili a tutti.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Com’è possibile?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Non c’è stato necessariamente un commit catastrofico, una svista evidente o una riga di codice palesemente sbagliata. Il programma, semplicemente, si è allontanato poco alla volta dal comportamento previsto. Una modifica dopo l’altra, quasi impercettibilmente, fino a raggiungere uno stato che nessuno avrebbe voluto senza che nessuno se ne accorgesse.&lt;/p&gt;</description></item><item><title>Linux Day 2026: aperta la Call for Papers</title><link>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</link><pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</guid><description>&lt;figure class="figure"&gt;
  &lt;picture&gt;
  &lt;source
  type="image/webp"
