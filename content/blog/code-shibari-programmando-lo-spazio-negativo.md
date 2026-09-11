@@ -52,4 +52,4 @@ Durante la serata vedremo come sia possibile **vincolare e limitare il codice** 
 Come sempre, la serata è aperta a tutti gli interessati: non è necessario essere soci del LuccaLUG né avere un particolare livello di esperienza.
 {{< /note >}}
 
-**Vi aspettiamo al Foro Boario! 🐧**
+Vi aspettiamo al Foro Boario! 🐧
