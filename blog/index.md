@@ -4,6 +4,7 @@
 Tutte le novità, gli eventi e gli articoli del Linux User Group di Lucca.
 
 
+- [Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)](https://luccalug.it/blog/2026/09/schemesh-la-shell-che-avreste-sempre-voluto/index.md) (24/09/2026)
 - [Code shibari: programmando lo spazio negativo](https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/index.md) (07/09/2026)
 - [Linux Day 2026: aperta la Call for Papers](https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/index.md) (25/07/2026)
 - [Serata a tema: Parallel Computing su GPU](https://luccalug.it/blog/2026/06/serata-parallel-computing-gpu/index.md) (22/06/2026)

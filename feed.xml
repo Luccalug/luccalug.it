@@ -9,7 +9,28 @@
 &lt;li&gt;Collaborare con altre associazioni, enti e istituzioni&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="art-3---soci"&gt;Art. 3 - Soci&lt;/h2&gt;
-&lt;p&gt;Possono essere soci dell&amp;rsquo;associazione tutte le persone che ne condividono le finalità.&lt;/p&gt;</description></item><item><title>Code shibari: programmando lo spazio negativo</title><link>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</guid><description>&lt;figure class="figure"&gt;
+&lt;p&gt;Possono essere soci dell&amp;rsquo;associazione tutte le persone che ne condividono le finalità.&lt;/p&gt;</description></item><item><title>Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)</title><link>https://luccalug.it/blog/2026/09/schemesh-la-shell-che-avreste-sempre-voluto/</link><pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/09/schemesh-la-shell-che-avreste-sempre-voluto/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh_hu_a4eb084a8fda77e0.webp 800w, https://luccalug.it/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh_hu_bc256223816e39d9.webp 1024w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh_hu_d44408bc082affd4.jpg"
+ srcset="https://luccalug.it/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh_hu_d44408bc082affd4.jpg 800w, https://luccalug.it/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh.jpg 1024w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Locandina della serata Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)"
+ width="800"
+ height="1000"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Lunedì &lt;strong&gt;12 ottobre&lt;/strong&gt;, dalle &lt;strong&gt;21:00&lt;/strong&gt;, tornano le serate a tema del LuccaLUG, presso il Foro Boario di Lucca.&lt;/p&gt;
+&lt;p&gt;Questa volta il relatore è &lt;strong&gt;Max&lt;/strong&gt;, e l&amp;rsquo;argomento è &lt;a href="https://github.com/cosmos72/schemesh"&gt;schemesh&lt;/a&gt;: una shell nata dalla fusione di una shell Unix con un REPL Lisp.&lt;/p&gt;
+&lt;h2 id="cosa-vedremo"&gt;Cosa vedremo&lt;/h2&gt;
+&lt;p&gt;Insieme, in modo interattivo, vedremo:&lt;/p&gt;</description></item><item><title>Code shibari: programmando lo spazio negativo</title><link>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/</guid><description>&lt;figure class="figure"&gt;
  &lt;picture&gt;
  &lt;source
  type="image/webp"
@@ -717,7 +738,7 @@
  &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
  &lt;/tr&gt;&lt;tr&gt;
  &lt;td&gt;12 Ottobre 2026&lt;/td&gt;
- &lt;td&gt;Incontro ordinario&lt;/td&gt;
+ &lt;td&gt;Serata a tema: Schemesh con Max&lt;/td&gt;
  &lt;td&gt;Foro Boario, Lucca&lt;/td&gt;
  &lt;/tr&gt;&lt;tr&gt;
  &lt;td&gt;19 Ottobre 2026&lt;/td&gt;
