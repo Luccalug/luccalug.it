@@ -747,7 +747,7 @@
  &lt;/tr&gt;&lt;tr&gt;
  &lt;td&gt;24 Ottobre 2026&lt;/td&gt;
  &lt;td&gt;Linux Day 2026&lt;/td&gt;
- &lt;td&gt;PRISMA Prato, via Galcianese, Prato&lt;/td&gt;
+ &lt;td&gt;PRISMA Prato, via Galcianese 34, Prato&lt;/td&gt;
  &lt;/tr&gt;&lt;tr&gt;
  &lt;td&gt;26 Ottobre 2026&lt;/td&gt;
  &lt;td&gt;Incontro ordinario&lt;/td&gt;
@@ -840,26 +840,26 @@
 &lt;/ul&gt;
 &lt;h2 id="-vuoi-partecipare"&gt;💬 Vuoi Partecipare?&lt;/h2&gt;
 &lt;p&gt;Non serve essere esperti! Vieni a trovarci a uno dei nostri &lt;a href="https://luccalug.it/calendario/"&gt;incontri&lt;/a&gt; o scrivici una mail. Siamo sempre felici di accogliere nuovi appassionati di software libero. 🐧&lt;/p&gt;</description></item><item><title>Linux Day</title><link>https://luccalug.it/linux-day/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://luccalug.it/linux-day/</guid><description>&lt;h2 id="-cosè-il-linux-day"&gt;🐧 Cos&amp;rsquo;è il Linux Day?&lt;/h2&gt;
-&lt;p&gt;Il &lt;strong&gt;Linux Day&lt;/strong&gt; è la principale manifestazione italiana dedicata a GNU/Linux, al software libero e alla cultura aperta. Si tiene ogni anno l&amp;rsquo;&lt;strong&gt;ultimo sabato di ottobre&lt;/strong&gt; in centinaia di città italiane, organizzata dai LUG locali.&lt;/p&gt;
+&lt;p&gt;Il &lt;strong&gt;Linux Day&lt;/strong&gt; è la principale manifestazione italiana dedicata a GNU/Linux, al software libero e alla cultura aperta. Si tiene ogni anno il &lt;strong&gt;quarto sabato di ottobre&lt;/strong&gt; in centinaia di città italiane, organizzata dai LUG locali.&lt;/p&gt;
 &lt;p&gt;Il Luccalug partecipa attivamente al Linux Day con talk, workshop e dimostrazioni pratiche.&lt;/p&gt;
 &lt;h2 id="-linux-day-2026"&gt;📅 Linux Day 2026&lt;/h2&gt;
 &lt;figure class="figure"&gt;
  &lt;picture&gt;
  &lt;source
  type="image/webp"
- srcset="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp_hu_9dfec7f48b8f87ad.webp 800w, https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp_hu_9dfec7f48b8f87ad.webp 800w"
+ srcset="https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_f0b3f872674175dc.webp 800w, https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_1c29216030802b04.webp 1200w"
  sizes="(max-width: 800px) 100vw, 800px"&gt;
  &lt;img
- src="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png"
- srcset="https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png 800w, https://luccalug.it/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png 800w"
+ src="https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_17de3b30ed1fbf56.png"
+ srcset="https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_17de3b30ed1fbf56.png 800w, https://luccalug.it/images/linux-day/linux-day-2026-programma.png 1200w"
  sizes="(max-width: 800px) 100vw, 800px"
- alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre"
+ alt="Linux Day Prato 2026 - Programma online. Prisma Prato, ingresso libero, sabato 24 ottobre"
  width="800"
  height="420"
  loading="lazy"
  decoding="async"&gt;
  &lt;/picture&gt;
- &lt;figcaption&gt;Linux Day Prato 2026: la Call for Papers è aperta.&lt;/figcaption&gt;
+ &lt;figcaption&gt;Linux Day Prato 2026: il programma è online!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Il Luccalug torna a unire le forze con &lt;strong&gt;&lt;a href="https://golem.linux.it/"&gt;GOLEM&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://linux.livorno.it/"&gt;GULLi&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a href="https://prato.linux.it/"&gt;PLUG&lt;/a&gt;&lt;/strong&gt; per organizzare una giornata di talk, laboratori e comunità dedicata a Linux e alla cultura libera.&lt;/p&gt;</description></item></channel></rss>
