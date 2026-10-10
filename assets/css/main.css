@@ -377,6 +377,14 @@ body {
   100% { transform: translateX(-100%); }
 }
 
+/* Pause the marquee while the pointer hovers over it, or while it has focus
+   (a click or tap focuses the bar via tabindex; focus moves away when the
+   user clicks or taps elsewhere). */
+.top-bar:hover .top-bar-scroll,
+.top-bar:focus .top-bar-scroll {
+  animation-play-state: paused;
+}
+
 /* --- Navigation --- */
 .nav {
   background: var(--bg-card);
