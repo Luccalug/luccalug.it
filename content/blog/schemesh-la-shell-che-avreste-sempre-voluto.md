@@ -10,7 +10,11 @@ image: "/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schem
 
 {{< figure src="images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh.jpg" alt="Locandina della serata Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)" >}}
 
-Lunedì **12 ottobre**, dalle **21:00**, tornano le serate a tema del LuccaLUG, presso il Foro Boario di Lucca.
+{{< note type="warning" >}}
+**Serata rimandata!** A causa di un evento che occuperà il Foro Boario per tutta la settimana, la serata su schemesh è spostata da lunedì 12 ottobre a **lunedì 19 ottobre**, sempre alle 21:00. La data riportata sulla locandina non è più valida.
+{{< /note >}}
+
+Lunedì **19 ottobre**, dalle **21:00**, tornano le serate a tema del LuccaLUG, presso il Foro Boario di Lucca.
 
 Questa volta il relatore è **Max**, e l'argomento è [schemesh](https://github.com/cosmos72/schemesh): una shell nata dalla fusione di una shell Unix con un REPL Lisp.
 
@@ -33,7 +37,7 @@ Insieme, in modo interattivo, vedremo:
 
 ## Informazioni
 
-{{< evento titolo="Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)" data="2026-10-12" luogo="Sede del LuccaLUG, Foro Boario, Lucca - ore 21:00" descrizione="Serata su schemesh a cura di Max: una shell nata dalla fusione di una shell Unix con un REPL Lisp." >}}
+{{< evento titolo="Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)" data="2026-10-19" luogo="Sede del LuccaLUG, Foro Boario, Lucca - ore 21:00" descrizione="Serata su schemesh a cura di Max: una shell nata dalla fusione di una shell Unix con un REPL Lisp." >}}
 
 {{< note type="info" >}}
 Come sempre, la serata è aperta a tutti gli interessati: non è necessario essere soci del LuccaLUG né avere un particolare livello di esperienza.
