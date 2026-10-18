@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software-Libero on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/software-libero/</link><description>Recent content in Software-Libero on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Fri, 04 Sep 2026 00:35:00 +0200</lastBuildDate><atom:link href="https://luccalug.it/tags/software-libero/feed.xml" rel="self" type="application/rss+xml"/><item><title>Linux Day 2026: aperta la Call for Papers</title><link>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</link><pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</guid><description>&lt;figure class="figure"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software-Libero on Luccalug - Lucca Linux User Group</title><link>https://luccalug.it/tags/software-libero/</link><description>Recent content in Software-Libero on Luccalug - Lucca Linux User Group</description><generator>Hugo</generator><language>it_IT</language><lastBuildDate>Sun, 18 Oct 2026 17:25:02 +0200</lastBuildDate><atom:link href="https://luccalug.it/tags/software-libero/feed.xml" rel="self" type="application/rss+xml"/><item><title>Linux Day 2026: il programma è completo, ci vediamo sabato 24 ottobre a Prato!</title><link>https://luccalug.it/blog/2026/10/linux-day-2026-programma-completo/</link><pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/10/linux-day-2026-programma-completo/</guid><description>&lt;figure class="figure"&gt;
+ &lt;picture&gt;
+ &lt;source
+ type="image/webp"
+ srcset="https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_f0b3f872674175dc.webp 800w, https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_1c29216030802b04.webp 1200w"
+ sizes="(max-width: 800px) 100vw, 800px"&gt;
+ &lt;img
+ src="https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_17de3b30ed1fbf56.png"
+ srcset="https://luccalug.it/images/linux-day/linux-day-2026-programma_hu_17de3b30ed1fbf56.png 800w, https://luccalug.it/images/linux-day/linux-day-2026-programma.png 1200w"
+ sizes="(max-width: 800px) 100vw, 800px"
+ alt="Linux Day Prato 2026 - Programma online. Prisma Prato, ingresso libero, sabato 24 ottobre"
+ width="800"
+ height="420"
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
+ &lt;figcaption&gt;Linux Day Prato 2026: sabato 24 ottobre al PRISMA di Prato&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Ci siamo! La Call for Papers è chiusa da un pezzo, le proposte sono state selezionate e il programma del &lt;strong&gt;Linux Day 2026&lt;/strong&gt; è completo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sabato 24 ottobre&lt;/strong&gt;, dalle &lt;strong&gt;10:00 alle 18:30&lt;/strong&gt;, vi aspettiamo al &lt;strong&gt;&lt;a href="https://www.prismaprato.it/"&gt;PRISMA Prato&lt;/a&gt;&lt;/strong&gt; per un&amp;rsquo;intera giornata di talk, chiacchiere e comunità attorno a Linux e al software libero. L&amp;rsquo;evento è organizzato dal Luccalug insieme agli amici di &lt;strong&gt;&lt;a href="https://golem.linux.it/"&gt;GOLEM&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://linux.livorno.it/"&gt;GULLi&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a href="https://prato.linux.it/"&gt;PLUG&lt;/a&gt;&lt;/strong&gt;, con il patrocinio del Comune di Prato.&lt;/p&gt;</description></item><item><title>Linux Day 2026: aperta la Call for Papers</title><link>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</link><pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/</guid><description>&lt;figure class="figure"&gt;
  &lt;picture&gt;
  &lt;source
  type="image/webp"
@@ -17,8 +37,16 @@
  &lt;figcaption&gt;La Call for Papers del Linux Day Prato 2026 è aperta!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Sabato 24 ottobre&lt;/strong&gt; torna il &lt;strong&gt;&lt;a href="https://www.linuxday.it/2026/"&gt;Linux Day&lt;/a&gt;&lt;/strong&gt;, la principale manifestazione comunitaria italiana dedicata a Linux, al software libero, alla cultura aperta e alla condivisione.&lt;/p&gt;
-&lt;p&gt;Anche quest&amp;rsquo;anno ci troveremo al &lt;strong&gt;&lt;a href="https://www.prismaprato.it/"&gt;PRISMA Prato&lt;/a&gt;, in via Galcianese&lt;/strong&gt;, per una giornata gratuita di talk, laboratori e comunità, organizzata insieme agli amici di &lt;strong&gt;&lt;a href="https://golem.linux.it/"&gt;GOLEM&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href="https://linux.livorno.it/"&gt;GULLi&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a href="https://prato.linux.it/"&gt;PLUG&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Project Gooseberry - il primo, vero open movie della storia</title><link>https://luccalug.it/blog/2014/04/project-gooseberry/</link><pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/04/project-gooseberry/</guid><description>&lt;figure class="figure"&gt;
+
+&lt;div class="note warning" role="note"&gt;
+ &lt;div class="note-title"&gt;
+ &lt;span aria-hidden="true"&gt;⚠️&lt;/span&gt; Attenzione
+ 
+ &lt;/div&gt;
+ &lt;strong&gt;La Call for Papers è chiusa.&lt;/strong&gt; Grazie a tutte e tutti per le proposte! Il programma del Linux Day 2026 è completo: &lt;a href="https://luccalug.it/blog/2026/10/linux-day-2026-programma-completo/"&gt;scopri cosa vi aspetta&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Sabato 24 ottobre&lt;/strong&gt; torna il &lt;strong&gt;&lt;a href="https://www.linuxday.it/2026/"&gt;Linux Day&lt;/a&gt;&lt;/strong&gt;, la principale manifestazione comunitaria italiana dedicata a Linux, al software libero, alla cultura aperta e alla condivisione.&lt;/p&gt;</description></item><item><title>Project Gooseberry - il primo, vero open movie della storia</title><link>https://luccalug.it/blog/2014/04/project-gooseberry/</link><pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate><guid>https://luccalug.it/blog/2014/04/project-gooseberry/</guid><description>&lt;figure class="figure"&gt;
  &lt;picture&gt;
  &lt;source
  type="image/webp"

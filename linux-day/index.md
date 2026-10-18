@@ -20,10 +20,6 @@ Il Luccalug torna a unire le forze con **[GOLEM](https://golem.linux.it/)**, **[
 - **Ingresso**: gratuito e aperto a tutti
 - **Programma**: 18 talk su due tracce parallele, generale e tecnica
 
-{{< note type="info" >}}
-La **Call for Papers si è chiusa il 15 settembre**: grazie a tutte e tutti per le proposte! Il **programma completo è online** sul sito ufficiale.
-{{< /note >}}
-
 {{< link-esterno url="https://day.linux.prato.it/#schedule" testo="Scopri il programma completo" >}}
 
 ### 🎤 Il programma
@@ -37,7 +33,7 @@ Due sale per un'intera giornata: la **traccia generale**, aperta a chiunque sia 
 | --- | ---- | -------- |
 | 10:00 | 👋 *Saluti di benvenuto* | |
 | 10:30 | Luanti: tra videogiochi e didattica | Marco "Zughy" Amato |
-| 11:00 | Blender: quando il software libero conquista l'industria | Alek Mugnozzo |
+| 11:00 | L'open hardware e il diritto di sperimentare | Giulio Fieramosca |
 | 11:30 | ☕ *Ricreazione* | |
 | 12:00 | Il cloud è davvero nostro? Sovranità digitale e dipendenza americana | Matteo Martinelli |
 | 12:30 | Di chi dobbiamo fidarci? Open Source e Fattore Umano come fondamenti per la CyberSecurity nell'era dell'IA | Giuseppe Augiero |
@@ -61,23 +57,23 @@ Due sale per un'intera giornata: la **traccia generale**, aperta a chiunque sia 
 | 10:30 | Freelens: un progetto open source italiano, aperto, meritocratico e costruito dai suoi utilizzatori | Roberto Bandini |
 | 11:00 | Come Valetudo mi ha permesso di liberare il mio robot aspirapolvere e WireGuard di controllarlo comunque da remoto | Pietro Battiston |
 | 11:30 | ☕ *Ricreazione* | |
-| 12:00 | Il peso invisibile di un sito web | Chiara Corrado |
+| 12:00 | Wikidata: cosa, chi e come | Fabrizio Carrai |
 | 12:30 | Hosting your digital life on a computer nailed to the wall | Zanna |
 | 13:00 | 🍕 *Pausa pranzo & networking* | |
 | 14:30 | L'AI sta mangiando Wikipedia (e Wikipedia non se ne accorge abbastanza) | Luca Landucci |
-| 15:00 | Wikidata: cosa, chi e come | Fabrizio Carrai |
+| 15:00 | Il peso invisibile di un sito web | Chiara Corrado |
 | 15:30 | 🍪 *Merendina* | |
 | 16:00 | Alla scoperta di architetture 8 bit attraverso l'emulazione | Salvatore La Porta |
 | 16:30 | WAF open source: Coraza e Caddy per proteggere i tuoi servizi | Monte |
 | 17:00 | 🧃 *Merendozza* | |
-| 17:30 | RedundaNet: community-run distributed storage | Alessandro De Filippo |
+| 17:30 | RedundaNet: community-run distributed storage | Alessio Cappellini |
 | 18:00 | 🎉 *Saluti finali* | |
 | 19:00 | 🥂 *Paperitivo* | |
 
 {{< /tab >}}
 {{< /tabs >}}
 
-Tra i relatori ci sono anche due volti di casa: **Alek Mugnozzo**, presidente del Luccalug, racconterà come Blender è diventato uno standard dell'industria creativa, mentre **Matteo Martinelli**, vicepresidente, parlerà di sovranità digitale e dipendenza dai grandi cloud provider. E ritroveremo **Zanna**, già ospite di una nostra [serata a tema]({{< relref "blog/code-shibari-programmando-lo-spazio-negativo.md" >}}), con il suo self-hosting casalingo da 150 euro.
+Tra i relatori c'è anche un volto di casa: **Matteo Martinelli**, vicepresidente del Luccalug, parlerà di sovranità digitale e dipendenza dai grandi cloud provider. E ritroveremo **Zanna**, già ospite di una nostra [serata a tema]({{< relref "blog/code-shibari-programmando-lo-spazio-negativo.md" >}}), con il suo self-hosting casalingo da 150 euro.
 
 Le descrizioni dei talk e le informazioni sui relatori sono sul [sito ufficiale](https://day.linux.prato.it/#speakers).
 

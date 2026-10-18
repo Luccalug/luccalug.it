@@ -11,6 +11,7 @@ Il sito del Lucca Linux User Group: software libero, eventi, documenti ufficiali
 - [Linux Day](https://luccalug.it/linux-day/index.md)
 
 ## Blog
+- [Linux Day 2026: il programma è completo, ci vediamo sabato 24 ottobre a Prato!](https://luccalug.it/blog/2026/10/linux-day-2026-programma-completo/index.md) (18/10/2026)
 - [Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)](https://luccalug.it/blog/2026/09/schemesh-la-shell-che-avreste-sempre-voluto/index.md) (24/09/2026)
 - [Code shibari: programmando lo spazio negativo](https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-negativo/index.md) (07/09/2026)
 - [Linux Day 2026: aperta la Call for Papers](https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/index.md) (25/07/2026)
