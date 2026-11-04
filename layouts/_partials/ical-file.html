@@ -1,0 +1,9 @@
+{{- /*
+  Joins a list of iCalendar lines into the content of a .ics file: each line
+  folded at 75 octets and ended by CRLF, as RFC 5545 requires.
+*/ -}}
+{{- $out := "" -}}
+{{- range . -}}
+  {{- $out = printf "%s%s\r\n" $out (partial "ical-fold.html" .) -}}
+{{- end -}}
+{{- return $out -}}

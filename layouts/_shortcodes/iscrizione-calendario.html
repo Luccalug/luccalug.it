@@ -1,0 +1,33 @@
+{{- /*
+  Subscribe to the site calendar (calendario.ics). A subscription, unlike a
+  downloaded copy, keeps the events up to date.
+
+  Usage:
+    {{< iscrizione-calendario >}}                     buttons for Google and Apple
+    {{< iscrizione-calendario mostra="indirizzo" >}}  the address, to paste in other apps;
+                                                      inline, to use inside a sentence
+
+  The Google link is not officially documented: it is the format used by the
+  Add to Calendar Button library (add-to-calendar-button.com).
+    Google  calendar.google.com/calendar/r?cid=<webcal address, encoded>
+    Apple   webcal://… (also opened by ICSx⁵ on Android)
+*/ -}}
+{{- $ics := ((site.GetPage "/calendario").OutputFormats.Get "ical").Permalink -}}
+{{- $mostra := .Get "mostra" | default "pulsanti" -}}
+
+{{- if eq $mostra "indirizzo" -}}
+<code class="iscrizione-indirizzo">{{ $ics }}</code>
+{{- else if eq $mostra "pulsanti" -}}
+{{- $webcal := replaceRE `^https?://` "webcal://" $ics -}}
+{{- $apps := slice
+  (dict "nome" "Google Calendar" "nota" "dal browser del computer" "url" (printf "https://calendar.google.com/calendar/r?cid=%s" (urlquery $webcal)))
+  (dict "nome" "Apple Calendario" "nota" "iPhone, iPad, Mac" "url" $webcal)
+-}}
+<ul class="iscrizione-calendario">
+  {{- range $apps }}
+  <li><a class="iscrizione-link" href="{{ .url | safeURL }}">{{ .nome }}{{ with .nota }} <span class="iscrizione-nota">{{ . }}</span>{{ end }}</a></li>
+  {{- end }}
+</ul>
+{{- else -}}
+{{- errorf "iscrizione-calendario: mostra deve essere \"pulsanti\" o \"indirizzo\", non %q (%s)" $mostra .Position -}}
+{{- end -}}

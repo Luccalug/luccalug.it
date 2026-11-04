@@ -60,7 +60,7 @@ image: "/images/blog/titolo-dell-articolo/locandina.png"   # facoltativa, file i
 - `image` nel front matter è l'immagine per le anteprime social: Hugo la converte in 1200×630.
 - **Data di ultima modifica**: non viene presa da git. Se cambi il contenuto di un articolo o di una pagina già pubblicati (non per correzioni di link, tag o refusi) aggiungi `lastmod: AAAA-MM-GG` nel front matter; senza, vale `date`. Finisce nel sitemap e nei metadati `article:modified_time`/`dateModified`.
 
-Shortcode disponibili in `layouts/_shortcodes/` (ognuno ha la documentazione in testa al file): `badge`, `details`, `download`, `eventi`, `evento`, `figure`, `gallery`/`gallery-img`, `link-esterno`, `mappa`, `member`, `note`, `tabs`/`tab`, `terminal`, `youtube`, `colonne`/`colonna`.
+Shortcode disponibili in `layouts/_shortcodes/` (ognuno ha la documentazione in testa al file): `badge`, `details`, `download`, `eventi`, `evento`, `iscrizione-calendario`, `figure`, `gallery`/`gallery-img`, `link-esterno`, `mappa`, `member`, `note`, `tabs`/`tab`, `terminal`, `youtube`, `colonne`/`colonna`.
 
 ## Calendario
 
@@ -70,7 +70,9 @@ Gli incontri settimanali si scrivono una volta sola, come regola (giorno della s
 
 Per annullare un evento non toglierlo e non cambiarne il titolo: aggiungi `status: cancelled` e scrivi il motivo in `description`. In tabella resta barrato, con l'etichetta "Annullato", e chi ha importato il calendario lo vede annullato. Nel file `.ics` ogni evento è identificato dalla data: se due eventi cadono nello stesso giorno la build si ferma e chiede di dare a uno dei due un campo `id`. Un evento con `id` si aggiunge all'incontro settimanale di quel giorno invece di sostituirlo.
 
-Per mostrare in un articolo la scheda di un evento del calendario basta `{{< evento data="2026-11-23" >}}` (o `id="…"` per un evento con `id`): titolo, orario, luogo, descrizione, link e stato vengono dal calendario, quindi non vanno ripetuti e restano aggiornati, anche se l'evento viene annullato. Nel calendario aggiungi all'evento `url` con l'indirizzo dell'articolo, così in tabella il titolo diventa un link. Gli eventi passati che non sono in calendario usano la forma completa (`titolo`, `data`, `luogo`…), documentata in testa a `layouts/_shortcodes/evento.html`.
+Per mostrare in un articolo la scheda di un evento del calendario basta `{{< evento data="2026-11-23" >}}` (o `id="…"` per un evento con `id`): titolo, orario, luogo, descrizione, link e stato vengono dal calendario, quindi non vanno ripetuti e restano aggiornati, anche se l'evento viene annullato. Nel calendario aggiungi all'evento `url` con l'indirizzo dell'articolo, così in tabella il titolo diventa un link. Finché l'evento non è passato, e se non è annullato, la scheda ha anche il link "Aggiungi al calendario" a un file `.ics` con solo quell'evento (es. `/calendario/2026-11-23.ics`), generato nella build. Gli eventi passati che non sono in calendario usano la forma completa (`titolo`, `data`, `luogo`…), documentata in testa a `layouts/_shortcodes/evento.html`.
+
+La sezione "Aggiungi il Calendario" della pagina usa lo shortcode `iscrizione-calendario`, che genera dall'indirizzo del file `.ics` i pulsanti per iscriversi con Google Calendar e Apple Calendario (`webcal://`) e, con `mostra="indirizzo"`, l'indirizzo da incollare negli altri programmi. Chi si iscrive riceve da solo gli aggiornamenti; il file scaricato invece resta fermo al momento del download.
 
 ## Pagine in bozza
 

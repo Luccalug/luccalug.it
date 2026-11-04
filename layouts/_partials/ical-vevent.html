@@ -1,0 +1,38 @@
+{{- /*
+  One event as a list of iCalendar lines (BEGIN:VEVENT … END:VEVENT).
+
+  Context: dict with
+    evento   an event from the partial calendario-eventi.html
+    dtstamp  the DTSTAMP line
+    tz       the TZID of the times
+*/ -}}
+{{- $e := .evento -}}
+{{- $lines := slice "BEGIN:VEVENT" (printf "UID:%s@luccalug.it" $e.key) .dtstamp -}}
+{{- if $e.allDay -}}
+  {{- $lines = $lines | append
+    (printf "DTSTART;VALUE=DATE:%s" ($e.start.Format "20060102"))
+    (printf "DTEND;VALUE=DATE:%s" ($e.end.Format "20060102"))
+  -}}
+{{- else -}}
+  {{- $lines = $lines | append
+    (printf "DTSTART;TZID=%s:%s" .tz ($e.start.Format "20060102T150405"))
+    (printf "DTEND;TZID=%s:%s" .tz ($e.end.Format "20060102T150405"))
+  -}}
+{{- end -}}
+{{- $summary := $e.summary -}}
+{{- if $e.cancelled -}}
+  {{- /* The prefix is for the clients that ignore STATUS. */ -}}
+  {{- $summary = printf "[Annullato] %s" $summary -}}
+  {{- $lines = $lines | append "STATUS:CANCELLED" -}}
+{{- end -}}
+{{- $lines = $lines | append (printf "SUMMARY:%s" (partial "ical-escape.html" $summary)) -}}
+{{- with $e.location -}}
+  {{- $lines = $lines | append (printf "LOCATION:%s" (partial "ical-escape.html" .)) -}}
+{{- end -}}
+{{- with $e.description -}}
+  {{- $lines = $lines | append (printf "DESCRIPTION:%s" (partial "ical-escape.html" .)) -}}
+{{- end -}}
+{{- with $e.url -}}
+  {{- $lines = $lines | append (printf "URL:%s" (absURL .)) -}}
+{{- end -}}
+{{- return ($lines | append "END:VEVENT") -}}

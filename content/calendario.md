@@ -91,7 +91,13 @@ events:
 
 {{< eventi >}}
 
-{{< download url="/calendario.ics" tipo="ics" testo="Scarica il calendario iCal" >}}
+## 🔔 Aggiungi il Calendario
+
+Iscriviti al calendario del Luccalug: gli eventi compaiono nel tuo calendario e si aggiornano da soli, con le nuove serate a tema, i cambi di orario e gli annullamenti.
+
+{{< iscrizione-calendario >}}
+
+Con altri programmi, come [Thunderbird](https://www.thunderbird.net/it/), [Nextcloud](https://nextcloud.com/it/) o [ICSx⁵](https://f-droid.org/packages/at.bitfire.icsdroid/) su Android, cerca l'opzione per aggiungere un calendario da URL, o in abbonamento, e incolla l'indirizzo {{< iscrizione-calendario mostra="indirizzo" >}}.
 
 ## 🔁 Incontri Regolari
 

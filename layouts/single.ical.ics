@@ -4,7 +4,9 @@
   format (RFC 5545). The fields are documented in calendario.md.
 
   Lines are collected in $lines and printed at the end, folded at 75 octets
-  and each ended by CRLF, as the RFC requires.
+  and each ended by CRLF, as the RFC requires (partials ical-vtimezone,
+  ical-vevent and ical-file, shared with the single-event files of
+  ical-evento-url.html).
 
   - Times are local to Europe/Rome (DTSTART;TZID=…), described by the
     VTIMEZONE block, so they stay right across the daylight saving change.
@@ -25,55 +27,11 @@
   (printf "X-WR-TIMEZONE:%s" $tz)
   "REFRESH-INTERVAL;VALUE=DURATION:P1D"
   "X-PUBLISHED-TTL:P1D"
-  "BEGIN:VTIMEZONE"
-  (printf "TZID:%s" $tz)
-  "BEGIN:DAYLIGHT"
-  "TZOFFSETFROM:+0100"
-  "TZOFFSETTO:+0200"
-  "TZNAME:CEST"
-  "DTSTART:19700329T020000"
-  "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU"
-  "END:DAYLIGHT"
-  "BEGIN:STANDARD"
-  "TZOFFSETFROM:+0200"
-  "TZOFFSETTO:+0100"
-  "TZNAME:CET"
-  "DTSTART:19701025T030000"
-  "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU"
-  "END:STANDARD"
-  "END:VTIMEZONE"
 -}}
+{{- $lines = $lines | append (partial "ical-vtimezone.html" $tz) -}}
 {{- $dtstamp := printf "DTSTAMP:%s" (.Lastmod.UTC.Format "20060102T150405Z") -}}
 {{- range partialCached "calendario-eventi.html" . -}}
-  {{- $lines = $lines | append "BEGIN:VEVENT" (printf "UID:%s@luccalug.it" .key) $dtstamp -}}
-  {{- if .allDay -}}
-    {{- $lines = $lines | append
-      (printf "DTSTART;VALUE=DATE:%s" (.start.Format "20060102"))
-      (printf "DTEND;VALUE=DATE:%s" (.end.Format "20060102"))
-    -}}
-  {{- else -}}
-    {{- $lines = $lines | append
-      (printf "DTSTART;TZID=%s:%s" $tz (.start.Format "20060102T150405"))
-      (printf "DTEND;TZID=%s:%s" $tz (.end.Format "20060102T150405"))
-    -}}
-  {{- end -}}
-  {{- $summary := .summary -}}
-  {{- if .cancelled -}}
-    {{- /* The prefix is for the clients that ignore STATUS. */ -}}
-    {{- $summary = printf "[Annullato] %s" $summary -}}
-    {{- $lines = $lines | append "STATUS:CANCELLED" -}}
-  {{- end -}}
-  {{- $lines = $lines | append (printf "SUMMARY:%s" (partial "ical-escape.html" $summary)) -}}
-  {{- with .location -}}
-    {{- $lines = $lines | append (printf "LOCATION:%s" (partial "ical-escape.html" .)) -}}
-  {{- end -}}
-  {{- with .description -}}
-    {{- $lines = $lines | append (printf "DESCRIPTION:%s" (partial "ical-escape.html" .)) -}}
-  {{- end -}}
-  {{- with .url -}}
-    {{- $lines = $lines | append (printf "URL:%s" (absURL .)) -}}
-  {{- end -}}
-  {{- $lines = $lines | append "END:VEVENT" -}}
+  {{- $lines = $lines | append (partial "ical-vevent.html" (dict "evento" . "dtstamp" $dtstamp "tz" $tz)) -}}
 {{- end -}}
 {{- $lines = $lines | append "END:VCALENDAR" -}}
-{{- range $lines }}{{ partial "ical-fold.html" . }}{{ "\r\n" }}{{ end -}}
+{{- partial "ical-file.html" $lines -}}

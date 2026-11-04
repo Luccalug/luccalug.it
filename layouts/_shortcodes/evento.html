@@ -2,7 +2,9 @@
   Event card with semantic date, plus Schema.org Event data for search engines.
 
   Events in the calendar (content/calendario.md): give only the date, and
-  title, time, place, description, link and status come from there.
+  title, time, place, description, link and status come from there. Until
+  the event is over (and if it is not cancelled) the card also links to a
+  .ics file with just this event, to add it to a calendar app.
     {{< evento data="2026-11-23" >}}
     {{< evento id="2026-11-23-reticulum" >}}   (when the event has an "id")
 
@@ -25,6 +27,7 @@
 {{- $descrizione := .Get "descrizione" | default "" -}}
 {{- $url := .Get "url" | default "" -}}
 {{- $annullato := false -}}
+{{- $ics := "" -}}
 {{- /* Structured data */ -}}
 {{- $place := $luogo -}}
 {{- $start := $data -}}
@@ -47,6 +50,8 @@
     {{- errorf "evento: il %s ci sono %d eventi in calendario, scegli quello giusto con id=\"…\" (%s)" $data (len $trovati) .Position -}}
   {{- end -}}
   {{- with index $trovati 0 -}}
+    {{- /* A single-event .ics only while the event is still to come. */ -}}
+    {{- if and (not .cancelled) (.end.After now) }}{{ $ics = partial "ical-evento-url.html" . }}{{ end -}}
     {{- $titolo = .summary -}}
     {{- $data = .date -}}
     {{- $place = .location -}}
@@ -102,8 +107,15 @@
     {{- with $descrizione }}
     <div class="evento-descrizione">{{ . }}</div>
     {{- end }}
-    {{- with $url }}
-    <a class="evento-link" href="{{ . }}">Maggiori informazioni &rarr;</a>
+    {{- if or $url $ics }}
+    <div class="evento-azioni">
+      {{- with $ics }}
+      <a class="evento-link" href="{{ . }}" type="text/calendar">Aggiungi al calendario &rarr;</a>
+      {{- end }}
+      {{- with $url }}
+      <a class="evento-link" href="{{ . }}">Maggiori informazioni &rarr;</a>
+      {{- end }}
+    </div>
     {{- end }}
   </div>
 </div>

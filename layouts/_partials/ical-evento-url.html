@@ -1,0 +1,23 @@
+{{- /*
+  Publishes a .ics file with a single event (calendario/<key>.ics) and
+  returns its URL, for the "Aggiungi al calendario" link of the cards.
+  Same UID and DTSTAMP as in calendario.ics; no calendar name and no
+  refresh interval, since it is a one-off import, not a subscription.
+
+  Context: an event from the partial calendario-eventi.html.
+*/ -}}
+{{- $tz := "Europe/Rome" -}}
+{{- $cal := site.GetPage "/calendario" -}}
+{{- $lines := slice
+  "BEGIN:VCALENDAR"
+  "VERSION:2.0"
+  "PRODID:-//Luccalug//Calendario Eventi//IT"
+  "CALSCALE:GREGORIAN"
+  "METHOD:PUBLISH"
+-}}
+{{- $lines = $lines | append (partial "ical-vtimezone.html" $tz) -}}
+{{- $dtstamp := printf "DTSTAMP:%s" ($cal.Lastmod.UTC.Format "20060102T150405Z") -}}
+{{- $lines = $lines | append (partial "ical-vevent.html" (dict "evento" . "dtstamp" $dtstamp "tz" $tz)) -}}
+{{- $lines = $lines | append "END:VCALENDAR" -}}
+{{- $file := resources.FromString (printf "calendario/%s.ics" (urlize .key)) (partial "ical-file.html" $lines) -}}
+{{- return $file.RelPermalink -}}

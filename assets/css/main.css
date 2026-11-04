@@ -1111,6 +1111,12 @@ img { max-width: 100%; height: auto; }
   border-bottom: 1px solid transparent;
 }
 
+.evento-azioni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
 .evento-link:hover { background: var(--link-hover-bg); border-bottom-color: var(--link-color); }
 
 @media (max-width: 500px) {
@@ -1381,6 +1387,58 @@ img { max-width: 100%; height: auto; }
   font-size: 18px;
   color: var(--accent);
   flex-shrink: 0;
+}
+
+/* --- Shortcode: Iscrizione calendario --- */
+.iscrizione-calendario {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 500px) {
+  .iscrizione-calendario { grid-template-columns: 1fr; }
+}
+
+.iscrizione-link,
+.iscrizione-link:visited {
+  display: block;
+  height: 100%;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.iscrizione-link:hover {
+  border-color: var(--accent);
+  background: var(--link-hover-bg);
+}
+
+.iscrizione-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.iscrizione-nota {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* One click selects the whole address, ready to copy; never split it. */
+.iscrizione-indirizzo {
+  user-select: all;
+  white-space: nowrap;
 }
 
 /* --- Shortcode: Mappa --- */
