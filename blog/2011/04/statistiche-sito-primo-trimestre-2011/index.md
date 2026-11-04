@@ -4,7 +4,7 @@
 
 **Autore:** matteo
 
-**Tag:** sito, statistiche
+**Tag:** sito
 
 ---
 

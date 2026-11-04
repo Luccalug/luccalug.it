@@ -4,7 +4,7 @@
 
 **Autore:** mugnozzo
 
-**Tag:** pillole-di-free-software, inkscape, grafica
+**Tag:** pillole-di-free-software, grafica
 
 ---
 

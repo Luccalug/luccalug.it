@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** sito, storia, retrocomputing, meta
+**Tag:** sito
 
 ---
 

@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** software-libero, blender, open-movie
+**Tag:** software-libero, blender
 
 ---
 

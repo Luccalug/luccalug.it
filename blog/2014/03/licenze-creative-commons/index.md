@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** pillole-di-free-software, licenze, software-libero
+**Tag:** pillole-di-free-software, software-libero
 
 ---
 

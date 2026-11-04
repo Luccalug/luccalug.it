@@ -4,7 +4,7 @@
 
 **Autore:** matteo
 
-**Tag:** django, eventi, incontri
+**Tag:** django, eventi
 
 ---
 

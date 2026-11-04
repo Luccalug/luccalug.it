@@ -7,6 +7,7 @@
 # Calendario
 
 URL: https://luccalug.it/calendario/
+Data: 04/11/2026
 
 
 ## 📅 Prossimi Eventi
@@ -30,77 +31,10 @@ Oppure [scrivici al nostro indirizzo mail](mailto:luccalug@protonmail.com)
 
 ---
 
-# Chi Siamo
-
-URL: https://luccalug.it/about/
-
-
-## 🐧 Chi Siamo
-
-Il **Luccalug** (Lucca Linux User Group) è un'associazione di promozione sociale che riunisce appassionati di **GNU/Linux** e **software libero** nella provincia di Lucca.
-
-## La Nostra Missione
-
-- **Diffondere** la conoscenza del software libero e open source
-- **Aiutare** chiunque voglia avvicinarsi a Linux
-- **Organizzare** eventi, workshop e install party
-- **Condividere** competenze e passione per la tecnologia libera
-
-## Dove Trovarci
-
-Ci incontriamo ogni lunedì al **Foro Boario di Lucca**, dalle 21:00 in poi.
-
-## Come Partecipare
-
-**Non serve essere esperti!** Il LUG è aperto a tutti: curiosi, principianti, appassionati e professionisti.
-
-Per unirti a noi:
-
-1. Vieni a uno dei nostri incontri
-2. Presentati, siamo gente amichevole! 🐧
-3. Se vuoi, diventa socio (quota annuale: €20)
-
-[Leggi la nostra guida alla prima serata]({{< ref "blog/guida-alla-prima-serata" >}})
-
----
-
-{{< figure src="images/glider.jpg" alt="Hacker Emblem - il Glider dal Gioco della Vita di Conway">}}
-
-
----
-
-# Contatti
-
-URL: https://luccalug.it/contatti/
-
-
-## 📬 Scrivici
-
-- **Email**: luccalug@protonmail.com
-
-## 📍 Dove Siamo
-
-{{< mappa lat="43.8566" lon="10.5087" zoom="17" titolo="Foro Boario, Lucca" >}}
-
-Ci incontriamo ogni lunedì, dalle 21:00 in poi, al Foro Boario di Lucca.
-
-## 🌐 Online
-
-- **Sito web**: [luccalug.it](https://luccalug.it)
-- **Telegram**: [t.me/luccalug](https://t.me/luccalug)
-
-## 💬 Vuoi Partecipare?
-
-Non serve essere esperti! Vieni a trovarci a uno dei nostri [incontri]({{< ref "calendario" >}}) o scrivici una mail. Siamo sempre felici di accogliere nuovi appassionati di software libero. 🐧
-
-[Leggi la nostra guida alla prima serata]({{< ref "blog/guida-alla-prima-serata" >}})
-
-
----
-
 # Linux Day
 
 URL: https://luccalug.it/linux-day/
+Data: 04/11/2026
 
 
 ## 🐧 Cos'è il Linux Day?
@@ -203,6 +137,76 @@ Il prossimo Linux Day si terrà come sempre il quarto sabato di ottobre: per sap
 - [Programma](https://day.linux.prato.it/#schedule) - tutti i talk delle due tracce, con orari e descrizioni
 - [Linux Day Italia 2026](https://www.linuxday.it/2026/) - il sito nazionale del Linux Day
 - [Italian Linux Society](https://www.ils.org/) - l'associazione che coordina il Linux Day
+
+
+---
+
+# Chi Siamo
+
+URL: https://luccalug.it/about/
+Data: 29/05/2026
+
+
+## 🐧 Chi Siamo
+
+Il **Luccalug** (Lucca Linux User Group) è un'associazione di promozione sociale che riunisce appassionati di **GNU/Linux** e **software libero** nella provincia di Lucca.
+
+## La Nostra Missione
+
+- **Diffondere** la conoscenza del software libero e open source
+- **Aiutare** chiunque voglia avvicinarsi a Linux
+- **Organizzare** eventi, workshop e install party
+- **Condividere** competenze e passione per la tecnologia libera
+
+## Dove Trovarci
+
+Ci incontriamo ogni lunedì al **Foro Boario di Lucca**, dalle 21:00 in poi.
+
+## Come Partecipare
+
+**Non serve essere esperti!** Il LUG è aperto a tutti: curiosi, principianti, appassionati e professionisti.
+
+Per unirti a noi:
+
+1. Vieni a uno dei nostri incontri
+2. Presentati, siamo gente amichevole! 🐧
+3. Se vuoi, diventa socio (quota annuale: €20)
+
+[Leggi la nostra guida alla prima serata]({{< ref "blog/guida-alla-prima-serata" >}})
+
+---
+
+{{< figure src="images/glider.jpg" alt="Hacker Emblem - il Glider dal Gioco della Vita di Conway">}}
+
+
+---
+
+# Contatti
+
+URL: https://luccalug.it/contatti/
+Data: 29/05/2026
+
+
+## 📬 Scrivici
+
+- **Email**: luccalug@protonmail.com
+
+## 📍 Dove Siamo
+
+{{< mappa lat="43.8566" lon="10.5087" zoom="17" titolo="Foro Boario, Lucca" >}}
+
+Ci incontriamo ogni lunedì, dalle 21:00 in poi, al Foro Boario di Lucca.
+
+## 🌐 Online
+
+- **Sito web**: [luccalug.it](https://luccalug.it)
+- **Telegram**: [t.me/luccalug](https://t.me/luccalug)
+
+## 💬 Vuoi Partecipare?
+
+Non serve essere esperti! Vieni a trovarci a uno dei nostri [incontri]({{< ref "calendario" >}}) o scrivici una mail. Siamo sempre felici di accogliere nuovi appassionati di software libero. 🐧
+
+[Leggi la nostra guida alla prima serata]({{< ref "blog/guida-alla-prima-serata" >}})
 
 
 ---
@@ -424,7 +428,7 @@ Vi aspettiamo al Foro Boario! 🐧
 URL: https://luccalug.it/blog/2026/07/linux-day-2026-aperta-cfp/
 Data: 25/07/2026
 Autore: Il Direttivo
-Tag: linux-day, eventi, call-for-papers, software-libero
+Tag: linux-day, eventi, software-libero
 
 
 {{< figure loading="eager" src="images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png" alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre" caption="La Call for Papers del Linux Day Prato 2026 è aperta!" >}}
@@ -492,7 +496,7 @@ La serata è aperta a tutti gli interessati. Vi aspettiamo in sede!
 URL: https://luccalug.it/blog/2026/05/come-eravamo-evoluzione-del-sito/
 Data: 29/05/2026
 Autore: Il Direttivo
-Tag: sito, storia, retrocomputing, meta
+Tag: sito
 
 
 Il nuovo sito appena andato online ma ci siamo già affezionati a questa estetica un po' anni '90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: **quanti siti ha avuto il LuccaLUG in tutti questi anni?**
@@ -596,7 +600,7 @@ Il prossimo capitolo? Lo scriviamo insieme. Se vuoi farne parte, dai un'occhiata
 URL: https://luccalug.it/blog/2026/03/guida-alla-prima-serata/
 Data: 19/03/2026
 Autore: Il Direttivo
-Tag: guide, community
+Tag: guide, associazione
 
 
 Stai pensando di passare a trovarci ma non sai bene cosa aspettarti? Questa guida è per te.
@@ -1706,7 +1710,7 @@ Aiutaci a promuovere l'evento condividendolo sui social network!
 URL: https://luccalug.it/blog/2014/04/project-gooseberry/
 Data: 11/04/2014
 Autore: Il Direttivo
-Tag: software-libero, blender, open-movie
+Tag: software-libero, blender
 
 
 {{< figure loading="eager" src="images/blog/project-gooseberry/gooseberry-project.png" alt="Project Gooseberry - il primo open movie della storia" caption="Project Gooseberry: il primo film d'animazione completamente libero" >}}
@@ -1752,7 +1756,7 @@ L'evento inizierà alle **21:00**.
 URL: https://luccalug.it/blog/2014/03/gpg-gnu-privacy-guard/
 Data: 19/03/2014
 Autore: Il Direttivo
-Tag: pillole-di-free-software, sicurezza, crittografia
+Tag: pillole-di-free-software, sicurezza
 
 
 {{< figure loading="eager" src="images/blog/gpg-gnu-privacy-guard/pillole-gpg.png" alt="Locandina serata GPG - Pillole di Free Software" caption="Pillole di Free Software: GPG (GNU Privacy Guard)" >}}
@@ -1775,7 +1779,7 @@ L'evento inizierà alle **21:00**.
 URL: https://luccalug.it/blog/2014/03/licenze-creative-commons/
 Data: 08/03/2014
 Autore: Il Direttivo
-Tag: pillole-di-free-software, licenze, software-libero
+Tag: pillole-di-free-software, software-libero
 
 
 {{< figure loading="eager" src="images/blog/licenze-creative-commons/pillole.png" alt="Locandina ciclo Pillole di Free Software" caption="Pillole di Free Software - il ciclo di serate a tema del Luccalug" >}}
@@ -1831,7 +1835,7 @@ Tutti i dati tecnici e le informazioni si possono trovare su [http://cosino.it](
 URL: https://luccalug.it/blog/2013/09/stallman-a-firenze/
 Data: 30/09/2013
 Autore: Il Direttivo
-Tag: software-libero, eventi, gnu
+Tag: software-libero, eventi
 
 
 {{< figure loading="eager" src="images/blog/stallman-a-firenze/richard-stallman.jpg" alt="Richard Stallman" caption="Richard Stallman, fondatore della Free Software Foundation" >}}
@@ -2200,7 +2204,7 @@ La serata è aperta a tutti, soci e non. Portate il vostro PC e i dati di cui av
 URL: https://luccalug.it/blog/2012/02/pillole-inkscape/
 Data: 27/02/2012
 Autore: mugnozzo
-Tag: pillole-di-free-software, inkscape, grafica
+Tag: pillole-di-free-software, grafica
 
 
 {{< evento titolo="Pillole di Free Software: Inkscape, software di disegno vettoriale" data="2012-03-12" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Serata di presentazione di Inkscape, il programma open source per la grafica vettoriale SVG. Incontro aperto a tutti." >}}
@@ -2336,7 +2340,7 @@ Per iscriversi è possibile rivolgersi il lunedì sera dalle ore 21:00 alle ore 
 URL: https://luccalug.it/blog/2011/07/incontri-sospesi/
 Data: 09/07/2011
 Autore: matteo
-Tag: luccalug
+Tag: associazione
 
 
 {{< note type="warning" >}}A causa della mancanza di volontari siamo costretti a sospendere fino a data da decidersi gli incontri del lunedì sera, questo ci rattrista molto ma le persone rimaste sono troppo poche per poter garantire l'apertura fissa settimanale.{{< /note >}}
@@ -2477,7 +2481,7 @@ Un video di introduzione ad Arduino, la piattaforma open hardware per il physica
 URL: https://luccalug.it/blog/2011/04/statistiche-sito-primo-trimestre-2011/
 Data: 08/04/2011
 Autore: matteo
-Tag: sito, statistiche
+Tag: sito
 
 
 In allegato le statistiche del nuovo sito nel primo trimestre 2011. Se anche tu vuoi proporre un articolo o un tema scrivi a sito@luccalug.it
@@ -2509,7 +2513,7 @@ Per maggiori informazioni potete scrivere a sito@luccalug.it
 URL: https://luccalug.it/blog/2010/11/django-sviluppare-applicazioni-web-rapidamente/
 Data: 29/11/2010
 Autore: matteo
-Tag: django, eventi, incontri
+Tag: django, eventi
 
 
 > "Django è un framework open source per lo sviluppo di applicazioni web, scritto in linguaggio Python, seguendo il pattern Model-View-Controller."

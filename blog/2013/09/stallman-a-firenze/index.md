@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** software-libero, eventi, gnu
+**Tag:** software-libero, eventi
 
 ---
 

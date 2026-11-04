@@ -6,9 +6,9 @@ Il sito del Lucca Linux User Group: software libero, eventi, documenti ufficiali
 
 ## Pagine principali
 - [Calendario](https://luccalug.it/calendario/index.md)
+- [Linux Day](https://luccalug.it/linux-day/index.md)
 - [Chi Siamo](https://luccalug.it/about/index.md)
 - [Contatti](https://luccalug.it/contatti/index.md)
-- [Linux Day](https://luccalug.it/linux-day/index.md)
 
 ## Blog
 - [Reticulum: ripensare la rete](https://luccalug.it/blog/2026/11/reticulum-ripensare-la-rete/index.md) (04/11/2026)

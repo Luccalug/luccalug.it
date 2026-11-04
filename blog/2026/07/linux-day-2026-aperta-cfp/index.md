@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** linux-day, eventi, call-for-papers, software-libero
+**Tag:** linux-day, eventi, software-libero
 
 ---
 

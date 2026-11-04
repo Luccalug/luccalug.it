@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** pillole-di-free-software, sicurezza, crittografia
+**Tag:** pillole-di-free-software, sicurezza
 
 ---
 
