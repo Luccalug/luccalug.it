@@ -7,7 +7,7 @@
 # Calendario
 
 URL: https://luccalug.it/calendario/
-Data: 04/11/2026
+Data: 05/11/2026
 
 
 ## 📅 Prossimi Eventi
