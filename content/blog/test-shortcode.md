@@ -84,7 +84,7 @@ $ hugo server -D
 
 {{< evento titolo="Incontro ordinario" data="2026-03-23" luogo="Foro Boario, Lucca" descrizione="Incontro settimanale del lunedì sera" >}}
 
-{{< evento titolo="Linux Day 2026" data="2026-10-24" luogo="Da definire, Lucca" descrizione="La principale manifestazione italiana dedicata a GNU/Linux" url="https://www.linuxday.it/" >}}
+{{< evento data="2026-10-24" >}}
 
 ---
 

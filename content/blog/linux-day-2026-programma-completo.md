@@ -49,6 +49,6 @@ Il programma completo, orario per orario, è sulla nostra [pagina del Linux Day]
 
 ## Informazioni
 
-{{< evento titolo="Linux Day 2026" data="2026-10-24" luogo="PRISMA Prato, via Galcianese 34, Prato - dalle 10:00 alle 18:30" descrizione="18 talk su due tracce, generale e tecnica, organizzati da Luccalug, GOLEM, GULLi e PLUG. Ingresso gratuito e aperto a tutti." url="https://day.linux.prato.it/" >}}
+{{< evento data="2026-10-24" >}}
 
 Vi aspettiamo a Prato: portate amici, colleghi e curiosi! 🐧

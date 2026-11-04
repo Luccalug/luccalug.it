@@ -1,0 +1,145 @@
+{{- /*
+  The events of the calendar ("events" in the front matter of
+  content/calendario.md, where the fields are documented), checked and
+  completed. Single source for everything that shows them: the "Prossimi
+  eventi" table (shortcode eventi), the cards in the articles (shortcode
+  evento) and calendario.ics.
+
+  Weekly events ("recurring") are expanded into one event per week, from
+  "from" to "until" or, without "until", up to $weeksAhead weeks after the
+  build day: the site is rebuilt every night, so new dates appear on their
+  own. An entry in "events" with the same key as an occurrence (the date,
+  or "<date>-<id>" for a rule with an "id") replaces it, and takes from the
+  rule what it does not set: always time, duration and location; also
+  summary, description and url when it has no summary of its own (the same
+  meeting, cancelled or changed), not when it has one (a themed evening).
+
+  Usage: {{ $eventi := partialCached "calendario-eventi.html" (site.GetPage "/calendario") }}
+
+  Returns a list of dicts, sorted by start:
+    key          "id", or the date: iCal UID and key for the shortcode evento
+    date         YYYY-MM-DD
+    start, end   time.Time in Europe/Rome; for all-day events, midnight of
+                 the day and of the next day
+    allDay       true when the event has no "time"
+    summary, location, description, url   as in the front matter ("" if missing)
+    cancelled    true with status: cancelled
+*/ -}}
+{{- $tz := "Europe/Rome" -}}
+{{- $weeksAhead := 12 -}}
+{{- $lastDay := ((time.AsTime (now.Format "2006-01-02") $tz).AddDate 0 0 (mul 7 $weeksAhead)).Format "2006-01-02" -}}
+{{- $weekdays := slice "monday" "tuesday" "wednesday" "thursday" "friday" "saturday" "sunday" -}}
+
+{{- /* Weekly rules, checked. */ -}}
+{{- $rules := slice -}}
+{{- range $i, $r := .Params.recurring -}}
+  {{- $n := add $i 1 -}}
+  {{- if not $r.summary -}}
+    {{- errorf "calendario: la ricorrenza n. %d non ha il titolo (summary)" $n -}}
+  {{- end -}}
+  {{- if not $r.from -}}
+    {{- errorf "calendario: la ricorrenza n. %d non ha la data di inizio (from)" $n -}}
+  {{- end -}}
+  {{- $weekday := lower ($r.weekday | default "") -}}
+  {{- if not (in $weekdays $weekday) -}}
+    {{- errorf "calendario: la ricorrenza n. %d ha weekday %q, i valori ammessi sono %s" $n $r.weekday (delimit $weekdays ", ") -}}
+  {{- end -}}
+  {{- if and $r.from (in $weekdays $weekday) -}}
+    {{- $until := "9999-12-31" -}}
+    {{- with $r.until }}{{ $until = (time .).Format "2006-01-02" }}{{ end -}}
+    {{- $rules = $rules | append (dict "r" $r "weekday" $weekday "from" ((time $r.from).Format "2006-01-02") "until" $until) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Entries in "events", completed from the rule they replace. */ -}}
+{{- $entries := slice -}}
+{{- $replaced := slice -}}
+{{- range $i, $e := .Params.events -}}
+  {{- if not $e.date -}}
+    {{- errorf "calendario: l'evento n. %d non ha la data (date)" (add $i 1) -}}
+  {{- end -}}
+  {{- $date := (time $e.date).Format "2006-01-02" -}}
+  {{- $key := $e.id | default $date -}}
+  {{- $entry := $e -}}
+  {{- range $rules -}}
+    {{- $ruleKey := $date -}}
+    {{- with .r.id }}{{ $ruleKey = printf "%s-%s" $date . }}{{ end -}}
+    {{- $sameDay := eq (lower ((time.AsTime $date $tz).Format "Monday")) .weekday -}}
+    {{- if and (eq $key $ruleKey) $sameDay (ge $date .from) (le $date .until) -}}
+      {{- $base := dict "time" .r.time "duration" .r.duration "location" .r.location -}}
+      {{- if not $e.summary -}}
+        {{- $base = merge $base (dict "summary" .r.summary "description" .r.description "url" .r.url) -}}
+      {{- end -}}
+      {{- $entry = merge $base $e -}}
+      {{- $replaced = $replaced | append $key -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $entries = $entries | append $entry -}}
+{{- end -}}
+
+{{- /* One entry per week for each rule, except the replaced ones. */ -}}
+{{- range $rules -}}
+  {{- $rule := . -}}
+  {{- $end := cond (lt .until $lastDay) .until $lastDay -}}
+  {{- /* First occurrence: the first matching weekday on or after "from". */ -}}
+  {{- $first := "" -}}
+  {{- range $k := seq 0 6 -}}
+    {{- $day := (time.AsTime $rule.from $tz).AddDate 0 0 $k -}}
+    {{- if and (not $first) (eq (lower ($day.Format "Monday")) $rule.weekday) }}{{ $first = $day }}{{ end -}}
+  {{- end -}}
+  {{- if le ($first.Format "2006-01-02") $end -}}
+    {{- $weeks := int (math.Ceil (div ((time.AsTime $end $tz).Sub $first).Hours 168.0)) -}}
+    {{- range $k := seq 0 $weeks -}}
+      {{- $date := ($first.AddDate 0 0 (mul 7 $k)).Format "2006-01-02" -}}
+      {{- $key := $date -}}
+      {{- with $rule.r.id }}{{ $key = printf "%s-%s" $date . }}{{ end -}}
+      {{- if and (le $date $end) (not (in $replaced $key)) -}}
+        {{- $occurrence := merge $rule.r (dict "date" $date) -}}
+        {{- with $rule.r.id }}{{ $occurrence = merge $occurrence (dict "id" $key) }}{{ end -}}
+        {{- $entries = $entries | append $occurrence -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Checks and computed fields, the same for both kinds. */ -}}
+{{- $eventi := slice -}}
+{{- $keys := slice -}}
+{{- range $e := $entries -}}
+  {{- $date := (time $e.date).Format "2006-01-02" -}}
+  {{- if not $e.summary -}}
+    {{- errorf "calendario: l'evento del %s non ha il titolo (summary)" $date -}}
+  {{- end -}}
+  {{- $key := $e.id | default $date -}}
+  {{- if in $keys $key -}}
+    {{- errorf "calendario: due eventi con identificativo %q: aggiungi a uno dei due (evento o ricorrenza) un campo \"id\" diverso" $key -}}
+  {{- end -}}
+  {{- $keys = $keys | append $key -}}
+  {{- with $e.status -}}
+    {{- if ne . "cancelled" -}}
+      {{- errorf "calendario: evento del %s con status %q, l'unico valore ammesso è \"cancelled\"" $date . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $start := time.AsTime $date $tz -}}
+  {{- $end := $start.AddDate 0 0 1 -}}
+  {{- with $e.time -}}
+    {{- $start = time.AsTime (printf "%sT%05s:00" $date .) $tz -}}
+    {{- $end = $start.Add (time.ParseDuration ($e.duration | default "2h")) -}}
+  {{- end -}}
+
+  {{- $eventi = $eventi | append (dict
+    "key" $key
+    "date" $date
+    "start" $start
+    "end" $end
+    "allDay" (not $e.time)
+    "summary" $e.summary
+    "location" ($e.location | default "")
+    "description" ($e.description | default "")
+    "url" ($e.url | default "")
+    "cancelled" (eq $e.status "cancelled")
+  ) -}}
+{{- end -}}
+{{- /* In date and time order, even if the front matter is not. */ -}}
+{{- return sort $eventi "start" -}}

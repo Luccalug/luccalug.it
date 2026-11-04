@@ -1,6 +1,7 @@
 {{- /*
-  calendario.ics: the events in the front matter of content/calendario.md,
-  in iCalendar format (RFC 5545). The fields are documented there.
+  calendario.ics: the events of content/calendario.md (read through the
+  partial calendario-eventi.html, which also checks them), in iCalendar
+  format (RFC 5545). The fields are documented in calendario.md.
 
   Lines are collected in $lines and printed at the end, folded at 75 octets
   and each ended by CRLF, as the RFC requires.
@@ -9,6 +10,7 @@
     VTIMEZONE block, so they stay right across the daylight saving change.
   - The UID depends only on the date (or on "id"), so changing the title or
     cancelling an event updates it in the calendars that already have it.
+    Two events with the same date or id stop the build.
   - DTSTAMP is the lastmod of the calendar page, not "now": the file stays
     identical between builds until the events change.
 */ -}}
@@ -42,47 +44,34 @@
   "END:VTIMEZONE"
 -}}
 {{- $dtstamp := printf "DTSTAMP:%s" (.Lastmod.UTC.Format "20060102T150405Z") -}}
-{{- $uids := slice -}}
-{{- range $e := .Params.events -}}
-  {{- $date := (time $e.date).Format "2006-01-02" -}}
-  {{- $uid := printf "%s@luccalug.it" ($e.id | default $date) -}}
-  {{- if in $uids $uid -}}
-    {{- errorf "calendario: due eventi con UID %q: aggiungi a uno dei due un campo \"id\" diverso" $uid -}}
-  {{- end -}}
-  {{- $uids = $uids | append $uid -}}
-  {{- $lines = $lines | append "BEGIN:VEVENT" (printf "UID:%s" $uid) $dtstamp -}}
-
-  {{- if $e.time -}}
-    {{- $start := time.AsTime (printf "%sT%05s:00" $date $e.time) $tz -}}
-    {{- $end := $start.Add (time.ParseDuration ($e.duration | default "2h")) -}}
+{{- range partialCached "calendario-eventi.html" . -}}
+  {{- $lines = $lines | append "BEGIN:VEVENT" (printf "UID:%s@luccalug.it" .key) $dtstamp -}}
+  {{- if .allDay -}}
     {{- $lines = $lines | append
-      (printf "DTSTART;TZID=%s:%s" $tz ($start.Format "20060102T150405"))
-      (printf "DTEND;TZID=%s:%s" $tz ($end.Format "20060102T150405"))
+      (printf "DTSTART;VALUE=DATE:%s" (.start.Format "20060102"))
+      (printf "DTEND;VALUE=DATE:%s" (.end.Format "20060102"))
     -}}
   {{- else -}}
-    {{- /* No time: all-day event. */ -}}
-    {{- $day := time.AsTime $date $tz -}}
     {{- $lines = $lines | append
-      (printf "DTSTART;VALUE=DATE:%s" ($day.Format "20060102"))
-      (printf "DTEND;VALUE=DATE:%s" (($day.AddDate 0 0 1).Format "20060102"))
+      (printf "DTSTART;TZID=%s:%s" $tz (.start.Format "20060102T150405"))
+      (printf "DTEND;TZID=%s:%s" $tz (.end.Format "20060102T150405"))
     -}}
   {{- end -}}
-
-  {{- $summary := $e.summary -}}
-  {{- with $e.status -}}
-    {{- if ne . "cancelled" -}}
-      {{- errorf "calendario: evento del %s con status %q, l'unico valore ammesso è \"cancelled\"" $date . -}}
-    {{- end -}}
+  {{- $summary := .summary -}}
+  {{- if .cancelled -}}
     {{- /* The prefix is for the clients that ignore STATUS. */ -}}
     {{- $summary = printf "[Annullato] %s" $summary -}}
     {{- $lines = $lines | append "STATUS:CANCELLED" -}}
   {{- end -}}
   {{- $lines = $lines | append (printf "SUMMARY:%s" (partial "ical-escape.html" $summary)) -}}
-  {{- with $e.location -}}
+  {{- with .location -}}
     {{- $lines = $lines | append (printf "LOCATION:%s" (partial "ical-escape.html" .)) -}}
   {{- end -}}
-  {{- with $e.description -}}
+  {{- with .description -}}
     {{- $lines = $lines | append (printf "DESCRIPTION:%s" (partial "ical-escape.html" .)) -}}
+  {{- end -}}
+  {{- with .url -}}
+    {{- $lines = $lines | append (printf "URL:%s" (absURL .)) -}}
   {{- end -}}
   {{- $lines = $lines | append "END:VEVENT" -}}
 {{- end -}}

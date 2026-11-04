@@ -25,7 +25,8 @@ I riferimenti `file:riga` sono aggiornati allo stato della cartella di lavoro de
 
 I giri 3–5 sono nel commit `5257c79`, pushato e pubblicato il 4/11: le verifiche fatte in produzione sono nel [§3](#3-verifiche-da-fare-dopo-il-primo-deploy).
 
-- [ ] **Committare e pushare** le ultime modifiche, non ancora committate: pulizia di cspell (`cspell.json`, vedi [§6](#6-falsi-positivi-noti)), `Gulli` → `GULLi` in `content/blog/da-obs-alla-webcam.md`, licenza CC BY 4.0 (`LICENSE`, `README.md`, vedi [§2.3](#23-licenza)), calendario conforme a RFC 5545 (B19) e feed RSS (vedi [§7](#7-già-fatto)) e questo `TODO.md`.
+- [x] Sesto giro e prima parte del settimo (cspell, `GULLi`, licenza CC BY 4.0, B19, feed RSS) nel commit `dfba7c5`, pushato il 4/11. In produzione `calendario.ics` ha già `VTIMEZONE`, CRLF e i nuovi UID, e `/feed.xml` non contiene più il calendario.
+- [ ] **Committare** il punto 5.1 (eventi in un solo posto) e gli incontri settimanali (`recurring`), vedi [§7](#7-già-fatto): `layouts/_partials/calendario-eventi.html`, gli shortcode `evento` ed `eventi`, `single.ical.ics`, `content/calendario.md`, i 4 articoli convertiti, la pagina di test, `README.md` e questo `TODO.md`.
 - [x] **PR #3 di Dependabot** ("ci: bump the actions group with 4 updates"), unita in `master` con il commit `92dfb5f`: `actions/checkout` 5.1.0 → 7.0.1, `DavidAnson/markdownlint-cli2-action` 23.2.0 → 25.0.0, `streetsidesoftware/cspell-action` 8.4.0 → 9.2.0, `actions/cache` 4.3.0 → 6.1.0. Il run del push (`41893761789`) ha passato lint e link check e ha fatto il deploy.
 - [ ] **PR #2** (contributore esterno, aperta il 21/9, "Pause the marquee on hover and focus"): quello che propone c'è già con M4, cioè pausa con hover e con `:focus-within` (`assets/css/main.css:350-355`) più il pulsante pausa. La PR aggiunge in più solo `tabindex="0"` alla barra, che rende raggiungibile con Tab un elemento non interattivo, e modifica `layouts/partials/marquee.html`, spostato in `layouts/_partials/` con B12. Proposta: chiuderla ringraziando e spiegando che la funzione è già presente.
 - [ ] **PR di prova con un link interno sbagliato** (es. `[x](/blog/non-esiste/)`): che sulle PR il deploy venga saltato è già verificato con la PR #3; resta da vedere che il job `link-check` fallisca. In locale gli stessi `args` trovano sia la pagina mancante sia l'ancora mancante.
@@ -97,7 +98,7 @@ Fino al 4/11 `LICENSE` era la **Creative Commons Attribution 3.0 Unported**: pre
 - [ ] **Anteprime social**: provare 2–3 link (home, articolo Reticulum, pagina Linux Day) con il [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) e il [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/), e mandarli su WhatsApp/Telegram. Le og:image ora sono JPEG 1200×630 da 52–120 KB.
 - [ ] **Core Web Vitals reali** su [PageSpeed Insights](https://pagespeed.web.dev/): i valori misurati il 4/11 sono di laboratorio (Lighthouse).
 - [ ] **Test manuale con lettore di schermo** (NVDA su Windows o Orca su Linux): menu, selettore del tema, pulsante pausa della barra in alto, tab nella pagina Linux Day, galleria, mappa da attivare.
-- [ ] **Calendario** (dopo il deploy di B19):
+- [ ] **Calendario** (B19 è online dal 4/11, commit `dfba7c5`):
   - passare `https://luccalug.it/calendario.ics` nel [validatore iCalendar](https://icalendar.org/validator.html); in locale è già stato controllato con la libreria Python `icalendar` (vedi [§8](#8-come-ripetere-le-verifiche));
   - importarlo in Google Calendar e in un client Apple, e controllare che gli incontri siano alle 21:00 sia prima sia dopo il cambio dell'ora (es. 19/10 e 26/10);
   - vedere come i due client mostrano gli annullati del 12/10 e del 2/11 (`STATUS:CANCELLED` più il prefisso "[Annullato]" nel titolo). Alcuni client nascondono gli eventi annullati: va bene lo stesso.
@@ -171,16 +172,9 @@ Il blocco `canonical` esiste già in `layouts/baseof.html` grazie alla correzion
 
 ## 5. Miglioramenti strutturali
 
-### 5.1 Un solo file per gli eventi
+### 5.1 Box "Prossimo incontro" in home (facoltativo)
 
-Oggi gli eventi sono scritti due volte: in `content/calendario.md` (`events`) e negli shortcode `evento` dentro gli articoli. L'articolo Reticulum, per esempio, ripete data e luogo della voce del 23/11.
-
-Proposta: un'unica sorgente, cioè il front matter del calendario oppure `data/eventi.yaml`, ogni evento identificato dalla data o da un `id` (come già oggi nel `.ics`), da cui generare:
-
-- tabella "Prossimi eventi" e `calendario.ics` (già oggi);
-- card nell'articolo: `{{< evento id="2026-11-23-reticulum" >}}`;
-- JSON-LD `Event` nelle pagine degli articoli: oggi lo genera lo shortcode `evento` (B7), ricavando l'orario dal testo di `luogo`; con il file unico avrebbe ora di inizio e di fine esplicite;
-- eventuale box "Prossimo incontro" in home.
+Gli eventi ora sono in un solo posto (fatto il 4/11, vedi il settimo giro nel [§7](#7-già-fatto)). Resta l'idea di un riquadro in home con il prossimo evento: basta leggere il primo evento futuro da `partialCached "calendario-eventi.html" (site.GetPage "/calendario")`, come fa la tabella.
 
 ### 5.2 Deploy con `actions/deploy-pages`
 
@@ -261,11 +255,11 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
 - **B6 (resto), pagine 2 e successive** – Il titolo diventa "Blog – pagina 2 - Luccalug" (o "Tag: Eventi – pagina 2 - …") e la description finisce con "Pagina 2 di 7.". Il numero di pagina viene da `_partials/paginator.html` ed è calcolato solo per blog e tag, cioè le liste i cui template paginano: chiamare il paginatore su `/tags/` farebbe generare pagine `/tags/page/N/`, che invece sono redirect.
 - Verifiche: link interni 0 errori su 3598; nessuna description oltre 160 caratteri; markdownlint 0 problemi; html-validate solo sulle pagine di redirect.
 
-**Sesto giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
+**Sesto giro, 4/11/2026** (commit `dfba7c5`):
 
 - **cspell** – Il run del push `5257c79` segnalava 42 parole nei file toccati, e su tutto `content/` erano 135. Ora sono 0: cspell ignora codice e shortcode `terminal`, le parole valide sono in `cspell.json`, e `Gulli` è diventato `GULLi`. Dettagli nel [§6](#6-falsi-positivi-noti).
 
-**Settimo giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
+**Settimo giro, 4/11/2026** (B19 e feed RSS nel commit `dfba7c5`; 5.1 da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
 
 - **B19** – `calendario.ics` conforme a RFC 5545. Il template `layouts/single.ical.ics` raccoglie le righe in una lista e le stampa alla fine:
   - **CRLF e righe lunghe:** ogni riga termina con CRLF e viene spezzata a 75 byte dal nuovo partial `_partials/ical-fold.html`, che lavora carattere per carattere e quindi non taglia mai le lettere accentate o le emoji. È stata scelta questa strada invece dei pezzi da 36 caratteri proposti nella review, che con caratteri da 3–4 byte potevano superare il limite.
@@ -278,6 +272,17 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
   - il feed della home (`/feed.xml`) contiene solo gli articoli del blog, 61 come `/blog/feed.xml`. Prima conteneva anche Calendario, Linux Day, Chi siamo e Contatti, e il calendario tornava in cima ogni volta che si aggiornava il suo `lastmod`. Il feed della home è quello che trovano i lettori di feed partendo da `luccalug.it`; il link "RSS Feed" del footer punta invece a `/blog/feed.xml`. Privacy e statuto non ci finiranno quando verranno pubblicati;
   - titolo e descrizione del canale sono in italiano, uguali a quelli della pagina ("Blog - Luccalug", "Tag: Eventi - Luccalug"), invece di "Blog on …" e "Recent content in …". La descrizione viene dal nuovo partial `_partials/page-description.html`, usato anche da `head.html`;
   - verifiche: tutte le pagine HTML sono identiche a prima (`diff -r`); negli altri 51 feed cambiano solo titolo e descrizione del canale, gli articoli sono gli stessi; tutti i feed sono XML valido, anche minificati.
+- **5.1, eventi in un solo posto** – Gli eventi restano nel front matter di `content/calendario.md` (non in `data/eventi.yaml`: così il `lastmod` del file, che è anche il `DTSTAMP`, resta accanto agli eventi):
+  - nuovo partial `_partials/calendario-eventi.html`, l'unico che legge gli eventi: li controlla (data e titolo obbligatori, date o `id` doppi, `status`), calcola inizio e fine in ora di Roma e li ordina per data e ora anche se nel file non lo sono. Lo usano la tabella (`eventi`), le schede (`evento`) e `calendario.ics`;
+  - negli articoli `{{< evento data="2026-11-23" >}}` (o `id="…"`) prende titolo, orario, luogo, descrizione, link e stato dal calendario. Convertiti i 4 articoli con un evento in calendario: code shibari, schemesh, Linux Day 2026, Reticulum. Le schede ora mostrano il titolo del calendario (es. "Serata a tema: Reticulum con Mugnozzo"), l'orario ("ore 21:00", oppure "dalle 10:00 alle 18:30" quando l'evento finisce in giornata) e, se annullato, il badge "Annullato". Il JSON-LD ha inizio e fine esplicite ed `eventStatus: EventCancelled` per gli annullati. Nessun `lastmod` sugli articoli: l'informazione non cambia;
+  - le altre 11 schede (eventi dal 2008 a giugno 2026, che non sono in calendario) restano scritte per intero e funzionano come prima. Se una scheda scritta per intero ha la data di un evento del calendario, la build mostra un avviso;
+  - nuovo campo `url` degli eventi: in tabella il titolo diventa un link, nel `.ics` c'è `URL:`, e la scheda mostra "Maggiori informazioni" solo se il link non è l'articolo stesso. Aggiunto ai 4 eventi (per il Linux Day è il sito esterno, come nella vecchia scheda). La descrizione di code shibari nel calendario ora è quella più completa che c'era nella scheda;
+  - verifiche: con i dati di prima il nuovo codice dava una build identica byte per byte; dopo la conversione cambiano solo i 4 articoli (e i loro output Markdown e `llms-full.txt`), la tabella e il `.ics` (4 righe `URL` e la descrizione di code shibari); 77 blocchi JSON-LD validi; link interni 0 errori su 3599; html-validate senza problemi sulle pagine toccate; build con bozze riuscita (la pagina di test usa entrambe le forme). In una copia del sito: evento futuro annullato con link (badge, barrato e link in tabella e nella scheda), due eventi lo stesso giorno con `id`, e i tre errori (data non in calendario, data con due eventi senza `id`, due eventi senza `id`).
+- **Incontri settimanali** – Nuova lista `recurring` in `content/calendario.md`: ogni regola (giorno della settimana, `from`, `until` facoltativo, più gli stessi campi degli eventi) genera un evento a settimana, fino a `until` o a 12 settimane dopo la build (`$weeksAhead` in `_partials/calendario-eventi.html`). La build notturna fa comparire le nuove date da sole.
+  - Un evento in `events` con la stessa chiave (la data, o `<data>-<id>` per una regola con `id`) sostituisce l'incontro e prende dalla regola orario, durata e luogo; anche titolo, descrizione e link se non ha un titolo suo. Funziona anche oltre le 12 settimane. Un evento con `id` invece si aggiunge all'incontro.
+  - Le singole date restano eventi separati nel `.ics`, con UID uguale alla data: per chi è abbonato non cambia niente. Una regola `RRULE` nel `.ics` non è stata usata: la tabella e le schede avrebbero dovuto comunque generare le date, e le eccezioni (`RECURRENCE-ID`) sono gestite in modo diverso dai vari client.
+  - I 18 eventi del calendario sono diventati una regola del lunedì e 6 eventi (3 serate a tema, il Linux Day, 2 annullati). Rispetto a prima il `.ics` e la tabella sono identici, più i 4 lunedì di gennaio 2027 che rientrano nelle 12 settimane; le schede negli articoli sono identiche.
+  - Verifiche in una copia del sito: `until`, cambio di sede e di giorno da una certa data (prima data calcolata dal giorno della settimana), evento con `id` in un lunedì, serata a tema oltre le 12 settimane in ora legale, giorno senza regola (evento di tutto il giorno), errori per `weekday` non valido, `from` mancante e due regole sullo stesso giorno. Link interni 0 errori; `.ics` letto da `icalendar` senza errori; build con bozze riuscita.
 
 ## 8. Come ripetere le verifiche
 

@@ -39,7 +39,7 @@ Durante la serata scopriremo:
 
 ## Informazioni
 
-{{< evento titolo="Reticulum: ripensare la rete" data="2026-11-23" luogo="Sede del LuccaLUG, Foro Boario, Lucca - ore 21:00" descrizione="Serata su Reticulum a cura di Mugnozzo: lo stack di rete libero per comunicare oltre Internet, senza infrastrutture centralizzate." >}}
+{{< evento data="2026-11-23" >}}
 
 {{< note type="info" >}}
 Come sempre, la serata è aperta a tutti gli interessati: non è necessario essere soci del LuccaLUG né avere un particolare livello di esperienza.

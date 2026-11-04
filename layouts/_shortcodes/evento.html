@@ -1,10 +1,15 @@
 {{- /*
   Event card with semantic date, plus Schema.org Event data for search engines.
 
-  Usage:
-    {{< evento titolo="Linux Day 2026" data="2026-10-24" luogo="Foro Boario, Lucca - ore 21:00" >}}
+  Events in the calendar (content/calendario.md): give only the date, and
+  title, time, place, description, link and status come from there.
+    {{< evento data="2026-11-23" >}}
+    {{< evento id="2026-11-23-reticulum" >}}   (when the event has an "id")
 
-  Parameters:
+  Past events that are not in the calendar: write everything here.
+    {{< evento titolo="Linux Day 2008" data="2008-10-25" luogo="Villa Bruguier, Capannori - dalle 09:00 alle 19:00" >}}
+
+  Parameters of the second form:
     titolo      - event title (required)
     data        - date in YYYY-MM-DD format (required)
     luogo       - location (required). A time after " - " ("… - ore 21:00",
@@ -19,14 +24,81 @@
 {{- $luogo := .Get "luogo" -}}
 {{- $descrizione := .Get "descrizione" | default "" -}}
 {{- $url := .Get "url" | default "" -}}
+{{- $annullato := false -}}
+{{- /* Structured data */ -}}
+{{- $place := $luogo -}}
+{{- $start := $data -}}
+{{- $end := "" -}}
+{{- $isoFormat := "2006-01-02T15:04:05-07:00" -}}
+{{- $calendario := partialCached "calendario-eventi.html" (site.GetPage "/calendario") -}}
+
+{{- if not $titolo -}}
+  {{- /* From the calendar, by id or by date. */ -}}
+  {{- $id := .Get "id" -}}
+  {{- $trovati := slice -}}
+  {{- range $calendario -}}
+    {{- if or (and $id (eq .key $id)) (and (not $id) (eq .date $data)) -}}
+      {{- $trovati = $trovati | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $trovati -}}
+    {{- errorf "evento: nessun evento con %s nel calendario (content/calendario.md). Per un evento che non è in calendario usa titolo, data e luogo (%s)" (cond (ne $id "") (printf "id %q" $id) (printf "data %q" $data)) .Position -}}
+  {{- else if gt (len $trovati) 1 -}}
+    {{- errorf "evento: il %s ci sono %d eventi in calendario, scegli quello giusto con id=\"…\" (%s)" $data (len $trovati) .Position -}}
+  {{- end -}}
+  {{- with index $trovati 0 -}}
+    {{- $titolo = .summary -}}
+    {{- $data = .date -}}
+    {{- $place = .location -}}
+    {{- $descrizione = .description -}}
+    {{- $annullato = .cancelled -}}
+    {{- /* No link to the article the card is already in. */ -}}
+    {{- if ne (absURL .url) $.Page.Permalink }}{{ $url = .url }}{{ end -}}
+    {{- if .allDay -}}
+      {{- $luogo = .location -}}
+      {{- $start = .date -}}
+    {{- else -}}
+      {{- /* Evenings run "from 21:00 on": show the end only when it is on the same day. */ -}}
+      {{- $orario := printf "ore %s" (.start.Format "15:04") -}}
+      {{- if eq (.start.Format "20060102") (.end.Format "20060102") -}}
+        {{- $orario = printf "dalle %s alle %s" (.start.Format "15:04") (.end.Format "15:04") -}}
+      {{- end -}}
+      {{- $luogo = $orario -}}
+      {{- with .location }}{{ $luogo = printf "%s - %s" . $orario }}{{ end -}}
+      {{- $start = .start.Format $isoFormat -}}
+      {{- $end = .end.Format $isoFormat -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- /* Written out in the article: "Place - [dalle] [ore] HH:MM [alle [ore] HH:MM]" */ -}}
+  {{- range $calendario -}}
+    {{- if eq .date $data -}}
+      {{- warnf "evento: il %s c'è già un evento in calendario (%q): se è lo stesso, usa solo data=\"%s\" (%s)" $data .summary $data $.Position -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $re := `^(.+?)\s+-\s+(?:dalle\s+)?(?:ore\s+)?(\d{1,2}:\d{2})(?:\s+alle\s+(?:ore\s+)?(\d{1,2}:\d{2}))?` -}}
+  {{- with index (findRESubmatch $re $luogo 1) 0 -}}
+    {{- $place = index . 1 -}}
+    {{- $start = (time.AsTime (printf "%sT%05s:00" $data (index . 2)) "Europe/Rome").Format $isoFormat -}}
+    {{- with index . 3 -}}
+      {{- $end = (time.AsTime (printf "%sT%05s:00" $data .) "Europe/Rome").Format $isoFormat -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 
 <div class="evento-card">
   <div class="evento-date">
     <time datetime="{{ $data }}">{{ time.Format "2 January 2006" $data }}</time>
   </div>
   <div class="evento-details">
+    {{- if $annullato }}
+    <div class="evento-titolo"><span class="badge badge--red">Annullato</span> <s>{{ $titolo }}</s></div>
+    {{- else }}
     <div class="evento-titolo">{{ $titolo }}</div>
-    <div class="evento-luogo"><span aria-hidden="true">📍</span> {{ $luogo }}</div>
+    {{- end }}
+    {{- with $luogo }}
+    <div class="evento-luogo"><span aria-hidden="true">📍</span> {{ . }}</div>
+    {{- end }}
     {{- with $descrizione }}
     <div class="evento-descrizione">{{ . }}</div>
     {{- end }}
@@ -36,27 +108,16 @@
   </div>
 </div>
 
-{{- /* Structured data: "Place - [dalle] [ore] HH:MM [alle [ore] HH:MM]" */ -}}
-{{- $place := $luogo -}}
-{{- $start := $data -}}
-{{- $end := "" -}}
-{{- $re := `^(.+?)\s+-\s+(?:dalle\s+)?(?:ore\s+)?(\d{1,2}:\d{2})(?:\s+alle\s+(?:ore\s+)?(\d{1,2}:\d{2}))?` -}}
-{{- with index (findRESubmatch $re $luogo 1) 0 -}}
-  {{- $place = index . 1 -}}
-  {{- $start = (time.AsTime (printf "%sT%05s:00" $data (index . 2)) "Europe/Rome").Format "2006-01-02T15:04:05-07:00" -}}
-  {{- with index . 3 -}}
-    {{- $end = (time.AsTime (printf "%sT%05s:00" $data .) "Europe/Rome").Format "2006-01-02T15:04:05-07:00" -}}
-  {{- end -}}
-{{- end -}}
 {{- $ld := dict
     "@context" "https://schema.org"
     "@type" "Event"
     "name" $titolo
     "startDate" $start
     "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
-    "location" (dict "@type" "Place" "name" $place "address" $place)
     "url" .Page.Permalink -}}
+{{- with $place }}{{ $ld = merge $ld (dict "location" (dict "@type" "Place" "name" . "address" .)) }}{{ end -}}
 {{- with $end }}{{ $ld = merge $ld (dict "endDate" .) }}{{ end -}}
 {{- with $descrizione }}{{ $ld = merge $ld (dict "description" .) }}{{ end -}}
+{{- if $annullato }}{{ $ld = merge $ld (dict "eventStatus" "https://schema.org/EventCancelled") }}{{ end -}}
 {{- with partial "og-image.html" .Page }}{{ $ld = merge $ld (dict "image" .Permalink) }}{{ end }}
 <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>

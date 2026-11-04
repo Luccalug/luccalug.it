@@ -1,14 +1,16 @@
 {{- /*
-  Upcoming events table, from the "events" list in the page front matter.
+  Upcoming events table, from the calendar (content/calendario.md, read
+  through the partial calendario-eventi.html).
   Only events from the build day onwards are shown: the site is rebuilt
   every night by the CI schedule, so past events drop off on their own.
   The iCal output (single.ical.ics) keeps all events.
-  Cancelled events (status: cancelled) are struck through, with a badge.
+  Cancelled events (status: cancelled) are struck through, with a badge;
+  events with a "url" link to it.
 */ -}}
 {{- $oggi := now.Format "2006-01-02" -}}
 {{- $prossimi := slice -}}
-{{- range .Page.Params.events -}}
-  {{- if ge ((time .date).Format "2006-01-02") $oggi -}}
+{{- range partialCached "calendario-eventi.html" (site.GetPage "/calendario") -}}
+  {{- if ge .date $oggi -}}
     {{- $prossimi = $prossimi | append . -}}
   {{- end -}}
 {{- end -}}
@@ -23,14 +25,13 @@
   </thead>
   <tbody>
     {{- range . -}}
-    {{- $d := time .date -}}
     <tr>
-      <td>{{ $d.Day }} {{ strings.FirstUpper (time.Format "January" .date) }} {{ $d.Year }}</td>
-      {{- if eq .status "cancelled" }}
-      <td><span class="badge badge--red">Annullato</span> <s>{{ .summary }}</s></td>
-      {{- else }}
-      <td>{{ .summary }}</td>
-      {{- end }}
+      <td>{{ .start.Day }} {{ strings.FirstUpper (time.Format "January" .start) }} {{ .start.Year }}</td>
+      <td>
+        {{- if .cancelled }}<span class="badge badge--red">Annullato</span> <s>{{ end -}}
+        {{- with .url }}<a href="{{ . }}">{{ end }}{{ .summary }}{{ with .url }}</a>{{ end -}}
+        {{- if .cancelled }}</s>{{ end -}}
+      </td>
       <td>{{ .location }}</td>
     </tr>
     {{- end }}
