@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/luccalug-reboot/reboot.png" alt="Luccalug Reboot" caption="Luccalug riparte!" >}}
+{{< figure loading="eager" src="images/blog/luccalug-reboot/reboot.png" alt="Luccalug Reboot" caption="Luccalug riparte!" >}}
 
 Luccalug riparte dopo la quarantena in totale sicurezza!
 

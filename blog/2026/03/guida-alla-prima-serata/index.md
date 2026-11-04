@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** guida, community
+**Tag:** guide, community
 
 ---
 

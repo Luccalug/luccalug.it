@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png" alt="Copertina della serata Code shibari: Programmando lo spazio negativo" >}}
+{{< figure loading="eager" src="images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png" alt="Copertina della serata Code shibari: Programmando lo spazio negativo" >}}
 
 C’è un endpoint dell’applicativo che esiste praticamente da sempre.
 

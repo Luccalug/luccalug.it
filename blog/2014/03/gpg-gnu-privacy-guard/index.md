@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/gpg-gnu-privacy-guard/pillole-gpg.png" alt="Locandina serata GPG - Pillole di Free Software" caption="Pillole di Free Software: GPG (GNU Privacy Guard)" >}}
+{{< figure loading="eager" src="images/blog/gpg-gnu-privacy-guard/pillole-gpg.png" alt="Locandina serata GPG - Pillole di Free Software" caption="Pillole di Free Software: GPG (GNU Privacy Guard)" >}}
 
 Lunedì **24 marzo** si svolgerà una serata a tema dedicata a **GNU Privacy Guard**, software Free e Open Source per la cifratura dei messaggi.
 

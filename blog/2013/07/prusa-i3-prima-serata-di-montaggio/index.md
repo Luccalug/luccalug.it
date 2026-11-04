@@ -11,7 +11,7 @@
 
 Ieri sera abbiamo montato l'armatura di base della nostra versione modificata di [Prusa i3](http://reprap.org/wiki/Prusa_i3), una stampante 3D [Open Hardware](http://it.wikipedia.org/wiki/Hardware_libero). La modifica che proponiamo consiste nell'aumentare le dimensioni del piatto (da 20×20 cm a 20×40 cm) per poter stampare oggetti più grandi.
 
-{{< figure src="images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png" alt="Il progetto Prusa i3 del LuccaLUG" caption="La nostra Prusa i3 modificata" >}}
+{{< figure loading="eager" src="images/blog/prusa-i3-prima-serata-di-montaggio/prusa-i3-luccalug.png" alt="Il progetto Prusa i3 del LuccaLUG" caption="La nostra Prusa i3 modificata" >}}
 
 Non avendo ancora reperito tutti i pezzi, abbiamo montato solo l'armatura della base (barre degli assi X e Y).
 

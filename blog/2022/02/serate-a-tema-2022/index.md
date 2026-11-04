@@ -4,12 +4,12 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** serate-a-tema, eventi
+**Tag:** serata-a-tema, eventi
 
 ---
 
 
-{{< figure src="images/blog/serate-a-tema-2022/serateatema2022.jpg" alt="Locandina serate a tema 2022" caption="Serate a tema Luccalug 2022" >}}
+{{< figure loading="eager" src="images/blog/serate-a-tema-2022/serateatema2022.jpg" alt="Locandina serate a tema 2022" caption="Serate a tema Luccalug 2022" >}}
 
 Ricominciano le serate a tema del Luccalug! Da lunedì 11 Aprile ci incontreremo per parlare di tecnologia e informatica libera! Continua a leggere per le serate finora programmate.
 

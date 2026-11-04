@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/reticulum-ripensare-la-rete/locandina-reticulum.png" alt="Locandina della serata Reticulum: ripensare la rete - Foro Boario, Lucca, lunedì 23 novembre 2026 ore 21:00" >}}
+{{< figure loading="eager" src="images/blog/reticulum-ripensare-la-rete/locandina-reticulum.png" alt="Locandina della serata Reticulum: ripensare la rete - Foro Boario, Lucca, lunedì 23 novembre 2026 ore 21:00" >}}
 
 Siamo abituati a pensare alla "Rete" come a qualcosa che passa per forza attraverso provider e infrastrutture centralizzate.
 

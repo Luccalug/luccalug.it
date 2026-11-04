@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/hello-web/tux-hacking.jpg" alt="Tux che lavora al computer" caption="Hello Web!" >}}
+{{< figure loading="eager" src="images/blog/hello-web/tux-hacking.jpg" alt="Tux che lavora al computer" caption="Hello Web!" >}}
 
 Sito tutto nuovo!
 

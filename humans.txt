@@ -5,7 +5,7 @@ Vicepresidente: Matteo Martinelli
 
 /* SITE */
 
-Software: Hugo 0.161.1 extended
+Software: Hugo 0.169.0 extended
 Language: Italian
 Standards: HTML5, CSS3
 Fonts: Inter, Silkscreen, VT323 (self-hosted)

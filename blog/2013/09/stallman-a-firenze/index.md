@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/stallman-a-firenze/richard-stallman.jpg" alt="Richard Stallman" caption="Richard Stallman, fondatore della Free Software Foundation" >}}
+{{< figure loading="eager" src="images/blog/stallman-a-firenze/richard-stallman.jpg" alt="Richard Stallman" caption="Richard Stallman, fondatore della Free Software Foundation" >}}
 
 Sabato 14 settembre tappa fiorentina per **Richard Stallman**, che nella suggestiva altana dell'ex Convento delle Oblate, a due passi dalla Cupola del Brunelleschi e dal Campanile di Giotto, ha incontrato gli appassionati - e non solo - di software libero per parlare di *"Tecnologia digitale: libera o soggiogante? - Software libero ed economia solidale per difendere democrazia e libertà"*.
 
@@ -36,13 +36,13 @@ Software *libero* è, al contrario, quello che assicura all'utente le quattro li
 2. Libertà di ridistribuire copie, a beneficio altrui
 3. Libertà di distribuire copie delle versioni modificate, in modo che tutta la comunità ne tragga beneficio, con la (pre)condizione dell'accesso al codice sorgente
 
-Per incentivarne l'uso e diffonderne la conoscenza, Stallman ha invitato tutti a navigare tra le pagine del sito [www.fsf.org](http://www.fsf.org), in particolare nella sezione "resources", con ampia scelta di applicativi e di distribuzioni GNU/Linux libere.
+Per incentivarne l'uso e diffonderne la conoscenza, Stallman ha invitato tutti a navigare tra le pagine del sito [www.fsf.org](https://www.fsf.org/), in particolare nella sezione "resources", con ampia scelta di applicativi e di distribuzioni GNU/Linux libere.
 
 ## Saint IGNUcius
 
 Infine, poiché la divulgazione del software libero è una missione quasi religiosa, Stallman ha svestito i panni del rigoroso divulgatore per assumere quelli più "mistici" - e molto "comici" - di **Saint IGNUcius della Chiesa di Emacs** e si è improvvisato banditore dell'asta di un piccolo pupazzo dalle sembianze di Gnu, il cui prezzo è andato a beneficio della FSF. Quasi a ricordare che "free" non equivale a gratis!
 
 {{< note type="info" >}}
-Maggiori informazioni sul software libero e sulla Free Software Foundation su [www.fsf.org](http://www.fsf.org).
+Maggiori informazioni sul software libero e sulla Free Software Foundation su [www.fsf.org](https://www.fsf.org/).
 {{< /note >}}
 

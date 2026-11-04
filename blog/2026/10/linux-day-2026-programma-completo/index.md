@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/linux-day/linux-day-2026-programma.png" alt="Linux Day Prato 2026 - Programma online. Prisma Prato, ingresso libero, sabato 24 ottobre" caption="Linux Day Prato 2026: sabato 24 ottobre al PRISMA di Prato" >}}
+{{< figure loading="eager" src="images/linux-day/linux-day-2026-programma.png" alt="Linux Day Prato 2026 - Programma online. Prisma Prato, ingresso libero, sabato 24 ottobre" caption="Linux Day Prato 2026: sabato 24 ottobre al PRISMA di Prato" >}}
 
 Ci siamo! La Call for Papers è chiusa da un pezzo, le proposte sono state selezionate e il programma del **Linux Day 2026** è completo.
 

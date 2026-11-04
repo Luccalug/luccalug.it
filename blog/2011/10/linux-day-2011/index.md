@@ -9,7 +9,5 @@
 ---
 
 
-Il Linux Day 2011 è stato un grande successo! Di seguito il video realizzato da Dì Lucca che documenta la giornata del 22 ottobre 2011.
-
-{{< link-esterno url="https://vimeo.com/30949991" testo="Dì News - 22 Ottobre 2011 - Linux Day (video su Vimeo)" >}}
+Il Linux Day 2011 è stato un grande successo! Dì Lucca aveva realizzato un video che documentava la giornata del 22 ottobre 2011 (*Dì News - 22 Ottobre 2011 - Linux Day*), pubblicato su Vimeo e oggi non più disponibile.
 

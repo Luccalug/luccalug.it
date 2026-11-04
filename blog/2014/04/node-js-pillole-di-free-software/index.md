@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/node-js-pillole-di-free-software/pillole-nodejs.png" alt="Locandina serata Node.js - Pillole di Free Software" caption="Pillole di Free Software: Node.js" >}}
+{{< figure loading="eager" src="images/blog/node-js-pillole-di-free-software/pillole-nodejs.png" alt="Locandina serata Node.js - Pillole di Free Software" caption="Pillole di Free Software: Node.js" >}}
 
 Lunedì 14 aprile si svolgerà una serata a tema dedicata a **Node.js**, framework che permette di realizzare server-side web application usando JavaScript.
 

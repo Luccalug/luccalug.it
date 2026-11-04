@@ -4,7 +4,7 @@
 
 **Autore:** Il Direttivo
 
-**Tag:** annuncio, sito
+**Tag:** news, sito
 
 ---
 

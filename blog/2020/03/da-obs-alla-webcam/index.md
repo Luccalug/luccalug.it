@@ -9,7 +9,7 @@
 ---
 
 
-{{< figure src="images/blog/da-obs-alla-webcam/obs2cam.jpg" alt="Schema OBS verso webcam virtuale" caption="OBS come sorgente per una webcam virtuale via v4l2loopback" >}}
+{{< figure loading="eager" src="images/blog/da-obs-alla-webcam/obs2cam.jpg" alt="Schema OBS verso webcam virtuale" caption="OBS come sorgente per una webcam virtuale via v4l2loopback" >}}
 
 In questo post mostreremo come redirezionare l'output di OBS verso un device v4l di loopback in modo da avere un flusso video totalmente controllabile per tutte quelle applicazioni che sfruttano input da webcam (videoconferenze ecc).
 
