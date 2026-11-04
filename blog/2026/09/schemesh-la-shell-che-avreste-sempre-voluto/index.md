@@ -38,7 +38,7 @@ Insieme, in modo interattivo, vedremo:
 
 ## Informazioni
 
-{{< evento titolo="Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)" data="2026-10-19" luogo="Sede del LuccaLUG, Foro Boario, Lucca - ore 21:00" descrizione="Serata su schemesh a cura di Max: una shell nata dalla fusione di una shell Unix con un REPL Lisp." >}}
+{{< evento data="2026-10-19" >}}
 
 {{< note type="info" >}}
 Come sempre, la serata è aperta a tutti gli interessati: non è necessario essere soci del LuccaLUG né avere un particolare livello di esperienza.

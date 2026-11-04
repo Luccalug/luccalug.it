@@ -49,7 +49,11 @@ DTSTART;TZID=Europe/Rome:20260921T210000
 DTEND;TZID=Europe/Rome:20260922T010000
 SUMMARY:Serata a tema: Negative Space Programming con Zanna
 LOCATION:Foro Boario\, Lucca
-DESCRIPTION:Serata sul Negative Space Programming a cura di Zanna
+DESCRIPTION:Serata sul Negative Space Programming a cura di Zanna: come vin
+ colare il codice per rendere impossibili i comportamenti indesiderati\, da
+ llo sviluppo alla produzione
+URL:https://luccalug.it/blog/2026/09/code-shibari-programmando-lo-spazio-ne
+ gativo/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-28@luccalug.it
@@ -89,6 +93,8 @@ SUMMARY:Serata a tema: Schemesh con Max
 LOCATION:Foro Boario\, Lucca
 DESCRIPTION:Serata su schemesh\, la shell nata dalla fusione di una shell U
  nix con un REPL Lisp\, a cura di Max
+URL:https://luccalug.it/blog/2026/09/schemesh-la-shell-che-avreste-sempre-v
+ oluto/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24@luccalug.it
@@ -100,6 +106,7 @@ LOCATION:PRISMA Prato\, via Galcianese 34\, Prato
 DESCRIPTION:Linux Day Prato 2026\, organizzato da Luccalug\, GOLEM\, GULLi 
  e PLUG: 18 talk su due tracce\, ingresso gratuito. Programma: https://day.
  linux.prato.it/#schedule
+URL:https://day.linux.prato.it/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-26@luccalug.it
@@ -148,6 +155,7 @@ LOCATION:Foro Boario\, Lucca
 DESCRIPTION:Serata su Reticulum a cura di Mugnozzo: lo stack di rete libero
   per costruire reti decentralizzate\, cifrate e resilienti\, oltre Interne
  t e senza infrastrutture centralizzate
+URL:https://luccalug.it/blog/2026/11/reticulum-ripensare-la-rete/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-30@luccalug.it
@@ -190,6 +198,42 @@ UID:2026-12-28@luccalug.it
 DTSTAMP:20261103T230000Z
 DTSTART;TZID=Europe/Rome:20261228T210000
 DTEND;TZID=Europe/Rome:20261229T010000
+SUMMARY:Incontro ordinario
+LOCATION:Foro Boario\, Lucca
+DESCRIPTION:Incontro settimanale del Luccalug
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-04@luccalug.it
+DTSTAMP:20261103T230000Z
+DTSTART;TZID=Europe/Rome:20270104T210000
+DTEND;TZID=Europe/Rome:20270105T010000
+SUMMARY:Incontro ordinario
+LOCATION:Foro Boario\, Lucca
+DESCRIPTION:Incontro settimanale del Luccalug
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-11@luccalug.it
+DTSTAMP:20261103T230000Z
+DTSTART;TZID=Europe/Rome:20270111T210000
+DTEND;TZID=Europe/Rome:20270112T010000
+SUMMARY:Incontro ordinario
+LOCATION:Foro Boario\, Lucca
+DESCRIPTION:Incontro settimanale del Luccalug
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-18@luccalug.it
+DTSTAMP:20261103T230000Z
+DTSTART;TZID=Europe/Rome:20270118T210000
+DTEND;TZID=Europe/Rome:20270119T010000
+SUMMARY:Incontro ordinario
+LOCATION:Foro Boario\, Lucca
+DESCRIPTION:Incontro settimanale del Luccalug
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-25@luccalug.it
+DTSTAMP:20261103T230000Z
+DTSTART;TZID=Europe/Rome:20270125T210000
+DTEND;TZID=Europe/Rome:20270126T010000
 SUMMARY:Incontro ordinario
 LOCATION:Foro Boario\, Lucca
 DESCRIPTION:Incontro settimanale del Luccalug

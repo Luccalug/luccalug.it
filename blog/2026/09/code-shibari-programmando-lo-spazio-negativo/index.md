@@ -47,7 +47,7 @@ Durante la serata vedremo come sia possibile **vincolare e limitare il codice** 
 
 ## Informazioni
 
-{{< evento titolo="Code shibari: Programmando lo spazio negativo" data="2026-09-21" luogo="Sede del LuccaLUG, Foro Boario, Lucca - ore 21:00" descrizione="Serata sul Negative Space Programming a cura di Zanna: come vincolare il codice per rendere impossibili i comportamenti indesiderati, dallo sviluppo alla produzione." >}}
+{{< evento data="2026-09-21" >}}
 
 {{< note type="info" >}}
 Come sempre, la serata è aperta a tutti gli interessati: non è necessario essere soci del LuccaLUG né avere un particolare livello di esperienza.
