@@ -1,0 +1,12 @@
+{{- /*
+  Description of a page, for the <head> meta tags and the RSS feeds:
+  the "description" in the front matter; for tag pages without one, a
+  sentence with the tag name; otherwise the site description.
+
+  Usage: {{ partial "page-description.html" . }}
+*/ -}}
+{{- $description := .Description -}}
+{{- if and (not $description) (eq .Kind "term") -}}
+  {{- $description = printf "Gli articoli del blog del Luccalug con il tag «%s»." (partial "page-title.html" .) -}}
+{{- end -}}
+{{- return ($description | default site.Params.description) -}}

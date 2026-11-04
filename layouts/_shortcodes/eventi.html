@@ -3,6 +3,7 @@
   Only events from the build day onwards are shown: the site is rebuilt
   every night by the CI schedule, so past events drop off on their own.
   The iCal output (single.ical.ics) keeps all events.
+  Cancelled events (status: cancelled) are struck through, with a badge.
 */ -}}
 {{- $oggi := now.Format "2006-01-02" -}}
 {{- $prossimi := slice -}}
@@ -25,7 +26,11 @@
     {{- $d := time .date -}}
     <tr>
       <td>{{ $d.Day }} {{ strings.FirstUpper (time.Format "January" .date) }} {{ $d.Year }}</td>
+      {{- if eq .status "cancelled" }}
+      <td><span class="badge badge--red">Annullato</span> <s>{{ .summary }}</s></td>
+      {{- else }}
       <td>{{ .summary }}</td>
+      {{- end }}
       <td>{{ .location }}</td>
     </tr>
     {{- end }}

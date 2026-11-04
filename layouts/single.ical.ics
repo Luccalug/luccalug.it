@@ -1,22 +1,90 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//Luccalug//Calendario Eventi//IT
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-X-WR-CALNAME:{{ .Site.Title }} - Eventi
-X-WR-TIMEZONE:Europe/Rome
-{{ range .Params.events -}}
-{{ $start := time.AsTime (printf "%sT%s:00Z" .date (.time | default "00:00")) -}}
-{{ $end := $start.Add (time.ParseDuration (.duration | default "2h")) -}}
-BEGIN:VEVENT
-{{- /* Last change of the calendar page, not "now": keeps the file identical between builds. */}}
-DTSTAMP:{{ $.Lastmod.UTC.Format "20060102T150405Z" }}
-DTSTART:{{ $start.Format "20060102T150405" }}
-DTEND:{{ $end.Format "20060102T150405" }}
-SUMMARY:{{ partial "ical-escape.html" .summary }}
-LOCATION:{{ partial "ical-escape.html" .location }}
-DESCRIPTION:{{ partial "ical-escape.html" .description }}
-UID:{{ .date }}-{{ .summary | urlize }}@luccalug.it
-END:VEVENT
-{{ end -}}
-END:VCALENDAR
+{{- /*
+  calendario.ics: the events in the front matter of content/calendario.md,
+  in iCalendar format (RFC 5545). The fields are documented there.
+
+  Lines are collected in $lines and printed at the end, folded at 75 octets
+  and each ended by CRLF, as the RFC requires.
+
+  - Times are local to Europe/Rome (DTSTART;TZID=…), described by the
+    VTIMEZONE block, so they stay right across the daylight saving change.
+  - The UID depends only on the date (or on "id"), so changing the title or
+    cancelling an event updates it in the calendars that already have it.
+  - DTSTAMP is the lastmod of the calendar page, not "now": the file stays
+    identical between builds until the events change.
+*/ -}}
+{{- $tz := "Europe/Rome" -}}
+{{- $lines := slice
+  "BEGIN:VCALENDAR"
+  "VERSION:2.0"
+  "PRODID:-//Luccalug//Calendario Eventi//IT"
+  "CALSCALE:GREGORIAN"
+  "METHOD:PUBLISH"
+  (printf "X-WR-CALNAME:%s - Eventi" (partial "ical-escape.html" site.Title))
+  (printf "X-WR-TIMEZONE:%s" $tz)
+  "REFRESH-INTERVAL;VALUE=DURATION:P1D"
+  "X-PUBLISHED-TTL:P1D"
+  "BEGIN:VTIMEZONE"
+  (printf "TZID:%s" $tz)
+  "BEGIN:DAYLIGHT"
+  "TZOFFSETFROM:+0100"
+  "TZOFFSETTO:+0200"
+  "TZNAME:CEST"
+  "DTSTART:19700329T020000"
+  "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU"
+  "END:DAYLIGHT"
+  "BEGIN:STANDARD"
+  "TZOFFSETFROM:+0200"
+  "TZOFFSETTO:+0100"
+  "TZNAME:CET"
+  "DTSTART:19701025T030000"
+  "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU"
+  "END:STANDARD"
+  "END:VTIMEZONE"
+-}}
+{{- $dtstamp := printf "DTSTAMP:%s" (.Lastmod.UTC.Format "20060102T150405Z") -}}
+{{- $uids := slice -}}
+{{- range $e := .Params.events -}}
+  {{- $date := (time $e.date).Format "2006-01-02" -}}
+  {{- $uid := printf "%s@luccalug.it" ($e.id | default $date) -}}
+  {{- if in $uids $uid -}}
+    {{- errorf "calendario: due eventi con UID %q: aggiungi a uno dei due un campo \"id\" diverso" $uid -}}
+  {{- end -}}
+  {{- $uids = $uids | append $uid -}}
+  {{- $lines = $lines | append "BEGIN:VEVENT" (printf "UID:%s" $uid) $dtstamp -}}
+
+  {{- if $e.time -}}
+    {{- $start := time.AsTime (printf "%sT%05s:00" $date $e.time) $tz -}}
+    {{- $end := $start.Add (time.ParseDuration ($e.duration | default "2h")) -}}
+    {{- $lines = $lines | append
+      (printf "DTSTART;TZID=%s:%s" $tz ($start.Format "20060102T150405"))
+      (printf "DTEND;TZID=%s:%s" $tz ($end.Format "20060102T150405"))
+    -}}
+  {{- else -}}
+    {{- /* No time: all-day event. */ -}}
+    {{- $day := time.AsTime $date $tz -}}
+    {{- $lines = $lines | append
+      (printf "DTSTART;VALUE=DATE:%s" ($day.Format "20060102"))
+      (printf "DTEND;VALUE=DATE:%s" (($day.AddDate 0 0 1).Format "20060102"))
+    -}}
+  {{- end -}}
+
+  {{- $summary := $e.summary -}}
+  {{- with $e.status -}}
+    {{- if ne . "cancelled" -}}
+      {{- errorf "calendario: evento del %s con status %q, l'unico valore ammesso è \"cancelled\"" $date . -}}
+    {{- end -}}
+    {{- /* The prefix is for the clients that ignore STATUS. */ -}}
+    {{- $summary = printf "[Annullato] %s" $summary -}}
+    {{- $lines = $lines | append "STATUS:CANCELLED" -}}
+  {{- end -}}
+  {{- $lines = $lines | append (printf "SUMMARY:%s" (partial "ical-escape.html" $summary)) -}}
+  {{- with $e.location -}}
+    {{- $lines = $lines | append (printf "LOCATION:%s" (partial "ical-escape.html" .)) -}}
+  {{- end -}}
+  {{- with $e.description -}}
+    {{- $lines = $lines | append (printf "DESCRIPTION:%s" (partial "ical-escape.html" .)) -}}
+  {{- end -}}
+  {{- $lines = $lines | append "END:VEVENT" -}}
+{{- end -}}
+{{- $lines = $lines | append "END:VCALENDAR" -}}
+{{- range $lines }}{{ partial "ical-fold.html" . }}{{ "\r\n" }}{{ end -}}

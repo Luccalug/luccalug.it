@@ -1,0 +1,19 @@
+{{- /*
+  Folds one iCalendar content line at 75 octets (RFC 5545, 3.1).
+  Each continuation line starts with a space, which counts toward the limit.
+  The line is walked one character at a time, so multi-byte UTF-8
+  characters (è, emoji…) are never split across two lines.
+  Returns the folded line without the final CRLF.
+*/ -}}
+{{- $out := "" -}}
+{{- $cur := "" -}}
+{{- $max := 75 -}}
+{{- range split . "" -}}
+  {{- if gt (add (len $cur) (len .)) $max -}}
+    {{- $out = printf "%s%s\r\n " $out $cur -}}
+    {{- $cur = "" -}}
+    {{- $max = 74 -}}
+  {{- end -}}
+  {{- $cur = printf "%s%s" $cur . -}}
+{{- end -}}
+{{- return printf "%s%s" $out $cur -}}

@@ -1,16 +1,16 @@
 # TODO – luccalug.it
 
-Cose rimaste aperte dopo la review tecnica del sito del 4 novembre 2026 e i cinque giri di correzioni dello stesso giorno.
+Cose rimaste aperte dopo la review tecnica del sito del 4 novembre 2026 e i sette giri di correzioni dello stesso giorno.
 
 - Tutti i finding di gravità **Critica, Alta e Media** sono stati corretti o messi in bozza in attesa di una decisione (vedi [§7](#7-già-fatto)).
-- Restano **3 voci di gravità Bassa** nel codice (B16, B19 e B20, quest'ultima rinviata), alcune osservazioni minori (Info), le azioni che spettano al Direttivo e alcune verifiche in produzione.
+- Restano **2 voci di gravità Bassa** nel codice (B16 e B20, quest'ultima rinviata), alcune osservazioni minori (Info), le azioni che spettano al Direttivo, due PR aperte da valutare e alcune verifiche in produzione.
 
 Legenda. Gravità: **Bassa** = miglioria; **Info** = osservazione. Sforzo: **S** = meno di un'ora, **M** = mezza giornata, **L** = più giorni.
 I riferimenti `file:riga` sono aggiornati allo stato della cartella di lavoro del 4/11/2026.
 
 ## Indice
 
-1. [Prima di tutto: commit dei giri 3–5](#1-prima-di-tutto-commit-dei-giri-35)
+1. [Prima di tutto: commit, PR aperte, verifiche rimaste](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)
 2. [Azioni per il Direttivo e per chi gestisce il repo](#2-azioni-per-il-direttivo-e-per-chi-gestisce-il-repo)
 3. [Verifiche da fare dopo il primo deploy](#3-verifiche-da-fare-dopo-il-primo-deploy)
 4. [Interventi nel codice ancora da fare](#4-interventi-nel-codice-ancora-da-fare)
@@ -21,18 +21,16 @@ I riferimenti `file:riga` sono aggiornati allo stato della cartella di lavoro de
 
 ---
 
-## 1. Prima di tutto: commit dei giri 3–5
+## 1. Prima di tutto: commit, PR aperte, verifiche rimaste
 
-I primi due giri sono nel commit `5c607e8`, pushato e pubblicato il 4/11. Il terzo giro (B4, M11, M12), il quarto (B7, B9, B10, B12, B13, B14, B21) e il quinto (B5/B6) sono **solo nella cartella di lavoro** (vedi [§7](#7-già-fatto) e `git status`). Conviene un commit per giro, e lo spostamento dei template (B12) in un commit a sé, così `git log --follow` resta leggibile.
+I giri 3–5 sono nel commit `5257c79`, pushato e pubblicato il 4/11: le verifiche fatte in produzione sono nel [§3](#3-verifiche-da-fare-dopo-il-primo-deploy).
 
-- [ ] Committare e pushare su `master`. Con B4 il commit non cambia più la data di ultima modifica dei contenuti che tocca.
-- [ ] Controllare in Actions che il run su `master` passi, con i due step "Link check (internal links and anchors)" e "Link check (external links)", e che faccia il deploy.
-- [ ] Controllare il sitemap in produzione: `curl -s https://luccalug.it/sitemap.xml | grep -o '<lastmod>[^<]*' | cut -c10-19 | sort | uniq -c | sort -rn | head -3`. Prima della correzione: 80 URL al 2026-11-04. Atteso: 11 (home, blog, calendario, Linux Day, articolo Reticulum e i suoi tag).
-- [ ] Dopo il deploy: il sito deve pesare circa 6 MB invece di 17 (B9); `/archivio/` e le sue sottosezioni non devono essere nel sitemap e devono avere `noindex` (B21), come i 22 tag con un solo articolo; i 13 vecchi indirizzi dei tag accorpati (es. `/tags/crittografia/`) devono reindirizzare (B5).
-- [ ] Provare home, un articolo e un articolo con eventi nel [Rich Results Test](https://search.google.com/test/rich-results) e nel [Schema Markup Validator](https://validator.schema.org/) (B7). In locale i blocchi JSON-LD sono JSON valido, ma non sono stati validati con gli strumenti di Google.
-- [ ] Aprire una PR di prova con un link interno sbagliato (es. `[x](/blog/non-esiste/)`): il job `link-check` deve fallire e `deploy` deve risultare "skipped". In locale gli stessi `args`, passati a `eval` come fa l'action, danno 0 errori su 4046 link e trovano sia la pagina mancante sia l'ancora mancante.
-- [ ] Entro una settimana controllare Insights → Dependency graph → Dependabot: il controllo delle action deve risultare eseguito. Le PR arrivano solo se c'è una versione più nuova.
-- [ ] (Facoltativo) Eseguire actionlint su `.github/workflows/deploy.yml`: in locale è stato di nuovo bloccato perché scarica ed esegue codice esterno. Il workflow è stato controllato solo con il parsing YAML e verificando che ogni `uses:` sia uno SHA di 40 caratteri.
+- [ ] **Committare e pushare** le ultime modifiche, non ancora committate: pulizia di cspell (`cspell.json`, vedi [§6](#6-falsi-positivi-noti)), `Gulli` → `GULLi` in `content/blog/da-obs-alla-webcam.md`, licenza CC BY 4.0 (`LICENSE`, `README.md`, vedi [§2.3](#23-licenza)), calendario conforme a RFC 5545 (B19) e feed RSS (vedi [§7](#7-già-fatto)) e questo `TODO.md`.
+- [x] **PR #3 di Dependabot** ("ci: bump the actions group with 4 updates"), unita in `master` con il commit `92dfb5f`: `actions/checkout` 5.1.0 → 7.0.1, `DavidAnson/markdownlint-cli2-action` 23.2.0 → 25.0.0, `streetsidesoftware/cspell-action` 8.4.0 → 9.2.0, `actions/cache` 4.3.0 → 6.1.0. Il run del push (`41893761789`) ha passato lint e link check e ha fatto il deploy.
+- [ ] **PR #2** (contributore esterno, aperta il 21/9, "Pause the marquee on hover and focus"): quello che propone c'è già con M4, cioè pausa con hover e con `:focus-within` (`assets/css/main.css:350-355`) più il pulsante pausa. La PR aggiunge in più solo `tabindex="0"` alla barra, che rende raggiungibile con Tab un elemento non interattivo, e modifica `layouts/partials/marquee.html`, spostato in `layouts/_partials/` con B12. Proposta: chiuderla ringraziando e spiegando che la funzione è già presente.
+- [ ] **PR di prova con un link interno sbagliato** (es. `[x](/blog/non-esiste/)`): che sulle PR il deploy venga saltato è già verificato con la PR #3; resta da vedere che il job `link-check` fallisca. In locale gli stessi `args` trovano sia la pagina mancante sia l'ancora mancante.
+- [ ] Provare home, un articolo e un articolo con eventi nel [Rich Results Test](https://search.google.com/test/rich-results) e nel [Schema Markup Validator](https://validator.schema.org/) (B7). In produzione i blocchi JSON-LD ci sono e sono JSON valido, ma non sono stati validati con gli strumenti di Google.
+- [ ] (Facoltativo) Eseguire actionlint su `.github/workflows/deploy.yml`: in locale è stato bloccato perché scarica ed esegue codice esterno. Il workflow è stato controllato con il parsing YAML, verificando che ogni `uses:` sia uno SHA di 40 caratteri, e dai run riusciti su push e PR.
 
 ## 2. Azioni per il Direttivo e per chi gestisce il repo
 
@@ -67,10 +65,13 @@ Il testo pubblicato fino al 4/11 aveva tutti gli indizi di un segnaposto:
 
 ### 2.3 Licenza
 
-`LICENSE` è stata ripristinata così com'era prima della migrazione: **Creative Commons Attribution 3.0 Unported**, presente dal 2020 (commit `6fbd040`) e rimossa nel commit `5127a2d`.
+Fino al 4/11 `LICENSE` era la **Creative Commons Attribution 3.0 Unported**: presente dal 2020 (commit `6fbd040`), rimossa nel commit della migrazione `5127a2d` e ripristinata nel primo giro di correzioni.
 
-- [ ] Confermare la licenza. Due cose da considerare: CC BY 4.0 è la versione corrente, e le licenze CC non sono pensate per il codice (template, CSS, JS). Un'opzione comune è CC BY 4.0 per i contenuti e una licenza software (es. MIT) per il codice.
-- [ ] Se si cambia, aggiornare `LICENSE` e il paragrafo "Licenza" del `README.md`.
+- [x] Licenza aggiornata a **CC BY 4.0** il 4/11: `LICENSE` contiene il testo ufficiale ([legalcode.txt](https://creativecommons.org/licenses/by/4.0/legalcode.txt)), e il paragrafo "Licenza" del `README.md` rimanda anche alla sintesi in italiano.
+- [ ] Valutare con il Direttivo due punti:
+  - le licenze CC non sono pensate per il codice (template, CSS, JS). Un'opzione comune è affiancare una licenza software, ad es. MIT, per `layouts/`, `assets/` e la configurazione;
+  - il cambio vale per chi detiene i diritti. Gli articoli di singoli soci restano sotto CC BY 3.0 finché i loro autori non sono d'accordo con il passaggio, e i contenuti già pubblicati restano comunque disponibili anche sotto CC BY 3.0, perché le licenze CC sono irrevocabili.
+- [ ] (Facoltativo) Indicare la licenza anche nel footer del sito, con un link alla pagina della CC BY 4.0: oggi è scritta solo nel repo.
 
 ### 2.4 Repository GitHub
 
@@ -80,7 +81,15 @@ Il testo pubblicato fino al 4/11 aveva tutti gli indizi di un segnaposto:
 ## 3. Verifiche da fare dopo il primo deploy
 
 - [x] **Primo run della CI** (run `41885086424`, push di `5c607e8`, 4/11): lint, link check e deploy riusciti; il deploy è partito solo dopo gli altri due job.
-  - [ ] Resta da guardare nel log se "Spell check" segnala circa 136 parole (quasi tutte nomi propri) invece di oltre 5000: i log delle Actions si leggono solo da loggati.
+  - [x] Spell check: il run del push `5257c79` segnalava 42 parole nei file toccati, tutte nomi propri o termini legittimi. Sistemato il 4/11, vedi [§6](#6-falsi-positivi-noti).
+- [x] **Deploy dei giri 3–5** (run `41892329714`, push di `5257c79`, 4/11): lint, i due step di link check e deploy riusciti. Verificato in produzione:
+  - sitemap con 90 URL, di cui 8 datati 4/11 (prima del push: 80). Sono 8 e non 11 come previsto perché i tag `reti`, `radio` e `decentralizzazione` dell'articolo Reticulum hanno un solo articolo, quindi ora sono fuori dal sitemap;
+  - `/archivio/`, le sue sottosezioni e i tag con un solo articolo (es. `/tags/rust/`) hanno `noindex` e non sono nel sitemap; i tag con più articoli (es. `/tags/eventi/`) restano indicizzati;
+  - i 13 vecchi indirizzi dei tag accorpati reindirizzano al tag giusto;
+  - gli originali delle immagini non sono più pubblicati (es. `locandina-reticulum.png` e `/images/luccalug.png` rispondono 404) e la home usa il logo in WebP;
+  - JSON-LD presente: `Organization` e `WebSite` in home, `BlogPosting` ed `Event` nell'articolo Reticulum;
+  - `/blog/page/2/` ha il titolo "Blog – pagina 2 - Luccalug".
+- [x] **Trigger sulle PR e Dependabot**: subito dopo il push Dependabot ha aperto la PR #3; il suo run (`41892518058`) ha eseguito lint e link check, e il deploy è risultato "skipped".
 - [ ] **Build notturna** (`cron: '30 3 * * *'`). Il 5/11 controllare in Actions che il run pianificato ci sia. GitHub disattiva i workflow pianificati dei repo pubblici dopo 60 giorni senza attività: se succede, riattivarlo da Actions.
 - [x] **Redirect dei vecchi URL**: verificati il 4/11 tutti i 18 vecchi indirizzi, ognuno con la sua pagina di redirect e destinazione che risponde 200 (comando in [§8](#8-come-ripetere-le-verifiche)).
 - [x] **HTTPS forzato**: `http://luccalug.it/` risponde con `Location: https://luccalug.it/` (verificato il 4/11).
@@ -88,16 +97,18 @@ Il testo pubblicato fino al 4/11 aveva tutti gli indizi di un segnaposto:
 - [ ] **Anteprime social**: provare 2–3 link (home, articolo Reticulum, pagina Linux Day) con il [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) e il [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/), e mandarli su WhatsApp/Telegram. Le og:image ora sono JPEG 1200×630 da 52–120 KB.
 - [ ] **Core Web Vitals reali** su [PageSpeed Insights](https://pagespeed.web.dev/): i valori misurati il 4/11 sono di laboratorio (Lighthouse).
 - [ ] **Test manuale con lettore di schermo** (NVDA su Windows o Orca su Linux): menu, selettore del tema, pulsante pausa della barra in alto, tab nella pagina Linux Day, galleria, mappa da attivare.
-- [ ] **Calendario**: importare `https://luccalug.it/calendario.ics` in Google Calendar e in un client Apple, e controllare gli orari (vedi B19).
+- [ ] **Calendario** (dopo il deploy di B19):
+  - passare `https://luccalug.it/calendario.ics` nel [validatore iCalendar](https://icalendar.org/validator.html); in locale è già stato controllato con la libreria Python `icalendar` (vedi [§8](#8-come-ripetere-le-verifiche));
+  - importarlo in Google Calendar e in un client Apple, e controllare che gli incontri siano alle 21:00 sia prima sia dopo il cambio dell'ora (es. 19/10 e 26/10);
+  - vedere come i due client mostrano gli annullati del 12/10 e del 2/11 (`STATUS:CANCELLED` più il prefisso "[Annullato]" nel titolo). Alcuni client nascondono gli eventi annullati: va bene lo stesso.
 
 ## 4. Interventi nel codice ancora da fare
 
 | ID | Area | Gravità | Cosa | Sforzo |
 | --- | --- | --- | --- | --- |
 | [B16](#b16--header-di-sicurezza-e-cache) | Sicurezza/Perf | Bassa | Header di sicurezza e cache non configurabili | M–L |
-| [B19](#b19--file-ics-non-conforme-a-rfc-5545) | Calendario | Bassa | ICS non conforme a RFC 5545 | M |
 | [B20](#b20--pagina-404) | SEO | Bassa | 404 con titolo in inglese e canonical (rinviato) | S |
-| [Info](#osservazioni-minori-info) | Varie | Info | Contatore finto, feed, favicon, `lang`, `theme-color` | S |
+| [Info](#osservazioni-minori-info) | Varie | Info | Contatore finto, feed dei tag, favicon, `lang`, `theme-color` | S |
 
 ### B16 – Header di sicurezza e cache
 
@@ -127,48 +138,6 @@ Il rischio è basso, perché il sito è statico, senza form né login.
 
 **Come verificare:** `curl -sI https://luccalug.it/` e <https://securityheaders.com/>; con la CSP attiva, la console del browser non deve mostrare violazioni su home, articolo con galleria, Linux Day (tab), Contatti (mappa) e 404.
 
-### B19 – File ICS non conforme a RFC 5545
-
-**Problema** (`layouts/single.ical.ics`):
-
-- le righe terminano con LF invece di CRLF;
-- 5 righe superano i 75 byte e non vengono spezzate;
-- `DTSTART`/`DTEND` sono orari "flottanti", senza `TZID` né `VTIMEZONE` (righe 9, 14, 15): funziona solo perché i client leggono l'estensione non standard `X-WR-TIMEZONE`;
-- gli eventi annullati ("Incontro annullato" del 12/10 e del 2/11) compaiono come eventi normali;
-- l'`UID` (riga 19) contiene il titolo: se il titolo cambia, il client vede un evento nuovo.
-
-**Correzione proposta:**
-
-- aggiungere il blocco `VTIMEZONE` e usare `DTSTART;TZID=Europe/Rome:…`:
-
-  ```text
-  BEGIN:VTIMEZONE
-  TZID:Europe/Rome
-  BEGIN:DAYLIGHT
-  TZOFFSETFROM:+0100
-  TZOFFSETTO:+0200
-  TZNAME:CEST
-  DTSTART:19700329T020000
-  RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
-  END:DAYLIGHT
-  BEGIN:STANDARD
-  TZOFFSETFROM:+0200
-  TZOFFSETTO:+0100
-  TZNAME:CET
-  DTSTART:19701025T030000
-  RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
-  END:STANDARD
-  END:VTIMEZONE
-  ```
-
-  e togliere la `Z` dalla `printf` della riga 9 (oggi l'orario viene interpretato come UTC e poi stampato senza fuso);
-
-- aggiungere agli eventi di `content/calendario.md` un campo `status: annullato` ed emettere `STATUS:CANCELLED` (la tabella può mostrarli barrati);
-- usare un `UID` stabile, ad es. `{{ .date }}-{{ .id | default (.summary | urlize) }}@luccalug.it`, con un `id` esplicito per gli eventi;
-- per CRLF e righe lunghe: costruire l'intero calendario in una variabile e stamparlo con `replace $ics "\n" "\r\n"`; spezzare `SUMMARY`/`DESCRIPTION`/`LOCATION` in pezzi da 36 caratteri al massimo (così si resta sotto i 75 byte anche con le lettere accentate, che valgono 2 byte), con la riga di continuazione che inizia con uno spazio.
-
-**Come verificare:** [validatore iCalendar](https://icalendar.org/validator.html) su `public/calendario.ics`, poi import in Google Calendar e Apple Calendar con controllo degli orari prima e dopo il cambio dell'ora (es. evento del 26/10).
-
 ### B20 – Pagina 404
 
 **Rinviato** su richiesta il 4/11: da riprendere più avanti.
@@ -194,10 +163,7 @@ Il blocco `canonical` esiste già in `layouts/baseof.html` grazie alla correzion
 ### Osservazioni minori (Info)
 
 - [ ] **Contatore visitatori finto** (`layouts/_partials/footer.html:9-20`): mostra 1337 + 7 al giorno + un numero casuale, presentato come "Visitatori". È coerente con lo stile retrò, ma è un dato inventato: dichiararlo come scherzo (es. "Visitatori (più o meno)") o toglierlo.
-- [ ] **Feed RSS:**
-  - la descrizione del canale è in inglese ("Recent content on …"), dal template RSS predefinito di Hugo: serve un `layouts/rss.xml` personalizzato;
-  - il feed della home (`/feed.xml`) include anche le pagine statiche, e includerà privacy e statuto quando saranno pubblicati: valutare di limitarlo al blog;
-  - ogni tag ha il suo feed (57): se non servono, `outputs.term = ["HTML"]` in `hugo.toml`.
+- [ ] **Feed dei tag**: ogni tag ha il suo feed (44); se non servono, `outputs.term = ["HTML"]` in `hugo.toml`. Il resto della voce sui feed è fatto, vedi il settimo giro nel [§7](#7-già-fatto).
 - [ ] **Favicon**: c'è solo `static/images/luccalug-favicon.png` (291×291), usata anche come `apple-touch-icon`, che dovrebbe essere 180×180. Aggiungere `favicon.ico` 32×32 e un PNG 180×180, generabili con Hugo Pipes (`Resize`).
 - [ ] **Testo in inglese senza `lang="en"`** (WCAG 3.1.2): titoli dei talk in `content/linux-day.md` (es. "Hosting your digital life…") e badge del footer (`footer.html:4-6`).
 - [ ] **`theme-color` non si aggiorna quando si cambia tema** (trovato durante le correzioni): lo script in `layouts/_partials/head.html:90` lo imposta solo al caricamento, mentre `setMode`/`setScheme` (`layouts/_partials/theme-switcher.html:34`) non lo toccano. Spostare la tabella dei colori in una funzione condivisa e richiamarla anche al cambio di tema.
@@ -209,9 +175,9 @@ Il blocco `canonical` esiste già in `layouts/baseof.html` grazie alla correzion
 
 Oggi gli eventi sono scritti due volte: in `content/calendario.md` (`events`) e negli shortcode `evento` dentro gli articoli. L'articolo Reticulum, per esempio, ripete data e luogo della voce del 23/11.
 
-Proposta: un'unica sorgente, cioè il front matter del calendario oppure `data/eventi.yaml`, ogni evento con un `id`, da cui generare:
+Proposta: un'unica sorgente, cioè il front matter del calendario oppure `data/eventi.yaml`, ogni evento identificato dalla data o da un `id` (come già oggi nel `.ics`), da cui generare:
 
-- tabella "Prossimi eventi" e `calendario.ics` (già oggi, risolvendo anche B19);
+- tabella "Prossimi eventi" e `calendario.ics` (già oggi);
 - card nell'articolo: `{{< evento id="2026-11-23-reticulum" >}}`;
 - JSON-LD `Event` nelle pagine degli articoli: oggi lo genera lo shortcode `evento` (B7), ricavando l'orario dal testo di `luogo`; con il file unico avrebbe ora di inizio e di fine esplicite;
 - eventuale box "Prossimo incontro" in home.
@@ -233,7 +199,7 @@ Vedi B16 (opzioni 2 e 3): HSTS, CSP, cache lunga per gli asset con fingerprint, 
 
 - **lychee segnala `https://www.fsf.org/`** (`HandshakeFailure`, 2 occorrenze in `stallman-a-firenze`): con curl e nei browser il sito risponde 200; è il client TLS di lychee che non negozia con il loro server. Non serve correggere il contenuto.
 - **`hugo --printUnusedTemplates`** segnala `archivio/single.html` come inutilizzato perché l'unico documento d'archivio (lo statuto) è in bozza: tornerà in uso appena viene pubblicato. Non va rimosso. Segnala anche gli shortcode `colonne`, `colonna` e `youtube`, tenuti apposta per usi futuri.
-- **cspell** segnala circa 136 parole, quasi tutte nomi propri (Prusa, Tecnoware, Galcianese…). Il controllo non è bloccante (`strict: false`). Per renderlo bloccante, aggiungere i nomi all'elenco `words` di `cspell.json` e mettere `strict: true`.
+- **cspell**: dal 4/11 ignora i blocchi di codice (```` ``` ````), il codice inline, il contenuto dello shortcode `terminal` e le elisioni subito prima di un link (`dall'[Internet Archive]`); nomi propri e parole valide sono nell'elenco `words` di `cspell.json`. Su tutto `content/` non resta nessuna segnalazione ("Stephano" Tesi è il nome corretto, confermato il 4/11). Corretto `Gulli` in `GULLi` in `da-obs-alla-webcam.md`. Il controllo resta non bloccante (`strict: false`); ora che l'elenco è pulito si può rendere bloccante con `strict: true`, al costo di dover aggiungere a `cspell.json` ogni nuovo nome proprio.
 
 ## 7. Già fatto
 
@@ -269,13 +235,13 @@ Vedi B16 (opzioni 2 e 3): HSTS, CSP, cache lunga per gli asset con fingerprint, 
 
 Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
 
-**Terzo giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-dei-giri-35)):
+**Terzo giro, 4/11/2026** (commit `5257c79`):
 
 - **B4** – `lastmod` non viene più da git: `enableGitInfo = false` e `[frontmatter] lastmod = ["lastmod", "date"]` in `hugo.toml`. Senza `lastmod` nel front matter vale `date`. Aggiunto `lastmod` solo dove il contenuto è cambiato davvero: articolo CFP Linux Day 2026 (18/10, avviso di chiusura), articolo schemesh (12/10, serata rinviata), Linux Day e Calendario (4/11), Chi siamo e Contatti (29/5). Nella build, i URL del sitemap datati oggi passano da 80 a 11; l'articolo Arduino del 2011 ha `article:modified_time` e `dateModified` uguali alla data di pubblicazione. Il `DTSTAMP` di `calendario.ics` ora viene dal `lastmod` del calendario, da aggiornare quando cambiano gli eventi (c'è un commento nel file). Tolto `fetch-depth: 0` dalla CI. Regola documentata nel README. Le 5 pagine dell'archivio senza documenti pubblicati ora non hanno `<lastmod>` nel sitemap (vedi B21).
 - **M11** – Il workflow gira anche sulle `pull_request`. Il deploy parte solo se `github.ref == 'refs/heads/master'`, quindi né dalle PR né dai run manuali su altri branch. Nuovo step bloccante per link interni e ancore (lychee `--offline --include-fragments` con `--remap` verso `./public`); il controllo dei link esterni resta non bloccante. `concurrency` è diventato `pages-${{ github.ref }}`: con il vecchio gruppo unico `pages` e `cancel-in-progress`, una PR avrebbe cancellato un deploy di master in corso.
 - **M12** – Tutte le action fissate allo SHA del commit con la versione in commento (checkout v5.1.0, cache v4.3.0, markdownlint-cli2-action v23.2.0, cspell-action v8.4.0, actions-hugo v3.2.1, lychee-action v2.9.0, actions-gh-pages v4.1.0; SHA confrontati con l'API di GitHub). Aggiunto `.github/dependabot.yml`: controllo settimanale, una sola PR per tutte le action, prefisso `ci`.
 
-**Quarto giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-dei-giri-35)):
+**Quarto giro, 4/11/2026** (commit `5257c79`):
 
 - **B21** – Il sitemap esclude le pagine con `sitemap: disable: true` e le sezioni senza pagine pubblicate; queste ultime hanno anche `<meta name="robots" content="noindex">`. Oggi riguarda `/archivio/` e le sue 4 sottosezioni, che tornano da sole appena viene pubblicato un documento (provato con `hugo -D`: statuto e archivio ricompaiono). Il template del sitemap è passato da 4 cicli quasi uguali a nessuno, perché Hugo calcola già il `lastmod` delle liste: per tutti gli altri URL l'output è identico.
 - **B10** – Un'immagine mancante fa fallire la build (`img.html`, `gallery-img.html`; per la galleria vale anche `static/`), e così una `figure` o una `gallery-img` senza `alt`; `alt=""` resta possibile per le immagini decorative. I messaggi indicano file e riga. `width` passato come stringa non dà più errore.
@@ -286,7 +252,7 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
 - **B12** – Template spostati nella struttura di Hugo 0.146+: `_partials/`, `_shortcodes/`, `home.html`, e i file di `_default/` direttamente in `layouts/`. Le build con e senza bozze sono **identiche** prima e dopo lo spostamento (`diff -r`), e `--printUnusedTemplates` segnala gli stessi template di prima.
 - README aggiornato: struttura delle cartelle, `hugo new content`, regole per `alt` e immagini.
 
-**Quinto giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-dei-giri-35)):
+**Quinto giro, 4/11/2026** (commit `5257c79`):
 
 - **B5 (resto), tag usati una volta** – Due interventi:
   - **Automatico:** le pagine dei tag con un solo articolo hanno `noindex` e sono fuori dal sitemap; tornano da sole quando un secondo articolo usa il tag. La regola è in `layouts/_partials/indexable.html`, condivisa da `head.html` e `sitemap.xml` insieme a quella delle sezioni vuote (B21). Oggi riguarda 22 tag su 44.
@@ -294,6 +260,24 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
 - **B6 (resto), description lunghe** – Riscritte le 9 description oltre i 160 caratteri (ora 140–159), senza `lastmod` perché il testo degli articoli non cambia.
 - **B6 (resto), pagine 2 e successive** – Il titolo diventa "Blog – pagina 2 - Luccalug" (o "Tag: Eventi – pagina 2 - …") e la description finisce con "Pagina 2 di 7.". Il numero di pagina viene da `_partials/paginator.html` ed è calcolato solo per blog e tag, cioè le liste i cui template paginano: chiamare il paginatore su `/tags/` farebbe generare pagine `/tags/page/N/`, che invece sono redirect.
 - Verifiche: link interni 0 errori su 3598; nessuna description oltre 160 caratteri; markdownlint 0 problemi; html-validate solo sulle pagine di redirect.
+
+**Sesto giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
+
+- **cspell** – Il run del push `5257c79` segnalava 42 parole nei file toccati, e su tutto `content/` erano 135. Ora sono 0: cspell ignora codice e shortcode `terminal`, le parole valide sono in `cspell.json`, e `Gulli` è diventato `GULLi`. Dettagli nel [§6](#6-falsi-positivi-noti).
+
+**Settimo giro, 4/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
+
+- **B19** – `calendario.ics` conforme a RFC 5545. Il template `layouts/single.ical.ics` raccoglie le righe in una lista e le stampa alla fine:
+  - **CRLF e righe lunghe:** ogni riga termina con CRLF e viene spezzata a 75 byte dal nuovo partial `_partials/ical-fold.html`, che lavora carattere per carattere e quindi non taglia mai le lettere accentate o le emoji. È stata scelta questa strada invece dei pezzi da 36 caratteri proposti nella review, che con caratteri da 3–4 byte potevano superare il limite.
+  - **Fuso orario:** blocco `VTIMEZONE` per Europe/Rome e `DTSTART;TZID=Europe/Rome:…`; l'orario non passa più da UTC. Il blocco coincide con il database IANA dal 2024 al 2034 (confronto ogni 30 minuti con `zoneinfo`).
+  - **Annullati:** nuovo campo `status: cancelled`, che dà `STATUS:CANCELLED` e il prefisso "[Annullato]" nel titolo, per i client che ignorano `STATUS`. In tabella il titolo è barrato, con il badge rosso "Annullato". I due eventi annullati sono tornati al titolo originale, ricavato dalla storia git: 12/10 "Serata a tema: Schemesh con Max", 2/11 "Incontro ordinario". Un valore diverso da `cancelled` blocca la build.
+  - **UID:** ora è solo la data (`2026-11-23@luccalug.it`), non più data e titolo come proposto nella review: così cambiare titolo, orario o stato aggiorna l'evento nei calendari che lo hanno già. Se due eventi cadono nello stesso giorno la build si ferma e chiede un campo `id` per uno dei due. Gli UID sono cambiati tutti una volta: chi è abbonato al calendario vede gli eventi sostituiti, chi lo reimporta a mano li ha doppi.
+  - **In più:** un evento senza `time` è di tutto il giorno (`VALUE=DATE`), invece di andare dalle 00:00 alle 02:00; `REFRESH-INTERVAL` e `X-PUBLISHED-TTL` chiedono ai client di aggiornarsi ogni giorno, come la build notturna; `location` e `description` sono facoltativi; `ical-escape.html` usa `return`. I campi degli eventi sono spiegati in un commento in testa a `content/calendario.md` e nel README.
+  - Verifiche: in una copia del sito, eventi di prova con apostrofo, `&`, `<`, `;`, `\`, emoji, titolo di oltre 150 byte, orario "9:00" ed evento senza orario; la libreria Python `icalendar` 7.3.0 legge il file senza errori e ricompone i testi spezzati identici all'originale; tutti gli incontri risultano alle 21:00 locali (19:00 UTC fino al 19/10, 20:00 UTC dal 26/10); a parte `calendario.ics`, la build è identica a prima (`diff -r`).
+- **Feed RSS** – Nuovo `layouts/rss.xml`, basato su quello di Hugo 0.169.0:
+  - il feed della home (`/feed.xml`) contiene solo gli articoli del blog, 61 come `/blog/feed.xml`. Prima conteneva anche Calendario, Linux Day, Chi siamo e Contatti, e il calendario tornava in cima ogni volta che si aggiornava il suo `lastmod`. Il feed della home è quello che trovano i lettori di feed partendo da `luccalug.it`; il link "RSS Feed" del footer punta invece a `/blog/feed.xml`. Privacy e statuto non ci finiranno quando verranno pubblicati;
+  - titolo e descrizione del canale sono in italiano, uguali a quelli della pagina ("Blog - Luccalug", "Tag: Eventi - Luccalug"), invece di "Blog on …" e "Recent content in …". La descrizione viene dal nuovo partial `_partials/page-description.html`, usato anche da `head.html`;
+  - verifiche: tutte le pagine HTML sono identiche a prima (`diff -r`); negli altri 51 feed cambiano solo titolo e descrizione del canale, gli articoli sono gli stessi; tutti i feed sono XML valido, anche minificati.
 
 ## 8. Come ripetere le verifiche
 
@@ -326,6 +310,16 @@ hugo --printUnusedTemplates --logLevel info -d /tmp/luccalug-public 2>&1 | grep 
 
 # Date nel sitemap (in produzione o nella build): nessuna data deve raccogliere quasi tutti gli URL
 curl -s https://luccalug.it/sitemap.xml | grep -o '<lastmod>[^<]*' | cut -c10-19 | sort | uniq -c | sort -rn | head
+
+# Calendario: atteso 0 righe senza CRLF e 0 righe oltre i 75 byte
+grep -c -v $'\r$' /tmp/luccalug-public/calendario.ics
+LC_ALL=C awk '{sub(/\r$/,"")} length($0)>75' /tmp/luccalug-public/calendario.ics | wc -l
+# Calendario letto da una libreria iCalendar: un evento per riga, con orario in UTC
+uv run --no-project --with icalendar python3 -c "
+import icalendar, sys
+for e in icalendar.Calendar.from_ical(open(sys.argv[1], 'rb').read()).walk('VEVENT'):
+    s = e.decoded('DTSTART'); print(e['UID'], s, e.get('STATUS', ''), e['SUMMARY'])
+" /tmp/luccalug-public/calendario.ics
 
 # Redirect dei vecchi URL in produzione: ogni riga deve avere una destinazione e 200
 for p in post/hello-web post/arduracing post/i-gestori-di-pacchetti post/luccalug-reboot post/obs2cam \

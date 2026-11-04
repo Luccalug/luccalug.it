@@ -64,7 +64,9 @@ Shortcode disponibili in `layouts/_shortcodes/` (ognuno ha la documentazione in 
 
 ## Calendario
 
-Gli eventi sono nel front matter di `content/calendario.md` (`events`). Da lì vengono generati la tabella "Prossimi eventi" (solo eventi futuri) e il file `calendario.ics`. Il sito viene ricostruito ogni notte, così gli eventi passati spariscono dalla tabella da soli. Quando aggiungi o modifichi un evento aggiorna anche `lastmod` in testa al file.
+Gli eventi sono nel front matter di `content/calendario.md` (`events`); i campi sono spiegati in un commento in testa al file. Da lì vengono generati la tabella "Prossimi eventi" (solo eventi futuri) e il file `calendario.ics`. Il sito viene ricostruito ogni notte, così gli eventi passati spariscono dalla tabella da soli. Quando aggiungi o modifichi un evento aggiorna anche `lastmod` in testa al file.
+
+Per annullare un evento non toglierlo e non cambiarne il titolo: aggiungi `status: cancelled` e scrivi il motivo in `description`. In tabella resta barrato, con l'etichetta "Annullato", e chi ha importato il calendario lo vede annullato. Nel file `.ics` ogni evento è identificato dalla data: se due eventi cadono nello stesso giorno la build si ferma e chiede di dare a uno dei due un campo `id`.
 
 ## Pagine in bozza
 
@@ -92,7 +94,7 @@ npx cspell "content/**/*.md"
 
 ## Licenza
 
-I contenuti del sito sono distribuiti con licenza [Creative Commons Attribuzione 3.0](LICENSE), salvo dove indicato diversamente.
+I contenuti del sito sono distribuiti con licenza [Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)](LICENSE) ([sintesi in italiano](https://creativecommons.org/licenses/by/4.0/deed.it)), salvo dove indicato diversamente.
 
 ## Contribuire
 

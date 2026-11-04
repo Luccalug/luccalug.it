@@ -7,6 +7,20 @@ outputs:
   - HTML
   - MD
   - ical
+# Campi di ogni evento:
+#   date         AAAA-MM-GG (obbligatorio)
+#   time         HH:MM, ora di Lucca; senza, l'evento dura tutto il giorno
+#   duration     durata, es. "4h" o "8h30m" (predefinita "2h")
+#   summary      titolo (obbligatorio)
+#   location     luogo
+#   description  descrizione
+#   status       "cancelled" per un evento annullato: resta in calendario,
+#                barrato in tabella e come annullato nel file .ics.
+#                Il titolo resta quello originale.
+#   id           solo se ci sono due eventi nello stesso giorno: identificativo
+#                stabile, es. "2026-11-23-reticulum". Senza, l'UID nel file
+#                .ics è la data, così chi ha già l'evento lo vede aggiornato
+#                quando cambiano titolo, orario o stato.
 events:
   - date: "2026-09-07"
     time: "21:00"
@@ -41,9 +55,10 @@ events:
   - date: "2026-10-12"
     time: "21:00"
     duration: "4h"
-    summary: "Incontro annullato"
+    summary: "Serata a tema: Schemesh con Max"
+    status: cancelled
     location: "Foro Boario, Lucca"
-    description: "Incontro annullato: il Foro Boario è occupato da un altro evento per tutta la settimana. La serata su schemesh è rimandata a lunedì 19 ottobre"
+    description: "Il Foro Boario è occupato da un altro evento per tutta la settimana. La serata su schemesh è rimandata a lunedì 19 ottobre"
   - date: "2026-10-19"
     time: "21:00"
     duration: "4h"
@@ -65,9 +80,10 @@ events:
   - date: "2026-11-02"
     time: "21:00"
     duration: "4h"
-    summary: "Incontro annullato"
+    summary: "Incontro ordinario"
+    status: cancelled
     location: "Foro Boario, Lucca"
-    description: "Incontro annullato: associazione chiusa per Lucca Comics"
+    description: "Associazione chiusa per Lucca Comics"
   - date: "2026-11-09"
     time: "21:00"
     duration: "4h"

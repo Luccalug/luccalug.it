@@ -1,0 +1,55 @@
+{{- /*
+  RSS feeds of the home, the sections and the tags. Based on Hugo's built-in
+  template (v0.169.0), with two changes:
+  - the home feed lists only the blog articles. With Hugo's template it also
+    had the pages (Calendario, Contatti…), and the calendar came back to the
+    top every time its lastmod changed;
+  - channel title and description are in Italian, the same as in the <head>
+    of the page (Hugo writes "Blog on …", "Recent content in …").
+*/ -}}
+{{- $pages := slice -}}
+{{- if .IsHome -}}
+  {{- $pages = where site.RegularPages "Section" "blog" -}}
+{{- else if .IsSection -}}
+  {{- $pages = .RegularPages -}}
+{{- else -}}
+  {{- $pages = .Pages -}}
+{{- end -}}
+{{- $limit := site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 }}{{ $pages = $pages | first $limit }}{{ end -}}
+
+{{- $title := site.Title -}}
+{{- $description := partial "page-description.html" . -}}
+{{- if .IsHome -}}
+  {{- with site.GetPage "/blog" }}{{ $description = .Description }}{{ end -}}
+{{- else -}}
+  {{- $pageTitle := partial "page-title.html" . -}}
+  {{- $docTitle := cond (eq .Kind "term") (printf "Tag: %s" $pageTitle) $pageTitle -}}
+  {{- $title = printf "%s - %s" $docTitle (site.Params.shortTitle | default site.Title) -}}
+{{- end -}}
+
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ $title }}</title>
+		<link>{{ .Permalink }}</link>
+		<description>{{ $description }}</description>
+		<generator>Hugo</generator>
+		<language>{{ site.Language.Locale }}</language>
+		{{ with $pages }}
+			<lastBuildDate>{{ (index .ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+		{{ end }}
+		{{- with .OutputFormats.Get "RSS" }}
+			{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+		{{- end }}
+		{{- range $pages }}
+			<item>
+				<title>{{ .Title }}</title>
+				<link>{{ .Permalink }}</link>
+				<pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+				<guid>{{ .Permalink }}</guid>
+				<description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+			</item>
+		{{- end }}
+	</channel>
+</rss>
