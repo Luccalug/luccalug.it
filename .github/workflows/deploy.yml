@@ -3,10 +3,19 @@ name: Deploy Hugo to GitHub Pages
 on:
   push:
     branches: [master]
+  # Nightly rebuild: drops past events from the calendar page.
+  # 03:30 UTC is 04:30/05:30 in Italy, so the UTC and Italian dates match.
+  schedule:
+    - cron: '30 3 * * *'
   workflow_dispatch:
 
+# Read-only by default; only the deploy job gets write access.
 permissions:
-  contents: write
+  contents: read
+
+# Keep in sync with the Hugo version used locally (`hugo version`).
+env:
+  HUGO_VERSION: '0.169.0'
 
 concurrency:
   group: pages
@@ -22,6 +31,11 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v23
         with:
           globs: 'content/**/*.md'
+
+      # The Italian dictionary is not bundled with cspell: install it so that
+      # the "import" in cspell.json resolves from ./node_modules.
+      - name: Install Italian dictionary
+        run: npm install --no-save --no-package-lock --no-audit --no-fund @cspell/dict-it-it@3.1.7
 
       - name: Spell check
         uses: streetsidesoftware/cspell-action@v8
@@ -39,14 +53,14 @@ jobs:
 
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.161.1'
+          hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
       - uses: actions/cache@v4
         with:
           path: resources
-          key: hugo-images-${{ hashFiles('assets/images/**') }}
-          restore-keys: hugo-images-
+          key: hugo-images-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/images/**') }}
+          restore-keys: hugo-images-${{ env.HUGO_VERSION }}-
 
       - run: hugo --minify --baseURL "https://luccalug.it/"
 
@@ -59,6 +73,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: [lint, link-check]
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
         with:
@@ -66,14 +82,14 @@ jobs:
 
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.161.1'
+          hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
       - uses: actions/cache@v4
         with:
           path: resources
-          key: hugo-images-${{ hashFiles('assets/images/**') }}
-          restore-keys: hugo-images-
+          key: hugo-images-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/images/**') }}
+          restore-keys: hugo-images-${{ env.HUGO_VERSION }}-
 
       - run: hugo --minify --baseURL "https://luccalug.it/"
 

@@ -23,5 +23,8 @@
     <a href="https://www.linux.it/LUG/">LUG Italiani</a> · <a href="https://neocities.org/">Neocities</a> · <a href="{{ "blog/feed.xml" | absURL }}">RSS Feed</a>
   </div>
 
-  <p>&copy; {{ now.Year }} Luccalug - Lucca Linux User Group</p>
+  <p>&copy; {{ now.Year }} Luccalug - Lucca Linux User Group
+    {{- /* Shown only once content/privacy.md is published (not a draft). */ -}}
+    {{- with site.GetPage "/privacy" }} · <a href="{{ .RelPermalink }}">Privacy</a>{{ end -}}
+  </p>
 </footer>

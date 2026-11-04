@@ -1,0 +1,13 @@
+{{- /*
+  Human-readable page title. For tag pages without their own
+  content/tags/<term>/_index.md, Hugo's default title is the slug title-cased
+  ("Pillole-Di-Free-Software"): turn it into "Pillole di free software".
+  Add content/tags/<term>/_index.md with a title for acronyms and brands.
+
+  Usage: {{ partial "page-title.html" . }}
+*/ -}}
+{{- $title := .Title -}}
+{{- if and (eq .Kind "term") (not .File) -}}
+  {{- $title = replace .Data.Term "-" " " | strings.FirstUpper -}}
+{{- end -}}
+{{- return $title -}}

@@ -13,4 +13,4 @@ Come ogni anno presenteremo i progetti completati durante l'anno, quelli ancora 
 
 Ci sarà inoltre una serie di presentazioni riguardanti vari argomenti con **aperitivo finale**.
 
-Per le informazioni complete guardate la [pagina dedicata](http://www.luccalug.it/linux-day-2015/).
+Per le informazioni complete guardate la [pagina dedicata (copia archiviata)](https://web.archive.org/web/20160209061950/http://luccalug.it/linux-day-2015/).

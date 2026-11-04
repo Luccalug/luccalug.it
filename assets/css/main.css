@@ -30,11 +30,14 @@
   line-gap-override: 0%;
 }
 
-/* --- Self-hosted fonts (latin + latin-ext) --- */
+/* --- Self-hosted fonts (latin + latin-ext) ---
+   Inter is a variable font: one file per subset covers both 400 and 600,
+   so it is declared once with a weight range. The range stops at 600 so
+   that <strong> (700) keeps rendering at 600, as it did before. */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 600;
   font-display: swap;
   src: url('/fonts/inter-400-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -42,25 +45,9 @@
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 600;
   font-display: swap;
   src: url('/fonts/inter-400-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/inter-600-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/inter-600-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
@@ -111,6 +98,7 @@
   --accent: #ff8a5c;
   --accent-alt: #c9a0c0;
   --accent-warm: #f4b61b;
+  --accent-warm-text: #f4b61b;
   --link-color: #ff8a5c;
   --link-visited: #c9a0c0;
   --link-hover-bg: rgba(233, 84, 32, 0.15);
@@ -130,10 +118,14 @@
   --bg-dot: #f0ddd2;
   --text-color: #2a2a3a;
   --text-heading: #1a1a2a;
-  --text-muted: #666;
-  --accent: #b03d10;
+  /* Text tokens below are tuned for >= 4.5:1 (WCAG AA) on every light
+     background, including --bg-deep of all distro schemes. */
+  --text-muted: #5e5e5e;
+  --accent: #ab3b10;
   --accent-alt: #77216f;
-  --link-color: #b03d10;
+  /* Amber stays for borders/backgrounds; text needs a darker shade. */
+  --accent-warm-text: #7a5906;
+  --link-color: #ab3b10;
   --link-visited: #77216f;
   --link-hover-bg: rgba(233, 84, 32, 0.18);
   --border-color: #d4c0b4;
@@ -226,9 +218,9 @@
   --bg-card: #e0eaf2;
   --bg-deep: #d4e0ec;
   --bg-dot: #d8e4ee;
-  --accent: #0f6b97;
+  --accent: #0e6690;
   --accent-alt: #333333;
-  --link-color: #0f6b97;
+  --link-color: #0e6690;
   --link-visited: #333333;
   --link-hover-bg: rgba(23, 147, 209, 0.15);
   --border-color: #b8c8d8;
@@ -257,9 +249,9 @@
   --bg-deep: #ecd4da;
   --bg-dot: #eed8de;
   --accent: #a80030;
-  --accent-alt: #646464;
+  --accent-alt: #5e5e5e;
   --link-color: #a80030;
-  --link-visited: #646464;
+  --link-visited: #5e5e5e;
   --link-hover-bg: rgba(215, 10, 83, 0.12);
   --border-color: #d4b8c0;
   --border-accent: #d70a53;
@@ -315,29 +307,6 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-/* --- Reduced Motion --- */
-@media (prefers-reduced-motion: reduce) {
-  .top-bar-scroll {
-    animation: none;
-    padding-left: 0;
-  }
-
-  .scheme-dropdown .scheme-btn {
-    transition: none;
-  }
-
-  .scheme-picker.open .scheme-dropdown .scheme-btn {
-    transition: none;
-  }
-
-  .mode-toggle,
-  .scheme-trigger,
-  .nav a,
-  .enter-btn {
-    transition: none;
-  }
-}
-
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -364,6 +333,7 @@ body {
   font-size: 16px;
   color: var(--accent);
   letter-spacing: 1px;
+  position: relative;
 }
 
 .top-bar-scroll {
@@ -375,6 +345,41 @@ body {
 @keyframes marquee-scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
+}
+
+/* Pause (WCAG 2.2.2): hover/focus pause in place, the button stops it and
+   shows the text from the start, like prefers-reduced-motion does. */
+.top-bar:hover .top-bar-scroll,
+.top-bar:focus-within .top-bar-scroll {
+  animation-play-state: paused;
+}
+
+[data-marquee="paused"] .top-bar-scroll {
+  animation: none;
+  padding-left: 12px;
+}
+
+.top-bar-pause {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 36px;
+  padding: 0 10px;
+  background: var(--bg-deep);
+  color: var(--accent);
+  border: 0;
+  border-left: 1px solid var(--border-color);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.top-bar-pause:hover {
+  background: var(--link-hover-bg);
+}
+
+.top-bar-pause:focus-visible {
+  outline-offset: -3px;
 }
 
 /* --- Navigation --- */
@@ -699,13 +704,16 @@ picture { display: contents; }
 .note-title { font-family: var(--font-pixel); font-size: 12px; margin-bottom: 6px; }
 
 .note.warning  { border-color: var(--accent-warm); background: rgba(251, 191, 36, 0.05); }
-.note.warning .note-title { color: var(--accent-warm); }
+.note.warning .note-title { color: var(--accent-warm-text); }
 .note.info     { border-color: var(--accent); background: rgba(94, 234, 212, 0.05); }
 .note.info .note-title { color: var(--accent); }
 .note.danger   { border-color: #f87171; background: rgba(248, 113, 113, 0.05); }
 .note.danger .note-title { color: #f87171; }
 .note.tip      { border-color: #4ade80; background: rgba(74, 222, 128, 0.05); }
 .note.tip .note-title { color: #4ade80; }
+/* The danger/tip title colors above are for dark backgrounds. */
+[data-mode="light"] .note.danger .note-title { color: #b91c1c; }
+[data-mode="light"] .note.tip .note-title { color: #166534; }
 
 /* --- Shortcode: Member Card --- */
 .member-card {
@@ -846,6 +854,10 @@ picture { display: contents; }
   flex-direction: column;
   gap: 4px;
   pointer-events: none;
+  /* Hidden buttons must not be reachable with Tab. The delay lets the
+     close animation (0.16s delay + 0.3s transform) finish first. */
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s;
 }
 
 .scheme-dropdown .scheme-btn {
@@ -876,6 +888,8 @@ picture { display: contents; }
 /* Fan-out on open */
 .scheme-picker.open .scheme-dropdown {
   pointer-events: auto;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .scheme-picker.open .scheme-dropdown .scheme-btn {
@@ -957,8 +971,8 @@ picture { display: contents; }
 
 .badge--accent { background: var(--accent); color: var(--bg-deep); }
 .badge--alt    { background: var(--accent-alt); color: var(--bg-deep); }
-.badge--warm   { background: var(--accent-warm); color: var(--bg-deep); }
-.badge--green  { background: #2ea043; color: #fff; }
+.badge--warm   { background: var(--accent-warm); color: #1a1a1a; }
+.badge--green  { background: #278638; color: #fff; }
 .badge--red    { background: #d73a49; color: #fff; }
 
 /* --- Shortcode: Link Esterno --- */
@@ -1368,6 +1382,45 @@ picture { display: contents; }
   display: block;
 }
 
+/* Click-to-load placeholder: same height as the iframe, so no layout shift. */
+.mappa-frame {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  text-align: center;
+  background: var(--bg-deep);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.mappa-frame--caricata {
+  display: block;
+  padding: 0;
+}
+
+.mappa-avviso {
+  margin: 0;
+  max-width: 44ch;
+}
+
+.mappa-carica {
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  color: var(--link-color);
+  border: 2px solid var(--accent);
+  cursor: pointer;
+}
+
+.mappa-carica:hover {
+  background: var(--link-hover-bg);
+}
+
 .mappa-link {
   display: block;
   padding: 6px 12px;
@@ -1384,9 +1437,33 @@ picture { display: contents; }
   background: var(--link-hover-bg);
 }
 
-/* --- Reduced motion additions --- */
+/* --- Reduced Motion ---
+   Keep this block at the end of the file: these rules have the same
+   specificity as the ones above, so they only win if they come last. */
 @media (prefers-reduced-motion: reduce) {
-  .gallery-item { transition: none; }
-  .download-link { transition: none; }
+  .top-bar-scroll {
+    animation: none;
+    padding-left: 0;
+  }
+
+  /* Nothing moves, so the pause button is not needed. */
+  .top-bar-pause {
+    display: none;
+  }
+
+  .scheme-dropdown,
+  .scheme-dropdown .scheme-btn,
+  .scheme-picker.open .scheme-dropdown .scheme-btn {
+    transition: none;
+  }
+
+  .mode-toggle,
+  .scheme-trigger,
+  .nav a,
+  .enter-btn,
+  .gallery-item,
+  .download-link {
+    transition: none;
+  }
 }
 

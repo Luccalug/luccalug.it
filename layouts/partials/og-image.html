@@ -1,0 +1,34 @@
+{{- /*
+  Returns a 1200x630 JPEG for Open Graph / Twitter cards, built from the page
+  "image" param (a path under assets/, leading slash optional) or, by default,
+  from assets/images/social-card.png.
+
+  - Images already close to 1.91:1 are resized and cropped to 1200x630.
+  - Other images (e.g. portrait posters) are scaled to fit whole and centered
+    on their own dominant color, instead of being cropped.
+
+  Returns false when the source cannot be found in assets/ (with a warning).
+  Usage: {{ $og := partial "og-image.html" . }}
+*/ -}}
+{{- $src := "images/social-card.png" -}}
+{{- with .Params.image }}{{ $src = strings.TrimPrefix "/" . }}{{ end -}}
+{{- $out := false -}}
+{{- with resources.Get $src -}}
+  {{- $target := div 1200.0 630.0 -}}
+  {{- $ratio := div (float .Width) .Height -}}
+  {{- if lt (math.Abs (sub (div $ratio $target) 1.0)) 0.05 -}}
+    {{- $out = .Fill "1200x630 Center jpg q80" -}}
+  {{- else -}}
+    {{- $fit := cond (lt $ratio $target) (.Resize "x630") (.Resize "1200x") -}}
+    {{- $padX := sub 1200 $fit.Width -}}
+    {{- $padY := sub 630 $fit.Height -}}
+    {{- $left := div $padX 2 -}}
+    {{- $top := div $padY 2 -}}
+    {{- $bg := "#1e1e1e" -}}
+    {{- with .Colors }}{{ $bg = (index . 0).ColorHex }}{{ end -}}
+    {{- $out = $fit | images.Filter (images.Padding $top (sub $padX $left) (sub $padY $top) $left $bg) (images.Process "jpg q80") -}}
+  {{- end -}}
+{{- else -}}
+  {{- warnf "og-image: %q non trovata in assets/ (pagina %s): uso il percorso così com'è" $src .RelPermalink -}}
+{{- end -}}
+{{- return $out -}}

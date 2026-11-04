@@ -2,6 +2,8 @@
 <html lang="{{ .Site.Language.Lang }}">
 <head>
   {{- partial "head.html" . -}}
+  {{- /* Paginated list templates redefine this block to point to the current page. */ -}}
+  {{- block "canonical" . }}{{ partial "canonical.html" .Permalink }}{{ end -}}
 </head>
 <body>
   <a href="#main-content" class="skip-link">Salta al contenuto principale</a>

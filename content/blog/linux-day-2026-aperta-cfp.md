@@ -8,7 +8,7 @@ description: "È aperta fino al 15 settembre la Call for Papers del Linux Day 20
 image: "/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png"
 ---
 
-{{< figure src="images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png" alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre" caption="La Call for Papers del Linux Day Prato 2026 è aperta!" >}}
+{{< figure loading="eager" src="images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png" alt="Linux Day Prato 2026 - Call for Papers, sabato 24 ottobre" caption="La Call for Papers del Linux Day Prato 2026 è aperta!" >}}
 
 {{< note type="warning" >}}
 **La Call for Papers è chiusa.** Grazie a tutte e tutti per le proposte! Il programma del Linux Day 2026 è completo: [scopri cosa vi aspetta]({{< relref "linux-day-2026-programma-completo.md" >}}).

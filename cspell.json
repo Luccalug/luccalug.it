@@ -1,6 +1,9 @@
 {
   "version": "0.2",
   "language": "it,en",
+  "import": [
+    "@cspell/dict-it-it/cspell-ext.json"
+  ],
   "dictionaries": [
     "it-it",
     "html",
@@ -50,6 +53,7 @@
     "fieramosca",
     "cappellini",
     "reticulum",
-    "meshtastic"
+    "meshtastic",
+    "profilazione"
   ]
 }

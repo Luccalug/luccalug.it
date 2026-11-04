@@ -1,0 +1,15 @@
+{{- /* Tag index: every term on a single page, alphabetical, with its article count. */ -}}
+{{ define "main" }}
+<h1>{{ partial "page-title.html" . }}</h1>
+
+{{ .Content }}
+
+<ul class="post-list">
+  {{ range .Data.Terms.Alphabetical }}
+  <li class="post-item">
+    <span class="post-title"><a href="{{ .Page.RelPermalink }}">{{ partial "page-title.html" .Page }}</a></span>
+    <span class="post-date">{{ .Count }} {{ cond (eq .Count 1) "articolo" "articoli" }}</span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

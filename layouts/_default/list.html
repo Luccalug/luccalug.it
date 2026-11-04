@@ -1,9 +1,11 @@
+{{ define "canonical" }}{{ partial "canonical.html" ((partial "paginator.html" .).URL | absURL) }}{{ end }}
+
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1>{{ partial "page-title.html" . }}</h1>
 
 {{ .Content }}
 
-{{ $paginator := .Paginate .Pages }}
+{{ $paginator := partial "paginator.html" . }}
 <ul class="post-list">
   {{ range $paginator.Pages }}
   <li class="post-item">

@@ -8,7 +8,7 @@ description: "Serata a tema con Zanna, contributor di rustc, sul Negative Space 
 image: "/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png"
 ---
 
-{{< figure src="images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png" alt="Copertina della serata Code shibari: Programmando lo spazio negativo" >}}
+{{< figure loading="eager" src="images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png" alt="Copertina della serata Code shibari: Programmando lo spazio negativo" >}}
 
 C’è un endpoint dell’applicativo che esiste praticamente da sempre.
 

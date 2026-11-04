@@ -1,3 +1,30 @@
+{{- /*
+  Scrolling announcement bar. WCAG 2.2.2 requires a way to stop moving
+  content: the button pauses it (choice remembered in localStorage and applied
+  early by the script in head.html via html[data-marquee="paused"]); hover and
+  keyboard focus also pause it. The button is hidden without JavaScript and
+  when the visitor prefers reduced motion (the text is static then).
+*/ -}}
 <div class="top-bar" role="marquee" aria-label="Annunci">
   <div class="top-bar-scroll"><span aria-hidden="true">🐧 </span>{{ .Site.Params.marqueeText }}</div>
+  <button type="button" class="top-bar-pause" id="marquee-toggle" aria-label="Ferma lo scorrimento degli annunci" aria-pressed="false" hidden><span aria-hidden="true">⏸</span></button>
 </div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('marquee-toggle');
+  function render() {
+    var paused = root.getAttribute('data-marquee') === 'paused';
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    btn.firstChild.textContent = paused ? '▶' : '⏸';
+  }
+  btn.hidden = false;
+  render();
+  btn.addEventListener('click', function () {
+    var paused = root.getAttribute('data-marquee') !== 'paused';
+    if (paused) root.setAttribute('data-marquee', 'paused'); else root.removeAttribute('data-marquee');
+    try { localStorage.setItem('luccalug-marquee', paused ? 'paused' : 'running'); } catch (e) {}
+    render();
+  });
+})();
+</script>

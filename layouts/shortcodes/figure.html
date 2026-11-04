@@ -3,6 +3,7 @@
 
   Usage:
     {{< figure src="images/photo.jpg" alt="Description" caption="Optional caption" >}}
+    {{< figure loading="eager" src="images/poster.png" alt="..." >}}   (image at the top of the page)
 
   Parameters:
     src     - path relative to assets/ (required)
@@ -10,6 +11,9 @@
     caption - figure caption (optional)
     width   - max width in px (optional, default 800)
     class   - additional CSS class (optional)
+    loading - "lazy" (default) or "eager". Use "eager" for an image visible
+              without scrolling (e.g. a poster at the top of a post): it is
+              then loaded right away and with high priority.
 */ -}}
 
 {{- $src := .Get "src" -}}
@@ -17,9 +21,13 @@
 {{- $caption := .Get "caption" | default "" -}}
 {{- $width := .Get "width" | default 800 -}}
 {{- $class := .Get "class" | default "" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- if not (in (slice "lazy" "eager") $loading) -}}
+  {{- errorf "figure: loading deve essere \"lazy\" o \"eager\", non %q (%s)" $loading .Position -}}
+{{- end -}}
 
 <figure class="figure{{ with $class }} {{ . }}{{ end }}">
-  {{ partial "img.html" (dict "src" $src "alt" $alt "width" $width) }}
+  {{ partial "img.html" (dict "src" $src "alt" $alt "width" $width "loading" $loading) }}
   {{- with $caption }}
   <figcaption>{{ . }}</figcaption>
   {{- end }}

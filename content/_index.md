@@ -1,5 +1,6 @@
 ---
 title: "Luccalug - Lucca Linux User Group"
+description: "Il Luccalug è il Linux User Group di Lucca: ogni lunedì sera al Foro Boario parliamo di GNU/Linux, software libero e tecnologie aperte. Aperto a tutti."
 ---
 
 Benvenuti nel sito del **Luccalug**, il Linux User Group della provincia di Lucca!

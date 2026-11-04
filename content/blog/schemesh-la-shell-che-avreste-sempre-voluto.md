@@ -8,7 +8,7 @@ description: "Serata a tema con Max su schemesh, la shell nata dalla fusione di 
 image: "/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh.jpg"
 ---
 
-{{< figure src="images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh.jpg" alt="Locandina della serata Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)" >}}
+{{< figure loading="eager" src="images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh.jpg" alt="Locandina della serata Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)" >}}
 
 {{< note type="warning" >}}
 **Serata rimandata!** A causa di un evento che occuperà il Foro Boario per tutta la settimana, la serata su schemesh è spostata da lunedì 12 ottobre a **lunedì 19 ottobre**, sempre alle 21:00. La data riportata sulla locandina non è più valida.

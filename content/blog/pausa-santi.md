@@ -3,7 +3,7 @@ title: "Pausa per i Santi"
 slug: "pausa-santi"
 date: 2016-10-25
 author: "Il Direttivo"
-tags: ["avvisi"]
+tags: ["news"]
 description: "Avviso: nessuna riunione lunedì 31 ottobre per il ponte di Ognissanti. Appuntamento al 7 novembre."
 ---
 

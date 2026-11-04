@@ -1,5 +1,6 @@
 ---
 title: "Accordi"
+description: "Accordi e convenzioni stipulati dal Luccalug con enti e altre organizzazioni."
 weight: 4
 ---
 

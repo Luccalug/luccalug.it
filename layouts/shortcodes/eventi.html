@@ -1,4 +1,17 @@
-{{- with .Page.Params.events -}}
+{{- /*
+  Upcoming events table, from the "events" list in the page front matter.
+  Only events from the build day onwards are shown: the site is rebuilt
+  every night by the CI schedule, so past events drop off on their own.
+  The iCal output (single.ical.ics) keeps all events.
+*/ -}}
+{{- $oggi := now.Format "2006-01-02" -}}
+{{- $prossimi := slice -}}
+{{- range .Page.Params.events -}}
+  {{- if ge ((time .date).Format "2006-01-02") $oggi -}}
+    {{- $prossimi = $prossimi | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- with $prossimi -}}
 <table>
   <thead>
     <tr>
@@ -18,4 +31,6 @@
     {{- end }}
   </tbody>
 </table>
+{{- else -}}
+<p>Al momento non ci sono altri eventi in calendario: segui il blog o il gruppo Telegram per le prossime date.</p>
 {{- end -}}

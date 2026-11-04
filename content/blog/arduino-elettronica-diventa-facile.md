@@ -9,7 +9,7 @@ description: "Conferenza di presentazione di Arduino con esempi dal vivo: sabato
 
 {{< evento titolo="Arduino, l'elettronica diventa facile!" data="2012-05-12" luogo="Sede del LuccaLUG, Capannori (Lucca)" descrizione="Conferenza di presentazione del progetto Arduino con esempi di applicazione dal vivo. Dalle ore 16:00 alle ore 18:00." >}}
 
-{{< figure src="images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png" alt="Locandina Arduino, l'elettronica diventa facile" caption="Sabato 12 maggio 2012 - conferenza Arduino al LuccaLUG" >}}
+{{< figure loading="eager" src="images/blog/arduino-elettronica-diventa-facile/eventoarduino2.png" alt="Locandina Arduino, l'elettronica diventa facile" caption="Sabato 12 maggio 2012 - conferenza Arduino al LuccaLUG" >}}
 
 Sabato **12 maggio** presso la sede del LuccaLUG (Centro Giovani di Capannori), Matteo terrà una conferenza di presentazione del progetto **Arduino** mostrando esempi di applicazione dal vivo.
 

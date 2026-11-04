@@ -2,7 +2,7 @@
 title: "Guida alla prima serata"
 date: 2026-03-19
 author: "Il Direttivo"
-tags: ["guida", "community"]
+tags: ["guide", "community"]
 description: "Tutto quello che devi sapere per venire al tuo primo incontro del Luccalug"
 ---
 

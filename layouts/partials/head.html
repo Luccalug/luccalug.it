@@ -1,23 +1,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/silkscreen-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/vt323-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-{{- $title := cond .IsHome .Site.Title (printf "%s - %s" .Title .Site.Title) -}}
-{{- $ogTitle := cond .IsHome .Site.Title .Title -}}
+{{- $pageTitle := partial "page-title.html" . -}}
 {{- $siteName := .Site.Params.shortTitle | default .Site.Title -}}
-{{- $description := cond (ne .Description "") .Description .Site.Params.description -}}
-{{- $image := "" -}}
-{{- $ogImageRes := false -}}
-{{- if isset .Params "image" -}}
-  {{- $image = .Params.image | absURL -}}
-{{- else -}}
-  {{- with resources.Get "images/social-card.png" -}}
-    {{- $ogImageRes = .Fill "1200x630 Center" -}}
-    {{- $image = $ogImageRes.Permalink -}}
-  {{- end -}}
+{{- /* Short suffix keeps titles within ~60 characters; the home keeps the full name. */ -}}
+{{- $docTitle := cond (eq .Kind "term") (printf "Tag: %s" $pageTitle) $pageTitle -}}
+{{- $title := cond .IsHome .Site.Title (printf "%s - %s" $docTitle $siteName) -}}
+{{- $ogTitle := cond .IsHome .Site.Title $pageTitle -}}
+{{- $description := .Description -}}
+{{- if and (not $description) (eq .Kind "term") -}}
+  {{- $description = printf "Gli articoli del blog del Luccalug con il tag «%s»." $pageTitle -}}
 {{- end -}}
+{{- $description = $description | default .Site.Params.description -}}
+{{- $ogImageRes := partial "og-image.html" . -}}
+{{- $image := "" -}}
+{{- with $ogImageRes }}{{ $image = .Permalink }}{{ else }}{{ with $.Params.image }}{{ $image = . | absURL }}{{ end }}{{ end -}}
 {{- $ogSquare := false -}}
 {{- with resources.Get "images/squared-logo.png" -}}
   {{- $ogSquare = . -}}
@@ -28,7 +27,6 @@
 <!-- Open Graph -->
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $description }}">
-<meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ cond (and (eq .Section "blog") .IsPage) "article" "website" }}">
 <meta property="og:site_name" content="{{ $siteName }}">
 <meta property="og:locale" content="it_IT">
@@ -68,9 +66,6 @@
 {{- end }}
 {{- end }}
 
-<!-- Canonical URL -->
-<link rel="canonical" href="{{ .Permalink }}">
-
 <meta name="theme-color" content="#1e1e1e" id="theme-color-meta">
 <link rel="icon" type="image/png" href="/images/luccalug-favicon.png">
 <link rel="apple-touch-icon" href="/images/luccalug-favicon.png">
@@ -79,14 +74,17 @@
 <script>
 (function(){
   var d=document.documentElement;
-  var m=localStorage.getItem('luccalug-mode')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
-  var s=localStorage.getItem('luccalug-scheme')||'default';
+  // localStorage can throw (storage blocked, some private modes): fall back to the defaults.
+  function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+  var m=get('luccalug-mode')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+  var s=get('luccalug-scheme')||'default';
   if(s==='ubuntu')s='default';
   d.setAttribute('data-mode',m);
   if(s&&s!=='default')d.setAttribute('data-scheme',s);
   var bg={dark:{default:'#1e1e1e',fedora:'#181e2e',opensuse:'#182418',arch:'#1a1a24',debian:'#2a1620'},light:{default:'#fdf4f0',fedora:'#f0f4fa',opensuse:'#f2f8ee',arch:'#f0f6fa',debian:'#faf0f2'}};
   var tc=document.getElementById('theme-color-meta');
   if(tc&&bg[m])tc.content=bg[m][s]||bg[m]['default'];
+  if(get('luccalug-marquee')==='paused')d.setAttribute('data-marquee','paused');
 })();
 </script>
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}

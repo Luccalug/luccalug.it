@@ -9,13 +9,13 @@ description: "Resoconto dello workshop gratuito sulla stampa 3D organizzato da L
 
 Si è concluso con grande successo lo workshop **"Stampare Tutto, Stampare Tutti"**, tenutosi venerdì 19 luglio presso il [Polo Tecnologico Lucchese](http://www.polotecnologicolucchese.it/), organizzato da LuccaLUG e [Multiverso](http://www.multiverso.biz/).
 
-{{< figure src="images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg" alt="Locandina del workshop Stampare tutto stampare tutti" caption="La locandina del workshop" >}}
+{{< figure loading="eager" src="images/blog/stampare-tutto-stampare-tutti/multiverso-ws-locandina.jpg" alt="Locandina del workshop Stampare tutto stampare tutti" caption="La locandina del workshop" >}}
 
 ## Il workshop
 
 Inizialmente Antonio Ardiccioni di Multiverso ha presentato il coworking e Fabio Angeli di Genau ha presentato le due successive conferenze.
 
-[Stefano Giovacchini](http://disegnodesign.com/), decoratore, designer e attuale presidente del LuccaLUG, ha fatto una presentazione sulla stampa 3D come opportunità per designers e makers che vogliono fare prototipi a basso costo delle loro creazioni, sottolineando l'importanza e i vantaggi offerti dall'utilizzo di stampanti [open hardware](http://it.wikipedia.org/wiki/Open_hardware) e di software [open source](http://it.wikipedia.org/wiki/Open_source).
+[Stefano Giovacchini](https://web.archive.org/web/20130801115758/http://disegnodesign.com/), decoratore, designer e attuale presidente del LuccaLUG, ha fatto una presentazione sulla stampa 3D come opportunità per designers e makers che vogliono fare prototipi a basso costo delle loro creazioni, sottolineando l'importanza e i vantaggi offerti dall'utilizzo di stampanti [open hardware](http://it.wikipedia.org/wiki/Open_hardware) e di software [open source](http://it.wikipedia.org/wiki/Open_source).
 
 Successivamente è intervenuto [Matteo Lucchesi](http://matteo.luccalug.it/), fondatore e primo presidente del LuccaLUG. Matteo ha parlato della stampa 3D da un punto di vista tecnico, descrivendo i meccanismi di base dell'estrusione e il funzionamento di una stampante 3D.
 

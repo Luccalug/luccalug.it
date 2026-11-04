@@ -1,8 +1,12 @@
 # Hugo output
 public/
 
-# Hugo cache
+# Hugo cache and lock file
 resources/_gen/
+.hugo_build.lock
+
+# Local Claude Code settings
+.claude/settings.local.json
 
 # OS
 .DS_Store
@@ -18,6 +22,9 @@ Thumbs.db
 # Logs
 *.log
 nohup.out
+
+# Node (cspell Italian dictionary, installed in CI or locally)
+node_modules/
 
 # Misc
 *.bak

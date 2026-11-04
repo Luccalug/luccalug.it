@@ -1,5 +1,6 @@
 ---
 title: "I gestori di pacchetti"
+aliases: ["/post/i-gestori-di-pacchetti/"]
 slug: "i-gestori-di-pacchetti"
 date: 2020-01-21
 author: "Claudio"
@@ -7,7 +8,7 @@ tags: ["guide", "package-manager"]
 description: "Un'introduzione ai più comuni package manager delle distribuzioni GNU/Linux: formati, strumenti e comandi principali."
 ---
 
-{{< figure src="images/blog/i-gestori-di-pacchetti/package.png" alt="Illustrazione di pacchetti software" caption="I gestori di pacchetti Linux" >}}
+{{< figure loading="eager" src="images/blog/i-gestori-di-pacchetti/package.png" alt="Illustrazione di pacchetti software" caption="I gestori di pacchetti Linux" >}}
 
 Un'introduzione ai più comuni package manager
 
@@ -47,7 +48,7 @@ La scelta tra interfaccia grafica o linea di comando è sicuramente influenzata 
 
 I gestori pacchetti recuperano i pacchetti dai repository, ovvero server su Internet appositamente creati e contenenti i pacchetti, suddivisi per versione della distribuzione e architettura del sistema. Normalmente, i repository sono preconfigurati in fase di installazione, ma l'utente è libero di modificarli o di aggiungerne di personalizzati, così da poter installare altri pacchetti che la distribuzione non mette a disposizione. È bene tener presente che l'aggiunta di repository esterni deve sempre essere fatta con molta cautela, in quanto i rischi sono molteplici: dall'installazione di pacchetti esterni possono derivare sia l'instabilità del sistema che conflitti di versioni (nel caso in cui sul repository esterno siano presenti pacchetti in comune con quelli di base) oppure, nel peggiore dei casi, l'installazione di pacchetti malevoli, se il repository non è fidato.
 
-Alcuni tra i repository più noti forniscono chiavi per la verifica delle firme dei pacchetti, proprio come quelli dei repository ufficiali. È, quindi, buona norma documentarsi su come abilitare correttamente tali repository e su come abilitarne la verifica. Tra i repository non ufficiali più famosi ci sono [EPEL (Red Hat/CentOS)](https://fedoraproject.org/wiki/EPEL), [RepoForge](http://repoforge.org/) (ex RPMForge per Red Hat, CentOS, ecc..), [repo-ck](http://repo-ck.com) (ArchLinux), i [Repository di Google](https://www.google.com/linuxrepositories) per le proprie app come Chrome, Earth e molti altri ancora.
+Alcuni tra i repository più noti forniscono chiavi per la verifica delle firme dei pacchetti, proprio come quelli dei repository ufficiali. È, quindi, buona norma documentarsi su come abilitare correttamente tali repository e su come abilitarne la verifica. Tra i repository non ufficiali più famosi ci sono [EPEL (Red Hat/CentOS)](https://fedoraproject.org/wiki/EPEL), [RepoForge](http://repoforge.org/) (ex RPMForge per Red Hat, CentOS, ecc..), [repo-ck (copia archiviata)](https://web.archive.org/web/20200221123525/http://repo-ck.com/) (ArchLinux), i [Repository di Google](https://www.google.com/linuxrepositories) per le proprie app come Chrome, Earth e molti altri ancora.
 
 ## Quali sono, dunque, le funzioni dei gestori di pacchetti?
 
@@ -301,11 +302,11 @@ apt-get clean
 
 ## Link utili
 
-- [ArchLinux Wiki - pacman](https://wiki.archlinux.org/index.php/Pacman)
-- [The Debian GNU/Linux FAQ - Capitolo 8 - Gli strumenti di gestione dei pacchetti Debian](https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.it.html)
-- [CentOS Wiki - RPM](https://wiki.centos.org/PackageManagement/Rpm) (contiene altri link molto utili)
-- [Managing Software with yum](https://www.centos.org/docs/4/html/yum/)
-- [CentOS Wiki - Yum and RPM tricks](https://wiki.centos.org/TipsAndTricks/YumAndRPM)
+- [ArchLinux Wiki - pacman](https://wiki.archlinux.org/title/Pacman)
+- [The Debian GNU/Linux FAQ - Capitolo 8 - Gli strumenti di gestione dei pacchetti Debian](https://www.debian.org/doc/manuals/debian-faq/pkgtools.it.html)
+- [CentOS Wiki - RPM (copia archiviata)](https://web.archive.org/web/20191119200646/https://wiki.centos.org/PackageManagement/Rpm) (contiene altri link molto utili)
+- [Managing Software with yum (copia archiviata)](https://web.archive.org/web/20131211170352/http://www.centos.org/docs/4/html/yum/)
+- [CentOS Wiki - Yum and RPM tricks (copia archiviata)](https://web.archive.org/web/20181108194810/https://wiki.centos.org/TipsAndTricks/YumAndRPM)
 
 Infine, ricordate sempre che il terminale vi è amico e se avete bisogno di informazioni su un comando potete sempre utilizzare il comando `man`:
 

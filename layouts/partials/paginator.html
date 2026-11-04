@@ -1,0 +1,13 @@
+{{- /*
+  Returns the paginator of a list page. It is the single place that decides
+  what is paginated, because the list templates and the "canonical" block
+  (rendered earlier, in <head>) must paginate the same sequence: Hugo builds
+  the paginator once per page, on the first call.
+
+  Usage: {{ $paginator := partial "paginator.html" . }}
+*/ -}}
+{{- $pages := .Pages -}}
+{{- if eq .Section "blog" -}}
+  {{- $pages = .Pages.ByDate.Reverse -}}
+{{- end -}}
+{{- return .Paginate $pages -}}

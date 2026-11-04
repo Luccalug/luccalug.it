@@ -1,5 +1,6 @@
 ---
 title: "Luccalug Reboot"
+aliases: ["/post/luccalug-reboot/"]
 slug: "luccalug-reboot"
 date: 2020-08-21
 author: "Il Direttivo"
@@ -7,7 +8,7 @@ tags: ["news"]
 description: "Il Luccalug riparte dopo la quarantena: sede sanificata, mascherine disponibili e serate a tema in programma da settembre."
 ---
 
-{{< figure src="images/blog/luccalug-reboot/reboot.png" alt="Luccalug Reboot" caption="Luccalug riparte!" >}}
+{{< figure loading="eager" src="images/blog/luccalug-reboot/reboot.png" alt="Luccalug Reboot" caption="Luccalug riparte!" >}}
 
 Luccalug riparte dopo la quarantena in totale sicurezza!
 

@@ -1,6 +1,7 @@
 ---
 title: "Chi Siamo"
-description: "Scopri il Luccalug, il Linux User Group di Lucca"
+aliases: ["/associazione/", "/attività/"]
+description: "Il Luccalug è l'associazione degli appassionati di GNU/Linux e software libero della provincia di Lucca: chi siamo, dove trovarci e come partecipare."
 ---
 
 ## 🐧 Chi Siamo

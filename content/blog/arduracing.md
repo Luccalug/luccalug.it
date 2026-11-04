@@ -1,5 +1,6 @@
 ---
 title: "Arduracing"
+aliases: ["/post/arduracing/"]
 slug: "arduracing"
 date: 2020-01-21
 author: "Il Direttivo"

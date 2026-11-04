@@ -55,6 +55,7 @@
       width="{{ $small.Width }}"
       height="{{ $small.Height }}"
       loading="{{ $loading }}"
+      {{- if eq $loading "eager" }} fetchpriority="high"{{ end }}
       decoding="async"
       {{- with $class }} class="{{ . }}"{{ end }}>
   </picture>

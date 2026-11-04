@@ -1,5 +1,6 @@
 ---
 title: "Hello Web"
+aliases: ["/post/hello-web/"]
 slug: "hello-web"
 date: 2020-01-20
 author: "Il Direttivo"
@@ -7,7 +8,7 @@ tags: ["news"]
 description: "Il sito del Luccalug si rinnova: da Jekyll a Hugo, e nuovi incontri in programma per il 2020."
 ---
 
-{{< figure src="images/blog/hello-web/tux-hacking.jpg" alt="Tux che lavora al computer" caption="Hello Web!" >}}
+{{< figure loading="eager" src="images/blog/hello-web/tux-hacking.jpg" alt="Tux che lavora al computer" caption="Hello Web!" >}}
 
 Sito tutto nuovo!
 

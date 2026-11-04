@@ -3,11 +3,12 @@ defaultContentLanguage = "it"
 title = "Luccalug - Lucca Linux User Group"
 enableRobotsTXT = true
 enableGitInfo = true
+timeZone = "Europe/Rome"
 
 [languages]
   [languages.it]
     label = "Italiano"
-    locale = "it_IT"
+    locale = "it-IT"
     weight = 1
 
 [pagination]
@@ -22,7 +23,7 @@ enableGitInfo = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
@@ -75,29 +76,29 @@ enableGitInfo = true
 [menus]
   [[menus.main]]
     name = "Home"
-    url = "/"
+    pageRef = "/"
     weight = 1
   [[menus.main]]
     name = "Chi siamo"
-    url = "/about/"
+    pageRef = "/about"
     weight = 2
   [[menus.main]]
     name = "Blog"
-    url = "/blog/"
+    pageRef = "/blog"
     weight = 3
   [[menus.main]]
     name = "Archivio"
-    url = "/archivio/"
+    pageRef = "/archivio"
     weight = 4
   [[menus.main]]
     name = "Calendario"
-    url = "/calendario/"
+    pageRef = "/calendario"
     weight = 5
   [[menus.main]]
     name = "Linux Day"
-    url = "/linux-day/"
+    pageRef = "/linux-day"
     weight = 6
   [[menus.main]]
     name = "Contatti"
-    url = "/contatti/"
+    pageRef = "/contatti"
     weight = 7

@@ -1,8 +1,9 @@
 ---
 title: "Benvenuti sul nuovo sito del Luccalug!"
+description: "Il nuovo sito del Luccalug, ispirato allo spirito del vecchio web: blog, archivio dei documenti dell'associazione e tutte le informazioni per partecipare."
 date: 2026-03-17
 author: "Il Direttivo"
-tags: ["annuncio", "sito"]
+tags: ["news", "sito"]
 ---
 
 Siamo felici di annunciare il lancio del nuovo sito del **Luccalug**!

@@ -4,6 +4,9 @@ date: 1997-01-01
 author: "Assemblea dei Soci"
 status: "vigente"
 weight: 1
+# In bozza finché non viene sostituito con il testo approvato dall'assemblea
+# (data 1997-01-01 e articoli generici: probabile segnaposto della migrazione 2026).
+draft: true
 ---
 
 ## Art. 1 - Denominazione e sede

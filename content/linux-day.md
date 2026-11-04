@@ -1,6 +1,7 @@
 ---
 title: "Linux Day"
-description: "Il Linux Day 2026 a Prato: sabato 24 ottobre, ingresso gratuito, 18 talk su due tracce. Il programma completo è online."
+aliases: ["/linuxday/", "/linuxday/2016/", "/linuxday/2019/"]
+description: "Il Linux Day, la giornata italiana del software libero: l'edizione 2026 si è tenuta sabato 24 ottobre al PRISMA di Prato, con 18 talk su due tracce."
 image: "/images/linux-day/linux-day-2026-programma.png"
 ---
 
@@ -12,20 +13,20 @@ Il Luccalug partecipa attivamente al Linux Day con talk, workshop e dimostrazion
 
 ## 📅 Linux Day 2026
 
-{{< figure src="images/linux-day/linux-day-2026-programma.png" alt="Linux Day Prato 2026 - Programma online. Prisma Prato, ingresso libero, sabato 24 ottobre" caption="Linux Day Prato 2026: il programma è online!" >}}
+{{< figure loading="eager" src="images/linux-day/linux-day-2026-programma.png" alt="Linux Day Prato 2026 - Programma online. Prisma Prato, ingresso libero, sabato 24 ottobre" caption="La locandina del Linux Day Prato 2026" >}}
 
-Il Luccalug torna a unire le forze con **[GOLEM](https://golem.linux.it/)**, **[GULLi](https://linux.livorno.it/)** e **[PLUG](https://prato.linux.it/)** per organizzare una giornata di talk, laboratori e comunità dedicata a Linux e alla cultura libera.
+Per l'edizione 2026 il Luccalug ha unito le forze con **[GOLEM](https://golem.linux.it/)**, **[GULLi](https://linux.livorno.it/)** e **[PLUG](https://prato.linux.it/)** per organizzare una giornata di talk, laboratori e comunità dedicata a Linux e alla cultura libera.
 
 - **Data**: sabato 24 ottobre 2026, dalle 10:00 alle 18:30
 - **Luogo**: [PRISMA Prato](https://www.prismaprato.it/), via Galcianese 34, Prato
 - **Ingresso**: gratuito e aperto a tutti
 - **Programma**: 18 talk su due tracce parallele, generale e tecnica
 
-{{< link-esterno url="https://day.linux.prato.it/#schedule" testo="Scopri il programma completo" >}}
+{{< link-esterno url="https://day.linux.prato.it/#schedule" testo="Il programma completo sul sito dell'evento" >}}
 
 ### 🎤 Il programma
 
-Due sale per un'intera giornata: la **traccia generale**, aperta a chiunque sia curioso anche senza competenze tecniche, e la **traccia tecnica**, per chi vuole mettere le mani sul terminale.
+Due sale per un'intera giornata: la **traccia generale**, pensata per chiunque fosse curioso anche senza competenze tecniche, e la **traccia tecnica**, per chi voleva mettere le mani sul terminale.
 
 {{< tabs >}}
 {{< tab name="Traccia generale" >}}
@@ -74,14 +75,17 @@ Due sale per un'intera giornata: la **traccia generale**, aperta a chiunque sia 
 {{< /tab >}}
 {{< /tabs >}}
 
-Tra i relatori c'è anche un volto di casa: **Matteo Martinelli**, vicepresidente del Luccalug, parlerà di sovranità digitale e dipendenza dai grandi cloud provider. E ritroveremo **Zanna**, già ospite di una nostra [serata a tema]({{< relref "blog/code-shibari-programmando-lo-spazio-negativo.md" >}}), con il suo self-hosting casalingo da 150 euro.
+Tra i relatori in programma c'era anche un volto di casa: **Matteo Martinelli**, vicepresidente del Luccalug, con un talk su sovranità digitale e dipendenza dai grandi cloud provider. E **Zanna**, già ospite di una nostra [serata a tema]({{< relref "blog/code-shibari-programmando-lo-spazio-negativo.md" >}}), con il suo self-hosting casalingo da 150 euro.
 
 Le descrizioni dei talk e le informazioni sui relatori sono sul [sito ufficiale](https://day.linux.prato.it/#speakers).
+
+Il prossimo Linux Day si terrà come sempre il quarto sabato di ottobre: per sapere dove, segui il [blog]({{< relref "blog" >}}) o il nostro [gruppo Telegram](https://t.me/luccalug).
 
 ## 📚 Edizioni Passate
 
 | Edizione | Slogan | Dove | Note |
 | ---------- | -------- | ------ | ------ |
+| 2026 | - | PRISMA, Prato | Edizione congiunta con GOLEM, GULLi e PLUG |
 | 2025 | - | PRISMA, Prato | Edizione congiunta con PLUG, FLUG e GOLEM |
 | 2019 | "Ai,Ai,Ai!" | Foro Boario, Lucca | Tavoli tematici e dimostrazioni |
 | 2016 | "1+1=10" | Polo Tecnologico lucchese | In collaborazione con Coworking Multiverso e CoderDojo Lucca |

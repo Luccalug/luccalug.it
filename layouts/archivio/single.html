@@ -17,7 +17,7 @@
     <h1>{{ .Title }}</h1>
 
     {{/* Document metadata */}}
-    {{ if or .Params.author .Params.status .Params.date }}
+    {{ if or .Params.author .Params.status (not .Date.IsZero) }}
     <dl class="doc-meta">
       {{ with .Params.status }}
         <dt>Stato</dt>

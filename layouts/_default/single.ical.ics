@@ -9,7 +9,8 @@ X-WR-TIMEZONE:Europe/Rome
 {{ $start := time.AsTime (printf "%sT%s:00Z" .date (.time | default "00:00")) -}}
 {{ $end := $start.Add (time.ParseDuration (.duration | default "2h")) -}}
 BEGIN:VEVENT
-DTSTAMP:{{ now.UTC.Format "20060102T150405Z" }}
+{{- /* Last change of the calendar page, not "now": keeps the file identical between builds. */}}
+DTSTAMP:{{ $.Lastmod.UTC.Format "20060102T150405Z" }}
 DTSTART:{{ $start.Format "20060102T150405" }}
 DTEND:{{ $end.Format "20060102T150405" }}
 SUMMARY:{{ partial "ical-escape.html" .summary }}

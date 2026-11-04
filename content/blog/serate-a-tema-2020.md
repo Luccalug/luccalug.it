@@ -1,13 +1,14 @@
 ---
 title: "Serate a tema 2020"
+aliases: ["/post/serateatema2020/"]
 slug: "serate-a-tema-2020"
 date: 2020-01-21
 author: "Il Direttivo"
-tags: ["serate-a-tema", "eventi"]
+tags: ["serata-a-tema", "eventi"]
 description: "Il programma delle serate a tema di inizio 2020, annullate a causa del Coronavirus: Linux, CSS Grid, Blender e SvelteJS."
 ---
 
-{{< figure src="images/blog/serate-a-tema-2020/serateatema2020.jpg" alt="Locandina serate a tema 2020" caption="Serate a tema Luccalug 2020" >}}
+{{< figure loading="eager" src="images/blog/serate-a-tema-2020/serateatema2020.jpg" alt="Locandina serate a tema 2020" caption="Serate a tema Luccalug 2020" >}}
 
 {{< note type="danger" >}}
 EVENTI ANNULLATI NEL RISPETTO DELLE NUOVE DIRETTIVE DEL COMUNE RELATIVE AL CORONAVIRUS. LE SERATE A TEMA SONO RIMANDATE FINO A DATA DA DESTINARSI.

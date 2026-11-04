@@ -22,9 +22,18 @@
   var dropdown = document.getElementById('scheme-dropdown');
   var schemeBtns = document.querySelectorAll('.scheme-btn');
 
-  function setMode(m) {
+  // Preferences are saved only when the visitor makes a choice (see /privacy/),
+  // and storage errors (blocked storage, private modes) must not break the UI.
+  function save(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+  function load(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+
+  function setMode(m, persist) {
     root.setAttribute('data-mode', m);
-    localStorage.setItem('luccalug-mode', m);
+    if (persist) save('luccalug-mode', m);
     modeBtn.textContent = m === 'dark' ? '🌙' : '☀️';
     modeBtn.setAttribute('aria-label', m === 'dark' ? 'Passa a modalità chiara' : 'Passa a modalità scura');
     modeBtn.setAttribute('aria-pressed', m === 'dark' ? 'true' : 'false');
@@ -40,13 +49,13 @@
     trigger.setAttribute('aria-expanded', 'false');
   }
 
-  function setScheme(s) {
+  function setScheme(s, persist) {
     if (s === 'default') {
       root.removeAttribute('data-scheme');
     } else {
       root.setAttribute('data-scheme', s);
     }
-    localStorage.setItem('luccalug-scheme', s);
+    if (persist) save('luccalug-scheme', s);
     schemeBtns.forEach(function(b) {
       var isActive = b.getAttribute('data-s') === s;
       b.classList.toggle('active', isActive);
@@ -56,7 +65,7 @@
   }
 
   modeBtn.addEventListener('click', function() {
-    setMode(root.getAttribute('data-mode') === 'dark' ? 'light' : 'dark');
+    setMode(root.getAttribute('data-mode') === 'dark' ? 'light' : 'dark', true);
   });
 
   trigger.addEventListener('click', function(e) {
@@ -71,7 +80,9 @@
   schemeBtns.forEach(function(b) {
     b.addEventListener('click', function(e) {
       e.stopPropagation();
-      setScheme(b.getAttribute('data-s'));
+      setScheme(b.getAttribute('data-s'), true);
+      // The dropdown closes: keep focus on a visible control.
+      trigger.focus();
     });
   });
 
@@ -88,9 +99,9 @@
 
   // Sync UI with the state already applied by the anti-flash script in <head>
   var curMode = root.getAttribute('data-mode') || 'dark';
-  var curScheme = localStorage.getItem('luccalug-scheme') || 'default';
+  var curScheme = load('luccalug-scheme') || 'default';
   if (curScheme === 'ubuntu') curScheme = 'default';
-  setMode(curMode);
-  setScheme(curScheme);
+  setMode(curMode, false);
+  setScheme(curScheme, false);
 })();
 </script>
