@@ -3,8 +3,8 @@ title: "Project Gooseberry - il primo, vero open movie della storia"
 slug: "project-gooseberry"
 date: 2014-04-11
 author: "Il Direttivo"
-tags: ["software-libero", "blender", "open-movie"]
-description: "La Blender Foundation ha lanciato una campagna di crowdfunding per realizzare il primo vero film d'animazione open movie della storia, con Blender e licenza libera."
+tags: ["software-libero", "blender"]
+description: "La Blender Foundation lancia un crowdfunding per il primo lungometraggio open movie della storia: 90 minuti d'animazione fatti con Blender, con licenza libera."
 ---
 
 {{< figure loading="eager" src="images/blog/project-gooseberry/gooseberry-project.png" alt="Project Gooseberry - il primo open movie della storia" caption="Project Gooseberry: il primo film d'animazione completamente libero" >}}

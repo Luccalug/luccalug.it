@@ -1,5 +1,6 @@
 ---
 title: "Contatti"
+lastmod: 2026-05-29
 description: "Come contattare il Luccalug"
 ---
 

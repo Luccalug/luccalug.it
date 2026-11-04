@@ -1,0 +1,16 @@
+{{- /*
+  Headings in Markdown content.
+
+  Titles like "## 📬 Scrivici":
+  - the emoji is hidden from screen readers (it is decoration);
+  - the id is "scrivici", without the leading "-" Hugo derives from the emoji.
+
+  The table of contents (archivio/single.html) keeps Hugo's own ids, so
+  headings in archive documents should not start with an emoji.
+*/ -}}
+{{- $id := .Anchor | strings.TrimLeft "-" -}}
+{{- $text := .Text | replaceRE `([\p{So}\x{FE0F}\x{200D}]+)` `<span aria-hidden="true">$1</span>` -}}
+<h{{ .Level }} id="{{ $id }}"
+  {{- range $k, $v := .Attributes }}{{ if ne $k "id" }} {{ $k }}="{{ $v }}"{{ end }}{{ end }}>
+  {{- $text | safeHTML -}}
+</h{{ .Level }}>

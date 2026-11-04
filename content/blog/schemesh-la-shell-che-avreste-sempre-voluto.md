@@ -2,9 +2,10 @@
 title: "Schemesh: la shell che avreste sempre voluto (ma non lo sapevate)"
 slug: "schemesh-la-shell-che-avreste-sempre-voluto"
 date: 2026-09-24
+lastmod: 2026-10-12
 author: "Il Direttivo"
 tags: ["serata-a-tema", "shell", "scheme", "lisp", "programmazione"]
-description: "Serata a tema con Max su schemesh, la shell nata dalla fusione di una shell Unix con un REPL Lisp: sintassi duale shell/scheme, gestione dei job, scripting e pipeline strutturate."
+description: "Serata a tema con Max su schemesh, shell Unix e REPL Lisp in uno: sintassi shell/Scheme, gestione dei job, scripting e pipeline strutturate."
 image: "/images/blog/schemesh-la-shell-che-avreste-sempre-voluto/locandina-schemesh.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "Le licenze Creative Commons - Pillole di Free Software"
 slug: "licenze-creative-commons"
 date: 2014-03-08
 author: "Il Direttivo"
-tags: ["pillole-di-free-software", "licenze", "software-libero"]
+tags: ["pillole-di-free-software", "software-libero"]
 description: "Prima serata del ciclo Pillole di Free Software 2014: Davide Francesconi illustra le principali licenze libere con particolare focus sulle Creative Commons."
 ---
 

@@ -1,0 +1,36 @@
+{{- /*
+  Single gallery image - must be used inside {{< gallery >}}.
+
+  Usage:
+    {{< gallery-img src="/images/photo.jpg" alt="Description" >}}
+
+  Parameters:
+    src - path to the image, in assets/ (processed) or static/ (used as is) (required)
+    alt - alt text (required)
+
+  Images in assets/ become a 400px WebP thumbnail and a WebP of at most 1600px
+  for the viewer; the original file is not published.
+*/ -}}
+
+{{- $src := .Get "src" -}}
+{{- if not (isset .Params "alt") -}}
+  {{- errorf "gallery-img: manca il testo alternativo (alt) (%s)" .Position -}}
+{{- end -}}
+{{- $alt := .Get "alt" -}}
+
+{{- with resources.Get (strings.TrimPrefix "/" $src) -}}
+  {{- $thumb := . -}}
+  {{- if gt .Width 400 }}{{ $thumb = .Resize "400x webp q85" }}{{ else }}{{ $thumb = .Process "webp q85" }}{{ end -}}
+  {{- $full := . -}}
+  {{- if gt .Width 1600 }}{{ $full = .Resize "1600x webp q85" }}{{ else }}{{ $full = .Process "webp q85" }}{{ end -}}
+  <div class="gallery-item" data-gallery-src="{{ $full.RelPermalink }}" data-gallery-alt="{{ $alt }}">
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ $alt }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" decoding="async">
+  </div>
+{{- else -}}
+  {{- if not (fileExists (path.Join "static" $src)) -}}
+    {{- errorf "gallery-img: %q non trovata né in assets/ né in static/ (%s)" $src $.Position -}}
+  {{- end -}}
+  <div class="gallery-item" data-gallery-src="{{ $src }}" data-gallery-alt="{{ $alt }}">
+    <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  </div>
+{{- end -}}

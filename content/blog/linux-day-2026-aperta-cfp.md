@@ -2,8 +2,9 @@
 title: "Linux Day 2026: aperta la Call for Papers"
 slug: "linux-day-2026-aperta-cfp"
 date: 2026-07-25
+lastmod: 2026-10-18
 author: "Il Direttivo"
-tags: ["linux-day", "eventi", "call-for-papers", "software-libero"]
+tags: ["linux-day", "eventi", "software-libero"]
 description: "È aperta fino al 15 settembre la Call for Papers del Linux Day 2026 di Prato, in programma sabato 24 ottobre. Proponi il tuo talk o laboratorio!"
 image: "/images/blog/linux-day-2026-aperta-cfp/linux-day-2026-cfp.png"
 ---

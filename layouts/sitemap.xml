@@ -2,36 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- range .Data.Pages }}
-  {{- $lastmod := .Lastmod }}
-  {{- if .IsHome }}
-    {{- range .Site.RegularPages }}
-      {{- if .Lastmod.After $lastmod }}
-        {{- $lastmod = .Lastmod }}
-      {{- end }}
-    {{- end }}
-  {{- else if .IsSection }}
-    {{- range .RegularPagesRecursive }}
-      {{- if .Lastmod.After $lastmod }}
-        {{- $lastmod = .Lastmod }}
-      {{- end }}
-    {{- end }}
-  {{- else if eq .Kind "term" }}
-    {{- range .Pages }}
-      {{- if .Lastmod.After $lastmod }}
-        {{- $lastmod = .Lastmod }}
-      {{- end }}
-    {{- end }}
-  {{- else if eq .Kind "taxonomy" }}
-    {{- range .Site.RegularPages }}
-      {{- if and .Params.tags (.Lastmod.After $lastmod) }}
-        {{- $lastmod = .Lastmod }}
-      {{- end }}
-    {{- end }}
-  {{- end }}
+  {{- /* Left out: pages with "sitemap: disable: true" and pages that are not
+         indexed (see _partials/indexable.html). */}}
+  {{- if or .Sitemap.Disable (not (partial "indexable.html" .)) }}{{ continue }}{{ end }}
+  {{- /* List pages (home, sections, tags) without their own lastmod get the
+         most recent one of their pages from Hugo. */}}
   <url>
     <loc>{{ .Permalink }}</loc>
-    {{- if not $lastmod.IsZero }}
-    <lastmod>{{ $lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     {{- end }}
     {{- with .Sitemap.ChangeFreq }}
     <changefreq>{{ . }}</changefreq>

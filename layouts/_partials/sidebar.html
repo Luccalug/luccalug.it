@@ -1,6 +1,6 @@
 {{ $archivio := .Site.GetPage "/archivio" }}
 <aside class="sidebar" aria-label="Navigazione archivio">
-  <h3><span aria-hidden="true">📁 </span>Archivio</h3>
+  <p class="sidebar-title"><span aria-hidden="true">📁 </span>Archivio</p>
   <ul>
     {{ range $archivio.Sections }}
     <li>

@@ -1,5 +1,6 @@
 ---
 title: "Chi Siamo"
+lastmod: 2026-05-29
 aliases: ["/associazione/", "/attività/"]
 description: "Il Luccalug è l'associazione degli appassionati di GNU/Linux e software libero della provincia di Lucca: chi siamo, dove trovarci e come partecipare."
 ---

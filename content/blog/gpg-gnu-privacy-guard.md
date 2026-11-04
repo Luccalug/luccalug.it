@@ -3,8 +3,8 @@ title: "GPG (GNU Privacy Guard) - Pillole di Free Software"
 slug: "gpg-gnu-privacy-guard"
 date: 2014-03-19
 author: "Il Direttivo"
-tags: ["pillole-di-free-software", "sicurezza", "crittografia"]
-description: "Serata a tema sulla crittografia con GNU Privacy Guard (GPG): storia e funzionamento del software free e open source per cifrare i messaggi, tenuta da Matteo Martinelli."
+tags: ["pillole-di-free-software", "sicurezza"]
+description: "Serata a tema sulla crittografia con Matteo Martinelli: storia e funzionamento di GNU Privacy Guard (GPG), il software libero per cifrare i messaggi."
 ---
 
 {{< figure loading="eager" src="images/blog/gpg-gnu-privacy-guard/pillole-gpg.png" alt="Locandina serata GPG - Pillole di Free Software" caption="Pillole di Free Software: GPG (GNU Privacy Guard)" >}}

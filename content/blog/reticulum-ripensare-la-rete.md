@@ -4,7 +4,7 @@ slug: "reticulum-ripensare-la-rete"
 date: 2026-11-04
 author: "Il Direttivo"
 tags: ["serata-a-tema", "reti", "radio", "decentralizzazione", "software-libero"]
-description: "Serata a tema con Mugnozzo su Reticulum, lo stack di rete libero per costruire reti decentralizzate, cifrate e resilienti su radio, Wi-Fi, Ethernet, fibra e, se serve, anche Internet."
+description: "Serata a tema con Mugnozzo su Reticulum, lo stack di rete libero per reti decentralizzate, cifrate e resilienti su radio, Wi-Fi, Ethernet e anche Internet."
 image: "/images/blog/reticulum-ripensare-la-rete/locandina-reticulum.png"
 ---
 

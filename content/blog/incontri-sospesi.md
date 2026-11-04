@@ -3,7 +3,7 @@ title: "Incontri sospesi"
 slug: "incontri-sospesi"
 date: 2011-07-09
 author: "matteo"
-tags: ["luccalug"]
+tags: ["associazione"]
 description: "A causa della mancanza di volontari, gli incontri del lunedì sera sono sospesi fino a data da destinarsi."
 ---
 

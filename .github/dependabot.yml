@@ -1,0 +1,14 @@
+# Weekly PRs to update the GitHub Actions in .github/workflows/.
+# Dependabot keeps the SHA pins and updates the "# vX.Y.Z" comments too.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ci
+    # A single PR for all the actions instead of one per action.
+    groups:
+      actions:
+        patterns: ['*']

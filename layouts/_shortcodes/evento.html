@@ -1,0 +1,62 @@
+{{- /*
+  Event card with semantic date, plus Schema.org Event data for search engines.
+
+  Usage:
+    {{< evento titolo="Linux Day 2026" data="2026-10-24" luogo="Foro Boario, Lucca - ore 21:00" >}}
+
+  Parameters:
+    titolo      - event title (required)
+    data        - date in YYYY-MM-DD format (required)
+    luogo       - location (required). A time after " - " ("… - ore 21:00",
+                  "… - dalle 10:00 alle 18:30") becomes the start (and end)
+                  time in the structured data; without it only the date is used.
+    descrizione - short description (optional)
+    url         - link for more info (optional)
+*/ -}}
+
+{{- $titolo := .Get "titolo" -}}
+{{- $data := .Get "data" -}}
+{{- $luogo := .Get "luogo" -}}
+{{- $descrizione := .Get "descrizione" | default "" -}}
+{{- $url := .Get "url" | default "" -}}
+
+<div class="evento-card">
+  <div class="evento-date">
+    <time datetime="{{ $data }}">{{ time.Format "2 January 2006" $data }}</time>
+  </div>
+  <div class="evento-details">
+    <div class="evento-titolo">{{ $titolo }}</div>
+    <div class="evento-luogo"><span aria-hidden="true">📍</span> {{ $luogo }}</div>
+    {{- with $descrizione }}
+    <div class="evento-descrizione">{{ . }}</div>
+    {{- end }}
+    {{- with $url }}
+    <a class="evento-link" href="{{ . }}">Maggiori informazioni &rarr;</a>
+    {{- end }}
+  </div>
+</div>
+
+{{- /* Structured data: "Place - [dalle] [ore] HH:MM [alle [ore] HH:MM]" */ -}}
+{{- $place := $luogo -}}
+{{- $start := $data -}}
+{{- $end := "" -}}
+{{- $re := `^(.+?)\s+-\s+(?:dalle\s+)?(?:ore\s+)?(\d{1,2}:\d{2})(?:\s+alle\s+(?:ore\s+)?(\d{1,2}:\d{2}))?` -}}
+{{- with index (findRESubmatch $re $luogo 1) 0 -}}
+  {{- $place = index . 1 -}}
+  {{- $start = (time.AsTime (printf "%sT%05s:00" $data (index . 2)) "Europe/Rome").Format "2006-01-02T15:04:05-07:00" -}}
+  {{- with index . 3 -}}
+    {{- $end = (time.AsTime (printf "%sT%05s:00" $data .) "Europe/Rome").Format "2006-01-02T15:04:05-07:00" -}}
+  {{- end -}}
+{{- end -}}
+{{- $ld := dict
+    "@context" "https://schema.org"
+    "@type" "Event"
+    "name" $titolo
+    "startDate" $start
+    "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"
+    "location" (dict "@type" "Place" "name" $place "address" $place)
+    "url" .Page.Permalink -}}
+{{- with $end }}{{ $ld = merge $ld (dict "endDate" .) }}{{ end -}}
+{{- with $descrizione }}{{ $ld = merge $ld (dict "description" .) }}{{ end -}}
+{{- with partial "og-image.html" .Page }}{{ $ld = merge $ld (dict "image" .Permalink) }}{{ end }}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>

@@ -3,7 +3,7 @@ title: "Pillole di Free Software: Inkscape, software di disegno vettoriale"
 slug: "pillole-inkscape"
 date: 2012-02-27
 author: "mugnozzo"
-tags: ["pillole-di-free-software", "inkscape", "grafica"]
+tags: ["pillole-di-free-software", "grafica"]
 description: "Serata Pillole di Free Software dedicata a Inkscape, il programma open source per la grafica vettoriale. Appuntamento lunedì 12 marzo 2012."
 ---
 

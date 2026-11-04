@@ -1,0 +1,14 @@
+{{- /*
+  Whether search engines should index a page. Pages that return false get
+  <meta name="robots" content="noindex"> (head.html) and are left out of
+  sitemap.xml. They come back by themselves when they get more content:
+
+  - sections with no published pages yet (e.g. an empty archive section);
+  - tag pages with a single article.
+
+  Usage: {{ if partial "indexable.html" . }}
+*/ -}}
+{{- $ok := true -}}
+{{- if and .IsSection (not .RegularPagesRecursive) }}{{ $ok = false }}{{ end -}}
+{{- if and (eq .Kind "term") (lt (len .Pages) 2) }}{{ $ok = false }}{{ end -}}
+{{- return $ok -}}

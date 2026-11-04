@@ -1,0 +1,48 @@
+{{- /*
+  Image processing partial.
+
+  Usage:
+    {{ partial "img.html" (dict "src" "images/photo.jpg" "alt" "Description" "class" "my-class") }}
+
+  Parameters:
+    src      - path relative to assets/ (required: the build fails if it is missing)
+    alt      - alt text (required; "" only for a decorative image)
+    class    - CSS class (optional)
+    width    - max width in px (optional, default 800)
+    loading  - "lazy" or "eager" (optional, default "lazy")
+    position - where the image is used, for error messages (optional, e.g. .Position)
+
+  Produces a WebP <img>, resized to the max width, with a 2x variant in srcset
+  when the original is large enough. The original file is never published.
+*/ -}}
+
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $width := .width | default 800 | int -}}
+{{- $loading := .loading | default "lazy" -}}
+
+{{- with resources.Get $src -}}
+  {{- $small := . -}}
+  {{- if gt .Width $width }}{{ $small = .Resize (printf "%dx webp" $width) }}{{ else }}{{ $small = .Process "webp" }}{{ end -}}
+  {{- $large := $small -}}
+  {{- $width2x := mul $width 2 -}}
+  {{- if gt .Width $width2x }}{{ $large = .Resize (printf "%dx webp" $width2x) }}{{ else if gt .Width $width }}{{ $large = .Process "webp" }}{{ end -}}
+  <img
+    src="{{ $small.RelPermalink }}"
+    {{- if gt $large.Width $small.Width }}
+    srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w"
+    sizes="(max-width: {{ $width }}px) 100vw, {{ $width }}px"
+    {{- end }}
+    alt="{{ $alt }}"
+    width="{{ $small.Width }}"
+    height="{{ $small.Height }}"
+    loading="{{ $loading }}"
+    {{- if eq $loading "eager" }} fetchpriority="high"{{ end }}
+    decoding="async"
+    {{- with $class }} class="{{ . }}"{{ end }}>
+{{- else -}}
+  {{- $where := "" -}}
+  {{- with .position }}{{ $where = printf " (%s)" . }}{{ end -}}
+  {{- errorf "img: %q non trovata in assets/%s" $src $where -}}
+{{- end -}}

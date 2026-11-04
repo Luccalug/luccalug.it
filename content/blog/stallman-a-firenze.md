@@ -3,7 +3,7 @@ title: "Stallman a Firenze - Tecnologia digitale: libera o soggiogante?"
 slug: "stallman-a-firenze"
 date: 2013-09-30
 author: "Il Direttivo"
-tags: ["software-libero", "eventi", "gnu"]
+tags: ["software-libero", "eventi"]
 description: "Resoconto della conferenza di Richard Stallman a Firenze, all'ex Convento delle Oblate, sul tema software libero, democrazia e libertà digitale."
 ---
 

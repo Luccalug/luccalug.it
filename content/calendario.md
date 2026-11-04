@@ -1,5 +1,7 @@
 ---
 title: "Calendario"
+# Aggiornare quando si aggiungono o cambiano eventi: è anche il DTSTAMP di calendario.ics.
+lastmod: 2026-11-04
 description: "Calendario degli eventi e incontri del Luccalug"
 outputs:
   - HTML

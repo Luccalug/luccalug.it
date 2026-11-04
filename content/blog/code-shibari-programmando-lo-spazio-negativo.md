@@ -4,7 +4,7 @@ slug: "code-shibari-programmando-lo-spazio-negativo"
 date: 2026-09-07
 author: "Il Direttivo"
 tags: ["serata-a-tema", "programmazione", "sviluppo", "sicurezza", "rust"]
-description: "Serata a tema con Zanna, contributor di rustc, sul Negative Space Programming: come vincolare il codice per rendere impossibili i comportamenti indesiderati, dallo sviluppo alla produzione."
+description: "Serata a tema con Zanna, contributor di rustc, sul Negative Space Programming: vincolare il codice per rendere impossibili i comportamenti indesiderati."
 image: "/images/blog/code-shibari-programmando-lo-spazio-negativo/code-shibari.png"
 ---
 

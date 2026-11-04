@@ -2,7 +2,7 @@ baseURL = "https://luccalug.it/"
 defaultContentLanguage = "it"
 title = "Luccalug - Lucca Linux User Group"
 enableRobotsTXT = true
-enableGitInfo = true
+enableGitInfo = false
 timeZone = "Europe/Rome"
 
 [languages]
@@ -10,6 +10,12 @@ timeZone = "Europe/Rome"
     label = "Italiano"
     locale = "it-IT"
     weight = 1
+
+# Last-modified date comes from the front matter, not from git: mass commits
+# (migrations, link fixes) would otherwise mark old articles as just updated.
+# Add `lastmod: YYYY-MM-DD` only when a page's content really changes.
+[frontmatter]
+  lastmod = ["lastmod", "date"]
 
 [pagination]
   pagerSize = 10
@@ -19,6 +25,9 @@ timeZone = "Europe/Rome"
   shortTitle = "Luccalug"
   marqueeText = "★ Benvenuti su Luccalug - Lucca Linux User Group! ★ Software libero, conoscenza condivisa, pinguini felici! ★"
   visitorCounterSeed = 1337
+  # Used in the structured data (JSON-LD) of the home page.
+  email = "luccalug@protonmail.com"
+  social = ["https://t.me/luccalug"]
 
 [markup]
   [markup.goldmark]

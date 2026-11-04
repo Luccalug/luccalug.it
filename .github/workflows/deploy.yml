@@ -3,6 +3,8 @@ name: Deploy Hugo to GitHub Pages
 on:
   push:
     branches: [master]
+  # Pull requests get lint and link checks, but are never deployed.
+  pull_request:
   # Nightly rebuild: drops past events from the calendar page.
   # 03:30 UTC is 04:30/05:30 in Italy, so the UTC and Italian dates match.
   schedule:
@@ -17,18 +19,21 @@ permissions:
 env:
   HUGO_VERSION: '0.169.0'
 
+# One queue per branch or PR, so a pull request never cancels a deploy of master.
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
+# Actions are pinned to a commit SHA (version in the comment); Dependabot
+# updates both, see .github/dependabot.yml.
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
       - name: Markdown lint
-        uses: DavidAnson/markdownlint-cli2-action@v23
+        uses: DavidAnson/markdownlint-cli2-action@ded1f9488f68a970bc66ea5619e13e9b52e601cd # v23.2.0
         with:
           globs: 'content/**/*.md'
 
@@ -38,7 +43,7 @@ jobs:
         run: npm install --no-save --no-package-lock --no-audit --no-fund @cspell/dict-it-it@3.1.7
 
       - name: Spell check
-        uses: streetsidesoftware/cspell-action@v8
+        uses: streetsidesoftware/cspell-action@de2a73e963e7443969755b648a1008f77033c5b2 # v8.4.0
         with:
           files: 'content/**/*.md'
           strict: false
@@ -47,16 +52,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: peaceiris/actions-hugo@v3
+      - uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
           path: resources
           key: hugo-images-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/images/**') }}
@@ -64,28 +67,42 @@ jobs:
 
       - run: hugo --minify --baseURL "https://luccalug.it/"
 
-      - name: Link check
-        uses: lycheeverse/lychee-action@v2
+      # Internal links and #anchors, checked offline against the build: blocking.
+      # Absolute links to the site (e.g. from ref/relref) are mapped to ./public.
+      - name: Link check (internal links and anchors)
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: >-
+            --offline --include-fragments
+            --root-dir ${{ github.workspace }}/public
+            --remap '^https://luccalug\.it/(.*)$ file://${{ github.workspace }}/public/$1'
+            --index-files index.html
+            --no-progress './public/**/*.html'
+          fail: true
+
+      # External links: reported but not blocking, remote sites come and go.
+      - name: Link check (external links)
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           args: --config .lychee.toml --root-dir ./public --no-progress ./public
           fail: false
 
   deploy:
+    # Only master is published: not pull requests, not manual runs on other branches.
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: [lint, link-check]
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: peaceiris/actions-hugo@v3
+      - uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
           path: resources
           key: hugo-images-${{ env.HUGO_VERSION }}-${{ hashFiles('assets/images/**') }}
@@ -93,7 +110,7 @@ jobs:
 
       - run: hugo --minify --baseURL "https://luccalug.it/"
 
-      - uses: peaceiris/actions-gh-pages@v4
+      - uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

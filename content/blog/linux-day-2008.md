@@ -4,7 +4,7 @@ slug: "linux-day-2008"
 date: 2008-10-25
 author: "Il Direttivo"
 tags: ["linux-day", "eventi"]
-description: "Il LuccaLug organizza il Linux Day 2008 a Villa Bruguier di Capannori: conferenze, stand interattivi e pranzo a buffet per promuovere Linux e il software libero."
+description: "Il Linux Day 2008 del LuccaLug a Villa Bruguier, Capannori: conferenze, stand interattivi e pranzo a buffet per promuovere Linux e il software libero."
 ---
 
 {{< evento titolo="Linux Day 2008" data="2008-10-25" luogo="Villa Bruguier, Capannori (Lucca)" descrizione="Manifestazione nazionale per la promozione di Linux e del software libero, organizzata localmente dal LuccaLug con il patrocinio del Comune di Capannori. Dalle ore 09:00 alle ore 19:00." >}}

@@ -2,7 +2,7 @@
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="pagination" aria-label="Paginazione">
   {{ if $paginator.HasPrev }}
-    <a href="{{ $paginator.Prev.URL }}" aria-label="Pagina precedente">&laquo; Precedente</a>
+    <a href="{{ $paginator.Prev.URL }}" rel="prev"><span aria-hidden="true">&laquo;</span> Precedente</a>
   {{ end }}
   {{ range $paginator.Pagers }}
     {{ if eq . $paginator }}
@@ -12,7 +12,7 @@
     {{ end }}
   {{ end }}
   {{ if $paginator.HasNext }}
-    <a href="{{ $paginator.Next.URL }}" aria-label="Pagina successiva">Successiva &raquo;</a>
+    <a href="{{ $paginator.Next.URL }}" rel="next">Successiva <span aria-hidden="true">&raquo;</span></a>
   {{ end }}
 </nav>
 {{ end }}

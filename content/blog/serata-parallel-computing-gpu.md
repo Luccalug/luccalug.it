@@ -4,7 +4,7 @@ slug: "serata-parallel-computing-gpu"
 date: 2026-06-22
 author: "Il Direttivo"
 tags: ["serata-a-tema", "eventi", "gpu", "programmazione", "sviluppo", "intelligenza-artificiale"]
-description: "Serata dedicata al parallel computing: come sfruttare il parallelismo delle GPU per migliorare le prestazioni del software, dai fondamenti all'ottimizzazione su NVIDIA."
+description: "Serata sul parallel computing: come sfruttare il parallelismo delle GPU per software più veloce, dai fondamenti all'ottimizzazione su NVIDIA."
 ---
 
 **Sabato 27 giugno**, a partire **dalle 16:30 in poi**, vi aspettiamo per una serata a tema dedicata al **parallel computing**, presentata dal nostro membro **Massimiliano Ghilardi**.

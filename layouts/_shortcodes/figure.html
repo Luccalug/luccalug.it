@@ -6,8 +6,9 @@
     {{< figure loading="eager" src="images/poster.png" alt="..." >}}   (image at the top of the page)
 
   Parameters:
-    src     - path relative to assets/ (required)
-    alt     - alt text (required)
+    src     - path relative to assets/ (required: the build fails if it is missing)
+    alt     - alt text (required: the build fails without it; alt="" only for
+              a purely decorative image)
     caption - figure caption (optional)
     width   - max width in px (optional, default 800)
     class   - additional CSS class (optional)
@@ -17,7 +18,10 @@
 */ -}}
 
 {{- $src := .Get "src" -}}
-{{- $alt := .Get "alt" | default "" -}}
+{{- if not (isset .Params "alt") -}}
+  {{- errorf "figure: manca il testo alternativo (alt), usa alt=\"\" solo per un'immagine decorativa (%s)" .Position -}}
+{{- end -}}
+{{- $alt := .Get "alt" -}}
 {{- $caption := .Get "caption" | default "" -}}
 {{- $width := .Get "width" | default 800 -}}
 {{- $class := .Get "class" | default "" -}}
@@ -27,7 +31,7 @@
 {{- end -}}
 
 <figure class="figure{{ with $class }} {{ . }}{{ end }}">
-  {{ partial "img.html" (dict "src" $src "alt" $alt "width" $width "loading" $loading) }}
+  {{ partial "img.html" (dict "src" $src "alt" $alt "width" $width "loading" $loading "position" .Position) }}
   {{- with $caption }}
   <figcaption>{{ . }}</figcaption>
   {{- end }}

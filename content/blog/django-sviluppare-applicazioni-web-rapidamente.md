@@ -3,8 +3,8 @@ title: "Django, sviluppare applicazioni web rapidamente"
 slug: "django-sviluppare-applicazioni-web-rapidamente"
 date: 2010-11-29
 author: "matteo"
-tags: ["django", "eventi", "incontri"]
-description: "Incontro di introduzione a Django con focus sul software Tango sviluppato per la Croce Verde di Ponte a Moriano. Lunedì 6 dicembre ore 21:00 presso la sede del LuccaLUG."
+tags: ["django", "eventi"]
+description: "Introduzione a Django e a Tango, il software sviluppato per la Croce Verde di Ponte a Moriano. Lunedì 6 dicembre, ore 21:00, nella sede del LuccaLUG."
 ---
 
 > "Django è un framework open source per lo sviluppo di applicazioni web, scritto in linguaggio Python, seguendo il pattern Model-View-Controller."

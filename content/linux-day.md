@@ -1,5 +1,6 @@
 ---
 title: "Linux Day"
+lastmod: 2026-11-04
 aliases: ["/linuxday/", "/linuxday/2016/", "/linuxday/2019/"]
 description: "Il Linux Day, la giornata italiana del software libero: l'edizione 2026 si è tenuta sabato 24 ottobre al PRISMA di Prato, con 18 talk su due tracce."
 image: "/images/linux-day/linux-day-2026-programma.png"

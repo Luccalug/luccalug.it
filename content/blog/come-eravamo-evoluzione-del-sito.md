@@ -3,8 +3,8 @@ title: "Come eravamo: una macchina del tempo per il sito del LuccaLUG"
 slug: "come-eravamo-evoluzione-del-sito"
 date: 2026-05-29
 author: "Il Direttivo"
-tags: ["sito", "storia", "retrocomputing", "meta"]
-description: "Un viaggio nostalgico tra tutti i siti web che il LuccaLUG ha avuto dal 2007 a oggi: Drupal, WordPress, Jekyll, Hugo... con screenshot veri pescati dall'Internet Archive."
+tags: ["sito"]
+description: "Un viaggio nostalgico tra i siti del LuccaLUG dal 2007 a oggi, da Drupal a WordPress, Jekyll e Hugo, con screenshot veri dall'Internet Archive."
 ---
 
 Il nuovo sito appena andato online ma ci siamo già affezionati a questa estetica un po' anni '90, fatta di marquee che scorrono, font a pixel e contatore delle visite. Ma mentre lo costruivamo ci è venuta una curiosità: **quanti siti ha avuto il LuccaLUG in tutti questi anni?**
