@@ -1,7 +1,7 @@
 ---
 title: "Calendario"
 # Aggiornare quando si aggiungono o cambiano eventi: è anche il DTSTAMP di calendario.ics.
-lastmod: 2026-11-04
+lastmod: 2026-11-05
 description: "Calendario degli eventi e incontri del Luccalug"
 outputs:
   - HTML
@@ -54,7 +54,7 @@ recurring:
   - weekday: monday
     from: "2026-09-07"
     time: "21:00"
-    duration: "4h"
+    duration: "3h"
     summary: "Incontro ordinario"
     location: "Foro Boario, Lucca"
     description: "Incontro settimanale del Luccalug"

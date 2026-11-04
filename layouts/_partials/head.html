@@ -95,7 +95,8 @@
   var bg={dark:{default:'#1e1e1e',fedora:'#181e2e',opensuse:'#182418',arch:'#1a1a24',debian:'#2a1620'},light:{default:'#fdf4f0',fedora:'#f0f4fa',opensuse:'#f2f8ee',arch:'#f0f6fa',debian:'#faf0f2'}};
   var tc=document.getElementById('theme-color-meta');
   if(tc&&bg[m])tc.content=bg[m][s]||bg[m]['default'];
-  if(get('luccalug-marquee')==='paused')d.setAttribute('data-marquee','paused');
+  // The marquee scrolls only with JavaScript, which also shows its pause button (see marquee.html).
+  d.setAttribute('data-marquee',get('luccalug-marquee')==='paused'?'paused':'running');
 })();
 </script>
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}

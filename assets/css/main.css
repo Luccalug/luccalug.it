@@ -322,13 +322,19 @@ body {
   min-height: 100vh;
 }
 
-/* --- Top Bar --- */
+/* --- Top Bar ---
+   The state comes from html[data-marquee], set early by head.html:
+   - "running": the text scrolls;
+   - "paused" (pause button): the text stands still;
+   - no attribute (no JavaScript, so no pause button): the text stands still
+     too, otherwise there would be no way to stop it (WCAG 2.2.2).
+   prefers-reduced-motion stops it as well (end of the file). When it stands
+   still the text wraps, so it can be read in full on narrow screens. */
 .top-bar {
   background: var(--bg-deep);
   border-bottom: 2px solid var(--border-color);
   padding: 6px 0;
   overflow: hidden;
-  white-space: nowrap;
   font-family: var(--font-mono);
   font-size: 16px;
   color: var(--accent);
@@ -337,9 +343,27 @@ body {
 }
 
 .top-bar-scroll {
+  padding: 0 12px;
+}
+
+/* Leave room for the pause button, which sits on the right edge. */
+[data-marquee="paused"] .top-bar-scroll {
+  padding-right: 48px;
+}
+
+[data-marquee="running"] .top-bar {
+  white-space: nowrap;
+}
+
+/* padding-left: 100% starts the text just past the right edge, and
+   translateX(-100%) moves the element by its own width (that padding plus
+   the text), so the text ends just past the left edge. The script in
+   marquee.html sets --marquee-duration from that width, so the speed is the
+   same on every screen; 18s is only the fallback. */
+[data-marquee="running"] .top-bar-scroll {
   display: inline-block;
-  padding-left: 100%;
-  animation: marquee-scroll 18s linear infinite;
+  padding: 0 0 0 100%;
+  animation: marquee-scroll var(--marquee-duration, 18s) linear infinite;
 }
 
 @keyframes marquee-scroll {
@@ -347,16 +371,20 @@ body {
   100% { transform: translateX(-100%); }
 }
 
-/* Pause (WCAG 2.2.2): hover/focus pause in place, the button stops it and
-   shows the text from the start, like prefers-reduced-motion does. */
-.top-bar:hover .top-bar-scroll,
-.top-bar:focus-within .top-bar-scroll {
-  animation-play-state: paused;
+/* Hover pauses it in place, but only where hover is real: on touch screens a
+   tap would leave it paused until the next tap somewhere else. */
+@media (hover: hover) {
+  .top-bar:hover .top-bar-scroll {
+    animation-play-state: paused;
+  }
 }
 
-[data-marquee="paused"] .top-bar-scroll {
-  animation: none;
-  padding-left: 12px;
+/* Keyboard focus on the button pauses it too. :focus-visible, not
+   :focus-within: after a mouse click on the button the focus stays there, and
+   the text would stay frozen. A separate rule, so that a browser without
+   :has() still keeps the hover one. */
+.top-bar:has(:focus-visible) .top-bar-scroll {
+  animation-play-state: paused;
 }
 
 .top-bar-pause {
@@ -1437,9 +1465,15 @@ img { max-width: 100%; height: auto; }
    Keep this block at the end of the file: these rules have the same
    specificity as the ones above, so they only win if they come last. */
 @media (prefers-reduced-motion: reduce) {
-  .top-bar-scroll {
+  /* The text stands still and wraps, as when it is paused. */
+  [data-marquee] .top-bar {
+    white-space: normal;
+  }
+
+  [data-marquee] .top-bar-scroll {
+    display: block;
+    padding: 0 12px;
     animation: none;
-    padding-left: 0;
   }
 
   /* Nothing moves, so the pause button is not needed. */

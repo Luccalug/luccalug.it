@@ -1,30 +1,76 @@
 {{- /*
   Scrolling announcement bar. WCAG 2.2.2 requires a way to stop moving
-  content: the button pauses it (choice remembered in localStorage and applied
-  early by the script in head.html via html[data-marquee="paused"]); hover and
-  keyboard focus also pause it. The button is hidden without JavaScript and
-  when the visitor prefers reduced motion (the text is static then).
+  content: the button stops it (choice remembered in localStorage and applied
+  early by the script in head.html via html[data-marquee]); hover and keyboard
+  focus pause it in place. Without JavaScript there is no button, so the text
+  does not move at all; with prefers-reduced-motion it does not move either and
+  the button is hidden. The states are described in assets/css/main.css
+  ("Top Bar").
+  The stars in marqueeText are decoration: they are hidden from screen readers,
+  which would read each one aloud ("stella nera").
 */ -}}
 <div class="top-bar" role="marquee" aria-label="Annunci">
-  <div class="top-bar-scroll"><span aria-hidden="true">🐧 </span>{{ .Site.Params.marqueeText }}</div>
-  <button type="button" class="top-bar-pause" id="marquee-toggle" aria-label="Ferma lo scorrimento degli annunci" aria-pressed="false" hidden><span aria-hidden="true">⏸</span></button>
+  <div class="top-bar-scroll"><span aria-hidden="true">🐧 </span>{{ replace (htmlEscape .Site.Params.marqueeText) "★" `<span aria-hidden="true">★</span>` | safeHTML }}</div>
+  <button type="button" class="top-bar-pause" id="marquee-toggle" aria-label="Ferma lo scorrimento degli annunci" aria-pressed="false" hidden><span aria-hidden="true">⏸&#xFE0E;</span></button>
 </div>
 <script>
 (function () {
+  var SPEED = 90; // pixels per second, the same on every screen width
   var root = document.documentElement;
+  var bar = document.querySelector('.top-bar');
+  var scroll = bar.querySelector('.top-bar-scroll');
   var btn = document.getElementById('marquee-toggle');
-  function render() {
-    var paused = root.getAttribute('data-marquee') === 'paused';
-    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
-    btn.firstChild.textContent = paused ? '▶' : '⏸';
+  var icon = btn.querySelector('span');
+
+  function isPaused() {
+    return root.getAttribute('data-marquee') === 'paused';
   }
+
+  function setPaused(paused) {
+    root.setAttribute('data-marquee', paused ? 'paused' : 'running');
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    // U+FE0E asks for the plain symbol instead of a colour emoji.
+    icon.textContent = paused ? '▶︎' : '⏸︎';
+  }
+
+  // The distance covered in one loop is the element's whole width (the 100%
+  // left padding plus the text), so the duration follows it. It changes with
+  // the window and when the web font arrives: the observer catches both.
+  function setDuration() {
+    if (getComputedStyle(scroll).animationName === 'none') return;
+    scroll.style.setProperty('--marquee-duration', scroll.offsetWidth / SPEED + 's');
+  }
+
+  // On resume the text starts scrolling from where it stood, instead of
+  // jumping past the right edge (where, while the button keeps keyboard
+  // focus and the scroll is paused, the bar would look empty). A negative
+  // delay skips the part of the loop the text needs to get there.
+  function toggle(paused) {
+    var start = parseFloat(getComputedStyle(scroll).paddingLeft);
+    setPaused(paused);
+    scroll.style.animationDelay = paused ? '' : -(bar.clientWidth - start) / SPEED + 's';
+    setDuration();
+  }
+
+  setPaused(isPaused());
   btn.hidden = false;
-  render();
+  if (window.ResizeObserver) {
+    var observer = new ResizeObserver(setDuration);
+    observer.observe(bar);
+    observer.observe(scroll);
+  }
+
   btn.addEventListener('click', function () {
-    var paused = root.getAttribute('data-marquee') !== 'paused';
-    if (paused) root.setAttribute('data-marquee', 'paused'); else root.removeAttribute('data-marquee');
+    var paused = !isPaused();
+    toggle(paused);
     try { localStorage.setItem('luccalug-marquee', paused ? 'paused' : 'running'); } catch (e) {}
-    render();
+  });
+
+  // Keep other open tabs of the site in step with the choice.
+  window.addEventListener('storage', function (e) {
+    if (e.key !== 'luccalug-marquee') return;
+    var paused = e.newValue === 'paused';
+    if (paused !== isPaused()) toggle(paused);
   });
 })();
 </script>

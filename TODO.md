@@ -26,9 +26,10 @@ I riferimenti `file:riga` sono aggiornati allo stato della cartella di lavoro de
 I giri 3–5 sono nel commit `5257c79`, pushato e pubblicato il 4/11: le verifiche fatte in produzione sono nel [§3](#3-verifiche-da-fare-dopo-il-primo-deploy).
 
 - [x] Sesto giro e prima parte del settimo (cspell, `GULLi`, licenza CC BY 4.0, B19, feed RSS) nel commit `dfba7c5`, pushato il 4/11. In produzione `calendario.ics` ha già `VTIMEZONE`, CRLF e i nuovi UID, e `/feed.xml` non contiene più il calendario.
-- [ ] **Committare** il punto 5.1 (eventi in un solo posto) e gli incontri settimanali (`recurring`), vedi [§7](#7-già-fatto): `layouts/_partials/calendario-eventi.html`, gli shortcode `evento` ed `eventi`, `single.ical.ics`, `content/calendario.md`, i 4 articoli convertiti, la pagina di test, `README.md` e questo `TODO.md`.
+- [x] Punto 5.1 (eventi in un solo posto) e incontri settimanali (`recurring`) nel commit `a61aa9c`, pushato il 4/11. In produzione il `.ics` ha 22 eventi: gli stessi UID del deploy precedente, nessuno doppio, più i 4 lunedì di gennaio 2027, e 4 righe `URL:`. In tabella la serata Reticulum è un link all'articolo.
 - [x] **PR #3 di Dependabot** ("ci: bump the actions group with 4 updates"), unita in `master` con il commit `92dfb5f`: `actions/checkout` 5.1.0 → 7.0.1, `DavidAnson/markdownlint-cli2-action` 23.2.0 → 25.0.0, `streetsidesoftware/cspell-action` 8.4.0 → 9.2.0, `actions/cache` 4.3.0 → 6.1.0. Il run del push (`41893761789`) ha passato lint e link check e ha fatto il deploy.
-- [ ] **PR #2** (contributore esterno, aperta il 21/9, "Pause the marquee on hover and focus"): quello che propone c'è già con M4, cioè pausa con hover e con `:focus-within` (`assets/css/main.css:350-355`) più il pulsante pausa. La PR aggiunge in più solo `tabindex="0"` alla barra, che rende raggiungibile con Tab un elemento non interattivo, e modifica `layouts/partials/marquee.html`, spostato in `layouts/_partials/` con B12. Proposta: chiuderla ringraziando e spiegando che la funzione è già presente.
+- [ ] **Committare** le correzioni al marquee del 5/11, vedi [§7](#7-già-fatto): `assets/css/main.css`, `layouts/_partials/marquee.html`, `layouts/_partials/head.html` e questo `TODO.md`.
+- [ ] **PR #2** (contributore esterno, aperta il 21/9, "Pause the marquee on hover and focus"): quello che propone c'è già con M4, cioè pausa con hover e con il focus da tastiera sul pulsante (`assets/css/main.css:374-388`) più il pulsante pausa. La PR aggiunge in più solo `tabindex="0"` alla barra, che rende raggiungibile con Tab un elemento non interattivo, e modifica `layouts/partials/marquee.html`, spostato in `layouts/_partials/` con B12. Proposta: chiuderla ringraziando e spiegando che la funzione è già presente.
 - [ ] **PR di prova con un link interno sbagliato** (es. `[x](/blog/non-esiste/)`): che sulle PR il deploy venga saltato è già verificato con la PR #3; resta da vedere che il job `link-check` fallisca. In locale gli stessi `args` trovano sia la pagina mancante sia l'ancora mancante.
 - [ ] Provare home, un articolo e un articolo con eventi nel [Rich Results Test](https://search.google.com/test/rich-results) e nel [Schema Markup Validator](https://validator.schema.org/) (B7). In produzione i blocchi JSON-LD ci sono e sono JSON valido, ma non sono stati validati con gli strumenti di Google.
 - [ ] (Facoltativo) Eseguire actionlint su `.github/workflows/deploy.yml`: in locale è stato bloccato perché scarica ed esegue codice esterno. Il workflow è stato controllato con il parsing YAML, verificando che ogni `uses:` sia uno SHA di 40 caratteri, e dai run riusciti su push e PR.
@@ -91,17 +92,18 @@ Fino al 4/11 `LICENSE` era la **Creative Commons Attribution 3.0 Unported**: pre
   - JSON-LD presente: `Organization` e `WebSite` in home, `BlogPosting` ed `Event` nell'articolo Reticulum;
   - `/blog/page/2/` ha il titolo "Blog – pagina 2 - Luccalug".
 - [x] **Trigger sulle PR e Dependabot**: subito dopo il push Dependabot ha aperto la PR #3; il suo run (`41892518058`) ha eseguito lint e link check, e il deploy è risultato "skipped".
-- [ ] **Build notturna** (`cron: '30 3 * * *'`). Il 5/11 controllare in Actions che il run pianificato ci sia. GitHub disattiva i workflow pianificati dei repo pubblici dopo 60 giorni senza attività: se succede, riattivarlo da Actions.
+- [ ] **Build notturna** (`cron: '30 3 * * *'`). Il 5/11 controllare in Actions che il run pianificato ci sia. GitHub disattiva i workflow pianificati dei repo pubblici dopo 60 giorni senza attività: se succede, riattivarlo da Actions. Con gli incontri settimanali (`recurring`) la build notturna non serve più solo a togliere gli eventi passati dalla tabella, ma anche ad aggiungere le nuove date: se si ferma, dopo 12 settimane la tabella e il `.ics` restano senza incontri.
 - [x] **Redirect dei vecchi URL**: verificati il 4/11 tutti i 18 vecchi indirizzi, ognuno con la sua pagina di redirect e destinazione che risponde 200 (comando in [§8](#8-come-ripetere-le-verifiche)).
 - [x] **HTTPS forzato**: `http://luccalug.it/` risponde con `Location: https://luccalug.it/` (verificato il 4/11).
 - [ ] **Search Console**: controllare il rapporto "Non trovata (404)" e chiedere la nuova scansione delle pagine con redirect. Inviare di nuovo `https://luccalug.it/sitemap.xml`.
 - [ ] **Anteprime social**: provare 2–3 link (home, articolo Reticulum, pagina Linux Day) con il [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) e il [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/), e mandarli su WhatsApp/Telegram. Le og:image ora sono JPEG 1200×630 da 52–120 KB.
 - [ ] **Core Web Vitals reali** su [PageSpeed Insights](https://pagespeed.web.dev/): i valori misurati il 4/11 sono di laboratorio (Lighthouse).
 - [ ] **Test manuale con lettore di schermo** (NVDA su Windows o Orca su Linux): menu, selettore del tema, pulsante pausa della barra in alto, tab nella pagina Linux Day, galleria, mappa da attivare.
-- [ ] **Calendario** (B19 è online dal 4/11, commit `dfba7c5`):
+- [ ] **Calendario** (B19 è online dal 4/11, commit `dfba7c5`; eventi in un solo posto e incontri settimanali, commit `a61aa9c`):
   - passare `https://luccalug.it/calendario.ics` nel [validatore iCalendar](https://icalendar.org/validator.html); in locale è già stato controllato con la libreria Python `icalendar` (vedi [§8](#8-come-ripetere-le-verifiche));
   - importarlo in Google Calendar e in un client Apple, e controllare che gli incontri siano alle 21:00 sia prima sia dopo il cambio dell'ora (es. 19/10 e 26/10);
-  - vedere come i due client mostrano gli annullati del 12/10 e del 2/11 (`STATUS:CANCELLED` più il prefisso "[Annullato]" nel titolo). Alcuni client nascondono gli eventi annullati: va bene lo stesso.
+  - vedere come i due client mostrano gli annullati del 12/10 e del 2/11 (`STATUS:CANCELLED` più il prefisso "[Annullato]" nel titolo). Alcuni client nascondono gli eventi annullati: va bene lo stesso;
+  - 5.1 e incontri settimanali sono online dal 4/11 (commit `a61aa9c`) e il `.ics` è già stato controllato in produzione (vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)): resta da vedere, in un client già abbonato prima del 4/11, che dopo l'aggiornamento non compaiano doppioni e che gli eventi abbiano il link all'articolo.
 
 ## 4. Interventi nel codice ancora da fare
 
@@ -109,7 +111,7 @@ Fino al 4/11 `LICENSE` era la **Creative Commons Attribution 3.0 Unported**: pre
 | --- | --- | --- | --- | --- |
 | [B16](#b16--header-di-sicurezza-e-cache) | Sicurezza/Perf | Bassa | Header di sicurezza e cache non configurabili | M–L |
 | [B20](#b20--pagina-404) | SEO | Bassa | 404 con titolo in inglese e canonical (rinviato) | S |
-| [Info](#osservazioni-minori-info) | Varie | Info | Contatore finto, feed dei tag, favicon, `lang`, `theme-color` | S |
+| [Info](#osservazioni-minori-info) | Varie | Info | Contatore finto, feed dei tag, favicon, `lang`, `theme-color`, finestra degli incontri | S |
 
 ### B16 – Header di sicurezza e cache
 
@@ -167,7 +169,8 @@ Il blocco `canonical` esiste già in `layouts/baseof.html` grazie alla correzion
 - [ ] **Feed dei tag**: ogni tag ha il suo feed (44); se non servono, `outputs.term = ["HTML"]` in `hugo.toml`. Il resto della voce sui feed è fatto, vedi il settimo giro nel [§7](#7-già-fatto).
 - [ ] **Favicon**: c'è solo `static/images/luccalug-favicon.png` (291×291), usata anche come `apple-touch-icon`, che dovrebbe essere 180×180. Aggiungere `favicon.ico` 32×32 e un PNG 180×180, generabili con Hugo Pipes (`Resize`).
 - [ ] **Testo in inglese senza `lang="en"`** (WCAG 3.1.2): titoli dei talk in `content/linux-day.md` (es. "Hosting your digital life…") e badge del footer (`footer.html:4-6`).
-- [ ] **`theme-color` non si aggiorna quando si cambia tema** (trovato durante le correzioni): lo script in `layouts/_partials/head.html:90` lo imposta solo al caricamento, mentre `setMode`/`setScheme` (`layouts/_partials/theme-switcher.html:34`) non lo toccano. Spostare la tabella dei colori in una funzione condivisa e richiamarla anche al cambio di tema.
+- [ ] **`theme-color` non si aggiorna quando si cambia tema** (trovato durante le correzioni): lo script in `layouts/_partials/head.html:85-100` lo imposta solo al caricamento (tabella dei colori alla riga 95), mentre `setMode`/`setScheme` (`layouts/_partials/theme-switcher.html:34`) non lo toccano. Spostare la tabella dei colori in una funzione condivisa e richiamarla anche al cambio di tema.
+- [ ] **Finestra degli incontri settimanali** (da confermare): le date vengono generate fino a 12 settimane dopo la build, quindi la tabella "Prossimi eventi" mostra sempre circa 12 righe. Per accorciarla o allungarla basta cambiare `$weeksAhead` in `layouts/_partials/calendario-eventi.html` (e il "12 settimane" nel commento di `content/calendario.md` e nel README).
 - [ ] **Pagina di test** `content/blog/test-shortcode.md`: è in bozza, quindi non viene pubblicata, ma compare nel blog con `hugo server -D`. Valutare di spostarla fuori da `blog/`.
 
 ## 5. Miglioramenti strutturali
@@ -259,7 +262,7 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
 
 - **cspell** – Il run del push `5257c79` segnalava 42 parole nei file toccati, e su tutto `content/` erano 135. Ora sono 0: cspell ignora codice e shortcode `terminal`, le parole valide sono in `cspell.json`, e `Gulli` è diventato `GULLi`. Dettagli nel [§6](#6-falsi-positivi-noti).
 
-**Settimo giro, 4/11/2026** (B19 e feed RSS nel commit `dfba7c5`; 5.1 da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
+**Settimo giro, 4/11/2026** (B19 e feed RSS nel commit `dfba7c5`, 5.1 e incontri settimanali nel commit `a61aa9c`):
 
 - **B19** – `calendario.ics` conforme a RFC 5545. Il template `layouts/single.ical.ics` raccoglie le righe in una lista e le stampa alla fine:
   - **CRLF e righe lunghe:** ogni riga termina con CRLF e viene spezzata a 75 byte dal nuovo partial `_partials/ical-fold.html`, che lavora carattere per carattere e quindi non taglia mai le lettere accentate o le emoji. È stata scelta questa strada invece dei pezzi da 36 caratteri proposti nella review, che con caratteri da 3–4 byte potevano superare il limite.
@@ -283,6 +286,16 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
   - Le singole date restano eventi separati nel `.ics`, con UID uguale alla data: per chi è abbonato non cambia niente. Una regola `RRULE` nel `.ics` non è stata usata: la tabella e le schede avrebbero dovuto comunque generare le date, e le eccezioni (`RECURRENCE-ID`) sono gestite in modo diverso dai vari client.
   - I 18 eventi del calendario sono diventati una regola del lunedì e 6 eventi (3 serate a tema, il Linux Day, 2 annullati). Rispetto a prima il `.ics` e la tabella sono identici, più i 4 lunedì di gennaio 2027 che rientrano nelle 12 settimane; le schede negli articoli sono identiche.
   - Verifiche in una copia del sito: `until`, cambio di sede e di giorno da una certa data (prima data calcolata dal giorno della settimana), evento con `id` in un lunedì, serata a tema oltre le 12 settimane in ora legale, giorno senza regola (evento di tutto il giorno), errori per `weekday` non valido, `from` mancante e due regole sullo stesso giorno. Link interni 0 errori; `.ics` letto da `icalendar` senza errori; build con bozze riuscita.
+
+**Marquee, 5/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)). Gli stati sono descritti in testa alla sezione "Top Bar" di `assets/css/main.css`.
+
+- **Velocità uguale su ogni schermo** – Prima la durata era fissa (18 s) e la velocità andava da circa 67 px/s su un telefono a 153 px/s su uno schermo da 1920 px. Ora lo script in `marquee.html` calcola la durata dalla larghezza da percorrere (90 px/s, costante `SPEED`) e la ricalcola con un `ResizeObserver` quando cambia la finestra o arriva il font. Senza `ResizeObserver` resta la durata di 18 s.
+- **Testo fermo leggibile** – In pausa, con "riduci movimento" e senza JavaScript il testo va a capo invece di essere tagliato a destra (su un telefono da 375 px: 3 righe), con 12 px di margine in tutti i casi e spazio per il pulsante quando c'è.
+- **Senza JavaScript il testo è fermo** – Senza il pulsante non c'era modo di fermarlo da tastiera (WCAG 2.2.2). Ora `head.html` mette sempre `data-marquee` (`running` o `paused`) e lo scorrimento parte solo con `running`.
+- **Pausa con il focus** – `:focus-within` è diventato `:has(:focus-visible)`. In Chrome e Firefox, dopo un clic su ▶ il focus restava sul pulsante e il testo restava fermo, con la barra vuota, finché non si cliccava altrove. Alla ripresa il testo riparte dal punto in cui era fermo, invece che da fuori a destra.
+- **Altro** – La pausa al passaggio del mouse vale solo dove il mouse c'è (`hover: hover`): sui touchscreen un tocco non la blocca più. Le stelle di `marqueeText` sono nascoste ai lettori di schermo. Le icone ⏸/▶ hanno U+FE0E, che chiede il simbolo semplice e non l'emoji colorata. L'icona si cerca con `querySelector` e non più con `firstChild`. La scelta passa alle altre schede aperte (evento `storage`).
+- Verifiche in Chromium headless: 90 px/s a 375, 768, 1280 e 1920 px e dopo un ridimensionamento; pausa, ripresa e scelta ricordata dopo il ricaricamento; clic su ▶ con il focus rimasto sul pulsante (scorre); pausa con hover e con Tab, assente con "hover: none"; ripresa da tastiera con il testo visibile a 12 px; "riduci movimento" (anche insieme alla pausa); pagina senza JavaScript; due schede; albero di accessibilità senza le stelle, pulsante con `pressed`. Resta da provare su un telefono vero e con un lettore di schermo (già in [§3](#3-verifiche-da-fare-dopo-il-primo-deploy)).
+- Da sapere: con il testo fermo su più righe, su un telefono il selettore del tema (fisso a 80 px dall'alto) copre l'angolo in basso a destra della barra, ma non il testo.
 
 ## 8. Come ripetere le verifiche
 
