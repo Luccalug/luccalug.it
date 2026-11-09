@@ -238,4 +238,13 @@ SUMMARY:Incontro ordinario
 LOCATION:Foro Boario\, Lucca
 DESCRIPTION:Incontro settimanale del Luccalug
 END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-01@luccalug.it
+DTSTAMP:20261104T230000Z
+DTSTART;TZID=Europe/Rome:20270201T210000
+DTEND;TZID=Europe/Rome:20270202T000000
+SUMMARY:Incontro ordinario
+LOCATION:Foro Boario\, Lucca
+DESCRIPTION:Incontro settimanale del Luccalug
+END:VEVENT
 END:VCALENDAR
