@@ -28,12 +28,14 @@ I giri 3–5 sono nel commit `5257c79`, pushato e pubblicato il 4/11: le verific
 - [x] Sesto giro e prima parte del settimo (cspell, `GULLi`, licenza CC BY 4.0, B19, feed RSS) nel commit `dfba7c5`, pushato il 4/11. In produzione `calendario.ics` ha già `VTIMEZONE`, CRLF e i nuovi UID, e `/feed.xml` non contiene più il calendario.
 - [x] Punto 5.1 (eventi in un solo posto) e incontri settimanali (`recurring`) nel commit `a61aa9c`, pushato il 4/11. In produzione il `.ics` ha 22 eventi: gli stessi UID del deploy precedente, nessuno doppio, più i 4 lunedì di gennaio 2027, e 4 righe `URL:`. In tabella la serata Reticulum è un link all'articolo.
 - [x] Incontri del lunedì fino a mezzanotte nel commit `21f1a35`, pushato il 5/11: in produzione finiscono alle 00:00 (es. `DTEND;TZID=Europe/Rome:20261110T000000`).
-- [ ] **Committare** l'ottavo giro (vedi [§7](#7-già-fatto)): sezione "Aggiungi il Calendario" e `.ics` dei singoli eventi. File: `layouts/_shortcodes/iscrizione-calendario.html`, `layouts/_shortcodes/evento.html`, `layouts/single.ical.ics`, i nuovi partial `ical-vtimezone.html`, `ical-vevent.html`, `ical-file.html` e `ical-evento-url.html`, `assets/css/main.css`, `content/calendario.md`, `cspell.json`, `README.md` e questo `TODO.md`.
+- [x] Ottavo giro (sezione "Aggiungi il Calendario" e `.ics` dei singoli eventi) nel commit `ccd2841`, pushato il 5/11. In produzione la pagina Calendario ha i pulsanti Google e Apple, la scheda della serata Reticulum ha il link "Aggiungi al calendario", `/calendario/2026-11-23.ics` risponde 200 con `text/calendar`, e `calendario.ics` è identico a quello della build locale.
 - [x] **PR #3 di Dependabot** ("ci: bump the actions group with 4 updates"), unita in `master` con il commit `92dfb5f`: `actions/checkout` 5.1.0 → 7.0.1, `DavidAnson/markdownlint-cli2-action` 23.2.0 → 25.0.0, `streetsidesoftware/cspell-action` 8.4.0 → 9.2.0, `actions/cache` 4.3.0 → 6.1.0. Il run del push (`41893761789`) ha passato lint e link check e ha fatto il deploy.
-- [ ] **Committare** le correzioni al marquee del 5/11, vedi [§7](#7-già-fatto): `assets/css/main.css`, `layouts/_partials/marquee.html`, `layouts/_partials/head.html` e questo `TODO.md`.
+- [x] Correzioni al marquee del 5/11 (vedi [§7](#7-già-fatto)) nel commit `21f1a35`, pushato il 5/11: in produzione la home ha lo script con `ResizeObserver` e `data-marquee`.
 - [ ] **PR #2** (contributore esterno, aperta il 21/9, "Pause the marquee on hover and focus"): quello che propone c'è già con M4, cioè pausa con hover e con il focus da tastiera sul pulsante (`assets/css/main.css:374-388`) più il pulsante pausa. La PR aggiunge in più solo `tabindex="0"` alla barra, che rende raggiungibile con Tab un elemento non interattivo, e modifica `layouts/partials/marquee.html`, spostato in `layouts/_partials/` con B12. Proposta: chiuderla ringraziando e spiegando che la funzione è già presente.
 - [ ] **PR di prova con un link interno sbagliato** (es. `[x](/blog/non-esiste/)`): che sulle PR il deploy venga saltato è già verificato con la PR #3; resta da vedere che il job `link-check` fallisca. In locale gli stessi `args` trovano sia la pagina mancante sia l'ancora mancante.
-- [ ] Provare home, un articolo e un articolo con eventi nel [Rich Results Test](https://search.google.com/test/rich-results) e nel [Schema Markup Validator](https://validator.schema.org/) (B7). In produzione i blocchi JSON-LD ci sono e sono JSON valido, ma non sono stati validati con gli strumenti di Google.
+- [ ] Provare home, un articolo e un articolo con eventi nel [Rich Results Test](https://search.google.com/test/rich-results) (B7). Va fatto dal browser, perché lo strumento non ha un'API pubblica.
+  - [x] [Schema Markup Validator](https://validator.schema.org/), 5/11 (comando in [§8](#8-come-ripetere-le-verifiche)): 0 errori e 0 avvisi su home (`WebSite` con `publisher` → `Organization`), articolo Reticulum e programma del Linux Day 2026 (`BlogPosting` con autore ed editore, `Event` con `Place`).
+  - Gli `Event` hanno tutti i campi che Google indica come obbligatori (`name`, `startDate`, `location` con `address`). È normale che il Rich Results Test segnali la mancanza di campi facoltativi come `organizer`, `performer` e `offers`: organizer e stato dell'evento sono stati lasciati fuori apposta (vedi B7 nel [§7](#7-già-fatto)).
 - [ ] (Facoltativo) Eseguire actionlint su `.github/workflows/deploy.yml`: in locale è stato bloccato perché scarica ed esegue codice esterno. Il workflow è stato controllato con il parsing YAML, verificando che ogni `uses:` sia uno SHA di 40 caratteri, e dai run riusciti su push e PR.
 
 ## 2. Azioni per il Direttivo e per chi gestisce il repo
@@ -79,8 +81,8 @@ Fino al 4/11 `LICENSE` era la **Creative Commons Attribution 3.0 Unported**: pre
 
 ### 2.4 Repository GitHub
 
-- [ ] Rimuovere il secret **`PERSONAL_TOKEN`** da Settings → Secrets and variables → Actions, se esiste ancora: era usato dai workflow del 2020–2022 (commit `d51e25d` e `7d91117`) e oggi non serve.
-- [ ] (Facoltativo) Rifare `gh auth login` sulla macchina di sviluppo: il token salvato risponde `401 Bad credentials`, quindi l'API delle Pages non è interrogabile da riga di comando.
+- [ ] Rimuovere il secret **`PERSONAL_TOKEN`** da Settings → Secrets and variables → Actions (o con `gh secret delete PERSONAL_TOKEN`): il 5/11 esiste ancora, con ultimo aggiornamento il 28/1/2020. Era usato dai workflow del 2020–2022 (commit `d51e25d` e `7d91117`); nessun file in `.github/` lo usa più.
+- [x] `gh` sulla macchina di sviluppo: il 5/11 il token funziona di nuovo (prima rispondeva `401 Bad credentials`), quindi Actions e API delle Pages sono interrogabili da riga di comando.
 
 ## 3. Verifiche da fare dopo il primo deploy
 
@@ -94,18 +96,24 @@ Fino al 4/11 `LICENSE` era la **Creative Commons Attribution 3.0 Unported**: pre
   - JSON-LD presente: `Organization` e `WebSite` in home, `BlogPosting` ed `Event` nell'articolo Reticulum;
   - `/blog/page/2/` ha il titolo "Blog – pagina 2 - Luccalug".
 - [x] **Trigger sulle PR e Dependabot**: subito dopo il push Dependabot ha aperto la PR #3; il suo run (`41892518058`) ha eseguito lint e link check, e il deploy è risultato "skipped".
-- [ ] **Build notturna** (`cron: '30 3 * * *'`). Il 5/11 controllare in Actions che il run pianificato ci sia. GitHub disattiva i workflow pianificati dei repo pubblici dopo 60 giorni senza attività: se succede, riattivarlo da Actions. Con gli incontri settimanali (`recurring`) la build notturna non serve più solo a togliere gli eventi passati dalla tabella, ma anche ad aggiungere le nuove date: se si ferma, dopo 12 settimane la tabella e il `.ics` restano senza incontri.
+- [ ] **Build notturna** (`cron: '30 3 * * *'`). Dopo le 03:30 UTC del 5/11 (04:30 in Italia) controllare che il run pianificato ci sia, con `gh run list --event schedule --limit 5` o in Actions: alle 00:03 UTC del 5/11 non ce n'era ancora nessuno, come previsto. GitHub disattiva i workflow pianificati dei repo pubblici dopo 60 giorni senza attività: se succede, riattivarlo da Actions. Con gli incontri settimanali (`recurring`) la build notturna non serve più solo a togliere gli eventi passati dalla tabella, ma anche ad aggiungere le nuove date: se si ferma, dopo 12 settimane la tabella e il `.ics` restano senza incontri.
 - [x] **Redirect dei vecchi URL**: verificati il 4/11 tutti i 18 vecchi indirizzi, ognuno con la sua pagina di redirect e destinazione che risponde 200 (comando in [§8](#8-come-ripetere-le-verifiche)).
-- [x] **HTTPS forzato**: `http://luccalug.it/` risponde con `Location: https://luccalug.it/` (verificato il 4/11).
-- [ ] **Search Console**: controllare il rapporto "Non trovata (404)" e chiedere la nuova scansione delle pagine con redirect. Inviare di nuovo `https://luccalug.it/sitemap.xml`.
-- [ ] **Anteprime social**: provare 2–3 link (home, articolo Reticulum, pagina Linux Day) con il [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) e il [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/), e mandarli su WhatsApp/Telegram. Le og:image ora sono JPEG 1200×630 da 52–120 KB.
-- [ ] **Core Web Vitals reali** su [PageSpeed Insights](https://pagespeed.web.dev/): i valori misurati il 4/11 sono di laboratorio (Lighthouse).
-- [ ] **Test manuale con lettore di schermo** (NVDA su Windows o Orca su Linux): menu, selettore del tema, pulsante pausa della barra in alto, tab nella pagina Linux Day, galleria, mappa da attivare.
-- [ ] **Calendario** (B19 è online dal 4/11, commit `dfba7c5`; eventi in un solo posto e incontri settimanali, commit `a61aa9c`):
-  - passare `https://luccalug.it/calendario.ics` nel [validatore iCalendar](https://icalendar.org/validator.html); in locale è già stato controllato con la libreria Python `icalendar` (vedi [§8](#8-come-ripetere-le-verifiche));
+- [x] **HTTPS forzato**: `http://luccalug.it/` risponde con `Location: https://luccalug.it/` (verificato il 4/11). Il 5/11 l'API delle Pages conferma `https_enforced: true`, con certificato per `luccalug.it` e `www.luccalug.it` valido fino al 19/1/2027 (lo rinnova GitHub).
+- [ ] **Search Console**: controllare il rapporto "Non trovata (404)" e chiedere la nuova scansione delle pagine con redirect. Inviare di nuovo `https://luccalug.it/sitemap.xml`. Serve l'accesso a Search Console; dal lato del sito è tutto pronto (5/11): il sitemap è XML valido con 90 URL, tutti con risposta 200, nessuno con `noindex` e tutti con il canonical uguale al proprio indirizzo; `robots.txt` indica il sitemap.
+- [ ] **Anteprime social**: provare 2–3 link (home, articolo Reticulum, pagina Linux Day) con il [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) e il [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/), e mandarli su WhatsApp/Telegram. Le og:image ora sono JPEG 1200×630 da 52–120 KB. Serve l'accesso a Facebook e LinkedIn. Verificato il 5/11 con lo user agent del crawler di Facebook: le tre pagine rispondono 200 con `og:title`, `og:description`, `og:url` e `og:image` giusti (l'articolo anche con `article:*`); le og:image sono JPEG 1200×630 e il logo 450×450, tutte con risposta 200 e `image/jpeg`; `robots.txt` non blocca nessun crawler.
+- [ ] **Core Web Vitals reali** su [PageSpeed Insights](https://pagespeed.web.dev/): i valori misurati il 4/11 sono di laboratorio (Lighthouse). Va fatto dal sito: l'API senza chiave ha quota 0 (risponde `429`). Con poco traffico PageSpeed può non avere dati reali, e allora valgono quelli di laboratorio. Lighthouse mobile in produzione il 5/11, dopo l'ultimo deploy: prestazioni 98–100 e accessibilità, best practice e SEO 100 su home, Calendario, Reticulum, Linux Day e Contatti; LCP 1,2–1,7 s, CLS 0, TBT al massimo 70 ms.
+- [ ] **Test manuale con lettore di schermo** (NVDA su Windows o Orca su Linux): menu, selettore del tema, pulsante pausa della barra in alto, tab nella pagina Linux Day, galleria, mappa da attivare. Resta da sentire come li annunciano NVDA e Orca; il 5/11 una prova automatica in produzione (Chromium, solo tastiera, albero di accessibilità) non ha trovato problemi:
+  - home: ordine dei Tab "Salta al contenuto", pausa, le 7 voci di menu, modalità, schemi colore;
+  - pausa della barra: `pressed` cambia con Invio e con Spazio;
+  - schemi colore: `expanded` corretto, pulsanti non esposti a menu chiuso, Esc riporta il focus sul pulsante;
+  - Linux Day: le tab sono in un `tablist` "Schede", si spostano con frecce, Inizio e Fine, e ogni pannello è collegato alla sua tab con `aria-labelledby`;
+  - galleria: le miniature sono pulsanti con il testo alternativo; il dialogo è `modal`, il focus va su "Chiudi" e resta dentro con Tab e Maiusc+Tab; Esc chiude e riporta il focus sulla miniatura;
+  - mappa: dopo "Mostra la mappa" il focus va sull'iframe "Foro Boario, Lucca".
+- [ ] **Calendario** (B19 è online dal 4/11, commit `dfba7c5`; eventi in un solo posto e incontri settimanali, commit `a61aa9c`; iscrizione e singoli eventi dal 5/11, commit `ccd2841`):
+  - [x] [validatore iCalendar](https://icalendar.org/validator.html), 5/11: l'opzione con l'indirizzo è rotta lato loro (errore `curl_exec()`), quindi i file sono stati mandati come testo (comando in [§8](#8-come-ripetere-le-verifiche)). `calendario.ics`: 22 eventi, 1 fuso orario, nessun errore; `/calendario/2026-11-23.ics`: 1 evento, nessun errore. Riletti anche con `icalendar` e con [`ical.js`](https://github.com/kewisch/ical.js), la libreria usata da Thunderbird e dal calendario di Nextcloud: incontri alle 21:00 ora di Roma sia fino al 19/10 (19:00 UTC) sia dal 26/10 (20:00 UTC), annullati con `STATUS:CANCELLED`, CRLF e righe entro 75 byte. I pulsanti della pagina Calendario (`webcal://luccalug.it/calendario.ics` e Google con `cid=webcal://…`) e il link della scheda Reticulum puntano agli indirizzi giusti;
   - importarlo in Google Calendar e in un client Apple, e controllare che gli incontri siano alle 21:00 sia prima sia dopo il cambio dell'ora (es. 19/10 e 26/10);
   - vedere come i due client mostrano gli annullati del 12/10 e del 2/11 (`STATUS:CANCELLED` più il prefisso "[Annullato]" nel titolo). Alcuni client nascondono gli eventi annullati: va bene lo stesso;
-  - dopo il deploy dell'ottavo giro, aprire "Aggiungi al calendario" nella scheda dell'articolo Reticulum da iPhone (deve proporre di aggiungere l'evento), da Android (il file si apre con l'app calendario) e dal computer, e controllare che l'evento sia alle 21:00; poi provare i pulsanti di "Aggiungi il Calendario": Google dal browser del computer, Apple Calendario su iPhone o Mac, e ICSx⁵ su Android con il pulsante Apple. Il link di Google non è documentato ufficialmente: se smette di funzionare, toglierlo dallo shortcode `iscrizione-calendario` e lasciare l'indirizzo da copiare;
+  - ora che l'ottavo giro è online, aprire "Aggiungi al calendario" nella scheda dell'articolo Reticulum da iPhone (deve proporre di aggiungere l'evento), da Android (il file si apre con l'app calendario) e dal computer, e controllare che l'evento sia alle 21:00; poi provare i pulsanti di "Aggiungi il Calendario": Google dal browser del computer, Apple Calendario su iPhone o Mac, e ICSx⁵ su Android con il pulsante Apple. Il link di Google non è documentato ufficialmente: se smette di funzionare, toglierlo dallo shortcode `iscrizione-calendario` e lasciare l'indirizzo da copiare;
   - 5.1 e incontri settimanali sono online dal 4/11 (commit `a61aa9c`) e il `.ics` è già stato controllato in produzione (vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)): resta da vedere, in un client già abbonato prima del 4/11, che dopo l'aggiornamento non compaiano doppioni e che gli eventi abbiano il link all'articolo.
 
 ## 4. Interventi nel codice ancora da fare
@@ -290,7 +298,7 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
   - I 18 eventi del calendario sono diventati una regola del lunedì e 6 eventi (3 serate a tema, il Linux Day, 2 annullati). Rispetto a prima il `.ics` e la tabella sono identici, più i 4 lunedì di gennaio 2027 che rientrano nelle 12 settimane; le schede negli articoli sono identiche.
   - Verifiche in una copia del sito: `until`, cambio di sede e di giorno da una certa data (prima data calcolata dal giorno della settimana), evento con `id` in un lunedì, serata a tema oltre le 12 settimane in ora legale, giorno senza regola (evento di tutto il giorno), errori per `weekday` non valido, `from` mancante e due regole sullo stesso giorno. Link interni 0 errori; `.ics` letto da `icalendar` senza errori; build con bozze riuscita.
 
-**Marquee, 5/11/2026** (da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)). Gli stati sono descritti in testa alla sezione "Top Bar" di `assets/css/main.css`.
+**Marquee, 5/11/2026** (commit `21f1a35`). Gli stati sono descritti in testa alla sezione "Top Bar" di `assets/css/main.css`.
 
 - **Velocità uguale su ogni schermo** – Prima la durata era fissa (18 s) e la velocità andava da circa 67 px/s su un telefono a 153 px/s su uno schermo da 1920 px. Ora lo script in `marquee.html` calcola la durata dalla larghezza da percorrere (90 px/s, costante `SPEED`) e la ricalcola con un `ResizeObserver` quando cambia la finestra o arriva il font. Senza `ResizeObserver` resta la durata di 18 s.
 - **Testo fermo leggibile** – In pausa, con "riduci movimento" e senza JavaScript il testo va a capo invece di essere tagliato a destra (su un telefono da 375 px: 3 righe), con 12 px di margine in tutti i casi e spazio per il pulsante quando c'è.
@@ -300,7 +308,7 @@ Il commit `5c607e8` con i primi due giri è stato pushato e pubblicato il 4/11.
 - Verifiche in Chromium headless: 90 px/s a 375, 768, 1280 e 1920 px e dopo un ridimensionamento; pausa, ripresa e scelta ricordata dopo il ricaricamento; clic su ▶ con il focus rimasto sul pulsante (scorre); pausa con hover e con Tab, assente con "hover: none"; ripresa da tastiera con il testo visibile a 12 px; "riduci movimento" (anche insieme alla pausa); pagina senza JavaScript; due schede; albero di accessibilità senza le stelle, pulsante con `pressed`. Resta da provare su un telefono vero e con un lettore di schermo (già in [§3](#3-verifiche-da-fare-dopo-il-primo-deploy)).
 - Da sapere: con il testo fermo su più righe, su un telefono il selettore del tema (fisso a 80 px dall'alto) copre l'angolo in basso a destra della barra, ma non il testo.
 
-**Ottavo giro, 5/11/2026** (incontri fino a mezzanotte nel commit `21f1a35`; il resto da committare, vedi [§1](#1-prima-di-tutto-commit-pr-aperte-verifiche-rimaste)):
+**Ottavo giro, 5/11/2026** (incontri fino a mezzanotte nel commit `21f1a35`, il resto nel commit `ccd2841`):
 
 - **Incontri fino a mezzanotte** – La regola del lunedì passa da `duration: "4h"` a `"3h"`: gli incontri, anche le serate a tema e gli annullati, vanno dalle 21:00 alle 00:00 invece che all'01:00 del martedì. Nel `.ics` la fine è `DTEND` alle 00:00 del giorno dopo, il modo standard per dire "fino a mezzanotte" (la fine è esclusa), e i client mostrano 21:00–00:00 solo sul lunedì. Le schede continuano a mostrare "ore 21:00"; nel JSON-LD `endDate` passa a 00:00. Aggiornato `lastmod` del calendario.
 - **Iscrizione al calendario** – La pagina Calendario aveva solo "Scarica il calendario iCal", cioè il download del file: chi lo importa ha una copia che non si aggiorna. Ora c'è una sezione "Aggiungi il Calendario" con:
@@ -354,6 +362,22 @@ import icalendar, sys
 for e in icalendar.Calendar.from_ical(open(sys.argv[1], 'rb').read()).walk('VEVENT'):
     s = e.decoded('DTSTART'); print(e['UID'], s, e.get('STATUS', ''), e['SUMMARY'])
 " /tmp/luccalug-public/calendario.ics
+
+# Validatore iCalendar online (l'opzione con l'indirizzo è rotta: si manda il testo): atteso "No errors found"
+curl -s https://luccalug.it/calendario.ics -o /tmp/cal.ics
+curl -s -F 'jform[ical_url]=' -F 'jform[ical_text]=</tmp/cal.ics' -F 'jform[task]=validate' https://icalendar.org/validator.html \
+  | sed 's/<[^>]*>/\n/g' | grep -E 'Number of|errors found'
+
+# Schema Markup Validator: atteso 0 errori e 0 avvisi
+for u in https://luccalug.it/ https://luccalug.it/blog/2026/11/reticulum-ripensare-la-rete/; do
+  curl -s --data-urlencode "url=$u" https://validator.schema.org/validate | tail -c +6 | jq -c '{url, totalNumErrors, totalNumWarnings}'
+done
+
+# Sitemap in produzione: ogni URL deve rispondere 200
+curl -s https://luccalug.it/sitemap.xml | grep -o '<loc>[^<]*' | cut -c6- | xargs -n1 curl -s -o /dev/null -w '%{http_code}\n' | sort | uniq -c
+
+# Build notturna: deve esserci un run "schedule" al giorno
+gh run list --event schedule --limit 5
 
 # Redirect dei vecchi URL in produzione: ogni riga deve avere una destinazione e 200
 for p in post/hello-web post/arduracing post/i-gestori-di-pacchetti post/luccalug-reboot post/obs2cam \

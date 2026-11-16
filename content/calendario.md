@@ -1,7 +1,7 @@
 ---
 title: "Calendario"
 # Aggiornare quando si aggiungono o cambiano eventi: è anche il DTSTAMP di calendario.ics.
-lastmod: 2026-11-05
+lastmod: 2026-11-16
 description: "Calendario degli eventi e incontri del Luccalug"
 outputs:
   - HTML
@@ -81,8 +81,12 @@ events:
   - date: "2026-11-02"
     status: cancelled
     description: "Associazione chiusa per Lucca Comics"
+  - date: "2026-11-16"
+    status: cancelled
+    description: "La sede al Foro Boario non è agibile"
   - date: "2026-11-23"
     summary: "Serata a tema: Reticulum con Mugnozzo"
+    location: "Polo Tecnologico Lucchese, via della Chiesa XXXII traversa I 231, Sorbano del Giudice, Lucca"
     description: "Serata su Reticulum a cura di Mugnozzo: lo stack di rete libero per costruire reti decentralizzate, cifrate e resilienti, oltre Internet e senza infrastrutture centralizzate"
     url: "/blog/2026/11/reticulum-ripensare-la-rete/"
 ---
