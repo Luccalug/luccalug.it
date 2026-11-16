@@ -22,11 +22,12 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-11-23@luccalug.it
-DTSTAMP:20261104T230000Z
+DTSTAMP:20261115T230000Z
 DTSTART;TZID=Europe/Rome:20261123T210000
 DTEND;TZID=Europe/Rome:20261124T000000
 SUMMARY:Serata a tema: Reticulum con Mugnozzo
-LOCATION:Foro Boario\, Lucca
+LOCATION:Polo Tecnologico Lucchese\, via della Chiesa XXXII traversa I 231\
+ , Sorbano del Giudice\, Lucca
 DESCRIPTION:Serata su Reticulum a cura di Mugnozzo: lo stack di rete libero
   per costruire reti decentralizzate\, cifrate e resilienti\, oltre Interne
  t e senza infrastrutture centralizzate

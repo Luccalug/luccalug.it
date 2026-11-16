@@ -7,7 +7,7 @@
 # Calendario
 
 URL: https://luccalug.it/calendario/
-Data: 05/11/2026
+Data: 16/11/2026
 
 
 ## 📅 Prossimi Eventi
@@ -218,6 +218,26 @@ Non serve essere esperti! Vieni a trovarci a uno dei nostri [incontri]({{< ref "
 ---
 
 
+# Sede non agibile: salta l'incontro del 16 novembre, Reticulum cambia sede
+
+URL: https://luccalug.it/blog/2026/11/sede-non-agibile-reticulum-cambia-sede/
+Data: 16/11/2026
+Autore: Il Direttivo
+Tag: news, associazione
+
+
+La nostra sede al Foro Boario al momento non è agibile, quindi ci sono due novità:
+
+* l'incontro di **lunedì 16 novembre è annullato**;
+* la serata a tema su [Reticulum]({{< ref "blog/reticulum-ripensare-la-rete" >}}) di **lunedì 23 novembre** si sposta al **[Polo Tecnologico Lucchese](https://www.openstreetmap.org/way/197039684)**, sempre alle 21:00.
+
+{{< evento data="2026-11-23" >}}
+
+Per le prossime date tenete d'occhio il [calendario]({{< ref "calendario" >}}) e il [gruppo Telegram](https://t.me/luccalug).
+
+
+---
+
 # Reticulum: ripensare la rete
 
 URL: https://luccalug.it/blog/2026/11/reticulum-ripensare-la-rete/
@@ -226,13 +246,17 @@ Autore: Il Direttivo
 Tag: serata-a-tema, reti, radio, decentralizzazione, software-libero
 
 
-{{< figure loading="eager" src="images/blog/reticulum-ripensare-la-rete/locandina-reticulum.png" alt="Locandina della serata Reticulum: ripensare la rete - Foro Boario, Lucca, lunedì 23 novembre 2026 ore 21:00" >}}
+{{< figure loading="eager" src="images/blog/reticulum-ripensare-la-rete/locandina-reticulum.jpg" alt="Locandina della serata Reticulum: ripensare la rete - nuova sede al Polo Tecnologico Lucchese, via della Chiesa XXXII, lunedì 23 novembre 2026 ore 21:00" >}}
+
+{{< note type="warning" >}}
+**Cambio di sede!** Il Foro Boario non è agibile: la serata si sposta al **[Polo Tecnologico Lucchese](https://www.openstreetmap.org/way/197039684)**, in via della Chiesa XXXII, traversa I n. 231, a Sorbano del Giudice (Lucca). Data e orario non cambiano: lunedì 23 novembre alle 21:00.
+{{< /note >}}
 
 Siamo abituati a pensare alla "Rete" come a qualcosa che passa per forza attraverso provider e infrastrutture centralizzate.
 
 E se non fosse così?
 
-Lunedì **23 novembre**, dalle **21:00**, torna una nuova serata a tema del LuccaLUG, presso il Foro Boario di Lucca.
+Lunedì **23 novembre**, dalle **21:00**, torna una nuova serata a tema del LuccaLUG, questa volta presso il Polo Tecnologico Lucchese.
 
 Questa volta il relatore è **Mugnozzo**, e parleremo di **[Reticulum](https://reticulum.network/)**: come comunicare oltre Internet, senza infrastrutture centralizzate.
 

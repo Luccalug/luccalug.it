@@ -9,13 +9,17 @@
 ---
 
 
-{{< figure loading="eager" src="images/blog/reticulum-ripensare-la-rete/locandina-reticulum.png" alt="Locandina della serata Reticulum: ripensare la rete - Foro Boario, Lucca, lunedì 23 novembre 2026 ore 21:00" >}}
+{{< figure loading="eager" src="images/blog/reticulum-ripensare-la-rete/locandina-reticulum.jpg" alt="Locandina della serata Reticulum: ripensare la rete - nuova sede al Polo Tecnologico Lucchese, via della Chiesa XXXII, lunedì 23 novembre 2026 ore 21:00" >}}
+
+{{< note type="warning" >}}
+**Cambio di sede!** Il Foro Boario non è agibile: la serata si sposta al **[Polo Tecnologico Lucchese](https://www.openstreetmap.org/way/197039684)**, in via della Chiesa XXXII, traversa I n. 231, a Sorbano del Giudice (Lucca). Data e orario non cambiano: lunedì 23 novembre alle 21:00.
+{{< /note >}}
 
 Siamo abituati a pensare alla "Rete" come a qualcosa che passa per forza attraverso provider e infrastrutture centralizzate.
 
 E se non fosse così?
 
-Lunedì **23 novembre**, dalle **21:00**, torna una nuova serata a tema del LuccaLUG, presso il Foro Boario di Lucca.
+Lunedì **23 novembre**, dalle **21:00**, torna una nuova serata a tema del LuccaLUG, questa volta presso il Polo Tecnologico Lucchese.
 
 Questa volta il relatore è **Mugnozzo**, e parleremo di **[Reticulum](https://reticulum.network/)**: come comunicare oltre Internet, senza infrastrutture centralizzate.
 
